@@ -10,7 +10,7 @@ from hok_tools import (
     generate_pick_up_html
 )
 import matplotlib.pyplot as plt
-import japanize_matplotlib
+#import japanize_matplotlib
 
 # 作業ディレクトリの指定
 # 例: プロジェクトがリポジトリ内にある場合
