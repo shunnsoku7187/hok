@@ -30,7 +30,7 @@ jobs:
 
       - name: Run the script
         run: |
-          python main.py  # 実行したいPythonスクリプトを指定
+          python hok/main.py  # 実行したいPythonスクリプトを指定
 
       - name: Check installed packages
         run: pip freeze
