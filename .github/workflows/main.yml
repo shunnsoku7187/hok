@@ -1,0 +1,36 @@
+name: Build and Deploy HTML
+
+on:
+  push:
+    branches:
+      - main  # mainブランチに変更が加わると実行
+  pull_request:
+    branches:
+      - main  # mainブランチへのプルリクエストが作成されたときにも実行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Ubuntu環境で実行
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # リポジトリのコードをチェックアウト
+
+      - name: Set up Python
+        uses: actions/setup-python@v2  # Python環境をセットアップ
+        with:
+          python-version: '3.x'  # 使用するPythonのバージョン
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # 必要なパッケージをインストール
+
+      - name: Run the script
+        run: |
+          python your_script.py  # 実行したいPythonスクリプトを指定
+
+      - name: Commit generated files
+        run: |
+          git add .  # 変更をステージ
+          git commit -m "Generated HTML"  # コミットメッセージを指定
+          git push  # コミットをリモートリポジトリにプッシュ
