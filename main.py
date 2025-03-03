@@ -12,16 +12,6 @@ from hok_tools import (
 import matplotlib.pyplot as plt
 #import japanize_matplotlib
 
-# 作業ディレクトリの指定
-# 例: プロジェクトがリポジトリ内にある場合
-os.chdir('/path/to/your/project')  # 作業ディレクトリを指定
-
-# 必要なパッケージをインストール
-# requirements.txtを使って、以下のパッケージが自動でインストールされます
-# matplotlib
-# japanize-matplotlib
-# pandas
-
 # main部分
 def generate_html():
     file_path = 'html.txt'  # 解析するhtmlを張り付けたテキストファイルのパス
