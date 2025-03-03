@@ -1,1 +1,1 @@
-html's for mobile dir
+html's for pc dir
