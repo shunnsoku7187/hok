@@ -27,7 +27,7 @@ jobs:
 
       - name: Run the script
         run: |
-          python your_script.py  # 実行したいPythonスクリプトを指定
+          python main.py  # 実行したいPythonスクリプトを指定
 
       - name: Commit generated files
         run: |
