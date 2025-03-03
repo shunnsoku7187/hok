@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.x'  # 使用するPythonのバージョン
 
+      - name: Install distutils
+        run: sudo apt-get install python3-distutils
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
