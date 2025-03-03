@@ -35,6 +35,11 @@ jobs:
       - name: Check installed packages
         run: pip freeze
 
+      - name: Set Git Config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Commit generated files
         run: |
           git add .  # 変更をステージ
