@@ -29,6 +29,9 @@ jobs:
         run: |
           python main.py  # 実行したいPythonスクリプトを指定
 
+      - name: Check installed packages
+        run: pip freeze
+
       - name: Commit generated files
         run: |
           git add .  # 変更をステージ
