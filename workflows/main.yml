@@ -1,0 +1,29 @@
+name: Run Python Script
+
+on:
+  push:
+    branches:
+      - main  # 'main' ブランチへのプッシュでトリガーされる
+  workflow_dispatch:  # 手動でトリガーできるようにする（GitHub UIから実行可能）
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # Ubuntu環境で実行
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2  # リポジトリをクローン
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # 使用するPythonのバージョンを指定
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  
+
+      - name: Run script
+        run: |
+          python main.py  
