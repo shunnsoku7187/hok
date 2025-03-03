@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
-import japanize_matplotlib
+#import japanize_matplotlib
 import os
 from hok_tools.csv_tool import get_period
+
+plt.rcParams['font.family'] = 'IPAexGothic'
 
 ###  画像出力本体
 def generate_meta_list_image(roll_name,roll, heroes, filename="meta_list.png",author = "ぴかち"):
