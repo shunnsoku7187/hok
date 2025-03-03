@@ -1,7 +1,3 @@
 matplotlib
 japanize-matplotlib
 pandas
-json
-csv
-datetime
-os
