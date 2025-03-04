@@ -277,7 +277,7 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
         hero_name = hero["name"]
         eng_name = transrate_name(hero_name, name_dict)
         image_path = os.path.join(image_folder, f"{eng_name}.png")
-        img_tag = f'<img src="{image_path}" alt="{hero_name}" />' if os.path.exists(image_path) else "no image"
+        img_tag = f'<img src="{image_path}" alt="{hero_name}" />'
 
         if device == "pc":
             html_content += f"""
