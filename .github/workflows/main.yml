@@ -30,7 +30,7 @@ jobs:
 
       - name: Run the script
         run: |
-          python main.py  # 実行したいPythonスクリプトを指定
+          python main.py
 
       - name: Check installed packages
         run: pip freeze
@@ -48,3 +48,12 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload files to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          ftp-server: ${{ secrets.FTP_HOST }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./html_list/
+          remote-dir: /public_html/
