@@ -5,7 +5,7 @@ import datetime
 from hok_tools.categories_tool import get_heroes_by_tag
 
 BASE_PATH = "csv/"
-IMAGE_PATH = "hok_pics"
+IMAGE_PATH = "../hok_pics"
 
 def get_period(previous=False):
     today = datetime.date.today()
