@@ -1,6 +1,7 @@
 import csv
 import os
 import pandas as pd
+from jinja2 import Environment, FileSystemLoader
 import datetime
 from hok_tools.categories_tool import get_heroes_by_tag
 
@@ -130,191 +131,34 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
     data = csv_to_list(roll=roll)
     y, m, d = get_period()
 
-    # PC/モバイル共通部分
-    html_content = f"""
-    <!DOCTYPE html>
-    <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{y}{m}{d} Score List</title>
-        <style>
-            body {{
-                font-family: Arial, sans-serif;
-                margin: 20px;
-                background-color: #f9f9f9;
-                color: #333;
-            }}
-            h1 {{
-                font-size: 1.5em;
-                text-align: center;
-            }}
-            .hero-name {{
-                font-weight: bold;
-                color: #333;
-            }}
-            .highlight {{
-                font-weight: bold;
-                color: #4CAF50;
-            }}
-    """
-
+    env = Environment(loader=FileSystemLoader('.'))
     if device == "pc":
-        # PC向けのスタイル
-        html_content += """
-            .supplementary {
-                color: #666;
-            }
-            .scrollable {
-                overflow-x: auto;
-                width: 100%;
-            }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-                background: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: center;
-                word-break: break-word;
-                max-width: 200px;
-            }
-            th {
-                background-color: #4CAF50;
-                color: white;
-            }
-            tr:nth-child(even) {
-                background-color: #f2f2f2;
-            }
-            td:first-child {
-                width: 120px;
-            }
-            img {
-                max-width: 100px;
-                height: auto;
-            }
-        """
+        template = env.get_template("template_pc.html")
     elif device == "mobile":
-        # モバイル向けのスタイル（縦長・シンプル化）
-        html_content += """
-            .supplementary {
-                border-bottom: 2px solid #4CAF50;
-                color: #666;
-                font-size: 0.6em
-            }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                background: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-            th, td {
-                border: 1px solid #ddd;
-                padding: 5px;
-                text-align: center;
-                font-size: 0.9em;
-            }
-            th {
-                background-color: #4CAF50;
-                color: white;
-            }
-            img {
-                max-width: 70px;
-                height: auto;
-            }
-            td:first-child {
-                width: 70px;
-            }
-            .hero-block:nth-of-type(odd) {
-                background-color: #f2f2f2;
-            }
-            .hero-block:nth-of-type(even) {
-                background-color: #ffffff;
-            }
-        """
+        template = env.get_template("template_mobile.html")
 
-    # PCまたはモバイルで異なるHTML構造
-    if device == "pc":
-        html_content += f"""
-        </style>
-    </head>
-    <body>
-        <h1>～{y}/{m}/{d}'s Score List (created by {author})</h1>
-        <div class="scrollable">
-            <table>
-                <thead>
-                    <tr>
-                        <th>image</th>
-                        <th>name</th>
-                        <th>score</th>
-                        <th>Tier</th>
-                        <th>data</th>
-                    </tr>
-                </thead>
-                <tbody>
-        """
-    elif device == "mobile":
-        html_content += f"""
-        </style>
-    </head>
-    <body>
-        <h1>～{y}/{m}/{d}'s Score List (created by {author})</h1>
-        <div class="scrollable">
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Hero Data</th>
-                    </tr>
-                </thead>
-                <tbody>
-        """
-
+    hero_data = []
     for idx, hero in enumerate(data):
         hero_name = hero["name"]
         eng_name = transrate_name(hero_name, name_dict)
         image_path = os.path.join(image_folder, f"{eng_name}.png")
         img_tag = f'<img src="{image_path}" alt="{hero_name}" />'
 
-        if device == "pc":
-            html_content += f"""
-            <tr class="hero-row">
-                <td>{img_tag}</td>
-                <td class="hero-name">{hero_name}</td>
-                <td class="highlight">{hero['score']}</td>
-                <td class="highlight">{hero['tier']}</td>
-                <td class="supplementary">{hero['data']}</td>
-            </tr>
-            """
-        elif device == "mobile":
-            html_content += f"""
-            <tbody class="hero-block">
-                <tr　class="hero-row">
-                    <td rowspan="3">{img_tag}</td>
-                    <td class="hero-name">{hero_name}</td>
-                </tr>
-                <tr class="hero-row">
-                    <td class="highlight">{hero['score']}</td>
-                </tr>
-                <tr class="hero-row">
-                    <td class="highlight">{hero['tier']}</td>
-                </tr>
-                <tr class="hero-row">
-                    <td colspan="2" class="supplementary">{hero['data']}</td>
-                </tr>
-            </tbody>
-            """
+        hero_data.append({
+            "name": hero_name,
+            "image": img_tag,
+            "score": hero["score"],
+            "tier": hero["tier"],
+            "data": hero["data"]
+        })
 
-    html_content += """
-                </tbody>
-            </table>
-        </div>
-    </body>
-    </html>
-    """
+    # テンプレートにデータを埋め込む
+    html_content = template.render(
+        title=f"{y}/{m}/{d} Score List",
+        author=author,
+        data=hero_data
+    )
+
 
     with open(filename, "w", encoding="utf-8") as file:
         file.write(html_content)

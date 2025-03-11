@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            h1 {
+                font-size: 1.5em;
+                text-align: center;
+            }
+            .hero-name {
+                font-weight: bold;
+                color: #333;
+            }
+            .highlight {
+                font-weight: bold;
+                color: #4CAF50;
+            }
+            .supplementary {
+                color: #666;
+            }
+            .scrollable {
+                overflow-x: auto;
+                width: 100%;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                background: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+                word-break: break-word;
+                max-width: 200px;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            td:first-child {
+                width: 120px;
+            }
+            img {
+                max-width: 100px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{ title }} (created by {{ author }})</h1>
+        <div class="scrollable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>image</th>
+                        <th>name</th>
+                        <th>score</th>
+                        <th>Tier</th>
+                        <th>data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for hero in data %}
+                    <tr class="hero-row">
+                        <td>{img_tag}</td>
+                        <td class="hero-name">{hero_name}</td>
+                        <td class="highlight">{hero['score']}</td>
+                        <td class="highlight">{hero['tier']}</td>
+                        <td class="supplementary">{hero['data']}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
