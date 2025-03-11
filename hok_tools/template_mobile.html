@@ -71,17 +71,17 @@
                 <tbody class="hero-block">
                     {% for hero in data %}
                     <tr class="hero-row">
-                        <td rowspan="3">{img_tag}</td>
-                        <td class="hero-name">{hero_name}</td>
+                        <td rowspan="3">{{ hero.image }}</td>
+                        <td class="hero-name">{{ hero.name }}</td>
                     </tr>
                     <tr class="hero-row">
-                        <td class="highlight">{hero['score']}</td>
+                        <td class="highlight">{{ hero.score }}</td>
                     </tr>
                     <tr class="hero-row">
-                        <td class="highlight">{hero['tier']}</td>
+                        <td class="highlight">{{ hero.tier }}</td>
                     </tr>
                     <tr class="hero-row">
-                        <td colspan="2" class="supplementary">{hero['data']}</td>
+                        <td colspan="2" class="supplementary">{{ hero.data }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>

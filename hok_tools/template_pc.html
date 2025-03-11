@@ -76,11 +76,11 @@
                 <tbody>
                     {% for hero in data %}
                     <tr class="hero-row">
-                        <td>{img_tag}</td>
-                        <td class="hero-name">{hero_name}</td>
-                        <td class="highlight">{hero['score']}</td>
-                        <td class="highlight">{hero['tier']}</td>
-                        <td class="supplementary">{hero['data']}</td>
+                        <td>{{ hero.image }}</td>
+                        <td class="hero-name">{{ hero.name }}</td>
+                        <td class="highlight">{{ hero.score }}</td>
+                        <td class="highlight">{{ hero.tier }}</td>
+                        <td class="supplementary">{{ hero.data }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
