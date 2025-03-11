@@ -133,9 +133,9 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
 
     env = Environment(loader=FileSystemLoader('.'))
     if device == "pc":
-        template = env.get_template("template_pc.html")
+        template = env.get_template("hok_tools/template_pc.html")
     elif device == "mobile":
-        template = env.get_template("template_mobile.html")
+        template = env.get_template("hok_tools/template_mobile.html")
 
     hero_data = []
     for idx, hero in enumerate(data):
