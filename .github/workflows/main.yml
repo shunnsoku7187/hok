@@ -48,11 +48,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      #- name: Upload files to FTP server
-        #uses: SamKirkland/FTP-Deploy-Action@v4.3.2
-        #with:
-          #server: ${{ secrets.FTP_HOST }}
-          #username: ${{ secrets.FTP_USERNAME }}
-          #password: ${{ secrets.FTP_PASSWORD }}
-          #local-dir: list_html/
-          #server-dir: /public_html/
+      - name: Upload files to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.2
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: list_html/
+          server-dir: /public_html/
