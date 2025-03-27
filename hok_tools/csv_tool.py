@@ -25,27 +25,22 @@ def save_heroes_to_csv(heroes, filename="heroes.csv"):
     if not os.path.exists(BASE_PATH):
         os.makedirs(BASE_PATH)
 
-    # CSVファイルに書き込む
     with open(f"{BASE_PATH}{year}{month}{day}_{filename}", mode='w', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=heroes[0].keys())
         writer.writeheader()  # ヘッダー（キー）を書き込む
         writer.writerows(heroes)  # ヒーロー情報を行ごとに書き込む
         
 def find_heroes_by_roll(previous_csv, current_csv, roll="All"):
-    # 前回と今回のデータを読み込む
     prev_df = pd.read_csv(previous_csv)
     curr_df = pd.read_csv(current_csv)
 
     roll_names = get_heroes_by_tag(tag = roll)
     
-    # ヒーロー名でデータを結合
     merged_df = pd.merge(prev_df, curr_df, on="name", suffixes=("_prev", "_curr"))
     merged_df = merged_df[merged_df["name"].isin(roll_names)]
     
-    # meta_score の差分を計算
     merged_df["meta_score_diff"] = merged_df["meta_score_curr"] - merged_df["meta_score_prev"]
     
-    # 必要なデータを抽出
     result = merged_df[[ 
         "name",
         "win_rate_curr",
@@ -96,15 +91,6 @@ def csv_to_list(filename="heroes.csv",roll = "All"):
     pick_up_list = format_hero_data(pick_up_list)
     
     return pick_up_list
-
-#デバッグ用のリストの表示
-def display_diff_list(roll = "All"):
-    
-    results = csv_to_list(roll = roll)
-    for hero in formated_results:
-        print(
-            f"{hero['name']} -- {hero['score']}/ {hero['tier']} / {hero['data']}"
-        )
         
 def load_name_dict(csv_file='names.csv'):
     name_dict = {}
@@ -158,7 +144,6 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
         author=author,
         data=hero_data
     )
-
 
     with open(filename, "w", encoding="utf-8") as file:
         file.write(html_content)
