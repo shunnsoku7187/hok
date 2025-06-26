@@ -1,6 +1,6 @@
 # hok
 ## 使い方
-html.txtにデータページ(https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list)の対象となる部分(<tobody>~</tobody>)をペースト
+html.txtにデータページ( https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list )の対象となる部分(<tobody>~</tobody>)をペースト
 上書きすれば自動的にhtmlの解析、データの加工(csv)、データの表示用ページ作成(html)、サーバーへのアップロードが実行される。
 
 ## 新ヒーロー実装時
