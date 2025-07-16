@@ -112,7 +112,7 @@ def transrate_name(japanese_name, name_dict=None):
     else:
         return None
         
-def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html", author="ぴかち", device="pc"):
+def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html", author="Picachu", device="pc"):
     name_dict = load_name_dict()
     data = csv_to_list(roll=roll)
     y, m, d = get_period()
