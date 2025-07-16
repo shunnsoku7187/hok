@@ -8,7 +8,7 @@ HOK（Honer of Kings）の対戦データは公式にHOKCAMPにて公開され�
 
 # ●使い方
 html.txtにデータ公開ページ[HOK CAMP](https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list)の対象となる部分(tobody)をペースト  
-上書保存きすれば自動的にhtmlの解析、データの加工(csv)、データの表示用ページ作成(html)、サーバーへのアップロードが実行される。  
+上書保存すれば自動的にhtmlの解析、データの加工(csv)、データの表示用ページ作成(html)、サーバーへのアップロードが実行される。  
 
 # ●新ヒーロー実装時 
 ①hero_categories.jsonに日本語名で追加  
@@ -30,12 +30,12 @@ html.txtにデータ公開ページ[HOK CAMP](https://camp.honorofkings.com/h5/a
   - hok_pics アイコン画像保管場所（英名.png）  
 - csv 加工後データ保存場所（過去分参照用）  
 - graph_images　グラフ画像保管場所（自動でサーバーにはアップロードされない）  
-- hok_tools　mainを動かすための自作のツール保管場所
+- hok_tools　main.pyを動かすための自作のツール保管場所
 
-# ●スコア計算について(25/07/10追記)
+# ●スコア計算について
 **基本的な指針**:勝率が高く使用率が高く禁止率が高いほど強い
 
-⇔勝率は高いが使用率が低い⇒一部のプレイヤーの影響が強い
+⇔勝率は高いが使用率が低い:一部の熟練プレイヤーの影響が強くノイズの可能性
 
 **🟩勝率基礎点**
 ```python
