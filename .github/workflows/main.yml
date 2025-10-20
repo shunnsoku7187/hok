@@ -9,6 +9,8 @@ on:
       - main  # mainブランチへのプルリクエストが作成されたときにも実行
   repository_dispatch:
     types: [trigger-from-discord]
+  schedule:
+    - cron: '0 21 * * 6'
 
 jobs:
   build:
