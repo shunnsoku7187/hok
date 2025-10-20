@@ -171,7 +171,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Ao'yin
+      白龍
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -507,7 +507,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Umbrosa
+      影
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -987,7 +987,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Gao Changgong
+      蘭陵王
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -2907,7 +2907,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Flowborn (Mage)
+      元流の子（メイジ）
      </div>
      <div class="hero-intro-career">
       Mage
