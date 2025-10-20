@@ -3003,7 +3003,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Flowborn (Tank)
+      元流の子（タンク）
      </div>
      <div class="hero-intro-career">
       Tank/Fighter
