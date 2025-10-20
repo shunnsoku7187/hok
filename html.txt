@@ -1419,7 +1419,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Flowborn (Marksman)
+      元流の子（マークスマン）
      </div>
      <div class="hero-intro-career">
       Marksman
