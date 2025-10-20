@@ -20,7 +20,8 @@ html.txtにデータ公開ページ[HOK CAMP](https://camp.honorofkings.com/h5/a
 
 # ●フォルダ構成
 - .github\workflows\main.yml　GitActions制御
-- main.py アプリ本体  
+- main.py アプリ本体
+- get_html.py 自動でのhtml取得用アプリ 
 - names.csv 日本語名⇔英名の管理用  
 - hero_categories.json　各ヒーローのロール管理用  
 - requirements.txt　必要な環境  
