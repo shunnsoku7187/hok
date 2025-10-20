@@ -9,6 +9,7 @@ HOK（Honer of Kings）の対戦データは公式にHOKCAMPにて公開され�
 # ●使い方
 html.txtにデータ公開ページ[HOK CAMP](https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list)の対象となる部分(tobody)をペースト  
 上書保存すれば自動的にhtmlの解析、データの加工(csv)、データの表示用ページ作成(html)、サーバーへのアップロードが実行される。  
+⇒自動取得テスト中（毎週日曜日の午前６時に自動で更新作業が開始）
 
 # ●新ヒーロー実装時 
 ①hero_categories.jsonに日本語名で追加  
