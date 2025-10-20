@@ -30,6 +30,10 @@ jobs:
       - name: Install Japanese Fonts
         run: sudo apt-get update && sudo apt-get install -y fonts-ipaexfont
 
+      - name: Get html to txt
+        run: |
+          python get_html.py
+
       - name: Run the script
         run: |
           python main.py
