@@ -603,7 +603,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Wang Zhaojun
+      王昭君
      </div>
      <div class="hero-intro-career">
       Mage
