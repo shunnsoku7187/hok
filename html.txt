@@ -555,7 +555,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Luban No.7
+      魯班7号
      </div>
      <div class="hero-intro-career">
       Marksman
