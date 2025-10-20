@@ -5,7 +5,7 @@
     <img class="hero-icon" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=504}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Milady
+      ミレディ
      </div>
      <div class="hero-intro-career">
       Mage
@@ -40,7 +40,7 @@
     <img class="hero-icon" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=109}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dYxuS6IA.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Daji
+      妲己
      </div>
      <div class="hero-intro-career">
       Mage
@@ -75,7 +75,7 @@
     <img class="hero-icon" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=517}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Augran
+      大司命
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -123,7 +123,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Hou Yi
+      后羿
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -219,7 +219,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Angela
+      アンジェラ
      </div>
      <div class="hero-intro-career">
       Mage
@@ -267,7 +267,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Marco Polo
+      マルコ・ポーロ
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -315,7 +315,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lam
+      瀾
      </div>
      <div class="hero-intro-career">
       Assassin/Fighter
@@ -363,7 +363,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Xiao Qiao
+      小喬
      </div>
      <div class="hero-intro-career">
       Mage
@@ -411,7 +411,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Liang
+      張良
      </div>
      <div class="hero-intro-career">
       Mage
@@ -459,7 +459,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Kongming
+      孔明
      </div>
      <div class="hero-intro-career">
       Mage
@@ -651,7 +651,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Donghuang
+      東皇太一
      </div>
      <div class="hero-intro-career">
       Support/Tank
@@ -699,7 +699,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Cai Yan
+      蔡文姫
      </div>
      <div class="hero-intro-career">
       Support
@@ -747,7 +747,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Mozi
+      墨子
      </div>
      <div class="hero-intro-career">
       Mage/Fighter
@@ -795,7 +795,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Yaria
+      瑶
      </div>
      <div class="hero-intro-career">
       Support
@@ -843,7 +843,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Li Xin
+      李信
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -891,7 +891,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lady Sun
+      孫尚香
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -939,7 +939,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Luna
+      ルナ
      </div>
      <div class="hero-intro-career">
       Fighter/Mage
@@ -1035,7 +1035,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Garo
+      伽羅
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -1083,7 +1083,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Ziya
+      太公望
      </div>
      <div class="hero-intro-career">
       Mage
@@ -1131,7 +1131,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Consort Yu
+      虞美人
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -1179,7 +1179,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Dolia
+      ドリア
      </div>
      <div class="hero-intro-career">
       Support
@@ -1227,7 +1227,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Dian Wei
+      典韋
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -1275,7 +1275,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Nuwa
+      女媧
      </div>
      <div class="hero-intro-career">
       Mage
@@ -1323,7 +1323,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Arke
+      阿軻
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -1371,7 +1371,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Da Qiao
+      大喬
      </div>
      <div class="hero-intro-career">
       Support/Mage
@@ -1467,7 +1467,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lady Zhen
+      甄姫
      </div>
      <div class="hero-intro-career">
       Mage
@@ -1515,7 +1515,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Arli
+      公孫離
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -1563,7 +1563,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Erin
+      エリン
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -1611,7 +1611,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Dyadia
+      少司縁
      </div>
      <div class="hero-intro-career">
       Support/Mage
@@ -1659,7 +1659,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Dun
+      夏侯惇
      </div>
      <div class="hero-intro-career">
       Tank/Fighter
@@ -1707,7 +1707,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Kaizer
+      カイザー
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -1755,7 +1755,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Musashi
+      宮本武蔵
      </div>
      <div class="hero-intro-career">
       Fighter/Assassin
@@ -1803,7 +1803,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Wukong
+      孫悟空
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -1851,7 +1851,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Zhuangzi
+      荘子
      </div>
      <div class="hero-intro-career">
       Support/Tank
@@ -1899,7 +1899,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Kui
+      鐘馗
      </div>
      <div class="hero-intro-career">
       Support/Mage
@@ -1947,7 +1947,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Diaochan
+      貂蝉
      </div>
      <div class="hero-intro-career">
       Mage
@@ -1995,7 +1995,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Alessio
+      アレッシオ
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -2043,7 +2043,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Arthur
+      アーサー
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -2091,7 +2091,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Luara
+      ルアンナ
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -2139,7 +2139,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Mi Yue
+      ミーユエ
      </div>
      <div class="hero-intro-career">
       Mage/Fighter
@@ -2187,7 +2187,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Heino
+      ハイノ
      </div>
      <div class="hero-intro-career">
       Mage/Fighter
@@ -2235,7 +2235,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Di Renjie
+      仁傑
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -2283,7 +2283,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Gan &amp; Mo
+      干将・莫耶
      </div>
      <div class="hero-intro-career">
       Mage
@@ -2331,7 +2331,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lu Bu
+      呂布
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -2379,7 +2379,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Yuhuan
+      楊貴妃
      </div>
      <div class="hero-intro-career">
       Mage
@@ -2427,7 +2427,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Sun Ce
+      孫策
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -2475,7 +2475,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Sakeer
+      啓
      </div>
      <div class="hero-intro-career">
       Support/Mage
@@ -2523,7 +2523,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Mai Shiranui
+      不知火舞
      </div>
      <div class="hero-intro-career">
       Assassin/Mage
@@ -2571,7 +2571,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lian Po
+      廉頗
      </div>
      <div class="hero-intro-career">
       Tank
@@ -2619,7 +2619,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Liu Shan
+      劉禅
      </div>
      <div class="hero-intro-career">
       Support/Tank
@@ -2667,7 +2667,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Biron
+      バイロン
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -2715,7 +2715,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Fang
+      李元芳
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -2763,7 +2763,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Yang Jian
+      楊戩
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -2811,7 +2811,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Yixing
+      棋星
      </div>
      <div class="hero-intro-career">
       Mage
@@ -2859,7 +2859,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Dr Bian
+      扁鵲
      </div>
      <div class="hero-intro-career">
       Mage
@@ -2955,7 +2955,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Ying
+      ユンエイ
      </div>
      <div class="hero-intro-career">
       Fighter/Assassin
@@ -3051,7 +3051,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Shouyue
+      百里守約
      </div>
      <div class="hero-intro-career">
       Marksman/Assassin
@@ -3099,7 +3099,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Chano
+      蒼
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -3147,7 +3147,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Huang Zhong
+      黄忠
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -3195,7 +3195,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Zhang Fei
+      張飛
      </div>
      <div class="hero-intro-career">
       Support/Tank
@@ -3243,7 +3243,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Nakoruru
+      ナコルル
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -3291,7 +3291,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Zhou Yu
+      周瑜
      </div>
      <div class="hero-intro-career">
       Mage
@@ -3339,7 +3339,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Yao
+      曜
      </div>
      <div class="hero-intro-career">
       Fighter/Assassin
@@ -3387,7 +3387,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Xiang Yu
+      項羽
      </div>
      <div class="hero-intro-career">
       Tank/Fighter
@@ -3435,7 +3435,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Mayene
+      姫小満
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -3483,7 +3483,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Han Xin
+      韓信
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -3531,7 +3531,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Ming
+      明世隠
      </div>
      <div class="hero-intro-career">
       Support
@@ -3579,7 +3579,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Wuyan
+      鐘無艶
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -3627,7 +3627,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Butterfly
+      バタフライ
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -3675,7 +3675,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Zilong
+      趙雲
      </div>
      <div class="hero-intro-career">
       Fighter/Assassin
@@ -3723,7 +3723,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Fuzi
+      孔子
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -3771,7 +3771,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Shi
+      西施
      </div>
      <div class="hero-intro-career">
       Mage
@@ -3819,7 +3819,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Agudo
+      アグド
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -3867,7 +3867,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Bai Qi
+      白起
      </div>
      <div class="hero-intro-career">
       Tank
@@ -3915,7 +3915,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Li Bai
+      李白
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -3963,7 +3963,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Mulan
+      ムーラン
      </div>
      <div class="hero-intro-career">
       Fighter/Assassin
@@ -4011,7 +4011,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Pei
+      タイガー
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -4059,7 +4059,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Gao
+      漸離
      </div>
      <div class="hero-intro-career">
       Mage
@@ -4107,7 +4107,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Allain
+      アレン
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4155,7 +4155,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Sima Yi
+      司馬懿
      </div>
      <div class="hero-intro-career">
       Assassin/Mage
@@ -4203,7 +4203,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Charlotte
+      シャルロット
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4251,7 +4251,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Sun Bin
+      孫臏
      </div>
      <div class="hero-intro-career">
       Support/Mage
@@ -4299,7 +4299,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Ata
+      アタ
      </div>
      <div class="hero-intro-career">
       Tank
@@ -4347,7 +4347,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Meng Ya
+      蒙牙
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -4395,7 +4395,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Feyd
+      ハロルド
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -4443,7 +4443,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Dharma
+      達磨
      </div>
      <div class="hero-intro-career">
       Fighter/Tank
@@ -4491,7 +4491,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Liu Bei
+      劉備
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4539,7 +4539,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Shangguan
+      上官婉児
      </div>
      <div class="hero-intro-career">
       Mage/Assassin
@@ -4587,7 +4587,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Guan Yu
+      関羽
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4635,7 +4635,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Ukyo Tachibana
+      橘右京
      </div>
      <div class="hero-intro-career">
       Assassin/Fighter
@@ -4683,7 +4683,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Fatih
+      ファーティフ
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4731,7 +4731,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Nezha
+      ナタク
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4779,7 +4779,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Liu Bang
+      劉邦
      </div>
      <div class="hero-intro-career">
       Tank/Mage
@@ -4827,7 +4827,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Menki
+      モンキ
      </div>
      <div class="hero-intro-career">
       Fighter/Mage
@@ -4875,7 +4875,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Guiguzi
+      鬼谷子
      </div>
      <div class="hero-intro-career">
       Support
@@ -4923,7 +4923,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Cirrus
+      雲中君
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -4971,7 +4971,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Jing
+      鏡
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -5019,7 +5019,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Xuance
+      百里玄策
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -5067,7 +5067,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Athena
+      アテナ
      </div>
      <div class="hero-intro-career">
       Fighter/Assassin
