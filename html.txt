@@ -651,7 +651,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Garuda
+      ガルダ
      </div>
      <div class="hero-intro-career">
       Mage
