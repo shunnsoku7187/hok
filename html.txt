@@ -20,52 +20,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.61%
+    50.36%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    2.06%
+    2.00%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     5.13%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <img class="hero-icon" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=169}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      后羿
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    52.72%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    4.02%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.34%
    </div>
   </td>
  </tr>
@@ -90,17 +55,52 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.11%
+    48.29%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.12%
+    1.14%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    5.98%
+    6.00%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <img class="hero-icon" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=169}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      后羿
+     </div>
+     <div class="hero-intro-career">
+      Marksman
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    52.49%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    3.89%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.34%
    </div>
   </td>
  </tr>
@@ -138,65 +138,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.29%
+    50.57%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    2.78%
+    2.81%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    2.21%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      東皇太一
-     </div>
-     <div class="hero-intro-career">
-      Support/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.80%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.33%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    3.85%
+    2.18%
    </div>
   </td>
  </tr>
@@ -234,17 +186,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.35%
+    49.41%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    2.19%
+    2.11%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.94%
+    2.26%
    </div>
   </td>
  </tr>
@@ -282,17 +234,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    46.76%
+    46.73%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.12%
+    1.14%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    4.01%
+    4.06%
    </div>
   </td>
  </tr>
@@ -315,10 +267,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      張良
+      東皇太一
      </div>
      <div class="hero-intro-career">
-      Mage
+      Support/Tank
      </div>
     </div>
    </div>
@@ -330,65 +282,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.07%
+    50.84%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.92%
+    1.29%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    3.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      マルコ・ポーロ
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    47.50%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    2.10%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.44%
+    3.61%
    </div>
   </td>
  </tr>
@@ -426,17 +330,113 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.76%
+    53.11%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.60%
+    1.83%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.32%
+    1.36%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      張良
+     </div>
+     <div class="hero-intro-career">
+      Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.75%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.92%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    3.07%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      マルコ・ポーロ
+     </div>
+     <div class="hero-intro-career">
+      Marksman
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    47.44%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    2.08%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.43%
    </div>
   </td>
  </tr>
@@ -474,17 +474,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.84%
+    48.97%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.18%
+    1.19%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    2.17%
+    1.96%
    </div>
   </td>
  </tr>
@@ -522,7 +522,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.32%
+    48.10%
    </div>
   </td>
   <td>
@@ -570,65 +570,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.73%
+    50.04%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.83%
+    1.82%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.45%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      魯班7号
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.53%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.91%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.17%
+    0.47%
    </div>
   </td>
  </tr>
@@ -666,17 +618,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.44%
+    50.10%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.83%
+    1.87%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.29%
+    0.32%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      魯班7号
+     </div>
+     <div class="hero-intro-career">
+      Marksman
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.42%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    1.92%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.18%
    </div>
   </td>
  </tr>
@@ -714,65 +714,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.29%
+    52.30%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.64%
+    1.58%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.62%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      瑶
-     </div>
-     <div class="hero-intro-career">
-      Support
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    47.40%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.29%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.21%
    </div>
   </td>
  </tr>
@@ -810,17 +762,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.62%
+    49.36%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.19%
+    1.17%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.40%
+    1.38%
    </div>
   </td>
  </tr>
@@ -843,10 +795,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      蘭陵王
+      瑶
      </div>
      <div class="hero-intro-career">
-      Assassin
+      Support
      </div>
     </div>
    </div>
@@ -858,17 +810,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.79%
+    47.08%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.56%
+    1.25%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    2.40%
+    1.21%
    </div>
   </td>
  </tr>
@@ -906,17 +858,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.47%
+    52.38%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.38%
+    1.32%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.74%
+    0.73%
    </div>
   </td>
  </tr>
@@ -939,10 +891,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      少司縁
+      蘭陵王
      </div>
      <div class="hero-intro-career">
-      Support/Mage
+      Assassin
      </div>
     </div>
    </div>
@@ -954,17 +906,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    47.40%
+    49.73%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.28%
+    0.56%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.87%
+    2.22%
    </div>
   </td>
  </tr>
@@ -1002,12 +954,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.58%
+    51.74%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.55%
+    1.53%
    </div>
   </td>
   <td>
@@ -1035,10 +987,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      カイザー
+      少司縁
      </div>
      <div class="hero-intro-career">
-      Fighter/Tank
+      Support/Mage
      </div>
     </div>
    </div>
@@ -1050,65 +1002,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.46%
+    47.48%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.56%
+    1.19%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.10%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      ガルダ
-     </div>
-     <div class="hero-intro-career">
-      Mage
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.27%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.44%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.29%
+    0.88%
    </div>
   </td>
  </tr>
@@ -1146,65 +1050,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    46.66%
+    46.72%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.56%
+    1.58%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.05%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      虞美人
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.47%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.48%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.14%
+    0.06%
    </div>
   </td>
  </tr>
@@ -1242,7 +1098,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    45.81%
+    45.66%
    </div>
   </td>
   <td>
@@ -1252,7 +1108,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.28%
+    0.30%
    </div>
   </td>
  </tr>
@@ -1275,10 +1131,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      太公望
+      虞美人
      </div>
      <div class="hero-intro-career">
-      Mage
+      Marksman
      </div>
     </div>
    </div>
@@ -1290,17 +1146,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.82%
+    50.58%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.30%
+    1.48%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.35%
+    0.14%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      カイザー
+     </div>
+     <div class="hero-intro-career">
+      Fighter/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.54%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    1.47%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.10%
    </div>
   </td>
  </tr>
@@ -1338,7 +1242,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.05%
+    51.72%
    </div>
   </td>
   <td>
@@ -1348,7 +1252,55 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.47%
+    1.54%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      太公望
+     </div>
+     <div class="hero-intro-career">
+      Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    52.87%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    1.31%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.35%
    </div>
   </td>
  </tr>
@@ -1386,12 +1338,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.09%
+    50.17%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.31%
+    1.33%
    </div>
   </td>
   <td>
@@ -1434,7 +1386,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.85%
+    50.03%
    </div>
   </td>
   <td>
@@ -1445,6 +1397,54 @@
   <td>
    <div class="table-text table-normal-text">
     0.12%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      ガルダ
+     </div>
+     <div class="hero-intro-career">
+      Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.18%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    1.29%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.21%
    </div>
   </td>
  </tr>
@@ -1482,7 +1482,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.53%
+    52.39%
    </div>
   </td>
   <td>
@@ -1493,102 +1493,6 @@
   <td>
    <div class="table-text table-normal-text">
     0.19%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      大喬
-     </div>
-     <div class="hero-intro-career">
-      Support/Mage
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    48.84%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.01%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.69%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      ルナ
-     </div>
-     <div class="hero-intro-career">
-      Fighter/Mage
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    48.49%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.72%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.24%
    </div>
   </td>
  </tr>
@@ -1626,17 +1530,113 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.74%
+    51.55%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.12%
+    1.14%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.39%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      大喬
+     </div>
+     <div class="hero-intro-career">
+      Support/Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    48.72%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.99%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.68%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      ルナ
+     </div>
+     <div class="hero-intro-career">
+      Fighter/Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    48.88%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.70%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    1.22%
    </div>
   </td>
  </tr>
@@ -1674,7 +1674,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.92%
+    49.80%
    </div>
   </td>
   <td>
@@ -1684,151 +1684,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.26%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      バイロン
-     </div>
-     <div class="hero-intro-career">
-      Fighter/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    48.66%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.23%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.09%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      アーサー
-     </div>
-     <div class="hero-intro-career">
-      Fighter/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    49.42%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.19%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.07%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      公孫離
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    48.17%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.78%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.89%
+    0.25%
    </div>
   </td>
  </tr>
@@ -1866,12 +1722,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.35%
+    52.43%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.16%
+    1.22%
    </div>
   </td>
   <td>
@@ -1899,10 +1755,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      荘子
+      アーサー
      </div>
      <div class="hero-intro-career">
-      Support/Tank
+      Fighter/Tank
      </div>
     </div>
    </div>
@@ -1914,17 +1770,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.29%
+    49.05%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.78%
+    1.20%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.78%
+    0.07%
    </div>
   </td>
  </tr>
@@ -1947,10 +1803,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      ミーユエ
+      バイロン
      </div>
      <div class="hero-intro-career">
-      Mage/Fighter
+      Fighter/Tank
      </div>
     </div>
    </div>
@@ -1962,17 +1818,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.44%
+    48.59%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.82%
+    1.17%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.70%
+    0.09%
    </div>
   </td>
  </tr>
@@ -2010,12 +1866,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.53%
+    51.94%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.12%
+    1.16%
    </div>
   </td>
   <td>
@@ -2043,10 +1899,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      白起
+      公孫離
      </div>
      <div class="hero-intro-career">
-      Tank
+      Marksman
      </div>
     </div>
    </div>
@@ -2058,17 +1914,113 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    53.04%
+    48.09%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.08%
+    0.76%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.13%
+    0.87%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      ミーユエ
+     </div>
+     <div class="hero-intro-career">
+      Mage/Fighter
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.40%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.80%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.75%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      荘子
+     </div>
+     <div class="hero-intro-career">
+      Support/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    49.97%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.77%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.78%
    </div>
   </td>
  </tr>
@@ -2106,17 +2058,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.99%
+    49.06%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.89%
+    0.88%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.47%
+    0.46%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      呂布
+     </div>
+     <div class="hero-intro-career">
+      Fighter/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    47.93%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    1.06%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.09%
    </div>
   </td>
  </tr>
@@ -2154,12 +2154,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.37%
+    52.74%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.09%
+    1.06%
    </div>
   </td>
   <td>
@@ -2202,113 +2202,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    47.46%
+    47.51%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.98%
+    0.95%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.20%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      呂布
-     </div>
-     <div class="hero-intro-career">
-      Fighter/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    48.39%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    1.02%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.09%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      影
-     </div>
-     <div class="hero-intro-career">
-      Fighter
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    49.29%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.93%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.26%
    </div>
   </td>
  </tr>
@@ -2346,17 +2250,113 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.01%
+    52.02%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.01%
+    1.02%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      白起
+     </div>
+     <div class="hero-intro-career">
+      Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    53.14%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.93%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.15%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      影
+     </div>
+     <div class="hero-intro-career">
+      Fighter
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    49.41%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.89%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.23%
    </div>
   </td>
  </tr>
@@ -2394,12 +2394,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.08%
+    49.05%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    1.00%
+    0.98%
    </div>
   </td>
   <td>
@@ -2442,7 +2442,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.95%
+    48.63%
    </div>
   </td>
   <td>
@@ -2495,60 +2495,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.82%
+    0.81%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.34%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      劉禅
-     </div>
-     <div class="hero-intro-career">
-      Support/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    49.61%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.89%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.18%
+    0.36%
    </div>
   </td>
  </tr>
@@ -2586,17 +2538,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    47.99%
+    48.43%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.87%
+    0.89%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.20%
+    0.21%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      劉禅
+     </div>
+     <div class="hero-intro-career">
+      Support/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    49.36%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.89%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.18%
    </div>
   </td>
  </tr>
@@ -2634,7 +2634,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.82%
+    48.75%
    </div>
   </td>
   <td>
@@ -2644,7 +2644,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.13%
+    0.12%
    </div>
   </td>
  </tr>
@@ -2682,12 +2682,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.88%
+    50.52%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.89%
+    0.88%
    </div>
   </td>
   <td>
@@ -2730,17 +2730,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.77%
+    50.51%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.69%
+    0.71%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.41%
+    0.42%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      啓
+     </div>
+     <div class="hero-intro-career">
+      Support/Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    52.73%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.83%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.11%
    </div>
   </td>
  </tr>
@@ -2778,17 +2826,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.64%
+    49.70%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.82%
+    0.83%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.10%
+    0.11%
    </div>
   </td>
  </tr>
@@ -2826,12 +2874,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.89%
+    48.58%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.84%
+    0.85%
    </div>
   </td>
   <td>
@@ -2874,108 +2922,60 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.25%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.76%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.17%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      啓
-     </div>
-     <div class="hero-intro-career">
-      Support/Mage
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    52.70%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.75%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.12%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      百里守約
-     </div>
-     <div class="hero-intro-career">
-      Marksman/Assassin
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    49.44%
+    52.50%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.74%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.16%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      蒼
+     </div>
+     <div class="hero-intro-career">
+      Marksman
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.24%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.78%
    </div>
   </td>
   <td>
@@ -3018,17 +3018,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.52%
+    49.72%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.68%
+    0.69%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.19%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      百里守約
+     </div>
+     <div class="hero-intro-career">
+      Marksman/Assassin
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    49.89%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.74%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.07%
    </div>
   </td>
  </tr>
@@ -3066,113 +3114,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.03%
+    51.89%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.67%
+    0.68%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.19%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      張飛
-     </div>
-     <div class="hero-intro-career">
-      Support/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.17%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.69%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.15%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      蒼
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.29%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.73%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.06%
+    0.18%
    </div>
   </td>
  </tr>
@@ -3210,12 +3162,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.83%
+    48.97%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.70%
+    0.72%
    </div>
   </td>
   <td>
@@ -3263,12 +3215,60 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.70%
+    0.73%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.07%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      張飛
+     </div>
+     <div class="hero-intro-career">
+      Support/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    49.99%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.69%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.14%
    </div>
   </td>
  </tr>
@@ -3306,12 +3306,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.95%
+    52.68%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.67%
+    0.64%
    </div>
   </td>
   <td>
@@ -3354,7 +3354,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.11%
+    50.94%
    </div>
   </td>
   <td>
@@ -3365,54 +3365,6 @@
   <td>
    <div class="table-text table-normal-text">
     0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      扁鵲
-     </div>
-     <div class="hero-intro-career">
-      Mage
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    51.07%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.60%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.13%
    </div>
   </td>
  </tr>
@@ -3450,17 +3402,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.43%
+    50.65%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.64%
+    0.65%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.02%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      扁鵲
+     </div>
+     <div class="hero-intro-career">
+      Mage
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    51.25%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.59%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.13%
    </div>
   </td>
  </tr>
@@ -3498,17 +3498,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.70%
+    50.45%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.59%
+    0.60%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.12%
+    0.09%
    </div>
   </td>
  </tr>
@@ -3546,7 +3546,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.66%
+    50.62%
    </div>
   </td>
   <td>
@@ -3556,103 +3556,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.08%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      明世隠
-     </div>
-     <div class="hero-intro-career">
-      Support
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    49.90%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.60%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.05%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      韓信
-     </div>
-     <div class="hero-intro-career">
-      Assassin
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    51.08%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.53%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.14%
+    0.07%
    </div>
   </td>
  </tr>
@@ -3690,12 +3594,156 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.00%
+    51.70%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.57%
+    0.58%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.05%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      鐘無艶
+     </div>
+     <div class="hero-intro-career">
+      Fighter/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    50.59%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.58%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      韓信
+     </div>
+     <div class="hero-intro-career">
+      Assassin
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    51.25%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.52%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.15%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      明世隠
+     </div>
+     <div class="hero-intro-career">
+      Support
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    49.73%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.55%
    </div>
   </td>
   <td>
@@ -3738,17 +3786,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.87%
+    51.17%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.53%
+    0.52%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.08%
+    0.09%
    </div>
   </td>
  </tr>
@@ -3771,10 +3819,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      鐘無艶
+      シャルロット
      </div>
      <div class="hero-intro-career">
-      Fighter/Tank
+      Fighter
      </div>
     </div>
    </div>
@@ -3786,12 +3834,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.72%
+    46.72%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.54%
+    0.55%
    </div>
   </td>
   <td>
@@ -3834,7 +3882,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.11%
+    50.39%
    </div>
   </td>
   <td>
@@ -3845,54 +3893,6 @@
   <td>
    <div class="table-text table-normal-text">
     0.11%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      シャルロット
-     </div>
-     <div class="hero-intro-career">
-      Fighter
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    46.28%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.53%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.04%
    </div>
   </td>
  </tr>
@@ -3930,17 +3930,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    47.70%
+    47.48%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.49%
+    0.50%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.06%
+    0.07%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      Lapulapu
+     </div>
+     <div class="hero-intro-career">
+      Support/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    55.61%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.45%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.11%
    </div>
   </td>
  </tr>
@@ -3978,17 +4026,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.40%
+    50.97%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.47%
+    0.45%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.07%
+    0.06%
    </div>
   </td>
  </tr>
@@ -4026,12 +4074,60 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.39%
+    48.06%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.46%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.03%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      ムーラン
+     </div>
+     <div class="hero-intro-career">
+      Fighter/Assassin
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    51.05%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.45%
    </div>
   </td>
   <td>
@@ -4074,113 +4170,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.16%
+    48.34%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.43%
+    0.42%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.09%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      ムーラン
-     </div>
-     <div class="hero-intro-career">
-      Fighter/Assassin
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    51.28%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.45%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      劉備
-     </div>
-     <div class="hero-intro-career">
-      Fighter
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    50.73%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.43%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.07%
    </div>
   </td>
  </tr>
@@ -4218,7 +4218,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.43%
+    50.15%
    </div>
   </td>
   <td>
@@ -4266,7 +4266,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.08%
+    49.93%
    </div>
   </td>
   <td>
@@ -4314,12 +4314,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.49%
+    48.50%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.42%
+    0.43%
    </div>
   </td>
   <td>
@@ -4362,17 +4362,113 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    53.20%
+    53.37%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.41%
+    0.42%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      劉備
+     </div>
+     <div class="hero-intro-career">
+      Fighter
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    51.24%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.40%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.07%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      アグド
+     </div>
+     <div class="hero-intro-career">
+      Marksman
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    46.87%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.40%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.03%
    </div>
   </td>
  </tr>
@@ -4410,12 +4506,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.31%
+    51.02%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.38%
+    0.36%
    </div>
   </td>
   <td>
@@ -4458,65 +4554,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.66%
+    48.60%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.35%
+    0.36%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
     0.08%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      蒙牙
-     </div>
-     <div class="hero-intro-career">
-      Marksman
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    51.01%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.37%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.02%
    </div>
   </td>
  </tr>
@@ -4554,12 +4602,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.30%
+    51.08%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.36%
+    0.38%
    </div>
   </td>
   <td>
@@ -4587,7 +4635,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      アグド
+      蒙牙
      </div>
      <div class="hero-intro-career">
       Marksman
@@ -4602,12 +4650,60 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    46.90%
+    51.09%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.36%
+    0.37%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.02%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      達磨
+     </div>
+     <div class="hero-intro-career">
+      Fighter/Tank
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    51.86%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.33%
    </div>
   </td>
   <td>
@@ -4650,55 +4746,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.38%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.34%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      達磨
-     </div>
-     <div class="hero-intro-career">
-      Fighter/Tank
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    51.64%
+    49.47%
    </div>
   </td>
   <td>
@@ -4709,54 +4757,6 @@
   <td>
    <div class="table-text table-normal-text">
     0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="hero-intro-container">
-    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
-     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#fff">
-       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
-       </path>
-       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
-       </path>
-       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
-       </path>
-       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
-       </path>
-      </g>
-     </svg>
-    </div>
-    <div class="hero-intro">
-     <div class="hero-intro-name">
-      タイガー
-     </div>
-     <div class="hero-intro-career">
-      Assassin
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-trank-text">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    49.70%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.29%
-   </div>
-  </td>
-  <td>
-   <div class="table-text table-normal-text">
-    0.08%
    </div>
   </td>
  </tr>
@@ -4794,7 +4794,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    45.60%
+    45.39%
    </div>
   </td>
   <td>
@@ -4804,7 +4804,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.05%
+    0.06%
    </div>
   </td>
  </tr>
@@ -4827,10 +4827,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      劉邦
+      タイガー
      </div>
      <div class="hero-intro-career">
-      Tank/Mage
+      Assassin
      </div>
     </div>
    </div>
@@ -4842,17 +4842,65 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    49.38%
+    49.63%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.28%
+    0.29%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.02%
+    0.08%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="hero-intro-container">
+    <div class="hero-icon" style="background: rgb(224, 226, 234); display: flex; align-items: center; justify-content: center;">
+     <svg class="camp-image-logo" fill="none" viewbox="0 0 172 158" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#fff">
+       <path d="m121.64 74.1501c-1.77-13.96-11.57-25.41-24.6199-29.6h-.06c-8.51-3.08-8.88-10.95-8.88-10.95v33.06c5.75 1.12 9.72 6.03 9.72 11.9 0 5.88-3.97 10.78-9.72 11.9v21.9799c17.6899-1.25 31.8099-15.9399 31.8099-33.8799 0-1.42.06-2.81-.1-4.18z">
+       </path>
+       <path d="m50.4702 83.1201c1.77 13.96 11.57 25.4099 24.62 29.5999h-.14c8.51 3.08 8.69 10.95 8.69 10.95v-33.0599c-5.75-1.12-9.72-6.03-9.72-11.9 0-5.88 3.97-10.78 9.72-11.9v-21.99c-17.68 1.24-31.61 15.94-31.61 33.88 0 1.42.04 2.81.2 4.18z">
+       </path>
+       <path d="m161.4 57.7s0-.01-.01-.03c-.17-.61-1-3.72-1.26-5.02-1.93-9.7-3.88-31.83 11.8-52.65l-7.74 7.72c.03-.05.06-.11.09-.16l-33.73 33.74-4.09 4.08h.01l-.02.02c.01.01.16.2.2.24 7.32 9.02 11.71 20.51 11.71 33.04 0 28.97-23.48 52.45-52.45 52.45-12.63 0-24.23-4.47-33.28-11.91l-18.36 18.36c13.79 12.1 31.86 19.44 51.64 19.44 14.19 0 27.71-3.86 39.19-10.46 0 0 4.44-2.76 6.82-4.58l-1.99-2.72c12.37-9.58 16.32-16.52 16.32-16.52l3 1.89c1.13-1.5 3.15-4.3 4.41-6.78 6.73-11.56 10.59-24.82 10.59-39.17 0-7.26-1-14.3-2.85-20.98z">
+       </path>
+       <path d="m10.53 99.56s0 .01.01.03c.17.61 1 3.72 1.26 5.02 1.93 9.7 3.88 31.83-11.8 52.65l7.74-7.72c-.03.05-.06.11-.09.16l33.73-33.74 4.09-4.08h-.01l.02-.02c-.01-.01-.16-.2-.2-.24-7.32-9.02-11.71-20.51-11.71-33.04 0-28.97 23.48-52.45 52.45-52.45 12.63 0 24.23 4.47 33.28 11.91l18.36-18.36c-13.79-12.11002-31.86-19.45002-51.64-19.45002-14.19 0-27.71 3.86-39.19 10.46002 0 0-4.44 2.76-6.82 4.58l1.99 2.72c-12.37 9.58-16.32 16.52-16.32 16.52l-3-1.89c-1.13 1.5-3.15 4.3-4.41 6.78-6.73 11.57-10.59 24.82-10.59 39.17 0 7.27.99 14.31 2.85 20.99z">
+       </path>
+      </g>
+     </svg>
+    </div>
+    <div class="hero-intro">
+     <div class="hero-intro-name">
+      鏡
+     </div>
+     <div class="hero-intro-career">
+      Assassin
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-trank-text">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    43.46%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.29%
+   </div>
+  </td>
+  <td>
+   <div class="table-text table-normal-text">
+    0.09%
    </div>
   </td>
  </tr>
@@ -4890,12 +4938,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    52.75%
+    52.63%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.26%
+    0.28%
    </div>
   </td>
   <td>
@@ -4938,17 +4986,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    51.66%
+    51.78%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.26%
+    0.27%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.03%
+    0.02%
    </div>
   </td>
  </tr>
@@ -4986,7 +5034,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.03%
+    50.39%
    </div>
   </td>
   <td>
@@ -5019,10 +5067,10 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      鏡
+      劉邦
      </div>
      <div class="hero-intro-career">
-      Assassin
+      Tank/Mage
      </div>
     </div>
    </div>
@@ -5034,17 +5082,17 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    43.70%
+    48.83%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.22%
+    0.26%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.08%
+    0.02%
    </div>
   </td>
  </tr>
@@ -5082,12 +5130,12 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    48.36%
+    48.30%
    </div>
   </td>
   <td>
    <div class="table-text table-normal-text">
-    0.18%
+    0.17%
    </div>
   </td>
   <td>
@@ -5130,7 +5178,7 @@
   </td>
   <td>
    <div class="table-text table-normal-text">
-    50.64%
+    49.71%
    </div>
   </td>
   <td>
