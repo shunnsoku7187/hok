@@ -19,6 +19,20 @@ INPUT_CSV_FILE = "names.csv"
 OUTPUT_HTML_FILE = "html.txt"
 OUTPUT_FILENAME = "html.txt" # 抽出された<tbody>タグの中身のみを保存するファイル名
 
+def load_lazy_table_content(driver):
+    """
+    テーブル内の遅延ロード画像をできるだけ読み込むため、各行を一度表示範囲に入れる。
+    """
+    rows = driver.find_elements(By.CSS_SELECTOR, "#table-container tr")
+    print(f"テーブル行を {len(rows)} 件検出しました。遅延ロード画像の読み込みを試みます...")
+
+    for row in rows:
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", row)
+        time.sleep(0.05)
+
+    driver.execute_script("window.scrollTo(0, 0);")
+    time.sleep(1)
+
 def fetch_and_extract_tbody(url, filename):
     """
     Seleniumでウェブサイトのコンテンツを取得し、ランキングデータの<tbody>タグの中身のみを抽出して保存する関数。
@@ -58,6 +72,7 @@ def fetch_and_extract_tbody(url, filename):
         
         # さらに時間差でコンテンツが完全にレンダリングされるのを待つ（必要に応じて調整）
         time.sleep(2) 
+        load_lazy_table_content(driver)
 
         # --- 4. レンダリングされたHTMLの取得 ---
         rendered_html_content = driver.page_source

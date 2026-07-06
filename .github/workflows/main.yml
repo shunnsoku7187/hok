@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # mainブランチに変更が加わると実行
+      - 'codex/**'
   pull_request:
     branches:
       - main  # mainブランチへのプルリクエストが作成されたときにも実行
@@ -36,11 +37,31 @@ jobs:
         run: |
           python get_html.py
 
+      - name: Sync new heroes
+        run: |
+          python sync_new_heroes.py
+
+      - name: Upload new icon preview
+        if: github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-hero-icons
+          path: |
+            list_html/hok_pics/florentino.png
+            list_html/hok_pics/lorion.png
+            list_html/hok_pics/haya.png
+            list_html/hok_pics/annette.png
+            list_html/hok_pics/devara.png
+            list_html/hok_pics/chicha.png
+            list_html/hok_pics/yango.png
+            list_html/hok_pics/lapulapu.png
+
       - name: Run the script
         run: |
           python main.py
 
       - name: Commit generated files
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -55,6 +76,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Upload files to FTP server
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.2
         with:
           server: ${{ secrets.FTP_HOST }}
