@@ -11,7 +11,7 @@ import re
 
 # ターゲットとなるURL
 # ユーザーが指定したURL: https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list
-TARGET_URL = "https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list"
+TARGET_URL = "https://camp.honorofkings.com/h5/app/index.html?heroId=510&lang=ja&lang_type=ja#/hero-hot-list"
 
 # ファイル名
 INPUT_HTML_FILE = "html.txt"
@@ -47,12 +47,21 @@ def fetch_and_extract_tbody(url, filename):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--lang=ja-JP")
+    chrome_options.add_experimental_option("prefs", {
+        "intl.accept_languages": "ja-JP,ja,en-US,en"
+    })
     # ユーザーエージェントを設定
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36")
     
     try:
         # WebDriverの初期化
         driver = webdriver.Chrome(options=chrome_options)
+        driver.execute_cdp_cmd("Emulation.setLocaleOverride", {"locale": "ja-JP"})
+        driver.execute_cdp_cmd("Network.enable", {})
+        driver.execute_cdp_cmd(
+            "Network.setExtraHTTPHeaders",
+            {"headers": {"Accept-Language": "ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7"}},
+        )
     except Exception as e:
         print(f"❌ WebDriverの初期化に失敗しました。ChromeDriverが正しく設定されているか確認してください: {e}")
         return

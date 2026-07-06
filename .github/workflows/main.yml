@@ -46,15 +46,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: new-hero-icons
-          path: |
-            list_html/hok_pics/florentino.png
-            list_html/hok_pics/lorion.png
-            list_html/hok_pics/haya.png
-            list_html/hok_pics/annette.png
-            list_html/hok_pics/devara.png
-            list_html/hok_pics/chicha.png
-            list_html/hok_pics/yango.png
-            list_html/hok_pics/lapulapu.png
+          path: new_hero_icon_preview/*.png
 
       - name: Run the script
         run: |
