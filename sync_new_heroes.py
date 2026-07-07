@@ -358,6 +358,10 @@ def rewrite_html_hero_names(names_by_hero_id, normalized_english_to_japanese):
     return changed
 
 
+def original_icon_url(image_url):
+    return image_url.split("?imageMogr2/thumbnail/64x", 1)[0]
+
+
 def download_icon(image_url, asset_name):
     if not image_url:
         return False, "画像URLなし"
@@ -368,7 +372,7 @@ def download_icon(image_url, asset_name):
         return False, "既存"
 
     request = urllib.request.Request(
-        image_url,
+        original_icon_url(image_url),
         headers={
             "User-Agent": (
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
