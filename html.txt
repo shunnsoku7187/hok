@@ -5,7 +5,7 @@
     <img class="hero-icon" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=631}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/skJXGWLF.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Florentino
+      フロレンティーノ
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -315,7 +315,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lorion
+      ロリアン
      </div>
      <div class="hero-intro-career">
       Mage
@@ -1035,7 +1035,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Haya
+      溟月
      </div>
      <div class="hero-intro-career">
       Mage
@@ -1563,7 +1563,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Annette
+      アネット
      </div>
      <div class="hero-intro-career">
       Support/Mage
@@ -1851,7 +1851,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Devara
+      デーヴァラ
      </div>
      <div class="hero-intro-career">
       Fighter/Mage
@@ -1947,7 +1947,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Chicha
+      チーシャ
      </div>
      <div class="hero-intro-career">
       Fighter
@@ -4299,7 +4299,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Yango
+      元歌
      </div>
      <div class="hero-intro-career">
       Assassin
@@ -4827,7 +4827,7 @@
     </div>
     <div class="hero-intro">
      <div class="hero-intro-name">
-      Lapulapu
+      ラプール
      </div>
      <div class="hero-intro-career">
       Support/Tank
