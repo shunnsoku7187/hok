@@ -1,8 +1,6 @@
 import csv
-import hashlib
 import json
 import re
-import shutil
 import sys
 import time
 import urllib.request
@@ -15,8 +13,8 @@ HTML_FILE = Path("html.txt")
 NAMES_FILE = Path("names.csv")
 CATEGORIES_FILE = Path("hero_categories.json")
 IMAGE_DIR = Path("list_html") / "hok_pics"
-PREVIEW_ICON_DIR = Path("new_hero_icon_preview")
 HOKCAMP_URL = "https://camp.honorofkings.com/h5/app/index.html?heroId=510&lang=ja&lang_type=ja#/hero-hot-list"
+HOKCAMP_ENGLISH_URL = "https://camp.honorofkings.com/h5/app/index.html?heroId=510&lang=en&lang_type=en#/hero-hot-list"
 
 ROLE_MAP = {
     "メイジ": ["Mid"],
@@ -53,18 +51,14 @@ def extract_hero_id(img_tag):
     return None
 
 
-def make_asset_name(hero_name, hero_id=None):
+def make_asset_name(hero_name):
     ascii_name = re.sub(r"\s+", "", hero_name).lower()
     ascii_name = re.sub(r'[<>:"/\\|?*]', "-", ascii_name)
     ascii_name = ascii_name.strip(".-")
 
     if ascii_name and ascii_name.isascii():
         return ascii_name
-    if hero_id:
-        return f"hero_{hero_id}"
-
-    digest = hashlib.sha1(hero_name.encode("utf-8")).hexdigest()[:10]
-    return f"hero_{digest}"
+    return None
 
 
 def load_names():
@@ -257,6 +251,78 @@ def fetch_japanese_hero_names_by_id():
             driver.quit()
 
 
+def fetch_english_asset_names_by_id():
+    try:
+        from selenium import webdriver
+        from selenium.webdriver.chrome.options import Options
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support import expected_conditions as EC
+        from selenium.webdriver.support.ui import WebDriverWait
+    except Exception as exc:
+        print(f"English asset resolver skipped: Selenium unavailable ({exc})")
+        return {}
+
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--lang=en-US")
+    chrome_options.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36"
+    )
+    chrome_options.add_experimental_option(
+        "prefs", {"intl.accept_languages": "en-US,en,ja-JP,ja"}
+    )
+
+    driver = None
+    try:
+        driver = webdriver.Chrome(options=chrome_options)
+        driver.execute_cdp_cmd("Emulation.setLocaleOverride", {"locale": "en-US"})
+        driver.execute_cdp_cmd("Network.enable", {})
+        driver.execute_cdp_cmd(
+            "Network.setExtraHTTPHeaders",
+            {"headers": {"Accept-Language": "en-US,en;q=0.9,ja-JP;q=0.8,ja;q=0.7"}},
+        )
+
+        driver.get(HOKCAMP_ENGLISH_URL)
+        driver.execute_script(
+            """
+            window.localStorage.setItem('CAMP_LANGUAGE', 'en');
+            window.sessionStorage.setItem('CAMP_LANGUAGE', 'en');
+            """
+        )
+        driver.get(HOKCAMP_ENGLISH_URL)
+
+        wait = WebDriverWait(driver, 20)
+        wait.until(EC.visibility_of_element_located((By.ID, "table-container")))
+        time.sleep(2)
+        load_lazy_table_content(driver)
+
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        assets_by_hero_id = {}
+
+        for row in soup.find_all("tr"):
+            name_tag = row.find("div", class_="hero-intro-name")
+            img_tag = row.find("img", class_="hero-icon") or row.find("img")
+            hero_id = extract_hero_id(img_tag)
+            if not name_tag or not hero_id:
+                continue
+
+            asset_name = make_asset_name(name_tag.get_text(strip=True))
+            if asset_name:
+                assets_by_hero_id[hero_id] = asset_name
+
+        print(f"English asset resolver: {len(assets_by_hero_id)} asset names loaded")
+        return assets_by_hero_id
+    except Exception as exc:
+        print(f"English asset resolver failed: {exc}")
+        return {}
+    finally:
+        if driver:
+            driver.quit()
+
+
 def rewrite_html_hero_names(names_by_hero_id, normalized_english_to_japanese):
     if not HTML_FILE.exists():
         return 0
@@ -316,17 +382,6 @@ def download_icon(image_url, asset_name):
     return True, str(image_path)
 
 
-def copy_preview_icon(icon_path):
-    source = Path(icon_path)
-    if not source.exists():
-        return None
-
-    PREVIEW_ICON_DIR.mkdir(parents=True, exist_ok=True)
-    destination = PREVIEW_ICON_DIR / source.name
-    shutil.copyfile(source, destination)
-    return str(destination)
-
-
 def sync_new_heroes():
     rows, japanese_to_english, normalized_english_to_japanese = load_names()
     categories = load_categories()
@@ -345,12 +400,23 @@ def sync_new_heroes():
     if missing_name_candidates:
         japanese_names_by_hero_id = fetch_japanese_hero_names_by_id()
 
+    missing_asset_candidates = []
+    for hero in heroes:
+        normalized_name = normalize_name(hero["name"])
+        existing_display_name = normalized_english_to_japanese.get(normalized_name)
+        display_name = existing_display_name or hero["name"]
+        if display_name not in japanese_to_english:
+            missing_asset_candidates.append(hero)
+
+    english_assets_by_hero_id = {}
+    if missing_asset_candidates:
+        english_assets_by_hero_id = fetch_english_asset_names_by_id()
+
     added_names = []
     renamed_names = []
     added_categories = []
     renamed_categories = []
     downloaded_icons = []
-    preview_icons = []
     warnings = []
     html_names_by_hero_id = {}
 
@@ -390,7 +456,17 @@ def sync_new_heroes():
         is_new_hero = display_name not in categories.get("All", [])
 
         if not asset_name:
-            asset_name = make_asset_name(raw_name, hero["hero_id"])
+            asset_name = None
+            if not has_non_ascii(raw_name):
+                asset_name = make_asset_name(raw_name)
+            if not asset_name and hero["hero_id"]:
+                asset_name = english_assets_by_hero_id.get(hero["hero_id"])
+            if not asset_name:
+                warnings.append(
+                    f"{display_name}: asset name unresolved for hero_id={hero['hero_id']}; "
+                    "add it to names.csv"
+                )
+                continue
             rows.append({"Japanese": display_name, "English": asset_name})
             japanese_to_english[display_name] = asset_name
             normalized_english_to_japanese[normalize_name(asset_name)] = display_name
@@ -421,9 +497,6 @@ def sync_new_heroes():
             downloaded, result = download_icon(hero["image_url"], asset_name)
             if downloaded:
                 downloaded_icons.append((display_name, result))
-                preview_path = copy_preview_icon(result)
-                if preview_path:
-                    preview_icons.append((display_name, preview_path))
         except Exception as exc:
             warnings.append(f"{display_name}: アイコン取得失敗 ({exc})")
 
@@ -454,10 +527,6 @@ def sync_new_heroes():
 
     print(f"- downloaded icons: {len(downloaded_icons)}")
     for name, path in downloaded_icons:
-        print(f"  - {name}: {path}")
-
-    print(f"- preview icons: {len(preview_icons)}")
-    for name, path in preview_icons:
         print(f"  - {name}: {path}")
 
     print(f"- html.txt name rewrites: {html_rewrites}")
