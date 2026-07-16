@@ -26,7 +26,8 @@ def save_heroes_to_csv(heroes, filename="heroes.csv"):
     if not os.path.exists(BASE_PATH):
         os.makedirs(BASE_PATH)
 
-    with open(f"{BASE_PATH}{year}{month:02d}{day:02d}_{filename}", mode='w', newline='', encoding='utf-8') as file:
+    snapshot_path = find_snapshot_path(year, month, day, filename)
+    with open(snapshot_path, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=heroes[0].keys())
         writer.writeheader()  # ヘッダー（キー）を書き込む
         writer.writerows(heroes)  # ヒーロー情報を行ごとに書き込む
