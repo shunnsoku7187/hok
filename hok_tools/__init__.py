@@ -11,3 +11,4 @@ from .print_tool import generate_meta_list_image
 from .categories_tool import load_hero_categories,add_hero_to_json,remove_hero_from_json
 
 from .csv_tool import save_heroes_to_csv,generate_pick_up_html
+from .hero_history_tool import generate_hero_history_pages

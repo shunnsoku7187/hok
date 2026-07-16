@@ -19,6 +19,14 @@
                 font-weight: bold;
                 color: #333;
             }
+            .hero-link {
+                color: inherit;
+                text-decoration: none;
+            }
+            .hero-link:hover {
+                color: #187c3a;
+                text-decoration: underline;
+            }
             .highlight {
                 font-weight: bold;
                 color: #4CAF50;
@@ -77,8 +85,8 @@
                 <tbody>
                     {% for hero in data %}
                     <tr class="hero-row">
-                        <td>{{ hero.image }}</td>
-                        <td class="hero-name">{{ hero.name }}</td>
+                        <td><a class="hero-link" href="{{ hero.url }}" aria-label="{{ hero.name }}のスコア推移">{{ hero.image }}</a></td>
+                        <td class="hero-name"><a class="hero-link" href="{{ hero.url }}">{{ hero.name }}</a></td>
                         <td class="highlight">{{ hero.score }}</td>
                         <td class="highlight">{{ hero.tier }}</td>
                         <td class="supplementary">{{ hero.data }}</td>

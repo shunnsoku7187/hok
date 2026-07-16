@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 import datetime
+import re
 from hok_tools.categories_tool import get_heroes_by_tag
 
 BASE_PATH = "csv/"
@@ -25,7 +26,7 @@ def save_heroes_to_csv(heroes, filename="heroes.csv"):
     if not os.path.exists(BASE_PATH):
         os.makedirs(BASE_PATH)
 
-    with open(f"{BASE_PATH}{year}{month}{day}_{filename}", mode='w', newline='', encoding='utf-8') as file:
+    with open(f"{BASE_PATH}{year}{month:02d}{day:02d}_{filename}", mode='w', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=heroes[0].keys())
         writer.writeheader()  # ヘッダー（キー）を書き込む
         writer.writerows(heroes)  # ヒーロー情報を行ごとに書き込む
@@ -83,14 +84,31 @@ def csv_to_list(filename="heroes.csv",roll = "All"):
     yc,mc,dc = get_period()
     yp,mp,dp = get_period(previous=True)
     
-    current_csv = f"{BASE_PATH}{yc}{mc}{dc}_{filename}"
-    previous_csv = f"{BASE_PATH}{yp}{mp}{dp}_{filename}"
+    current_csv = find_snapshot_path(yc, mc, dc, filename)
+    previous_csv = find_snapshot_path(yp, mp, dp, filename)
     
     pick_up_list = find_heroes_by_roll(previous_csv, current_csv,roll = roll)
     pick_up_list = sorted(pick_up_list, key=lambda hero:hero['meta_score_curr'], reverse=True)
     pick_up_list = format_hero_data(pick_up_list)
     
     return pick_up_list
+
+
+def find_snapshot_path(year, month, day, filename="heroes.csv"):
+    padded_path = f"{BASE_PATH}{year}{month:02d}{day:02d}_{filename}"
+    legacy_path = f"{BASE_PATH}{year}{month}{day}_{filename}"
+    if os.path.exists(padded_path):
+        return padded_path
+    if os.path.exists(legacy_path):
+        return legacy_path
+    return padded_path
+
+
+def hero_page_slug(english_name):
+    slug = re.sub(r"[^a-z0-9]+", "-", english_name.lower()).strip("-")
+    if not slug:
+        raise ValueError(f"Could not create hero page slug from: {english_name}")
+    return slug
         
 def load_name_dict(csv_file='names.csv'):
     name_dict = {}
@@ -127,12 +145,16 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
     for idx, hero in enumerate(data):
         hero_name = hero["name"]
         eng_name = transrate_name(hero_name, name_dict)
-        image_path = os.path.join(image_folder, f"{eng_name}.png")
+        if eng_name is None:
+            raise ValueError(f"Missing English hero name in names.csv: {hero_name}")
+        image_path = f"{image_folder.rstrip('/\\\\')}/{eng_name}.png"
         img_tag = f'<img src="{image_path}" alt="{hero_name}" />'
+        detail_url = f"../heroes/{hero_page_slug(eng_name)}.html"
 
         hero_data.append({
             "name": hero_name,
             "image": img_tag,
+            "url": detail_url,
             "score": hero["score"],
             "tier": hero["tier"],
             "data": hero["data"]
@@ -144,6 +166,7 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
         author=author,
         data=hero_data
     )
+    html_content = "\n".join(line.rstrip() for line in html_content.splitlines()) + "\n"
 
     with open(filename, "w", encoding="utf-8") as file:
         file.write(html_content)

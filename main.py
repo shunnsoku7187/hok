@@ -7,7 +7,8 @@ from hok_tools import (
     generate_meta_list_image,
     save_heroes_to_csv,
     load_hero_categories,
-    generate_pick_up_html
+    generate_pick_up_html,
+    generate_hero_history_pages
 )
 import matplotlib.pyplot as plt
 #import japanize_matplotlib
@@ -43,6 +44,8 @@ def generate_html():
         # モバイル用HTML生成
         h_mb_filename = f"{html_path}/for_mobile/{category_name}_mb_table.html"
         generate_pick_up_html(category_name, filename=h_mb_filename, device='mobile')
+
+    generate_hero_history_pages()
 
 if __name__ == "__main__":
     generate_html()

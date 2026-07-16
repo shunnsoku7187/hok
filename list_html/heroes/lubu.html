@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>呂布 スコア推移 | HOK Score List</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --green: #2fbd57;
+            --green-dark: #187c3a;
+            --ink: #17201b;
+            --muted: #68726b;
+            --line: #d8ded9;
+            --surface: #ffffff;
+            --canvas: #f3f5f2;
+            --positive: #168443;
+            --negative: #c64d3f;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--canvas);
+            color: var(--ink);
+            font-family: Arial, "Noto Sans JP", sans-serif;
+            letter-spacing: 0;
+        }
+        a { color: inherit; }
+        .site-header {
+            border-bottom: 4px solid var(--green);
+            background: #202923;
+            color: #fff;
+        }
+        .site-header-inner, main, .footer-inner {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+        .site-header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 58px;
+            gap: 20px;
+        }
+        .brand {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .header-nav { display: flex; gap: 18px; }
+        .header-nav a {
+            color: #dfe7e1;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .header-nav a:hover { color: #fff; text-decoration: underline; }
+        main { padding: 34px 0 56px; }
+        .hero-heading {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding-bottom: 28px;
+        }
+        .hero-icon {
+            flex: 0 0 112px;
+            width: 112px;
+            height: 112px;
+            object-fit: cover;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+        }
+        .eyebrow {
+            margin: 0 0 5px;
+            color: var(--green-dark);
+            font-size: 14px;
+            font-weight: 700;
+        }
+        h1 { margin: 0; font-size: 34px; line-height: 1.25; }
+        .english-name { margin: 5px 0 0; color: var(--muted); font-size: 15px; }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .metric { min-width: 0; padding: 18px 16px; border-left: 1px solid var(--line); }
+        .metric:first-child { border-left: 0; }
+        .metric-label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 12px; }
+        .metric-value { display: block; font-size: 21px; font-weight: 700; white-space: nowrap; }
+        .metric-value.small { font-size: 16px; }
+        .positive { color: var(--positive); }
+        .negative { color: var(--negative); }
+        .flat { color: var(--muted); }
+        section { padding-top: 38px; }
+        h2 { margin: 0 0 8px; font-size: 23px; }
+        .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .chart-wrap {
+            overflow-x: auto;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+            padding: 18px 10px 6px;
+        }
+        .score-chart { display: block; width: 100%; min-width: 660px; height: auto; }
+        .chart-grid { stroke: #e4e8e5; stroke-width: 1; }
+        .chart-axis { stroke: #89938c; stroke-width: 1; }
+        .chart-line { fill: none; stroke: var(--green-dark); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+        .chart-point { fill: #fff; stroke: var(--green-dark); stroke-width: 2; }
+        .chart-point-latest { fill: var(--green); stroke: #145f30; stroke-width: 3; }
+        .chart-y-label, .chart-x-label { fill: #657068; font-size: 12px; }
+        .chart-y-label { text-anchor: end; }
+        .chart-x-label { text-anchor: middle; }
+        .chart-latest-label { fill: #145f30; font-size: 14px; font-weight: 700; }
+        .table-wrap { overflow-x: auto; border-top: 1px solid var(--line); }
+        table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 14px; }
+        th, td { border-bottom: 1px solid var(--line); padding: 12px 14px; text-align: right; white-space: nowrap; }
+        th { background: #e9eee9; color: #3e4942; font-size: 12px; }
+        th:first-child, td:first-child { text-align: left; }
+        tbody tr:hover { background: #f2f7f3; }
+        footer { border-top: 1px solid var(--line); background: #e7ebe7; }
+        .footer-inner { padding: 24px 0 32px; color: var(--muted); font-size: 13px; }
+        @media (max-width: 760px) {
+            .site-header-inner, main, .footer-inner { width: min(100% - 24px, 1120px); }
+            .site-header-inner { min-height: 52px; }
+            .header-nav a:first-child { display: none; }
+            main { padding-top: 24px; }
+            .hero-heading { gap: 16px; padding-bottom: 22px; }
+            .hero-icon { flex-basis: 88px; width: 88px; height: 88px; }
+            h1 { font-size: 27px; }
+            .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .metric { border-bottom: 1px solid var(--line); }
+            .metric:nth-child(odd) { border-left: 0; }
+            .metric:nth-last-child(-n + 2) { border-bottom: 0; }
+            .metric-value { font-size: 19px; }
+            section { padding-top: 32px; }
+            h2 { font-size: 21px; }
+            .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a class="brand" href="../index.html">HOK Score List</a>
+            <nav class="header-nav" aria-label="ページ移動">
+                <a href="../for_pc/All_pc_table.html">スコア一覧</a>
+                <a href="index.html">ヒーロー一覧</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-heading">
+            <img class="hero-icon" src="../hok_pics/lubu.png" alt="呂布">
+            <div>
+                <p class="eyebrow">Clash</p>
+                <h1>呂布</h1>
+                <p class="english-name">lubu</p>
+            </div>
+        </div>
+
+        <div class="metrics" aria-label="最新スコア概要">
+            <div class="metric"><span class="metric-label">スコア</span><span class="metric-value">51.05</span></div>
+            <div class="metric"><span class="metric-label">前週比</span><span class="metric-value positive">+3.03</span></div>
+            <div class="metric"><span class="metric-label">Tier</span><span class="metric-value">B</span></div>
+            <div class="metric"><span class="metric-label">全体順位</span><span class="metric-value">58<small> / 116</small></span></div>
+            <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">49.51%</span></div>
+            <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">1.66% / 0.15%</span></div>
+        </div>
+
+        <section aria-labelledby="score-trend-title">
+            <h2 id="score-trend-title">スコア推移</h2>
+            <p class="section-note">2025/01/24から2026/07/03まで、67週分</p>
+            <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="呂布のスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">40</text><line class="chart-grid" x1="62" y1="236.0" x2="936" y2="236.0" /><text class="chart-y-label" x="50" y="240.0">45</text><line class="chart-grid" x1="62" y1="166.0" x2="936" y2="166.0" /><text class="chart-y-label" x="50" y="170.0">50</text><line class="chart-grid" x1="62" y1="96.0" x2="936" y2="96.0" /><text class="chart-y-label" x="50" y="100.0">55</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">60</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,207.0 75.2,207.5 88.5,205.3 101.7,207.5 115.0,205.6 128.2,196.4 141.5,190.0 154.7,202.8 167.9,197.9 181.2,200.0 194.4,202.0 207.7,195.2 220.9,200.9 234.2,204.0 247.4,193.2 260.6,206.3 273.9,207.3 287.1,214.5 300.4,215.9 313.6,216.7 326.8,218.4 340.1,216.1 353.3,211.0 366.6,142.2 379.8,173.0 393.1,197.2 406.3,197.2 419.5,210.4 432.8,210.4 446.0,211.4 459.3,208.6 472.5,216.5 485.8,206.4 499.0,203.9 512.2,213.1 525.5,215.3 538.7,209.1 552.0,206.2 565.2,204.1 578.5,195.8 591.7,187.4 604.9,172.4 618.2,167.4 631.4,176.5 644.7,174.3 657.9,172.9 671.2,184.4 684.4,117.3 697.6,164.0 710.9,164.0 724.1,202.8 737.4,207.9 750.6,207.9 763.8,232.3 777.1,230.1 790.3,221.5 803.6,208.8 816.8,200.5 830.1,163.8 843.3,198.4 856.5,190.8 869.8,198.6 883.0,194.2 896.3,197.3 909.5,184.1 922.8,193.7 936.0,151.3" /><circle class="chart-point" cx="62.0" cy="207.0" r="4"><title>2025/01/24: 47.07</title></circle><circle class="chart-point" cx="75.2" cy="207.5" r="4"><title>2025/01/31: 47.04</title></circle><circle class="chart-point" cx="88.5" cy="205.3" r="4"><title>2025/02/07: 47.20</title></circle><circle class="chart-point" cx="101.7" cy="207.5" r="4"><title>2025/02/14: 47.03</title></circle><circle class="chart-point" cx="115.0" cy="205.6" r="4"><title>2025/02/21: 47.17</title></circle><circle class="chart-point" cx="128.2" cy="196.4" r="4"><title>2025/02/28: 47.83</title></circle><circle class="chart-point" cx="141.5" cy="190.0" r="4"><title>2025/03/07: 48.29</title></circle><circle class="chart-point" cx="154.7" cy="202.8" r="4"><title>2025/03/14: 47.37</title></circle><circle class="chart-point" cx="167.9" cy="197.9" r="4"><title>2025/03/21: 47.72</title></circle><circle class="chart-point" cx="181.2" cy="200.0" r="4"><title>2025/03/28: 47.57</title></circle><circle class="chart-point" cx="194.4" cy="202.0" r="4"><title>2025/04/04: 47.43</title></circle><circle class="chart-point" cx="207.7" cy="195.2" r="4"><title>2025/04/11: 47.91</title></circle><circle class="chart-point" cx="220.9" cy="200.9" r="4"><title>2025/04/18: 47.51</title></circle><circle class="chart-point" cx="234.2" cy="204.0" r="4"><title>2025/04/25: 47.29</title></circle><circle class="chart-point" cx="247.4" cy="193.2" r="4"><title>2025/05/02: 48.06</title></circle><circle class="chart-point" cx="260.6" cy="206.3" r="4"><title>2025/05/09: 47.12</title></circle><circle class="chart-point" cx="273.9" cy="207.3" r="4"><title>2025/05/16: 47.05</title></circle><circle class="chart-point" cx="287.1" cy="214.5" r="4"><title>2025/05/23: 46.54</title></circle><circle class="chart-point" cx="300.4" cy="215.9" r="4"><title>2025/05/30: 46.44</title></circle><circle class="chart-point" cx="313.6" cy="216.7" r="4"><title>2025/06/06: 46.38</title></circle><circle class="chart-point" cx="326.8" cy="218.4" r="4"><title>2025/06/13: 46.26</title></circle><circle class="chart-point" cx="340.1" cy="216.1" r="4"><title>2025/06/20: 46.42</title></circle><circle class="chart-point" cx="353.3" cy="211.0" r="4"><title>2025/06/27: 46.79</title></circle><circle class="chart-point" cx="366.6" cy="142.2" r="4"><title>2025/07/04: 51.70</title></circle><circle class="chart-point" cx="379.8" cy="173.0" r="4"><title>2025/07/11: 49.50</title></circle><circle class="chart-point" cx="393.1" cy="197.2" r="4"><title>2025/07/18: 47.77</title></circle><circle class="chart-point" cx="406.3" cy="197.2" r="4"><title>2025/07/25: 47.77</title></circle><circle class="chart-point" cx="419.5" cy="210.4" r="4"><title>2025/08/01: 46.83</title></circle><circle class="chart-point" cx="432.8" cy="210.4" r="4"><title>2025/10/10: 46.83</title></circle><circle class="chart-point" cx="446.0" cy="211.4" r="4"><title>2025/10/17: 46.76</title></circle><circle class="chart-point" cx="459.3" cy="208.6" r="4"><title>2025/10/24: 46.96</title></circle><circle class="chart-point" cx="472.5" cy="216.5" r="4"><title>2025/10/31: 46.39</title></circle><circle class="chart-point" cx="485.8" cy="206.4" r="4"><title>2025/11/07: 47.11</title></circle><circle class="chart-point" cx="499.0" cy="203.9" r="4"><title>2025/11/14: 47.29</title></circle><circle class="chart-point" cx="512.2" cy="213.1" r="4"><title>2025/11/21: 46.64</title></circle><circle class="chart-point" cx="525.5" cy="215.3" r="4"><title>2025/11/28: 46.48</title></circle><circle class="chart-point" cx="538.7" cy="209.1" r="4"><title>2025/12/05: 46.92</title></circle><circle class="chart-point" cx="552.0" cy="206.2" r="4"><title>2025/12/12: 47.13</title></circle><circle class="chart-point" cx="565.2" cy="204.1" r="4"><title>2025/12/19: 47.28</title></circle><circle class="chart-point" cx="578.5" cy="195.8" r="4"><title>2025/12/26: 47.87</title></circle><circle class="chart-point" cx="591.7" cy="187.4" r="4"><title>2026/01/02: 48.47</title></circle><circle class="chart-point" cx="604.9" cy="172.4" r="4"><title>2026/01/09: 49.55</title></circle><circle class="chart-point" cx="618.2" cy="167.4" r="4"><title>2026/01/16: 49.90</title></circle><circle class="chart-point" cx="631.4" cy="176.5" r="4"><title>2026/01/23: 49.25</title></circle><circle class="chart-point" cx="644.7" cy="174.3" r="4"><title>2026/01/30: 49.41</title></circle><circle class="chart-point" cx="657.9" cy="172.9" r="4"><title>2026/02/06: 49.51</title></circle><circle class="chart-point" cx="671.2" cy="184.4" r="4"><title>2026/02/13: 48.69</title></circle><circle class="chart-point" cx="684.4" cy="117.3" r="4"><title>2026/02/20: 53.48</title></circle><circle class="chart-point" cx="697.6" cy="164.0" r="4"><title>2026/02/27: 50.15</title></circle><circle class="chart-point" cx="710.9" cy="164.0" r="4"><title>2026/03/06: 50.15</title></circle><circle class="chart-point" cx="724.1" cy="202.8" r="4"><title>2026/03/13: 47.37</title></circle><circle class="chart-point" cx="737.4" cy="207.9" r="4"><title>2026/03/20: 47.01</title></circle><circle class="chart-point" cx="750.6" cy="207.9" r="4"><title>2026/03/27: 47.01</title></circle><circle class="chart-point" cx="763.8" cy="232.3" r="4"><title>2026/04/03: 45.26</title></circle><circle class="chart-point" cx="777.1" cy="230.1" r="4"><title>2026/04/10: 45.42</title></circle><circle class="chart-point" cx="790.3" cy="221.5" r="4"><title>2026/04/17: 46.03</title></circle><circle class="chart-point" cx="803.6" cy="208.8" r="4"><title>2026/04/24: 46.94</title></circle><circle class="chart-point" cx="816.8" cy="200.5" r="4"><title>2026/05/01: 47.54</title></circle><circle class="chart-point" cx="830.1" cy="163.8" r="4"><title>2026/05/08: 50.16</title></circle><circle class="chart-point" cx="843.3" cy="198.4" r="4"><title>2026/05/15: 47.69</title></circle><circle class="chart-point" cx="856.5" cy="190.8" r="4"><title>2026/05/22: 48.23</title></circle><circle class="chart-point" cx="869.8" cy="198.6" r="4"><title>2026/05/29: 47.67</title></circle><circle class="chart-point" cx="883.0" cy="194.2" r="4"><title>2026/06/05: 47.99</title></circle><circle class="chart-point" cx="896.3" cy="197.3" r="4"><title>2026/06/12: 47.77</title></circle><circle class="chart-point" cx="909.5" cy="184.1" r="4"><title>2026/06/19: 48.70</title></circle><circle class="chart-point" cx="922.8" cy="193.7" r="4"><title>2026/06/26: 48.02</title></circle><circle class="chart-point" cx="936.0" cy="151.3" r="4"><title>2026/07/03: 51.05</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="151.3" r="6" /><text class="chart-latest-label" x="926.0" y="139.3" text-anchor="end">51.05</text><text class="chart-x-label" x="62.0" y="342">25/01/24</text><text class="chart-x-label" x="234.2" y="342">25/04/25</text><text class="chart-x-label" x="406.3" y="342">25/07/25</text><text class="chart-x-label" x="591.7" y="342">26/01/02</text><text class="chart-x-label" x="763.8" y="342">26/04/03</text><text class="chart-x-label" x="936.0" y="342">26/07/03</text></svg></div>
+        </section>
+
+        <section aria-labelledby="history-title">
+            <h2 id="history-title">週次履歴</h2>
+            <p class="section-note">新しい週から順に表示</p>
+            <div class="table-wrap">
+                <table>
+                    <thead><tr><th>日付</th><th>スコア</th><th>Tier</th><th>順位</th><th>勝率</th><th>使用率</th><th>BAN率</th></tr></thead>
+                    <tbody>
+
+                        <tr><td>2026/07/03</td><td>51.05</td><td>B</td><td>58 / 116</td><td>49.51%</td><td>1.66%</td><td>0.15%</td></tr>
+
+                        <tr><td>2026/06/26</td><td>48.02</td><td>C</td><td>95 / 116</td><td>48.75%</td><td>1.00%</td><td>0.09%</td></tr>
+
+                        <tr><td>2026/06/19</td><td>48.70</td><td>C</td><td>92 / 116</td><td>49.13%</td><td>0.99%</td><td>0.12%</td></tr>
+
+                        <tr><td>2026/06/12</td><td>47.77</td><td>C</td><td>97 / 112</td><td>48.38%</td><td>1.18%</td><td>0.14%</td></tr>
+
+                        <tr><td>2026/06/05</td><td>47.99</td><td>C</td><td>96 / 112</td><td>48.51%</td><td>1.18%</td><td>0.14%</td></tr>
+
+                        <tr><td>2026/05/29</td><td>47.67</td><td>C</td><td>99 / 112</td><td>48.32%</td><td>1.18%</td><td>0.15%</td></tr>
+
+                        <tr><td>2026/05/22</td><td>48.23</td><td>C</td><td>94 / 112</td><td>48.63%</td><td>1.19%</td><td>0.15%</td></tr>
+
+                        <tr><td>2026/05/15</td><td>47.69</td><td>C</td><td>101 / 112</td><td>48.19%</td><td>1.26%</td><td>0.20%</td></tr>
+
+                        <tr><td>2026/05/08</td><td>50.16</td><td>B</td><td>76 / 112</td><td>49.07%</td><td>1.63%</td><td>0.24%</td></tr>
+
+                        <tr><td>2026/05/01</td><td>47.54</td><td>C</td><td>99 / 112</td><td>47.90%</td><td>1.40%</td><td>0.17%</td></tr>
+
+                        <tr><td>2026/04/24</td><td>46.94</td><td>C</td><td>100 / 112</td><td>47.46%</td><td>1.45%</td><td>0.14%</td></tr>
+
+                        <tr><td>2026/04/17</td><td>46.03</td><td>C</td><td>106 / 112</td><td>47.44%</td><td>1.10%</td><td>0.12%</td></tr>
+
+                        <tr><td>2026/04/10</td><td>45.42</td><td>C</td><td>107 / 112</td><td>47.31%</td><td>0.92%</td><td>0.11%</td></tr>
+
+                        <tr><td>2026/04/03</td><td>45.26</td><td>C</td><td>106 / 112</td><td>47.15%</td><td>0.96%</td><td>0.11%</td></tr>
+
+                        <tr><td>2026/03/27</td><td>47.01</td><td>C</td><td>100 / 112</td><td>48.20%</td><td>1.00%</td><td>0.10%</td></tr>
+
+                        <tr><td>2026/03/20</td><td>47.01</td><td>C</td><td>100 / 112</td><td>48.20%</td><td>1.00%</td><td>0.10%</td></tr>
+
+                        <tr><td>2026/03/13</td><td>47.37</td><td>C</td><td>102 / 112</td><td>48.39%</td><td>1.01%</td><td>0.12%</td></tr>
+
+                        <tr><td>2026/03/06</td><td>50.15</td><td>B</td><td>72 / 111</td><td>49.49%</td><td>1.34%</td><td>0.15%</td></tr>
+
+                        <tr><td>2026/02/27</td><td>50.15</td><td>B</td><td>72 / 111</td><td>49.49%</td><td>1.34%</td><td>0.15%</td></tr>
+
+                        <tr><td>2026/02/20</td><td>53.48</td><td>B</td><td>35 / 111</td><td>51.08%</td><td>1.37%</td><td>0.13%</td></tr>
+
+                        <tr><td>2026/02/13</td><td>48.69</td><td>C</td><td>82 / 111</td><td>49.03%</td><td>1.10%</td><td>0.13%</td></tr>
+
+                        <tr><td>2026/02/06</td><td>49.51</td><td>C</td><td>76 / 111</td><td>49.41%</td><td>1.15%</td><td>0.13%</td></tr>
+
+                        <tr><td>2026/01/30</td><td>49.41</td><td>C</td><td>76 / 111</td><td>49.36%</td><td>1.15%</td><td>0.12%</td></tr>
+
+                        <tr><td>2026/01/23</td><td>49.25</td><td>C</td><td>81 / 111</td><td>49.28%</td><td>1.15%</td><td>0.11%</td></tr>
+
+                        <tr><td>2026/01/16</td><td>49.90</td><td>C</td><td>75 / 110</td><td>49.56%</td><td>1.21%</td><td>0.10%</td></tr>
+
+                        <tr><td>2026/01/09</td><td>49.55</td><td>C</td><td>78 / 110</td><td>49.53%</td><td>1.09%</td><td>0.09%</td></tr>
+
+                        <tr><td>2026/01/02</td><td>48.47</td><td>C</td><td>85 / 110</td><td>49.05%</td><td>1.01%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/12/26</td><td>47.87</td><td>C</td><td>89 / 110</td><td>48.72%</td><td>1.01%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/12/19</td><td>47.28</td><td>C</td><td>87 / 110</td><td>48.47%</td><td>0.94%</td><td>0.07%</td></tr>
+
+                        <tr><td>2025/12/12</td><td>47.13</td><td>C</td><td>91 / 109</td><td>48.28%</td><td>1.02%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/12/05</td><td>46.92</td><td>C</td><td>92 / 109</td><td>48.13%</td><td>1.04%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/11/28</td><td>46.48</td><td>C</td><td>93 / 109</td><td>47.89%</td><td>1.02%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/11/21</td><td>46.64</td><td>C</td><td>95 / 109</td><td>47.93%</td><td>1.06%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/11/14</td><td>47.29</td><td>C</td><td>91 / 108</td><td>48.39%</td><td>1.02%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/11/07</td><td>47.11</td><td>C</td><td>92 / 108</td><td>48.36%</td><td>0.96%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/10/31</td><td>46.39</td><td>C</td><td>95 / 108</td><td>47.98%</td><td>0.92%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/10/24</td><td>46.96</td><td>C</td><td>95 / 108</td><td>48.26%</td><td>0.97%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/10/17</td><td>46.76</td><td>C</td><td>90 / 107</td><td>48.14%</td><td>0.98%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/10/10</td><td>46.83</td><td>C</td><td>84 / 106</td><td>48.24%</td><td>0.94%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/08/01</td><td>46.83</td><td>C</td><td>84 / 106</td><td>48.24%</td><td>0.94%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/07/25</td><td>47.77</td><td>C</td><td>80 / 105</td><td>48.73%</td><td>1.00%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/07/18</td><td>47.77</td><td>C</td><td>80 / 105</td><td>48.73%</td><td>1.00%</td><td>0.08%</td></tr>
+
+                        <tr><td>2025/07/11</td><td>49.50</td><td>C</td><td>66 / 105</td><td>49.39%</td><td>1.23%</td><td>0.09%</td></tr>
+
+                        <tr><td>2025/07/04</td><td>51.70</td><td>B</td><td>49 / 104</td><td>50.30%</td><td>1.41%</td><td>0.07%</td></tr>
+
+                        <tr><td>2025/06/27</td><td>46.79</td><td>C</td><td>89 / 104</td><td>48.29%</td><td>0.91%</td><td>0.04%</td></tr>
+
+                        <tr><td>2025/06/20</td><td>46.42</td><td>C</td><td>91 / 103</td><td>48.05%</td><td>0.94%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/06/13</td><td>46.26</td><td>C</td><td>90 / 103</td><td>47.89%</td><td>0.99%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/06/06</td><td>46.38</td><td>C</td><td>87 / 102</td><td>47.90%</td><td>1.05%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/05/30</td><td>46.44</td><td>C</td><td>84 / 102</td><td>47.95%</td><td>1.04%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/05/23</td><td>46.54</td><td>C</td><td>85 / 102</td><td>48.05%</td><td>1.01%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/05/16</td><td>47.05</td><td>C</td><td>79 / 102</td><td>48.38%</td><td>0.99%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/05/09</td><td>47.12</td><td>C</td><td>77 / 102</td><td>48.43%</td><td>0.98%</td><td>0.04%</td></tr>
+
+                        <tr><td>2025/05/02</td><td>48.06</td><td>C</td><td>66 / 102</td><td>48.87%</td><td>1.06%</td><td>0.04%</td></tr>
+
+                        <tr><td>2025/04/25</td><td>47.29</td><td>C</td><td>73 / 101</td><td>48.47%</td><td>1.04%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/04/18</td><td>47.51</td><td>C</td><td>71 / 101</td><td>48.60%</td><td>1.04%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/04/11</td><td>47.91</td><td>C</td><td>69 / 101</td><td>48.84%</td><td>1.03%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/04/04</td><td>47.43</td><td>C</td><td>74 / 101</td><td>48.49%</td><td>1.09%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/03/28</td><td>47.57</td><td>C</td><td>71 / 100</td><td>48.61%</td><td>1.07%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/03/21</td><td>47.72</td><td>C</td><td>71 / 100</td><td>48.71%</td><td>1.06%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/03/14</td><td>47.37</td><td>C</td><td>72 / 100</td><td>48.52%</td><td>1.05%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/03/07</td><td>48.29</td><td>C</td><td>69 / 100</td><td>49.07%</td><td>1.02%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/02/28</td><td>47.83</td><td>C</td><td>66 / 99</td><td>48.78%</td><td>1.06%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/02/21</td><td>47.17</td><td>C</td><td>70 / 99</td><td>48.39%</td><td>1.07%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/02/14</td><td>47.03</td><td>C</td><td>66 / 99</td><td>48.37%</td><td>1.02%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/02/07</td><td>47.20</td><td>C</td><td>70 / 98</td><td>48.51%</td><td>0.99%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/01/31</td><td>47.04</td><td>C</td><td>72 / 98</td><td>48.44%</td><td>0.97%</td><td>0.03%</td></tr>
+
+                        <tr><td>2025/01/24</td><td>47.07</td><td>C</td><td>72 / 98</td><td>48.22%</td><td>1.17%</td><td>0.03%</td></tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer><div class="footer-inner">HOK Score List / 最終更新 2026/07/03</div></footer>
+</body>
+</html>
