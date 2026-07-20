@@ -4,6 +4,7 @@ import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 import datetime
 import re
+from hok_tools.adjustment_tool import has_adjustment_between, load_adjustment_data
 from hok_tools.categories_tool import get_heroes_by_tag
 
 BASE_PATH = "csv/"
@@ -133,8 +134,12 @@ def transrate_name(japanese_name, name_dict=None):
         
 def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html", author="Picachu", device="pc"):
     name_dict = load_name_dict()
+    adjustment_data = load_adjustment_data()
     data = csv_to_list(roll=roll)
     y, m, d = get_period()
+    py, pm, pd = get_period(previous=True)
+    current_date = datetime.date(y, m, d)
+    previous_date = datetime.date(py, pm, pd)
 
     env = Environment(loader=FileSystemLoader('.'))
     if device == "pc":
@@ -158,7 +163,10 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
             "url": detail_url,
             "score": hero["score"],
             "tier": hero["tier"],
-            "data": hero["data"]
+            "data": hero["data"],
+            "recent_adjustment": has_adjustment_between(
+                adjustment_data.get(hero_name), previous_date, current_date
+            ),
         })
 
     # テンプレートにデータを埋め込む

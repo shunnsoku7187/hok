@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,183 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">47.95%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.68% / 0.08%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=141" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/02/05</time>
+                        <span class="adjustment-season">S13</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキルダメージと回復効果の強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>呪言・花印</h4>
+                            <p class="adjustment-description">パッシブ「呪言・花印」
+基本ダメージ：
+調整前：130～260（+魔法攻撃の40％）
+調整後：140～280（+魔法攻撃の40％）
+HP回復：
+調整前：130～260（+追加HPの1.5％）
+調整後：140～280（+追加HPの1.5％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>落・紅雨</h4>
+                            <p class="adjustment-description">スキル1「落・紅雨」
+基本ダメージ：
+調整前：260（スキルLv.ごとに+52）（+魔法攻撃の52％）
+調整後：260（スキルLv.ごとに+52）（+魔法攻撃の55％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/09/24</time>
+                        <span class="adjustment-season">S12</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>「数値強化」</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>落・紅雨</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：240（スキルLv.ごとに+48）（+魔法攻撃の45％）
+調整後：260（スキルLv.ごとに+52）（+魔法攻撃の52％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/06/12</time>
+                        <span class="adjustment-season">S10</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>クールダウンの仕様変更</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>呪言・花印</h4>
+                            <p class="adjustment-description">移動速度減少効果：
+調整前：50％
+調整後：25％～50％</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>縁・心結</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：10
+調整後：10（スキルLv.ごとに-0.3秒）
+クールダウン仕様変更：
+調整前：命中時に4秒短縮
+調整後：命中時に3秒短縮</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>綻・鳳華</h4>
+                            <p class="adjustment-description">追加効果：
+再度発動すると魔法陣を終了できる
+クールダウン仕様変更：
+調整前：発動後即座にクールダウン開始
+調整後：魔法陣終了後にクールダウン開始</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/03/20</time>
+                        <span class="adjustment-season">S9</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>数値弱体化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>落・紅雨</h4>
+                            <p class="adjustment-description">基本ダメージ
+調整前：280（スキルLv.ごとに+56）（+魔法攻撃の56％）
+調整後：240（スキルLv.ごとに+48）（+魔法攻撃の45％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/11/28</time>
+                        <span class="adjustment-season">S7</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>基本ステータスを強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>基本ステータス</h4>
+                            <p class="adjustment-description">基本HP：
+調整前：3060（ヒーローLv.ごとに+195.4）
+調整後：3205（ヒーローLv.ごとに+205.2）
+基本物理防御：
+調整前：87（ヒーローLv.ごとに+17.4）
+調整後：110（ヒーローLv.ごとに+17.4）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/09/25</time>
+                        <span class="adjustment-season">S7</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">制度調整</span>
+                            <h3>スキル2によるクールダウン短縮の仕様を改善</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>呪言・花印</h4>
+                            <p class="adjustment-description">刻印によるHP回復量：
+調整前：120～274
+調整後：130～260（+追加HP1.5％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>縁・心結</h4>
+                            <p class="adjustment-description">バランス調整：
+調整前：3個の花球の命中範囲は500、3個とも命中した場合はスキル2のクールダウンが4秒短縮
+調整後：1個目の花球の命中範囲は500、2個目は525、3個目は550で、1個命中するごとに、スキル2のクールダウンが1.33秒ずつ短縮</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

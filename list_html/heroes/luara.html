@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,192 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">52.88%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">1.36% / 0.12%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=547" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/03/11</time>
+                        <span class="adjustment-season">S14</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>MP消費の減少、スキルダメージの調整。</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>血潮の牙</h4>
+                            <p class="adjustment-description">MP消費：
+調整前：40（スキルLv.ごとに+5）
+調整後：30
+基本ダメージ：
+調整前：85（スキルLv.ごとに+17）（+物理攻撃の11％）
+調整後：40（スキルLv.ごとに+8）（+物理攻撃の20％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>スネイク・キス</h4>
+                            <p class="adjustment-description">MP消費：
+調整前：50（スキルLv.ごとに+5）
+調整後：40
+基本ダメージ：
+調整前：275（スキルLv.ごとに+55）（+物理攻撃の55％）
+調整後：320（スキルLv.ごとに+64）（+追加物理攻撃の80％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>ブレージング・グレア</h4>
+                            <p class="adjustment-description">MP消費：
+調整前：120（スキルLv.ごとに+15）
+調整後：100
+基本ダメージ：
+調整前：360（スキルLv.ごとに+180）（+物理攻撃の70％）
+調整後：480（スキルLv.ごとに+96）（+追加物理攻撃の120％）
+範囲ダメージ：
+調整前：200（スキルLv.ごとに+100）（+物理攻撃の35％）
+調整後：240（スキルLv.ごとに+120）（+追加物理攻撃の60％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/10/30</time>
+                        <span class="adjustment-season">S12</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキルダメージ強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>血潮の牙</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：80（スキルLv.ごとに+16）（+物理攻撃の10％）
+調整後：85（スキルLv.ごとに+17）（+物理攻撃の11％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>ブレージング・グレア</h4>
+                            <p class="adjustment-description">範囲ダメージ：
+調整前：180（スキルLv.ごとに+90）（+物理攻撃の35％）
+調整後：200（スキルLv.ごとに+100）（+物理攻撃の35％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/06/24</time>
+                        <span class="adjustment-season">S11</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>スキルのクールダウン増加</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>血潮の牙</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：10（スキルLv.ごとに‐0.4）
+調整後：12.5（スキルLv.ごとに‐0.5）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>スネイク・キス</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：9（スキルLv.ごとに‐0.3）
+調整後：10（スキルLv.ごとに‐0.4）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/05/01</time>
+                        <span class="adjustment-season">S10</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">数値調整</span>
+                            <h3>基本ステータス調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>基本ステータス</h4>
+                            <p class="adjustment-description">基本HP
+調整前：3135（ヒーローLv.ごとに+183.3）
+調整後：3204（ヒーローLv.ごとに+191.2）
+基本物理攻撃
+調整前：182（ヒーローLv.ごとに+12.2）
+調整後：170（ヒーローLv.ごとに+12.8）
+基本物理防御
+調整前：150（ヒーローLv.ごとに+16.8）
+調整後：150（ヒーローLv.ごとに+13.5）
+基本魔法防御
+調整前：75（ヒーローLv.ごとに+8.5）
+調整前：75（ヒーローLv.ごとに+7.4）
+基本攻撃速度：
+調整前：0%（ヒーローLv.ごとに+2%）
+調整後：10％（ヒーローLv.ごとに+2％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/01/09</time>
+                        <span class="adjustment-season">S8</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>「アップデート」</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>蛇炎の使者</h4>
+                            <p class="adjustment-description">仕様削除：
+撃破またはアシストすると自身の移動速度が増加し、円月刀を呼び出す
+仕様追加：
+円月刀の断斬が命中するたびにスキル1のクールダウンが0.15秒短縮する（1回の断斬につき1回まで）
+円月刀の断斬速度がクリティカル率に応じて増加する仕様を調整：
+調整前：クリティカル率が50％に達するとボタンがアンロックされ、タップすると円月刀の断斬速度が増加する
+調整後：円月刀の断斬速度はスキル1のレベルごとに5％増加する。最大値は調整前と同じ
+円月刀の通常攻撃に付与される特殊効果の割合：
+調整前：10％
+調整後：30％</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>血潮の牙</h4>
+                            <p class="adjustment-description">壁越えの特殊ゲージ最適化：
+壁を飛び越えられる時は赤色、壁を飛び越えると黄色に変化する</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>スネイク・キス</h4>
+                            <p class="adjustment-description">操作性の最適化：
+スキル2発動中、スキル2の後続の効果に影響することなく通常攻撃または奥義を発動できる</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,140 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">52.20%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.99% / 0.32%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=179" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/07/16</time>
+                        <span class="adjustment-season">S15</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキルダメージ強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：融合</h4>
+                            <p class="adjustment-description">効果調整：
+調整前：合体時、2つのマトリックスの間にいる敵に爆発ダメージの50％を与え、中心エリアに爆発ダメージの100％を与える（マトリックス同士の初期距離に基づきダメージが増加）
+調整後：合体時、2つのマトリックスの間にいる敵に180（スキルLv.ごとに+60）（+魔法攻撃の35％）の魔法ダメージを与え（中心エリアは追加で50％のダメージ）、衝突時に180（スキルLv.ごとに+60）（+魔法攻撃の35％）の魔法ダメージを与える</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：降臨</h4>
+                            <p class="adjustment-description">効果調整：
+基本発動速度増加、魔法攻撃ステータスに応じた発動速度短縮効果を削除</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/05/14</time>
+                        <span class="adjustment-season">S14</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>スキルダメージ調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：破滅</h4>
+                            <p class="adjustment-description">基本ダメージ
+調整前：640（スキルLv.ごとに+320）（+魔法攻撃の120％）
+調整前：600（スキルLv.ごとに+300）（+魔法攻撃の115％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/08/01</time>
+                        <span class="adjustment-season">S11</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>スキル効果調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：創造</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：8秒（スキルLv.ごとに-0.5秒）
+調整後：8.5秒（スキルLv.ごとに-0.5秒）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：降臨</h4>
+                            <p class="adjustment-description">移動速度減少：
+調整前：50％
+調整後：25％～50％</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/01/09</time>
+                        <span class="adjustment-season">S8</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">ヒーローリメイク</span>
+                            <h3>全面的なアップグレード</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天地の真理</h4>
+                            <p class="adjustment-description">視界、通常攻撃とスキルの範囲が10～20％増加する。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：創造</h4>
+                            <p class="adjustment-description">クールダウン：8秒（スキルLv.ごとに-0.5秒）
+エネルギーを放ち、ルート上の敵に225（スキルLv.ごとに+75）（+魔法攻撃の42％）の魔法ダメージを与えてノックバックする。エネルギーは敵に命中すると徐々に停止し、その場にマトリックス空間を生成して十字に展開し、命中した敵に225（スキルLv.ごとに+75）（+魔法攻撃の42％）の魔法ダメージを与える。
+十字の中心にいる敵には追加で50％のダメージを与える。十字がマトリックス空間に接触すると爆発を引き起こす。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：融合</h4>
+                            <p class="adjustment-description">クールダウン：15秒（スキルLv.ごとに-1秒）
+3.5秒間持続するマトリックス空間を作り出す。マトリックス空間は自身のみ高速移動可能で、敵ヒーローは通過できない。
+マトリックス空間に女媧の他のスキルが接触すると爆発を引き起こし、近くの敵に210（スキルLv.ごとに+70）（+魔法攻撃の40％）の魔法ダメージを与える。
+マトリックスは2回まで合体可能。合体時、2つのマトリックスの間にいる敵に爆発ダメージの50％を与えて0.5秒間ノックバックし、さらに爆発を1回発生させる（この爆発は最初のマトリックス同士の距離に応じて最大で範囲が30％増加し、さらに最大で50％の追加ダメージを与える）
+複数のマトリックスが同時に爆発した場合、同一ターゲットに与えるダメージは1つ分のみとなる。マトリックス空間は最大3つまでスタックできる。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：降臨</h4>
+                            <p class="adjustment-description">クールダウン：30秒（スキルLv.ごとに-2秒）
+時空の裂け目を創造し、指定位置にワープする。ワープ後、自身に600（スキルLv.ごとに+200）（+追加HPの9％）のシールドを付与し、2秒間移動速度が30％増加する。さらに周囲の敵に300（スキルLv.ごとに+100）（+魔法攻撃の57％）の魔法ダメージを与え、0.5秒間移動速度を50％減少させる。距離が離れている敵は与ダメージが減少する（最大50％まで）。
+パッシブ：魔法攻撃ステータスに応じてスキルの発動速度が短縮される</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>神光：破滅</h4>
+                            <p class="adjustment-description">クールダウン：50秒（スキルLv.ごとに-5秒）
+浄化エネルギーを放ち、ルート上の敵に640（スキルLv.ごとに+320）（+魔法攻撃の120％）の魔法ダメージを与える。浄化エネルギーがマトリックス空間に接触すると爆発を引き起こす。</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

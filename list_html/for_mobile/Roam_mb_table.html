@@ -27,6 +27,21 @@
                 color: #187c3a;
                 text-decoration: underline;
             }
+            .adjustment-notice {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                margin-left: 6px;
+                color: #b3472f;
+                font-size: 11px;
+                white-space: nowrap;
+            }
+            .adjustment-notice::before {
+                width: 7px;
+                height: 7px;
+                background: #d65b3d;
+                content: "";
+            }
             .highlight {
                 font-weight: bold;
                 color: #4CAF50;
@@ -82,7 +97,7 @@
                     <tbody class="hero-block">
                         <tr class="hero-row">
                             <td rowspan="3"><a class="hero-link" href="../heroes/lapulapu.html" aria-label="ラプールのスコア推移"><img src="../hok_pics/lapulapu.png" alt="ラプール" /></a></td>
-                            <td class="hero-name"><a class="hero-link" href="../heroes/lapulapu.html">ラプール</a></td>
+                            <td class="hero-name"><a class="hero-link" href="../heroes/lapulapu.html">ラプール</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         </tr>
                         <tr class="hero-row">
                             <td class="highlight">62.68(-0.40)</td>
@@ -386,7 +401,7 @@
                     <tbody class="hero-block">
                         <tr class="hero-row">
                             <td rowspan="3"><a class="hero-link" href="../heroes/liubang.html" aria-label="劉邦のスコア推移"><img src="../hok_pics/liubang.png" alt="劉邦" /></a></td>
-                            <td class="hero-name"><a class="hero-link" href="../heroes/liubang.html">劉邦</a></td>
+                            <td class="hero-name"><a class="hero-link" href="../heroes/liubang.html">劉邦</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         </tr>
                         <tr class="hero-row">
                             <td class="highlight">47.23(+0.47)</td>

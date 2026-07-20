@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,122 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">49.16%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">1.87% / 0.27%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=132" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/03/26</time>
+                        <span class="adjustment-season">S14</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>スキルダメージ調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>グロリアス・リボルバー</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：150（スキルLv.ごとに+19）（+物理攻撃の18％）
+調整後：120（スキルLv.ごとに+24）（+物理攻撃の18％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/12/16</time>
+                        <span class="adjustment-season">S13</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">数値調整</span>
+                            <h3>スキルダメージ調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>チェーン・リアクション</h4>
+                            <p class="adjustment-description">確定ダメージ：
+調整前：40～82（+物理攻撃の35％）（クリティカルヒット可）
+調整後：100～200（+追加物理攻撃の35％）（クリティカルヒット不可）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>グロリアス・リボルバー</h4>
+                            <p class="adjustment-description">効果追加：
+物理ライフスティール・クリティカルヒット可
+特殊効果係数：
+50％→弾丸3発ごとに通常攻撃1回分としてみなす
+効果変更：
+必中係数を物理攻撃ボーナスと同じになるように変更
+基本ダメージ（通常攻撃）：
+調整前：145（スキルLv.ごとに+18）（+物理攻撃の25％）（クリティカルヒット・ライフスティール不可）
+調整後：150（スキルLv.ごとに+19）（+物理攻撃の23％）（クリティカルヒット・ライフスティール可）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>ローミング・ショット</h4>
+                            <p class="adjustment-description">効果変更：スキル発動モーションがわずかに増加</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>フレンジー・バラージ</h4>
+                            <p class="adjustment-description">効果追加：
+物理ライフスティール・クリティカルヒット可
+特殊効果係数：
+50％→弾丸3発ごとに通常攻撃1回分としてみなす
+効果変更：
+必中係数を物理攻撃ボーナスと同じになるように変更
+効果追加：
+攻撃速度2％ごとにスキル発動速度が1％増加
+弾丸数：
+調整前：12（攻撃速度30％ごとに1発増加）
+調整後：12（スキルLv.ごとに+3）（弾丸数に比例して発射時間が増加）
+基本ダメージ（通常攻撃としてみなす）：
+調整前：165（スキルLv.ごとに+60）（物理攻撃の+35％）（クリティカルヒット・ライフスティール不可）
+調整後：170（スキルLv.ごとに+65）（+物理攻撃の25％）（クリティカルヒット・ライフスティール可）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/07/11</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>攻撃速度によって得られる恩恵を段階的に得られるようにし、成長を体感しやすくなるように調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>グロリアス・リボルバー</h4>
+                            <p class="adjustment-description">弾丸数の調整：
+調整前：攻撃速度が0％/80％/130％/180％に到達すると、5/7/9/11発の弾丸を発射できる
+調整後：初期は弾丸を5発発射できる。攻撃速度が30％上昇するたび、弾丸の数が1発増える。この効果により増加する弾丸は6発まで（最大11発）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>フレンジー・バラージ</h4>
+                            <p class="adjustment-description">弾丸数の調整：
+調整前：攻撃速度が0％/80％/130％/180％に到達すると、10/13/16/19発の弾丸を発射できる
+調整後：初期は弾丸を12発発射できる。攻撃速度が30％上昇するたび、弾丸の数が1発増える。この効果により増加する弾丸は6発まで（最大18発）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

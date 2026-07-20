@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,129 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">52.16%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.42% / 0.02%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=533" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/12/16</time>
+                        <span class="adjustment-season">S13</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">数値調整</span>
+                            <h3>スキルダメージ調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>山の奇縁</h4>
+                            <p class="adjustment-description">効果削除：種爆弾を拾った際にHP回復、種爆弾に触れた敵に移動速度減少効果付与</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>急速成長</h4>
+                            <p class="adjustment-description">効果変更：小型モンスターにアグドの特殊効果が反映されなくなる</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>峡谷大集合</h4>
+                            <p class="adjustment-description">効果変更：
+変更前：ポンポンにアグドの特殊効果の50％が反映される
+変更後：ポンポンにアグドの特殊効果の100％が反映される</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/09/24</time>
+                        <span class="adjustment-season">S12</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>「アップデート」</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>山の奇縁</h4>
+                            <p class="adjustment-description">モンスターたちとの不思議な縁により、モンスターに近づくと回復がリリースとなる（バフを獲得）。
+通常攻撃が敵に命中すると種爆弾をドロップしながら、周囲の種爆弾を引き寄せる。
+種爆弾を自分で拾うと2.5秒間、攻撃速度と移動速度が3％～6％が増加する（最大6スタックまで）。
+敵が種爆弾に触れると30～60（+追加{ad}の10％）の物理ダメージを与える。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>急速成長</h4>
+                            <p class="adjustment-description">草木を生やして動物たちの楽園を作り出す。アグドと仲間モンスターの攻撃速度と移動速度15％（スキルLv.ごとに+3％）増加し、HPを40（スキルLv.ごとに+8）（+追加HPの0.6％）回復、さらに仲間モンスターたちが楽園にやって来て一緒に戦ってくれる。
+仲間モンスターのステータスはヒーローレベルとともに、複数体召喚できる確率はスキルレベルとともに増加する。
+アグドのステータスバフの50％が仲間モンスターの攻撃力、攻撃速度、クリティカル率に反映され、一定割合の特殊効果ボーナスを引き継ぐ。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>転がれ！ポンポン！</h4>
+                            <p class="adjustment-description">騎乗状態「転がれ！ポンポン！」：ポンポンとともに転がりながら前進（ハードCCを1回無効化可能)する。回転中は40（スキルLv.ごとに+8）のダメージをブロックし、命中した敵に240（スキルLv.ごとに+48）（+追加物理攻撃の80％）の物理ダメージを与えて、1/2秒間スタンさせる。効果時間中に壁にぶつかるとバウンド（最大3回まで）して回転距離がリセットされ、スキル効果が25％増加し、次回の通常攻撃を強化する。強化通常攻撃は種爆弾を連続で3発放ち、追加で60（スキルLv.ごとに+12）（+追加物理攻撃の20％）の物理ダメージを与える。
+分離状態「転がれ！アグド！」：（基本クールダウン半減）アグドが前方に転がり、次回の通常攻撃を強化する。強化通常攻撃は種爆弾を連続で3発放ち、追加で60（スキルLv.ごとに+12）（+追加物理攻撃の20％）の物理ダメージを与える。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>峡谷大集合</h4>
+                            <p class="adjustment-description">騎乗状態：ポンポンがアグドから離れて指定位置にジャンプし、460（スキルLv.ごとに+230）（+追加物理攻撃の150％）の物理ダメージを与えて2/3秒間スタンさせる。その後、ポンポンは単独で行動する（アグドのステータスバフの50％と特殊効果が反映される）。
+分離状態：ポンポンは撃破されると回復モードに入る。HPが最大になると戦闘に復帰する。
+ポンポンの生存時は、スキル終了前に呼び戻せる。</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/03/20</time>
+                        <span class="adjustment-season">S9</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>マークスマンとして使用可能に</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>リリースでバフ獲得</h4>
+                            <p class="adjustment-description">アグドの回復スキルがリリースとなり、モンスターをリリースすると、それぞれのモンスターに対応したバフを獲得できる。（例：ルインパンサーなら移動速度が永続的に増加するバフ）。2種類以上のバフを同時に獲得することはできない。リリーススキルのレベルアップとゴーレムのリリースができるのは、スマイトを所持している時のみ。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>山の奇縁</h4>
+                            <p class="adjustment-description">通常攻撃時に種爆弾を1つ放つ。落ちた種爆弾に自身が触れるとHP回復、攻撃速度増加（スタック可能）、スキル2のクールダウン短縮の3つの効果を獲得でき、敵が触れると物理ダメージを与える。装備によるステータス増加はアグド自身が100％、ポンポンは50％となる。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>急速成長</h4>
+                            <p class="adjustment-description">草木を生やし、仲間モンスターを召喚する。範囲内の味方の移動速度と攻撃速度を増加させ、HPを持続的に回復する（アグドと召喚モンスターは効果が2倍）。アグドは自動的に範囲内の種爆弾を吸収する。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>転がれ！ポンポン！</h4>
+                            <p class="adjustment-description">合体モード：転がりながら前進する。発動中に敵ヒーローにぶつかるとノックアップし、ポンポンと分離する。ポンポンと分離するとアグドの基本HPが2倍になる。
+人型モード：前方に転がり、次回の通常攻撃を強化して、種爆弾を3つ連続で放つ。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>峡谷大集合</h4>
+                            <p class="adjustment-description">ポンポンがアグドと分離し、基本HPが2倍になる。ポンポンを指定位置に突撃させ、敵に物理ダメージを与えてノックアップする。その後、ポンポンは単独で行動する。ポンポンは攻撃速度と移動速度が追加で増加し、シールドを獲得する。発動するとHPが一定量回復し、自身に付与されているCC効果を解除する。再度このスキルを発動すると、ポンポンを呼び戻せる。</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

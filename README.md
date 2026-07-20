@@ -3,13 +3,14 @@
 HOK（Honer of Kings）の対戦データは公式にHOKCAMPにて公開されているが、直感的に「どのヒーローが強いか」が分かりにくい表示形式になっている。  
 本アプリは公開されているデータ(勝率、使用率、禁止率)から独自の計算式にてスコアを算出しソートすることで、直感的な強さの序列を表現する。  
 スコアは勝率が高く、使用率が高く、禁止率が高いヒーローほど高くなるようにしてあり、３パラメータを独自のバランスで足し合わせて算出している。  
-各ヒーローの個別ページでは、保存済みの週次CSVを使ってスコア推移と勝率・使用率・禁止率の履歴を確認できる。
+各ヒーローの個別ページでは、保存済みの週次CSVを使ったスコア推移と、HOKCAMPに掲載された能力調整の日時・内容を確認できる。
 主に初心者から中級者プレイヤーにとって、環境把握やヒーロー選択の補助となる情報を提供する目的で公開している。  
 ページリンク：[スコア公開ページ(PC向けレイアウト)](http://shunnsoku.s324.xrea.com/index.html)
 
 # ●使い方
 GitHub Actionsが毎週日曜日の午前6時に[HOK CAMP](https://camp.honorofkings.com/h5/app/index.html?heroId=510#/hero-hot-list)を取得する。
-取得後、ヒーロー情報の同期、週次CSVの保存、ロール別一覧とヒーロー別推移ページの生成、FTPサーバーへのアップロードまで自動で実行される。
+取得後、`get_adjustments.py`による全ヒーローの能力調整履歴取得、ヒーロー情報の同期、週次CSVの保存、ロール別一覧とヒーロー別推移ページの生成、FTPサーバーへのアップロードまで自動で実行される。
+週次一覧には直近1週間に能力調整されたヒーローだけ「調整あり」と簡易表示する。調整履歴の取得に一時的に失敗した場合は保存済みの`data/hero_adjustments.json`を利用し、通常の週次更新は継続する。
 `main`ブランチへのpushでも同じ処理を実行できる。
 
 # ●新ヒーロー実装時
@@ -22,6 +23,8 @@ GitHub Actionsが毎週日曜日の午前6時に[HOK CAMP](https://camp.honorofk
 - .github\workflows\main.yml　GitActions制御
 - main.py アプリ本体
 - get_html.py 自動でのhtml取得用アプリ 
+- get_adjustments.py HOKCAMPから能力調整履歴を取得するアプリ
+- data\hero_adjustments.json 能力調整履歴のキャッシュ
 - names.csv 日本語名⇔英名の管理用  
 - hero_categories.json　各ヒーローのロール管理用  
 - requirements.txt　必要な環境  
@@ -29,7 +32,7 @@ GitHub Actionsが毎週日曜日の午前6時に[HOK CAMP](https://camp.honorofk
 - list_html  
   - for_mobile モバイル版ページ保管場所  
   - for_pc PC版ページ保管場所  
-  - heroes ヒーロー別スコア推移ページ保管場所
+  - heroes ヒーロー別スコア推移・能力調整ページ保管場所
   - hok_pics アイコン画像保管場所（英名.png）  
 - csv 加工後データ保存場所（過去分参照用）  
 - graph_images　グラフ画像保管場所（自動でサーバーにはアップロードされない）  

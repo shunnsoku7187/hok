@@ -49,6 +49,16 @@ class GeneratedPageTests(unittest.TestCase):
             image_name = html.unescape(image_match.group(1))
             self.assertTrue((ROOT / "list_html" / "hok_pics" / image_name).is_file(), image_name)
 
+    def test_hero_pages_contain_adjustment_history(self):
+        chicha = (HERO_DIR / "chicha.html").read_text(encoding="utf-8")
+        garuda = (HERO_DIR / "garuda.html").read_text(encoding="utf-8")
+
+        self.assertIn("能力調整履歴", chicha)
+        self.assertIn("2026/07/16", chicha)
+        self.assertIn("調整前", chicha)
+        self.assertIn("調整後", chicha)
+        self.assertIn("HOKCAMPに掲載された能力調整はありません。", garuda)
+
 
 if __name__ == "__main__":
     unittest.main()

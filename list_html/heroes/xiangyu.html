@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,145 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">51.00%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.74% / 0.04%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=135" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/06/24</time>
+                        <span class="adjustment-season">S11</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>ダメージ＆回復効果の増加</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>勇猛突撃</h4>
+                            <p class="adjustment-description">強化通常攻撃ダメージ：
+調整前：225（スキルLv.ごとに+45）（+追加物理攻撃の70％）
+調整後：250（スキルLv.ごとに+50）（+追加物理攻撃の80％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>破釜沈船</h4>
+                            <p class="adjustment-description">強化通常攻撃の回復効果：
+調整前：330（スキルLv.ごとに+66）（+追加HPの7％）
+調整後：350（スキルLv.ごとに+70）（+追加HPの7％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>覇王斬</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：800（スキルLv.ごとに+400）（+追加物理攻撃の250％）
+調整前：900（スキルLv.ごとに+450）（+追加物理攻撃の260％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/05/15</time>
+                        <span class="adjustment-season">S10</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>強化通常攻撃＆奥義強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>勝利への意志</h4>
+                            <p class="adjustment-description">調整前：通常攻撃時、敵ユニットに追加で物理ダメージを与える（ターゲット1体につき5秒に1回）。
+調整後：スキル1を発動すると必ずクリティカルヒットが発動する強化縦斬りを1スタックし、スキル2を発動すると回復効果付きの強化横切りを1スタックする（合計で最大2スタック）。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>勇猛突撃</h4>
+                            <p class="adjustment-description">突進終了後の斬撃のノックアップ時間
+調整前：1秒
+調整後：0.75秒
+基本ダメージ
+調整前：130（+30/Lv）（+物理攻撃の60％）
+調整後：225（+45/Lv）（+追加HPの5％）
+強化通常攻撃の追加ダメージ
+調整前：50（+70/Lv）（+物理攻撃の60％）
+調整後：225（+45/Lv）（+追加HPの5％）
+クールダウン
+調整前：11（-1/Lv）
+調整後：10（-0.4/Lv）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>破釜沈船</h4>
+                            <p class="adjustment-description">追加効果
+発動後、2秒間移動速度が25％（+5％/Lv）増加する（徐々に減少）。
+以下の効果を削除
+物理防御に応じて追加でHPが増加
+与ダメージ減少
+調整前：25％（+4％/Lv）
+調整後：30％
+基本ダメージ
+調整前：140（+30/Lv）（+物理攻撃の80％）
+調整後：275（+55/Lv）（+追加物理攻撃の90％）
+HP回復
+調整前：200（+失っているHPの8％）
+調整後：330（+66/Lv）（+追加HPの7％）、HPが低いほど回復量が増加（最大50％）
+クールダウン
+調整前：7
+調整後：8（-0.3/Lv）
+移動速度減少
+調整前：30％
+調整後：15％（+3％/Lv）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>覇王斬</h4>
+                            <p class="adjustment-description">追加効果
+HPを与ダメージの20％分回復する。スキル発動中はスーパーアーマー状態を獲得する。
+効果調整
+刀身命中時の追加ダメージ：66％→50％
+スキルダメージ
+調整前：500（+250/Lv）（+物理攻撃の100％）、HPが低いほどダメージ増加（最大100％）
+調整後：800（+400/Lv）（+追加物理攻撃の250％）、HPが低いほどダメージ増加（最大50％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/06/27</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>能力調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>破釜沈船</h4>
+                            <p class="adjustment-description">スキル内容変更：
+発動時、項羽は2秒間瞬発的な加速を得ることができ、通常攻撃強化を2回獲得する（必ずクリティカルヒットになるが150％の基本クリティカルダメージしか与えられない）。持続時間は5秒間。
+1回目の薙ぎ払いで200（スキルLv.ごとに+40）（自身の減少HP+8％を追加）のHPを回復し、非ヒーローユニットへの効果が半減し、75（スキルLv.ごとに+15）（物理攻撃+100％）の物理ダメージを与える
+2回目の縦斬りで225（スキルLv.ごとに+45）（物理攻撃+140％）の物理ダメージを与える
+以下の効果を削除：
+物理防御を最大HPに変換するパッシブ効果を削除</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

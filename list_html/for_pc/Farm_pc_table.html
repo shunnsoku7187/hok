@@ -27,6 +27,21 @@
                 color: #187c3a;
                 text-decoration: underline;
             }
+            .adjustment-notice {
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                margin-left: 9px;
+                color: #b3472f;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+            .adjustment-notice::before {
+                width: 8px;
+                height: 8px;
+                background: #d65b3d;
+                content: "";
+            }
             .highlight {
                 font-weight: bold;
                 color: #4CAF50;
@@ -94,7 +109,7 @@
 
                     <tr class="hero-row">
                         <td><a class="hero-link" href="../heroes/lubanno-7.html" aria-label="魯班7号のスコア推移"><img src="../hok_pics/lubanno.7.png" alt="魯班7号" /></a></td>
-                        <td class="hero-name"><a class="hero-link" href="../heroes/lubanno-7.html">魯班7号</a></td>
+                        <td class="hero-name"><a class="hero-link" href="../heroes/lubanno-7.html">魯班7号</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         <td class="highlight">59.72(-0.92)</td>
                         <td class="highlight">S → A</td>
                         <td class="supplementary">【53.27%/2.15%/0.21%】→【52.90%/2.22%/0.21%】</td>

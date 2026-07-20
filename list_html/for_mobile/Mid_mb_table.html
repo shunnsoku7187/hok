@@ -27,6 +27,21 @@
                 color: #187c3a;
                 text-decoration: underline;
             }
+            .adjustment-notice {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                margin-left: 6px;
+                color: #b3472f;
+                font-size: 11px;
+                white-space: nowrap;
+            }
+            .adjustment-notice::before {
+                width: 7px;
+                height: 7px;
+                background: #d65b3d;
+                content: "";
+            }
             .highlight {
                 font-weight: bold;
                 color: #4CAF50;
@@ -114,7 +129,7 @@
                     <tbody class="hero-block">
                         <tr class="hero-row">
                             <td rowspan="3"><a class="hero-link" href="../heroes/nuwa.html" aria-label="女媧のスコア推移"><img src="../hok_pics/nuwa.png" alt="女媧" /></a></td>
-                            <td class="hero-name"><a class="hero-link" href="../heroes/nuwa.html">女媧</a></td>
+                            <td class="hero-name"><a class="hero-link" href="../heroes/nuwa.html">女媧</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         </tr>
                         <tr class="hero-row">
                             <td class="highlight">55.44(+1.90)</td>
@@ -130,7 +145,7 @@
                     <tbody class="hero-block">
                         <tr class="hero-row">
                             <td rowspan="3"><a class="hero-link" href="../heroes/wangzhaojun.html" aria-label="王昭君のスコア推移"><img src="../hok_pics/wangzhaojun.png" alt="王昭君" /></a></td>
-                            <td class="hero-name"><a class="hero-link" href="../heroes/wangzhaojun.html">王昭君</a></td>
+                            <td class="hero-name"><a class="hero-link" href="../heroes/wangzhaojun.html">王昭君</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         </tr>
                         <tr class="hero-row">
                             <td class="highlight">55.09(-0.92)</td>
@@ -498,7 +513,7 @@
                     <tbody class="hero-block">
                         <tr class="hero-row">
                             <td rowspan="3"><a class="hero-link" href="../heroes/devara.html" aria-label="デーヴァラのスコア推移"><img src="../hok_pics/devara.png" alt="デーヴァラ" /></a></td>
-                            <td class="hero-name"><a class="hero-link" href="../heroes/devara.html">デーヴァラ</a></td>
+                            <td class="hero-name"><a class="hero-link" href="../heroes/devara.html">デーヴァラ</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         </tr>
                         <tr class="hero-row">
                             <td class="highlight">45.61(+0.79)</td>

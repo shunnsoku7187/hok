@@ -27,6 +27,21 @@
                 color: #187c3a;
                 text-decoration: underline;
             }
+            .adjustment-notice {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                margin-left: 6px;
+                color: #b3472f;
+                font-size: 11px;
+                white-space: nowrap;
+            }
+            .adjustment-notice::before {
+                width: 7px;
+                height: 7px;
+                background: #d65b3d;
+                content: "";
+            }
             .highlight {
                 font-weight: bold;
                 color: #4CAF50;
@@ -290,7 +305,7 @@
                     <tbody class="hero-block">
                         <tr class="hero-row">
                             <td rowspan="3"><a class="hero-link" href="../heroes/feyd.html" aria-label="ハロルドのスコア推移"><img src="../hok_pics/feyd.png" alt="ハロルド" /></a></td>
-                            <td class="hero-name"><a class="hero-link" href="../heroes/feyd.html">ハロルド</a></td>
+                            <td class="hero-name"><a class="hero-link" href="../heroes/feyd.html">ハロルド</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         </tr>
                         <tr class="hero-row">
                             <td class="highlight">53.00(+2.17)</td>

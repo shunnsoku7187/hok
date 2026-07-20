@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,112 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">46.44%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.70% / 0.26%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=199" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/12/16</time>
+                        <span class="adjustment-season">S13</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">数値調整</span>
+                            <h3>スキルダメージ調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>夕雲</h4>
+                            <p class="adjustment-description">刻印ダメージ：
+調整前：200～400（物理攻撃の+35％）
+調整後：220～440（+追加物理攻撃の40％）
+追加通常攻撃ダメージ（通常攻撃としてみなす）：
+調整前：20～40（+物理攻撃の30％）（クリティカルヒット不可）
+調整後：20～40（+物理攻撃の20％）（クリティカルヒット可）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>霜葉の舞</h4>
+                            <p class="adjustment-description">ダメージ半径：
+調整前：700
+調整後：650
+傘の旋回半径：
+調整前：600
+調整後：575
+基本ダメージ：
+調整前：200（スキルLv.ごとに+65）（+物理攻撃の72％）
+調整後：300（スキルLv.ごとに+60）（+追加物理攻撃の72％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>孤鷲裂空</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：250（スキルLv.ごとに+125）（+物理攻撃の80％）
+調整後：400（スキルLv.ごとに+200）（+追加物理攻撃の90％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/09/05</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキル1のクールダウンを短縮</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>山上の昇り月</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：8秒（スキルLv.ごとに-0.5秒）
+調整後：7.5秒（スキルLv.ごとに-0.4秒）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/06/27</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>能力調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>基本ステータス</h4>
+                            <p class="adjustment-description">基本ステータス：
+基本HP：
+調整前：3096（ヒーローLv.ごとに+199.9）
+調整後：3219（ヒーローLv.ごとに+202.2）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>夕雲</h4>
+                            <p class="adjustment-description">新たな効果を追加：
+4秒間、追加攻撃が2スタック可能
+バランス調整：
+刻印が4スタック付与した時の範囲ダメージを魔法ダメージから物理ダメージに変更
+手元に唐傘がない時、レベルに応じて攻撃速度が自身の攻撃速度が10％～20％上昇する</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

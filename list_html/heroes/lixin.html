@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,117 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">53.64%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">2.64% / 2.84%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=507" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/06/17</time>
+                        <span class="adjustment-season">S15</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>スキルアップデート</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>暗影刃</h4>
+                            <p class="adjustment-description">新効果：初期モードから支配モード/バーサークモードに切り替えると、支配エネルギー/バーサークエネルギーを最大まで獲得し（上限100）、1秒ごとに使用中のモードのエネルギーを10消費する。モードを切り替えると、切り替え前のモードのエネルギーは0になり、切り替え後のモードのエネルギーを（100-切り替え前のモードのエネルギー量）獲得する。エネルギーを獲得すると、各モードのパッシブ効果が50％増加する（エネルギーに応じて増加、最大100％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>初期モード：</h4>
+                            <p class="adjustment-description">スキル1「急速突進」
+クールダウン：7秒（スキルLv.ごとに-0.8秒）→6.5（スキルLv.ごとに-0.3秒）
+スキル2「強襲斬撃」
+基本ダメージ：300（スキルLv.ごとに+60）（+物理攻撃の100％）→450（スキルLv.ごとに+90）（+追加物理攻撃の135％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>バーサークモード</h4>
+                            <p class="adjustment-description">パッシブ：「狂乱の刃」
+移動速度増加：30→20〜40
+影による追加ダメージ：65〜205→75〜150（+追加物理攻撃の24％）
+スキル1「勇猛突撃」
+新効果：チャージ中、自動的に範囲内のターゲットを攻撃する。攻撃が命中するごとに、物理攻撃の50％の物理ダメージを与える（2回の攻撃を1回の通常攻撃とみなす）
+効果の調整：チャージ終了後（1秒未満）、3秒間攻撃速度が40％（スキルLv.ごとに+6％）増加する→1秒以上チャージすると、攻撃速度が35％（スキルLv.ごとに+7％）増加する。チャージが終了後も、3秒間攻撃速度を維持できる
+移動速度増加：100（スキルLv.ごとに+10）→80（スキルLv.ごとに+16）
+クールダウン：10秒→12秒（スキルLv.ごとに-0.5秒）
+スキル2「乱れ裂き」
+基本ダメージ：280（スキルLv.ごとに+50）（+追加物理攻撃の80％）→2回ダメージに変更。1回ごとに180（スキルLv.ごとに+36）（+追加物理攻撃の55％）
+裂傷ダメージ：90（スキルLv.ごとに+18）→75（スキルLv.ごとに+15）（+追加物理攻撃の24％）
+クールダウン：6.5秒（スキルLv.ごとに-0.3秒）→7秒（スキルLv.ごとに-0.3秒）
+スキル3「暗影の陣」
+操作性の最適化：スキル発動中も移動可能
+基本ダメージ：600（スキルLv.ごとに+300）（+追加物理攻撃の120％）→700（スキルLv.ごとに+350）（+追加物理攻撃の210％）
+クールダウン：25秒（スキルLv.ごとに-5秒）→22秒（スキルLv.ごとに-2秒）
+モード変更に要する時間：3秒（スキルLv.ごとに-0.5秒）→2秒
+スキル4「力の掌握」
+モード変更中の移動速度調整
+新効果：範囲内の敵に200〜400（+追加物理攻撃の60％）の物理ダメージを与える</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>支配モード</h4>
+                            <p class="adjustment-description">スキル1「希望への跳躍」
+基本ダメージ：50（スキルLv.ごとに+10）（+追加物理攻撃の50％）〜150（スキルLv.ごとに+30）（+追加物理攻撃の150％）→150（スキルLv.ごとに+30）（+追加物理攻撃の50％）〜450（スキルLv.ごとに+90）（+追加物理攻撃の150％）
+スキル2「旋風烈華」
+基本ダメージ：100（スキルLv.ごとに+20）（+追加物理攻撃の150％）→390（スキルLv.ごとに+78）（+追加物理攻撃の130％）
+新効果：攻撃速度に応じて剣気を放つ速度が増加。攻撃速度が速いほど剣気を速く放つ
+スキル3「光翼連斬」
+基本ダメージ：150（スキルLv.ごとに+50）（+追加物理攻撃の75％）～450（スキルLv.ごとに+150）（+追加物理攻撃の225％）→270（スキルLv.ごとに+135％）（+追加物理攻撃の90％）～810（スキルLv.ごとに+405）（+追加物理攻撃の270％）
+新効果：攻撃速度に応じてチャージ速度が増加。攻撃速度が速いほどチャージ速度が短縮する
+スキル4「力の解放」
+モード変更に要する時間：3秒（スキルLv.ごとに-0.5秒）→2秒
+モード変更中の移動速度調整
+新効果：範囲内の敵に200〜400（+追加物理攻撃の60％）の物理ダメージを与える</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/08/08</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">数値調整</span>
+                            <h3>移動速度と序盤の基本ステータスをアップし、バーサークモードの機動性を低下</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>基本ステータス</h4>
+                            <p class="adjustment-description">基本移動速度：
+調整前：370
+調整後：375
+基本HP：
+調整前：3470（+274.5×ヒーローLv.）
+調整後：3512（+274.4×ヒーローLv.）
+基本物理防御：
+調整前：106（+21.4×ヒーローLv.）
+調整後：150（+18.5×ヒーローLv.）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>バーサークモードスキル1――勇猛突撃</h4>
+                            <p class="adjustment-description">チャージでアップする移動速度：
+調整前：150
+調整後：100（スキルLv.ごとに+10）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

@@ -7,6 +7,11 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+from hok_tools.adjustment_tool import (
+    hero_adjustment_url,
+    load_adjustment_data,
+    prepare_hero_adjustments,
+)
 from hok_tools.categories_tool import load_hero_categories
 from hok_tools.csv_tool import hero_page_slug, load_name_dict, transrate_name
 
@@ -216,7 +221,7 @@ def _role_map(hero_categories):
     return result
 
 
-def _page_data(hero_name, english_name, history, roles):
+def _page_data(hero_name, english_name, history, roles, adjustment_entry=None):
     history = [dict(item, hero_name=hero_name) for item in history]
     latest = history[-1]
     previous = history[-2] if len(history) > 1 else None
@@ -238,6 +243,8 @@ def _page_data(hero_name, english_name, history, roles):
         "period_count": len(history),
         "chart_svg": build_score_chart(history),
         "history": list(reversed(history)),
+        "adjustments": prepare_hero_adjustments(adjustment_entry),
+        "adjustment_source_url": hero_adjustment_url(adjustment_entry),
     }
 
 
@@ -250,16 +257,24 @@ def generate_hero_history_pages(
     output_dir=OUTPUT_DIR,
     names_file="names.csv",
     categories_file="hero_categories.json",
+    adjustments_file="data/hero_adjustments.json",
 ):
     histories = load_hero_histories(csv_dir)
     name_dict = load_name_dict(names_file)
     roles = _role_map(load_hero_categories(categories_file))
+    adjustments = load_adjustment_data(adjustments_file)
     missing_names = sorted(name for name in histories if transrate_name(name, name_dict) is None)
     if missing_names:
         raise ValueError(f"Missing English hero names in {names_file}: {', '.join(missing_names)}")
 
     pages = [
-        _page_data(hero_name, transrate_name(hero_name, name_dict), history, roles[hero_name])
+        _page_data(
+            hero_name,
+            transrate_name(hero_name, name_dict),
+            history,
+            roles[hero_name],
+            adjustments.get(hero_name),
+        )
         for hero_name, history in histories.items()
     ]
     pages.sort(key=lambda hero: (-hero["latest"]["score"], hero["name"]))

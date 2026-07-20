@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,143 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">50.62%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.95% / 0.03%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=127" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/03/26</time>
+                        <span class="adjustment-season">S14</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>スキルダメージ調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>水流の響</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：250（スキルLv.ごとに+50）（+魔法攻撃の40％）
+調整後：230（スキルLv.ごとに+46）（+魔法攻撃の40％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/12/12</time>
+                        <span class="adjustment-season">S7</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキル2の跳ね返り回数調整、スキル1のクールダウン短縮</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>滂沱の涙</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：10秒（スキルLv.ごとに-0.4秒）
+調整後：8秒</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>水流の響</h4>
+                            <p class="adjustment-description">水流の跳ね返り回数：
+調整前：6回
+調整後：5/6/7回（それぞれスキルLv.1/3/5の時）
+基本ダメージ：
+調整前：250（スキルLv.ごとに+50）（+魔法攻撃の30％）
+調整後：250（スキルLv.ごとに+50）（+魔法攻撃の40％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/09/05</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>中終盤のダメージ減少、奥義の序盤・中盤の移動速度減少効果を下方修正</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>氷の涙</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：250～500（+魔法攻撃の38％）
+調整後：250～500（+魔法攻撃の30％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>滂沱の涙</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：500（スキルLv.ごとに+100）（+魔法攻撃の80％）
+調整後：500（スキルLv.ごとに+100）（+魔法攻撃の70％）
+効果調整：
+氷柱の阻害範囲を縮小</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>水流の響</h4>
+                            <p class="adjustment-description">基本ダメージ：
+調整前：250（スキルLv.ごとに+50）（+魔法攻撃の35％）
+調整後：250（スキルLv.ごとに+50）（+魔法攻撃の30％）
+クールダウン：
+調整前：8秒（スキルLv.ごとに-0.3秒）
+調整後：8秒（スキルLv.ごとに-0.2秒）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>洛神降臨</h4>
+                            <p class="adjustment-description">移動速度減少効果：
+調整前：2秒、移動速度50％減少
+調整後：1.5秒、移動速度25％（スキルLv.ごとに+12.5％）減少</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/07/11</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>序盤のミニオン処理能力をやや強化し、終盤のポーク能力を弱体化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>氷の涙</h4>
+                            <p class="adjustment-description">与ダメージ：
+調整前：210～420（+魔法攻撃の45％）
+調整後：250～500（+魔法攻撃の38％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>水流の響</h4>
+                            <p class="adjustment-description">与ダメージ：
+調整前：250（スキルLv.ごとに+50）（+魔法攻撃の40％）
+調整後：250（スキルLv.ごとに+50）（+魔法攻撃の35％）に弱体化</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

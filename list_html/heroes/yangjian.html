@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,114 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">51.01%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.32% / 0.02%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=178" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/01/08</time>
+                        <span class="adjustment-season">S13</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">数値調整</span>
+                            <h3>スキル効果＆クールダウン調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天地逆転</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：6.5（スキルLv.ごとに-0.3秒）
+調整後：7.5（スキルLv.ごとに-0.3秒）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>虚妄破滅</h4>
+                            <p class="adjustment-description">移動速度減少：
+調整前：25％～50％
+調整後：15％～30％</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/09/24</time>
+                        <span class="adjustment-season">S12</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>「アップデート」</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>精神浸蝕</h4>
+                            <p class="adjustment-description">法天象地：楊戩は通常攻撃とスキルでダメージを与えると耐性（最大90％）が増加する。最大値になるとスーパーアーマーを獲得する。ヒーローユニットとの戦闘になると「法天象地」モードに入り、周囲の敵をノックバックして、スキルと射程が強化され、さらに最大HPが600～1200増加する。
+天眼：スキル命中時にエネルギーを1スタック獲得する（最大3スタック）。ターゲットが楊戩から遠いと、レーザーを放って80～160（+追加物理攻撃の25％）の物理ダメージを与え、HPが80～160（+追加HPの1.2％）回復する（ターゲットが非ヒーローの場合は半減）。
+「法天象地」以外で楊戩が獲得できる耐性は25％まで。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天地逆転</h4>
+                            <p class="adjustment-description">哮天犬を呼び出して突撃させ、200～400（+追加物理攻撃の60％）の物理ダメージを与えて、5秒間刻印を付与し、敵の視界を獲得する。効果発動中にスキルを再発動すると、敵に突撃して300～600（+追加物理攻撃の90％）の物理ダメージを与え、ターゲットが失っているHPの15％の物理ダメージを与える。
+命中しなかった場合、哮天犬は終着点に留まってターゲットを探す。楊戩が近づくと哮天犬は戻り、「天地逆転」の残りクールダウンを50％短縮する。
+敵が刻印のある状態で死亡すると、「天地逆転」のクールダウンはリセットされる。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>虚妄破滅</h4>
+                            <p class="adjustment-description">槍で薙ぎ払い攻撃を行い、範囲内の敵に350～700（+追加物理攻撃の100％）の物理ダメージを与えて、2秒間移動速度を25％～50％減少させ、さらに1/2秒間スタンさせる（ターゲットのHPの割合が自身を上回っている場合、スタン時間倍増）。敵に命中すると5秒間、通常攻撃時に追加で125～250（+追加物理攻撃の36％）の確定ダメージを与え、パッシブの天眼でも確定ダメージを与えられるようになる｡</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天眼</h4>
+                            <p class="adjustment-description">天眼からレーザーを3回放ち、ルート上の敵に340～680（+追加物理攻撃の110％）の物理ダメージを与え、さらに自身のHPを300～600（+追加HPの4.5％）回復する（非ヒーローユニットの場合は半減）。
+複数のレーザーが同時に命中した場合のダメージは30％、回復量は50％となる。</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/09/05</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキル1とスキル3のクールダウンを短縮、スキル3の回復量増加</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天地逆転</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：6秒
+調整後：6秒（スキルLv.ごとに-0.2秒）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天眼</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：28秒（スキルLv.ごとに-6秒）
+調整後：22秒（スキルLv.ごとに-3秒）
+レーザー命中時のHP回復量：
+調整前：220（スキルLv.ごとに+110）（+追加HPの5％）
+調整後：220（スキルLv.ごとに+110）（+追加物理攻撃の50％）（+追加HPの5％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

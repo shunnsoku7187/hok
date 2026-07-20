@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,125 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">48.83%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.86% / 0.36%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=191" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/07/17</time>
+                        <span class="adjustment-season">S11</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag adjust">制度調整</span>
+                            <h3>制度調整</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>川流永遠</h4>
+                            <p class="adjustment-description">移動速度減少効果：
+調整前：50％
+調整後：30％～60％</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>鯉の滝登り</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：8秒
+調整後：9.5秒（スキルLv.ごとに-0.5秒）
+基本ダメージ：
+調整前：300（スキルLv.ごとに+60）（+魔法攻撃の50％）
+調整後：300（スキルLv.ごとに+100）（+魔法攻撃の55％）
+持続ダメージ：
+調整前：75（スキルLv.ごとに+15）（+魔法攻撃の8％）
+調整後：75（スキルLv.ごとに+25）（+魔法攻撃の12％）
+移動速度増加：
+調整前：30％（スキルLv.ごとに+6％）
+調整後：30％（スキルLv.ごとに+10％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>宿命の海</h4>
+                            <p class="adjustment-description">スキルレベルアップ方法：
+調整前：バトル開始時に使用可能
+調整後：スキルポイントで習得後に使用可能
+クールダウン：
+調整前：25秒
+調整後：26秒（スキルLv.ごとに-2秒）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>断絶の橋</h4>
+                            <p class="adjustment-description">クールダウン：
+調整前：8秒
+調整後：9.5秒（スキルLv.ごとに-0.5秒）
+基本ダメージ：
+調整前：300（スキルLv.ごとに+60）（+魔法攻撃の50％）
+調整後：300（スキルLv.ごとに+100）（+魔法攻撃の55％）
+持続ダメージ：
+調整前：75（スキルLv.ごとに+15）（+魔法攻撃の8％）
+調整後：75（スキルLv.ごとに+25）（+魔法攻撃の12％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/09/25</time>
+                        <span class="adjustment-season">S7</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>スキル1・スキル3の範囲を拡大し、スキル2を強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>川流永遠</h4>
+                            <p class="adjustment-description">効果調整：
+大喬は味方ではなく、自身の移動速度を30～60増加させる
+新たな効果を追加：
+魔法攻撃250ごとに「鯉の滝登り」と「断絶の橋」のスキル範囲が50拡大する（最大200まで）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>鯉の滝登り</h4>
+                            <p class="adjustment-description">水流の攻撃回数：
+調整前：6回
+調整後：5回</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>宿命の海</h4>
+                            <p class="adjustment-description">効果調整：
+視界を提供する魔法陣を4秒間召喚する。魔法陣終了時に味方ヒーロー1体をリスポーン地点にワープさせる。ワープした味方はデバフが全て解除され、クリスタルのワープポイントを通じて元の場所に戻れる。味方ヒーローをワープさせなかった場合、刻印を残し、それに触れた味方1体はリコールできる。刻印が消えた、あるいは味方ヒーローをワープさせなかった場合、クールダウンが50％短縮する。</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>断絶の橋</h4>
+                            <p class="adjustment-description">水流の攻撃回数：
+調整前：6回
+調整後：5回</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>渦潮の扉</h4>
+                            <p class="adjustment-description">範囲内の味方ヒーローへのバフ效果：
+調整前：攻撃速度+40％（スキルLv.ごとに+5％）
+調整後：350のシールドを獲得（スキルLv.ごとに+175）（+魔法攻撃の50％）、8秒間持続</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

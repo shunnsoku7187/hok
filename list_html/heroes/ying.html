@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,153 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">53.62%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.72% / 0.06%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=538" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/05/14</time>
+                        <span class="adjustment-season">S14</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">制度レベルアップ</span>
+                            <h3>スキルアップデート</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>共鳴・掠火</h4>
+                            <p class="adjustment-description">移動速度増加効果
+調整前：10％で固定
+調整後：25～50（ヒーローレベルに応じて増加）
+パッシブ：共鳴2スタック「鋭意・破城」
+新効果追加：発動中に移動可能
+パッシブ：共鳴3スタック「真意・燎原」
+発動時の操作性の最適化</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>断月</h4>
+                            <p class="adjustment-description">クールダウン
+調整前：9～8
+調整後：10～8</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>追雲</h4>
+                            <p class="adjustment-description">チャージ薙ぎ払い基本ダメージ
+調整前：80（スキルLv.ごとに+30）（+物理攻撃の50％）
+調整後：180（スキルLv.ごとに+36）（+追加物理攻撃の60％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>追雲</h4>
+                            <p class="adjustment-description">チャージ薙ぎ払い最大ダメージ
+調整前：160（スキルLv.ごとに+60）（+物理攻撃の100％）
+調整後：360（スキルLv.ごとに+72）（+追加物理攻撃の120％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>追星</h4>
+                            <p class="adjustment-description">クールダウン
+調整前：40（スキルLv.ごとに-2.5）
+調整後：40（スキルLv.ごとに-4）
+被ダメージ軽減効果
+調整前：10％（スキルLv.ごとに+30％）
+調整後：30％（スキルLv.ごとに+15％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/05/15</time>
+                        <span class="adjustment-season">S10</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>強化通常攻撃強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>共鳴1スタック「堅意・戦止」</h4>
+                            <p class="adjustment-description">基本ダメージ
+調整前：50～106（+物理攻撃の40％）
+調整後：60～120（+物理攻撃の45％）
+シールド効果
+調整前：100～184（+物理攻撃の50％）
+調整後：100～200（+物理攻撃の60％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>共鳴2スタック「鋭意・破城」</h4>
+                            <p class="adjustment-description">2回目までのダメージ
+調整前：30～170（+物理攻撃の35％）
+調整後：100～200（+物理攻撃の45％）
+3回目のダメージ
+調整前：170～380（+物理攻撃の70％）
+調整後：200～400（+物理攻撃の80％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/01/24</time>
+                        <span class="adjustment-season">S8</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>CD短縮、ダメージと回復効果増加</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>2スタック時共鳴効果「鋭意・破城」</h4>
+                            <p class="adjustment-description">最初の2回の突き攻撃のHP回復量：
+調整前：8～36（+物理攻撃の15％）
+調整後：65～130（+追加HPの1％）
+3回目の突き攻撃のHP回復量：
+調整前：16～72（+物理攻撃の30％）
+調整後：130～260（+追加HPの2％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>断月</h4>
+                            <p class="adjustment-description">CD：
+調整前：9秒
+調整後：9秒（スキルLv.ごとに-0.2秒）
+基本ダメージ：
+調整前：125（スキルLv.ごとに+25）（+物理攻撃の50％）
+調整後：225（スキルLv.ごとに+45）（+追加物理攻撃の65％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>追雲</h4>
+                            <p class="adjustment-description">CD：
+調整前：10秒（スキルLv.ごとに-0.2秒）
+調整後：10秒（スキルLv.ごとに-0.4秒）
+移動速度増加効果：
+調整前：30％（スキルLv.ごとに+2％）
+調整後：25％（スキルLv.ごとに+5％）
+移動速度減少効果：
+調整前：30％
+調整後：15％（スキルLv.ごとに+3％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>

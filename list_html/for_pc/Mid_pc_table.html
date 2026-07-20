@@ -27,6 +27,21 @@
                 color: #187c3a;
                 text-decoration: underline;
             }
+            .adjustment-notice {
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                margin-left: 9px;
+                color: #b3472f;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+            .adjustment-notice::before {
+                width: 8px;
+                height: 8px;
+                background: #d65b3d;
+                content: "";
+            }
             .highlight {
                 font-weight: bold;
                 color: #4CAF50;
@@ -102,7 +117,7 @@
 
                     <tr class="hero-row">
                         <td><a class="hero-link" href="../heroes/nuwa.html" aria-label="女媧のスコア推移"><img src="../hok_pics/nuwa.png" alt="女媧" /></a></td>
-                        <td class="hero-name"><a class="hero-link" href="../heroes/nuwa.html">女媧</a></td>
+                        <td class="hero-name"><a class="hero-link" href="../heroes/nuwa.html">女媧</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         <td class="highlight">55.44(+1.90)</td>
                         <td class="highlight">B → A</td>
                         <td class="supplementary">【51.60%/0.80%/0.26%】→【52.20%/0.99%/0.32%】</td>
@@ -110,7 +125,7 @@
 
                     <tr class="hero-row">
                         <td><a class="hero-link" href="../heroes/wangzhaojun.html" aria-label="王昭君のスコア推移"><img src="../hok_pics/wangzhaojun.png" alt="王昭君" /></a></td>
-                        <td class="hero-name"><a class="hero-link" href="../heroes/wangzhaojun.html">王昭君</a></td>
+                        <td class="hero-name"><a class="hero-link" href="../heroes/wangzhaojun.html">王昭君</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         <td class="highlight">55.09(-0.92)</td>
                         <td class="highlight">A → A</td>
                         <td class="supplementary">【51.61%/1.78%/0.50%】→【51.19%/1.80%/0.51%】</td>
@@ -294,7 +309,7 @@
 
                     <tr class="hero-row">
                         <td><a class="hero-link" href="../heroes/devara.html" aria-label="デーヴァラのスコア推移"><img src="../hok_pics/devara.png" alt="デーヴァラ" /></a></td>
-                        <td class="hero-name"><a class="hero-link" href="../heroes/devara.html">デーヴァラ</a></td>
+                        <td class="hero-name"><a class="hero-link" href="../heroes/devara.html">デーヴァラ</a><span class="adjustment-notice" title="直近1週間に能力調整あり">調整あり</span></td>
                         <td class="highlight">45.61(+0.79)</td>
                         <td class="highlight">D → C</td>
                         <td class="supplementary">【46.48%/1.12%/0.23%】→【46.82%/1.24%/0.24%】</td>

@@ -16,6 +16,7 @@
             --canvas: #f3f5f2;
             --positive: #168443;
             --negative: #c64d3f;
+            --adjust: #1676a3;
         }
         * { box-sizing: border-box; }
         body {
@@ -96,6 +97,58 @@
         section { padding-top: 38px; }
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+        .adjustment-list { border-top: 1px solid var(--line); }
+        .adjustment-item {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 26px;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
+        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-heading {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .adjustment-heading h3 { margin: 0; font-size: 18px; }
+        .adjustment-tag { color: var(--muted); font-size: 13px; font-weight: 700; }
+        .adjustment-tag::before {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-right: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            content: "";
+        }
+        .adjustment-tag.buff { color: var(--positive); }
+        .adjustment-tag.nerf { color: var(--negative); }
+        .adjustment-tag.adjust { color: var(--adjust); }
+        .adjustment-attribute {
+            padding: 12px 0 12px 16px;
+            border-left: 3px solid #cfd7d1;
+        }
+        .adjustment-attribute + .adjustment-attribute { margin-top: 12px; }
+        .adjustment-attribute h4 { margin: 0 0 7px; font-size: 15px; }
+        .adjustment-description {
+            margin: 0;
+            color: #354039;
+            font-size: 14px;
+            line-height: 1.7;
+            white-space: pre-line;
+        }
+        .source-link { color: var(--green-dark); font-weight: 700; }
+        .empty-adjustments {
+            margin: 22px 0 0;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            color: var(--muted);
+        }
         .chart-wrap {
             overflow-x: auto;
             border-top: 1px solid var(--line);
@@ -137,6 +190,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
         }
     </style>
 </head>
@@ -168,6 +222,152 @@
             <div class="metric"><span class="metric-label">勝率</span><span class="metric-value small">50.86%</span></div>
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.46% / 0.03%</span></div>
         </div>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=501" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2026/06/17</time>
+                        <span class="adjustment-season">S15</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>スキルダメージ強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>臨卦・無憂</h4>
+                            <p class="adjustment-description">新効果：
+味方に命中すると、ターゲットのメイン攻撃ステータスの増加効果を追加で25％増加させる（4秒かけて減少）
+消費MP：
+調整前：50
+調整後：40
+クールダウン：
+調整前：3秒
+調整後：5秒（スキルLv.ごとに-0.2秒）
+基本ダメージ：
+調整前：25（スキルLv.ごとに+5）（+魔法攻撃の25％）
+調整後：30（スキルLv.ごとに+6）（+魔法攻撃の25％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>師卦・飛翼</h4>
+                            <p class="adjustment-description">新効果：
+命中すると、ターゲットの物理/魔法防御の減少効果を追加で25％増加させる（4秒かけて減少）
+消費MP：
+調整前：50
+調整後：40
+クールダウン：
+調整前：3秒
+調整後：5秒（スキルLv.ごとに-0.2秒）
+基本ダメージ：
+調整前：25（スキルLv.ごとに+5）（+魔法攻撃の25％）
+調整後：30（スキルLv.ごとに+6）（+魔法攻撃の25％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/03/20</time>
+                        <span class="adjustment-season">S9</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>数値弱体化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>臨卦・無憂</h4>
+                            <p class="adjustment-description">自身の魔法攻撃増加量
+調整前：75（スキルLv.ごとに+15）
+調整後：65（スキルLv.ごとに+13）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2025/02/13</time>
+                        <span class="adjustment-season">S8</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag buff">数値強化</span>
+                            <h3>パッシブ効果の強化</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天佑神助</h4>
+                            <p class="adjustment-description">回復効果
+調整前：210～420（+魔法攻撃の40％）
+調整後：225～450（+魔法攻撃の40％）
+効果追加
+詳細：追加で自身のHP（+追加HPの4％）を回復する</p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="adjustment-item">
+                    <div>
+                        <time class="adjustment-date">2024/08/22</time>
+                        <span class="adjustment-season">S6</span>
+                    </div>
+                    <div>
+                        <div class="adjustment-heading">
+                            <span class="adjustment-tag nerf">数値弱体化</span>
+                            <h3>序盤の味方に対する強化効果を減少</h3>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>基本ステータス</h4>
+                            <p class="adjustment-description">基本移動速度：
+調整前：370
+調整後：365</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>天佑神助</h4>
+                            <p class="adjustment-description">強化通常攻撃で回復するHP：
+調整前：210（ヒーローLv.ごとに+15）（+追加HPの6％）
+調整後：210（ヒーローLv.ごとに+15）（+魔法攻撃の40％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>臨卦・無憂</h4>
+                            <p class="adjustment-description">味方ヒーローに追加するステータス：
+調整前：物理攻撃を20（スキルLv.ごとに+4）（+魔法攻撃の10％）、魔法攻撃を50（スキルLv.ごとに+10）（+魔法攻撃の20％）
+調整後：メイン攻撃ステータスを20（スキルLv.ごとに+4）（+魔法攻撃の10％）（メイン攻撃ステータス1=物理攻撃1または魔法攻撃2）
+味方ヒーローへの攻撃速度の増加量：
+調整前：20％
+調整後：10％（ヒーローLv.ごとに+2％）
+パッシブで自身の移動速度を増加：
+調整前：12％
+調整後：7.5％（スキルLv.ごとに+1.5％）</p>
+                        </div>
+
+                        <div class="adjustment-attribute">
+                            <h4>師卦・飛翼</h4>
+                            <p class="adjustment-description">ターゲットの物理防御と魔法防御を減少させる割合：
+調整前：15％（ヒーローLv.ごとに+3％）
+調整後：10％（ヒーローLv.ごとに+2％）</p>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
 
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>
