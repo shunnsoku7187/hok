@@ -436,9 +436,39 @@
 
             </div>
         </section>
+
+        <section class="comment-board" aria-labelledby="comment-heading">
+            <div class="section-heading comment-board-heading">
+                <div>
+                    <p class="eyebrow">COMMUNITY BOARD</p>
+                    <h2 id="comment-heading">みんなの修正予想</h2>
+                </div>
+                <strong id="comment-count">0件</strong>
+            </div>
+            <p class="comment-lead">候補にいないヒーローの予想や、修正理由について自由に投稿できます。</p>
+
+            <form class="comment-form" id="comment-form">
+                <label for="comment-nickname">ニックネーム <span>必須</span></label>
+                <input id="comment-nickname" name="nickname" type="text" maxlength="24" autocomplete="nickname" required>
+                <label for="comment-body">コメント <span>必須</span></label>
+                <textarea id="comment-body" name="body" maxlength="500" rows="4" required></textarea>
+                <div class="reply-target" id="reply-target" hidden>
+                    <span id="reply-target-name"></span>
+                    <button id="reply-cancel" type="button" aria-label="返信を取り消す">取り消す</button>
+                </div>
+                <div class="comment-form-footer">
+                    <small>500文字まで</small>
+                    <button id="comment-submit" type="submit">投稿する</button>
+                </div>
+            </form>
+
+            <p class="comment-status" id="comment-status" role="status" aria-live="polite">コメントを読み込んでいます</p>
+            <div class="comment-list" id="comment-list" aria-live="polite"></div>
+        </section>
     </main>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="prediction.js" defer></script>
+    <script src="comments.js" defer></script>
 </body>
 </html>
