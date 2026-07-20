@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -15,6 +16,40 @@ DEFAULT_API_URL = "https://ss1.xrea.com/shunnsoku.s324.xrea.com/api/prediction_c
 def default_round_id():
     with (ROOT / "data" / "prediction_round.json").open(encoding="utf-8") as file:
         return json.load(file)["round_id"]
+
+
+def request_json_with_powershell(url, payload=None, admin_token=None):
+    environment = os.environ.copy()
+    environment["HOK_COMMENT_REQUEST_URL"] = url
+    environment["HOK_COMMENT_REQUEST_BODY"] = (
+        json.dumps(payload, ensure_ascii=False) if payload is not None else ""
+    )
+    environment["HOK_COMMENT_REQUEST_TOKEN"] = admin_token or ""
+    script = r"""
+$ErrorActionPreference = 'Stop'
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$headers = @{ Accept = 'application/json' }
+if ($env:HOK_COMMENT_REQUEST_TOKEN) {
+    $headers['X-Admin-Token'] = $env:HOK_COMMENT_REQUEST_TOKEN
+}
+if ($env:HOK_COMMENT_REQUEST_BODY) {
+    $body = [System.Text.Encoding]::UTF8.GetBytes($env:HOK_COMMENT_REQUEST_BODY)
+    $response = Invoke-RestMethod -Method Post -Uri $env:HOK_COMMENT_REQUEST_URL -Headers $headers -ContentType 'application/json; charset=utf-8' -Body $body
+} else {
+    $response = Invoke-RestMethod -Method Get -Uri $env:HOK_COMMENT_REQUEST_URL -Headers $headers
+}
+$response | ConvertTo-Json -Depth 20 -Compress
+"""
+    result = subprocess.run(
+        ["powershell.exe", "-NoProfile", "-NonInteractive", "-Command", script],
+        capture_output=True,
+        env=environment,
+        timeout=20,
+    )
+    if result.returncode != 0:
+        message = result.stderr.decode("utf-8", errors="replace").strip()
+        raise RuntimeError(message or "PowerShellでAPIへ接続できませんでした")
+    return json.loads(result.stdout.decode("utf-8"))
 
 
 def request_json(url, payload=None, admin_token=None):
@@ -34,6 +69,10 @@ def request_json(url, payload=None, admin_token=None):
         except (UnicodeDecodeError, json.JSONDecodeError):
             message = str(error)
         raise RuntimeError(message) from error
+    except urllib.error.URLError as error:
+        if os.name == "nt":
+            return request_json_with_powershell(url, payload, admin_token)
+        raise RuntimeError(str(error.reason)) from error
 
 
 def load_admin_token(path):
