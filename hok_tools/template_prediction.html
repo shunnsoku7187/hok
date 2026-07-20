@@ -97,9 +97,27 @@
             <p class="comment-lead">候補にいないヒーローの予想や、修正理由について自由に投稿できます。</p>
 
             <form class="comment-form" id="comment-form">
-                <label for="comment-nickname">ニックネーム <span>必須</span></label>
-                <input id="comment-nickname" name="nickname" type="text" maxlength="24" autocomplete="nickname" required>
-                <label for="comment-body">コメント <span>必須</span></label>
+                <label for="comment-nickname">ユーザーネーム <span class="required">必須</span></label>
+                <input id="comment-nickname" name="nickname" type="text" value="匿名希望" maxlength="24" autocomplete="nickname" required>
+                <div class="prediction-fields" id="prediction-fields">
+                    <label for="comment-hero">ヒーロー <span class="required">必須</span></label>
+                    <input id="comment-hero" name="hero" type="text" list="hero-name-options" maxlength="40" required>
+                    <datalist id="hero-name-options">
+                        {% for hero_name in hero_names %}<option value="{{ hero_name }}"></option>{% endfor %}
+                    </datalist>
+                    <span class="form-label" id="direction-label">予想される修正 <b class="required">必須</b></span>
+                    <div class="direction-options" role="radiogroup" aria-labelledby="direction-label">
+                        <label class="direction-option">
+                            <input type="radio" name="comment-direction" value="buff" checked>
+                            <span>上方修正</span>
+                        </label>
+                        <label class="direction-option">
+                            <input type="radio" name="comment-direction" value="nerf">
+                            <span>下方修正</span>
+                        </label>
+                    </div>
+                </div>
+                <label for="comment-body"><span id="comment-body-label">予想理由</span> <span class="required">必須</span></label>
                 <textarea id="comment-body" name="body" maxlength="500" rows="4" required></textarea>
                 <div class="reply-target" id="reply-target" hidden>
                     <span id="reply-target-name"></span>
@@ -107,7 +125,7 @@
                 </div>
                 <div class="comment-form-footer">
                     <small>500文字まで</small>
-                    <button id="comment-submit" type="submit">投稿する</button>
+                    <button id="comment-submit" type="submit">予想を投稿</button>
                 </div>
             </form>
 

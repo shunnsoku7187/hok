@@ -98,6 +98,9 @@ def list_comments(args):
         deleted = " [削除済み]" if comment["deleted"] else ""
         body = comment["body"].replace("\n", " ")
         print(f"#{comment['id']}{parent} {comment['nickname']} 賛成:{comment['like_count']}{deleted}")
+        if comment.get("hero") and comment.get("direction"):
+            direction = "上方修正" if comment["direction"] == "buff" else "下方修正"
+            print(f"  [{comment['hero']} / {direction}]")
         print(f"  {body}")
 
 
@@ -116,7 +119,7 @@ def delete_comment(args):
         token,
     )
     deleted = next((item for item in data["comments"] if item["id"] == args.comment_id), None)
-    if not deleted or not deleted["deleted"]:
+    if deleted and not deleted["deleted"]:
         raise RuntimeError("削除結果を確認できませんでした")
     print(f"コメント #{args.comment_id} を削除しました")
 
