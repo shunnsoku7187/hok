@@ -184,6 +184,24 @@
         .chart-line { fill: none; stroke: var(--green-dark); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
         .chart-point { fill: #fff; stroke: var(--green-dark); stroke-width: 2; }
         .chart-point-latest { fill: var(--green); stroke: #145f30; stroke-width: 3; }
+        .chart-adjustment-line { stroke-width: 2; stroke-dasharray: 6 5; opacity: .78; }
+        .chart-adjustment-point { stroke: #fff; stroke-width: 2; }
+        .chart-adjustment-label {
+            font-size: 12px;
+            font-weight: 700;
+            paint-order: stroke;
+            stroke: var(--surface);
+            stroke-width: 4px;
+        }
+        .chart-adjustment.buff .chart-adjustment-line { stroke: var(--positive); }
+        .chart-adjustment.buff .chart-adjustment-point,
+        .chart-adjustment.buff .chart-adjustment-label { fill: var(--positive); }
+        .chart-adjustment.nerf .chart-adjustment-line { stroke: var(--negative); }
+        .chart-adjustment.nerf .chart-adjustment-point,
+        .chart-adjustment.nerf .chart-adjustment-label { fill: var(--negative); }
+        .chart-adjustment.adjust .chart-adjustment-line { stroke: var(--adjust); }
+        .chart-adjustment.adjust .chart-adjustment-point,
+        .chart-adjustment.adjust .chart-adjustment-label { fill: var(--adjust); }
         .chart-y-label, .chart-x-label { fill: #657068; font-size: 12px; }
         .chart-y-label { text-anchor: end; }
         .chart-x-label { text-anchor: middle; }
