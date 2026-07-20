@@ -184,6 +184,24 @@
         .chart-line { fill: none; stroke: var(--green-dark); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
         .chart-point { fill: #fff; stroke: var(--green-dark); stroke-width: 2; }
         .chart-point-latest { fill: var(--green); stroke: #145f30; stroke-width: 3; }
+        .chart-adjustment-line { stroke-width: 2; stroke-dasharray: 6 5; opacity: .78; }
+        .chart-adjustment-point { stroke: #fff; stroke-width: 2; }
+        .chart-adjustment-label {
+            font-size: 12px;
+            font-weight: 700;
+            paint-order: stroke;
+            stroke: var(--surface);
+            stroke-width: 4px;
+        }
+        .chart-adjustment.buff .chart-adjustment-line { stroke: var(--positive); }
+        .chart-adjustment.buff .chart-adjustment-point,
+        .chart-adjustment.buff .chart-adjustment-label { fill: var(--positive); }
+        .chart-adjustment.nerf .chart-adjustment-line { stroke: var(--negative); }
+        .chart-adjustment.nerf .chart-adjustment-point,
+        .chart-adjustment.nerf .chart-adjustment-label { fill: var(--negative); }
+        .chart-adjustment.adjust .chart-adjustment-line { stroke: var(--adjust); }
+        .chart-adjustment.adjust .chart-adjustment-point,
+        .chart-adjustment.adjust .chart-adjustment-label { fill: var(--adjust); }
         .chart-y-label, .chart-x-label { fill: #657068; font-size: 12px; }
         .chart-y-label { text-anchor: end; }
         .chart-x-label { text-anchor: middle; }
@@ -285,7 +303,7 @@
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>
             <p class="section-note">2026/06/19から2026/07/17まで、5週分</p>
-            <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="デーヴァラのスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">40</text><line class="chart-grid" x1="62" y1="166.0" x2="936" y2="166.0" /><text class="chart-y-label" x="50" y="170.0">45</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">50</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,223.1 280.5,139.5 499.0,171.0 717.5,170.9 936.0,148.8" /><circle class="chart-point" cx="62.0" cy="223.1" r="4"><title>2026/06/19: 42.96</title></circle><circle class="chart-point" cx="280.5" cy="139.5" r="4"><title>2026/06/26: 45.95</title></circle><circle class="chart-point" cx="499.0" cy="171.0" r="4"><title>2026/07/03: 44.82</title></circle><circle class="chart-point" cx="717.5" cy="170.9" r="4"><title>2026/07/10: 44.83</title></circle><circle class="chart-point" cx="936.0" cy="148.8" r="4"><title>2026/07/17: 45.61</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="148.8" r="6" /><text class="chart-latest-label" x="926.0" y="136.8" text-anchor="end">45.61</text><text class="chart-x-label" x="62.0" y="342">26/06/19</text><text class="chart-x-label" x="280.5" y="342">26/06/26</text><text class="chart-x-label" x="499.0" y="342">26/07/03</text><text class="chart-x-label" x="717.5" y="342">26/07/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
+            <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="デーヴァラのスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">40</text><line class="chart-grid" x1="62" y1="166.0" x2="936" y2="166.0" /><text class="chart-y-label" x="50" y="170.0">45</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">50</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><g class="chart-adjustment buff"><title>2026/07/16 上方修正</title><line class="chart-adjustment-line" x1="904.8" y1="26" x2="904.8" y2="306" /><circle class="chart-adjustment-point" cx="904.8" cy="306" r="4" /><text class="chart-adjustment-label" x="899.8" y="41" text-anchor="end">調整</text></g><polyline class="chart-line" points="62.0,223.1 280.5,139.5 499.0,171.0 717.5,170.9 936.0,148.8" /><circle class="chart-point" cx="62.0" cy="223.1" r="4"><title>2026/06/19: 42.96</title></circle><circle class="chart-point" cx="280.5" cy="139.5" r="4"><title>2026/06/26: 45.95</title></circle><circle class="chart-point" cx="499.0" cy="171.0" r="4"><title>2026/07/03: 44.82</title></circle><circle class="chart-point" cx="717.5" cy="170.9" r="4"><title>2026/07/10: 44.83</title></circle><circle class="chart-point" cx="936.0" cy="148.8" r="4"><title>2026/07/17: 45.61</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="148.8" r="6" /><text class="chart-latest-label" x="926.0" y="136.8" text-anchor="end">45.61</text><text class="chart-x-label" x="62.0" y="342">26/06/19</text><text class="chart-x-label" x="280.5" y="342">26/06/26</text><text class="chart-x-label" x="499.0" y="342">26/07/03</text><text class="chart-x-label" x="717.5" y="342">26/07/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
         </section>
 
         <section aria-labelledby="adjustment-title">
