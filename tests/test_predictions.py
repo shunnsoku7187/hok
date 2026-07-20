@@ -11,10 +11,10 @@ class PredictionPageTests(unittest.TestCase):
         prediction_round = load_prediction_round()
         predictions = prediction_round["predictions"]
 
-        self.assertEqual(6, len(predictions))
+        self.assertEqual(10, len(predictions))
         self.assertEqual(len(predictions), len({item["id"] for item in predictions}))
         self.assertEqual(
-            ["鉄板", "大本命", "本命", "対抗", "穴", "大穴"],
+            ["鉄板", "大本命", "本命", "対抗", "対抗", "単穴", "穴", "穴", "大穴", "大穴"],
             [item["rank"] for item in predictions],
         )
 

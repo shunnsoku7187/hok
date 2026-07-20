@@ -51,6 +51,28 @@
       "metrics": "Score 45.85 / Win 48.17% / Pick 0.33% / Ban 0.06%"
     },
     {
+      "id": "cirrus-buff",
+      "rank": "対抗",
+      "hero_name": "雲中君",
+      "english_name": "cirrus",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 52,
+      "reason": "C帯の49.43点でPick率0.18%。全期間モデルでは上方候補の上位で、昨年3月の下方修正後も利用率が低い状態です。",
+      "metrics": "Score 49.43 / Win 50.21% / Pick 0.18% / Ban 0.01%"
+    },
+    {
+      "id": "ukyotachibana-buff",
+      "rank": "単穴",
+      "hero_name": "橘右京",
+      "english_name": "ukyotachibana",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 48,
+      "reason": "C帯の48.15点でPick率0.38%。勝率は極端ではありませんが、存在感が薄く、小幅な底上げ候補に入りやすい位置です。",
+      "metrics": "Score 48.15 / Win 49.45% / Pick 0.38% / Ban 0.02%"
+    },
+    {
       "id": "garo-nerf",
       "rank": "穴",
       "hero_name": "伽羅",
@@ -60,6 +82,28 @@
       "probability": 43,
       "reason": "S帯の60.32点、勝率53.77%。突出したBAN率ではないものの、静かに高勝率を保つため数値調整の候補です。",
       "metrics": "Score 60.32 / Win 53.77% / Pick 1.29% / Ban 0.21%"
+    },
+    {
+      "id": "mengya-nerf",
+      "rank": "穴",
+      "hero_name": "蒙牙",
+      "english_name": "mengya",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 40,
+      "reason": "A帯の58.78点、勝率53.82%。Pick率とBAN率は低いものの勝率が高く、局所的な数値抑制が入る可能性があります。",
+      "metrics": "Score 58.78 / Win 53.82% / Pick 0.57% / Ban 0.01%"
+    },
+    {
+      "id": "annette-buff",
+      "rank": "大穴",
+      "hero_name": "アネット",
+      "english_name": "annette",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 35,
+      "reason": "C帯の49.57点でPick率0.59%。調整履歴がなく優先度は低めですが、ローム内の選択肢を広げる小幅上方なら候補です。",
+      "metrics": "Score 49.57 / Win 49.83% / Pick 0.59% / Ban 0.54%"
     },
     {
       "id": "dolia-buff",
