@@ -1,3 +1,4 @@
+import csv
 import json
 from pathlib import Path
 
@@ -6,6 +7,11 @@ from jinja2 import Environment, FileSystemLoader
 
 DEFAULT_CONFIG = Path("data/prediction_round.json")
 DEFAULT_OUTPUT = Path("list_html/predictions")
+
+
+def load_hero_names(path="names.csv"):
+    with Path(path).open(newline="", encoding="utf-8") as file:
+        return [row["Japanese"] for row in csv.DictReader(file) if row.get("Japanese")]
 
 
 def _normalized_html(content):
@@ -41,7 +47,7 @@ def generate_prediction_page(
 
     env = Environment(loader=FileSystemLoader("."), autoescape=True)
     template = env.get_template(template_path)
-    html = template.render(round=prediction_round)
+    html = template.render(round=prediction_round, hero_names=load_hero_names())
 
     (output_dir / "index.html").write_text(_normalized_html(html), encoding="utf-8")
     (output_dir / "round.json").write_text(

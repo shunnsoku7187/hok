@@ -448,9 +448,27 @@
             <p class="comment-lead">候補にいないヒーローの予想や、修正理由について自由に投稿できます。</p>
 
             <form class="comment-form" id="comment-form">
-                <label for="comment-nickname">ニックネーム <span>必須</span></label>
-                <input id="comment-nickname" name="nickname" type="text" maxlength="24" autocomplete="nickname" required>
-                <label for="comment-body">コメント <span>必須</span></label>
+                <label for="comment-nickname">ユーザーネーム <span class="required">必須</span></label>
+                <input id="comment-nickname" name="nickname" type="text" value="匿名希望" maxlength="24" autocomplete="nickname" required>
+                <div class="prediction-fields" id="prediction-fields">
+                    <label for="comment-hero">ヒーロー <span class="required">必須</span></label>
+                    <input id="comment-hero" name="hero" type="text" list="hero-name-options" maxlength="40" required>
+                    <datalist id="hero-name-options">
+                        <option value="バイロン"></option><option value="アーサー"></option><option value="達磨"></option><option value="姫小満"></option><option value="シャルロット"></option><option value="関羽"></option><option value="ムーラン"></option><option value="孔子"></option><option value="李信"></option><option value="劉邦"></option><option value="呂布"></option><option value="ナタク"></option><option value="孫策"></option><option value="夏侯惇"></option><option value="項羽"></option><option value="楊戩"></option><option value="アレン"></option><option value="鐘無艶"></option><option value="アンジェラ"></option><option value="扁鵲"></option><option value="不知火舞"></option><option value="ハイノ"></option><option value="妲己"></option><option value="貂蝉"></option><option value="干将・莫耶"></option><option value="漸離"></option><option value="太公望"></option><option value="ミレディ"></option><option value="女媧"></option><option value="上官婉児"></option><option value="王昭君"></option><option value="小喬"></option><option value="張良"></option><option value="甄姫"></option><option value="周瑜"></option><option value="エリン"></option><option value="白龍"></option><option value="百里守約"></option><option value="ルアンナ"></option><option value="仁傑"></option><option value="伽羅"></option><option value="公孫離"></option><option value="后羿"></option><option value="黄忠"></option><option value="李元芳"></option><option value="魯班7号"></option><option value="マルコ・ポーロ"></option><option value="アレッシオ"></option><option value="蒙牙"></option><option value="孫尚香"></option><option value="虞美人"></option><option value="孫悟空"></option><option value="孔明"></option><option value="アグド"></option><option value="大司命"></option><option value="バタフライ"></option><option value="ユンエイ"></option><option value="典韋"></option><option value="宮本武蔵"></option><option value="韓信"></option><option value="鏡"></option><option value="橘右京"></option><option value="モンキ"></option><option value="カイザー"></option><option value="蘭陵王"></option><option value="李白"></option><option value="劉備"></option><option value="ルナ"></option><option value="瀾"></option><option value="ナコルル"></option><option value="タイガー"></option><option value="司馬懿"></option><option value="アテナ"></option><option value="楊貴妃"></option><option value="曜"></option><option value="雲中君"></option><option value="趙雲"></option><option value="アタ"></option><option value="劉禅"></option><option value="蔡文姫"></option><option value="少司縁"></option><option value="大喬"></option><option value="東皇太一"></option><option value="鬼谷子"></option><option value="廉頗"></option><option value="ドリア"></option><option value="明世隠"></option><option value="墨子"></option><option value="孫臏"></option><option value="瑶"></option><option value="張飛"></option><option value="鐘馗"></option><option value="荘子"></option><option value="西施"></option><option value="ミーユエ"></option><option value="棋星"></option><option value="百里玄策"></option><option value="阿軻"></option><option value="啓"></option><option value="ハロルド"></option><option value="蒼"></option><option value="白起"></option><option value="ファーティフ"></option><option value="元流の子（マークスマン）"></option><option value="元流の子（タンク）"></option><option value="元流の子（メイジ）"></option><option value="影"></option><option value="フロレンティーノ"></option><option value="ロリアン"></option><option value="溟月"></option><option value="アネット"></option><option value="デーヴァラ"></option><option value="チーシャ"></option><option value="カルラ"></option><option value="元歌"></option><option value="ラプール"></option>
+                    </datalist>
+                    <span class="form-label" id="direction-label">予想される修正 <b class="required">必須</b></span>
+                    <div class="direction-options" role="radiogroup" aria-labelledby="direction-label">
+                        <label class="direction-option">
+                            <input type="radio" name="comment-direction" value="buff" checked>
+                            <span>上方修正</span>
+                        </label>
+                        <label class="direction-option">
+                            <input type="radio" name="comment-direction" value="nerf">
+                            <span>下方修正</span>
+                        </label>
+                    </div>
+                </div>
+                <label for="comment-body"><span id="comment-body-label">予想理由</span> <span class="required">必須</span></label>
                 <textarea id="comment-body" name="body" maxlength="500" rows="4" required></textarea>
                 <div class="reply-target" id="reply-target" hidden>
                     <span id="reply-target-name"></span>
@@ -458,7 +476,7 @@
                 </div>
                 <div class="comment-form-footer">
                     <small>500文字まで</small>
-                    <button id="comment-submit" type="submit">投稿する</button>
+                    <button id="comment-submit" type="submit">予想を投稿</button>
                 </div>
             </form>
 

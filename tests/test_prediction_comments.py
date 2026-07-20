@@ -88,7 +88,9 @@ class PredictionCommentApiTests(unittest.TestCase):
                 "round_id": ROUND_ID,
                 "action": "create",
                 "nickname": "予想屋A",
-                "body": "次は別のヒーローが上方修正されると思います。",
+                "hero": "ルナ",
+                "direction": "buff",
+                "body": "勝率が低いため上方修正されると思います。",
                 "parent_id": None,
                 "voter_token": "comment-voter-token-0001",
             },
@@ -96,6 +98,8 @@ class PredictionCommentApiTests(unittest.TestCase):
         root = created["comments"][-1]
         self.assertEqual(1, root["id"])
         self.assertEqual("予想屋A", root["nickname"])
+        self.assertEqual("ルナ", root["hero"])
+        self.assertEqual("buff", root["direction"])
 
         replied = self._request(
             "POST",
@@ -110,6 +114,8 @@ class PredictionCommentApiTests(unittest.TestCase):
         )
         reply = replied["comments"][-1]
         self.assertEqual(root["id"], reply["parent_id"])
+        self.assertIsNone(reply["hero"])
+        self.assertIsNone(reply["direction"])
 
         liked = self._request(
             "POST",
@@ -147,7 +153,28 @@ class PredictionCommentApiTests(unittest.TestCase):
         self.assertEqual("管理者により削除されました", deleted["comments"][0]["body"])
         self.assertEqual(root["id"], deleted["comments"][1]["parent_id"])
 
+        reply_deleted = self._request(
+            "POST",
+            payload={
+                "round_id": ROUND_ID,
+                "action": "admin_delete",
+                "comment_id": reply["id"],
+            },
+            admin_token=ADMIN_TOKEN,
+        )
+        self.assertNotIn(reply["id"], [item["id"] for item in reply_deleted["comments"]])
+
+        root_deleted = self._request(
+            "POST",
+            payload={
+                "round_id": ROUND_ID,
+                "action": "admin_delete",
+                "comment_id": root["id"],
+            },
+            admin_token=ADMIN_TOKEN,
+        )
+        self.assertEqual([], root_deleted["comments"])
+
 
 if __name__ == "__main__":
     unittest.main()
-

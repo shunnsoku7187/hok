@@ -6,7 +6,10 @@
     const roundId = document.body.dataset.roundId;
     const form = document.getElementById("comment-form");
     const nicknameInput = document.getElementById("comment-nickname");
+    const heroInput = document.getElementById("comment-hero");
     const bodyInput = document.getElementById("comment-body");
+    const bodyLabel = document.getElementById("comment-body-label");
+    const predictionFields = document.getElementById("prediction-fields");
     const submitButton = document.getElementById("comment-submit");
     const list = document.getElementById("comment-list");
     const count = document.getElementById("comment-count");
@@ -52,6 +55,20 @@
         return button;
     }
 
+    function setReplyTarget(comment = null) {
+        replyTarget = comment;
+        const replying = comment !== null;
+        predictionFields.hidden = replying;
+        heroInput.required = !replying;
+        bodyLabel.textContent = replying ? "コメント本文" : "予想理由";
+        submitButton.textContent = replying ? "返信する" : "予想を投稿";
+        document.getElementById("reply-target").hidden = !replying;
+        if (replying) {
+            document.getElementById("reply-target-name").textContent = `${comment.nickname} #${comment.id} へ返信`;
+            bodyInput.focus();
+        }
+    }
+
     function renderComment(comment, childrenByParent, depth = 0) {
         const item = document.createElement("article");
         item.className = `comment-item depth-${Math.min(depth, 2)}`;
@@ -68,11 +85,25 @@
         time.textContent = formatDate(comment.created_at);
         header.append(author, id, time);
 
+        if (comment.parent_id === null && comment.hero && comment.direction) {
+            const prediction = document.createElement("div");
+            prediction.className = "comment-prediction";
+            const hero = document.createElement("strong");
+            hero.textContent = comment.hero;
+            const direction = document.createElement("span");
+            direction.className = `comment-direction ${comment.direction}`;
+            direction.textContent = comment.direction === "buff" ? "上方修正" : "下方修正";
+            prediction.append(hero, direction);
+            item.append(header, prediction);
+        } else {
+            item.append(header);
+        }
+
         const body = document.createElement("p");
         body.className = "comment-body";
         body.textContent = comment.body;
 
-        item.append(header, body);
+        item.append(body);
         if (!comment.deleted) {
             const actions = document.createElement("div");
             actions.className = "comment-actions";
@@ -82,12 +113,7 @@
                 () => sendAction({ action: "like", comment_id: comment.id }),
             );
             like.setAttribute("aria-pressed", String(comment.liked_by_me));
-            const reply = actionButton("返信", "comment-action", () => {
-                replyTarget = comment;
-                document.getElementById("reply-target-name").textContent = `${comment.nickname} #${comment.id} へ返信`;
-                document.getElementById("reply-target").hidden = false;
-                bodyInput.focus();
-            });
+            const reply = actionButton("返信", "comment-action", () => setReplyTarget(comment));
             actions.append(like, reply);
             item.append(actions);
         } else {
@@ -166,21 +192,23 @@
             action: "create",
             nickname: nicknameInput.value,
             body: bodyInput.value,
+            hero: replyTarget ? null : heroInput.value,
+            direction: replyTarget
+                ? null
+                : form.querySelector('input[name="comment-direction"]:checked')?.value,
             parent_id: replyTarget?.id ?? null,
         });
         if (success) {
             bodyInput.value = "";
-            replyTarget = null;
-            document.getElementById("reply-target").hidden = true;
+            if (!replyTarget) heroInput.value = "";
+            setReplyTarget();
         }
     });
 
     document.getElementById("reply-cancel").addEventListener("click", () => {
-        replyTarget = null;
-        document.getElementById("reply-target").hidden = true;
+        setReplyTarget();
     });
 
     fetchComments();
     window.setInterval(fetchComments, POLL_INTERVAL_MS);
 })();
-

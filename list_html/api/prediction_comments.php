@@ -63,6 +63,17 @@ function clean_nickname($value): ?string
     return $length >= 1 && $length <= 24 ? $value : null;
 }
 
+function clean_hero_name($value): ?string
+{
+    if (!is_string($value)) {
+        return null;
+    }
+    $value = preg_replace('/[\x00-\x1F\x7F]/u', '', $value);
+    $value = is_string($value) ? trim(preg_replace('/\s+/u', ' ', $value) ?? '') : '';
+    $length = text_length($value);
+    return $length >= 1 && $length <= 40 ? $value : null;
+}
+
 function clean_body($value): ?string
 {
     if (!is_string($value)) {
@@ -148,6 +159,8 @@ function public_state(array $state, ?string $voterHash): array
             'parent_id' => isset($comment['parent_id']) ? (int) $comment['parent_id'] : null,
             'nickname' => $deleted ? '削除済み' : (string) ($comment['nickname'] ?? ''),
             'body' => $deleted ? '管理者により削除されました' : (string) ($comment['body'] ?? ''),
+            'hero' => $deleted ? null : ($comment['hero'] ?? null),
+            'direction' => $deleted ? null : ($comment['direction'] ?? null),
             'created_at' => (string) ($comment['created_at'] ?? ''),
             'updated_at' => $comment['updated_at'] ?? null,
             'deleted' => $deleted,
@@ -228,11 +241,21 @@ if ($method === 'POST') {
             fclose($handle);
             respond(404, ['error' => 'コメントが見つかりません']);
         }
-        $state['comments'][$index]['deleted'] = true;
-        $state['comments'][$index]['nickname'] = '';
-        $state['comments'][$index]['body'] = '';
-        $state['comments'][$index]['likes'] = [];
-        $state['comments'][$index]['updated_at'] = gmdate('c');
+        $hasReplies = count(array_filter(
+            $state['comments'],
+            static fn(array $comment): bool => (int) ($comment['parent_id'] ?? 0) === $commentId
+        )) > 0;
+        if ($hasReplies) {
+            $state['comments'][$index]['deleted'] = true;
+            $state['comments'][$index]['nickname'] = '';
+            $state['comments'][$index]['body'] = '';
+            $state['comments'][$index]['hero'] = null;
+            $state['comments'][$index]['direction'] = null;
+            $state['comments'][$index]['likes'] = [];
+            $state['comments'][$index]['updated_at'] = gmdate('c');
+        } else {
+            array_splice($state['comments'], $index, 1);
+        }
     } elseif ($action === 'create') {
         if ($voterHash === null) {
             respond(400, ['error' => '投稿者IDが不正です']);
@@ -245,12 +268,8 @@ if ($method === 'POST') {
             respond(429, ['error' => '連続投稿はできません。少し待ってから投稿してください']);
         }
         $nickname = clean_nickname($payload['nickname'] ?? null);
-        $body = clean_body($payload['body'] ?? null);
         if ($nickname === null) {
-            respond(400, ['error' => 'ニックネームは1〜24文字で入力してください']);
-        }
-        if ($body === null) {
-            respond(400, ['error' => 'コメントは1〜500文字、URLは2件以内で入力してください']);
+            respond(400, ['error' => 'ユーザーネームは1〜24文字で入力してください']);
         }
         $parentId = isset($payload['parent_id']) && $payload['parent_id'] !== null
             ? (int) $payload['parent_id']
@@ -264,6 +283,23 @@ if ($method === 'POST') {
                 respond(400, ['error' => '返信は2階層までです']);
             }
         }
+        $body = clean_body($payload['body'] ?? null);
+        if ($body === null) {
+            $fieldName = $parentId === null ? '予想理由' : 'コメント本文';
+            respond(400, ['error' => $fieldName . 'は1〜500文字、URLは2件以内で入力してください']);
+        }
+        $hero = null;
+        $direction = null;
+        if ($parentId === null) {
+            $hero = clean_hero_name($payload['hero'] ?? null);
+            $direction = $payload['direction'] ?? null;
+            if ($hero === null) {
+                respond(400, ['error' => 'ヒーローは1〜40文字で入力してください']);
+            }
+            if (!in_array($direction, ['buff', 'nerf'], true)) {
+                respond(400, ['error' => '予想される修正を選択してください']);
+            }
+        }
         $commentId = (int) $state['next_id'];
         $state['next_id'] = $commentId + 1;
         $state['comments'][] = [
@@ -271,6 +307,8 @@ if ($method === 'POST') {
             'parent_id' => $parentId,
             'nickname' => $nickname,
             'body' => $body,
+            'hero' => $hero,
+            'direction' => $direction,
             'created_at' => gmdate('c'),
             'updated_at' => null,
             'deleted' => false,
@@ -315,4 +353,3 @@ $response = public_state($state, $voterHash);
 flock($handle, LOCK_UN);
 fclose($handle);
 respond(200, $response);
-
