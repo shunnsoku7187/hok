@@ -130,6 +130,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.comment-admin-token
 env/
 venv/
 ENV/

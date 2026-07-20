@@ -1,0 +1,186 @@
+(() => {
+    "use strict";
+
+    const API_URL = "../api/prediction_comments.php";
+    const POLL_INTERVAL_MS = 10000;
+    const roundId = document.body.dataset.roundId;
+    const form = document.getElementById("comment-form");
+    const nicknameInput = document.getElementById("comment-nickname");
+    const bodyInput = document.getElementById("comment-body");
+    const submitButton = document.getElementById("comment-submit");
+    const list = document.getElementById("comment-list");
+    const count = document.getElementById("comment-count");
+    const status = document.getElementById("comment-status");
+    let requestInFlight = false;
+    let replyTarget = null;
+
+    function voterToken() {
+        const storageKey = "hok-prediction-voter-token";
+        let token = localStorage.getItem(storageKey);
+        if (!token) {
+            token = crypto.randomUUID
+                ? crypto.randomUUID()
+                : `${Date.now()}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`;
+            localStorage.setItem(storageKey, token);
+        }
+        return token;
+    }
+
+    const token = voterToken();
+
+    function formatDate(value) {
+        const date = new Date(value);
+        return Number.isNaN(date.getTime())
+            ? ""
+            : new Intl.DateTimeFormat("ja-JP", {
+                year: "numeric", month: "2-digit", day: "2-digit",
+                hour: "2-digit", minute: "2-digit",
+            }).format(date);
+    }
+
+    function setStatus(message, isError = false) {
+        status.textContent = message;
+        status.classList.toggle("error", isError);
+    }
+
+    function actionButton(label, className, onClick) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = className;
+        button.textContent = label;
+        button.addEventListener("click", onClick);
+        return button;
+    }
+
+    function renderComment(comment, childrenByParent, depth = 0) {
+        const item = document.createElement("article");
+        item.className = `comment-item depth-${Math.min(depth, 2)}`;
+        item.dataset.commentId = String(comment.id);
+
+        const header = document.createElement("div");
+        header.className = "comment-meta";
+        const author = document.createElement("strong");
+        author.textContent = comment.nickname;
+        const id = document.createElement("span");
+        id.textContent = `#${comment.id}`;
+        const time = document.createElement("time");
+        time.dateTime = comment.created_at;
+        time.textContent = formatDate(comment.created_at);
+        header.append(author, id, time);
+
+        const body = document.createElement("p");
+        body.className = "comment-body";
+        body.textContent = comment.body;
+
+        item.append(header, body);
+        if (!comment.deleted) {
+            const actions = document.createElement("div");
+            actions.className = "comment-actions";
+            const like = actionButton(
+                `賛成 ${comment.like_count}`,
+                `comment-action like-action${comment.liked_by_me ? " selected" : ""}`,
+                () => sendAction({ action: "like", comment_id: comment.id }),
+            );
+            like.setAttribute("aria-pressed", String(comment.liked_by_me));
+            const reply = actionButton("返信", "comment-action", () => {
+                replyTarget = comment;
+                document.getElementById("reply-target-name").textContent = `${comment.nickname} #${comment.id} へ返信`;
+                document.getElementById("reply-target").hidden = false;
+                bodyInput.focus();
+            });
+            actions.append(like, reply);
+            item.append(actions);
+        } else {
+            item.classList.add("deleted");
+        }
+
+        const replies = childrenByParent.get(comment.id) || [];
+        if (replies.length) {
+            const replyList = document.createElement("div");
+            replyList.className = "comment-replies";
+            replies.forEach((child) => replyList.append(renderComment(child, childrenByParent, depth + 1)));
+            item.append(replyList);
+        }
+        return item;
+    }
+
+    function render(data) {
+        count.textContent = `${data.comment_count}件`;
+        list.replaceChildren();
+        const childrenByParent = new Map();
+        data.comments.forEach((comment) => {
+            const key = comment.parent_id || 0;
+            if (!childrenByParent.has(key)) childrenByParent.set(key, []);
+            childrenByParent.get(key).push(comment);
+        });
+        const roots = childrenByParent.get(0) || [];
+        roots.slice().reverse().forEach((comment) => list.append(renderComment(comment, childrenByParent)));
+        if (!roots.length) {
+            const empty = document.createElement("p");
+            empty.className = "comment-empty";
+            empty.textContent = "まだコメントはありません。最初の予想を書いてみましょう。";
+            list.append(empty);
+        }
+        setStatus("コメントを更新しました");
+    }
+
+    async function fetchComments() {
+        if (requestInFlight) return;
+        requestInFlight = true;
+        try {
+            const url = `${API_URL}?round_id=${encodeURIComponent(roundId)}&voter_token=${encodeURIComponent(token)}&_=${Date.now()}`;
+            const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
+            const data = await response.json();
+            if (!response.ok) throw new Error(data.error || "コメントを取得できませんでした");
+            render(data);
+        } catch (error) {
+            setStatus(error.message, true);
+        } finally {
+            requestInFlight = false;
+        }
+    }
+
+    async function sendAction(action) {
+        submitButton.disabled = true;
+        try {
+            const response = await fetch(API_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
+                body: JSON.stringify({ round_id: roundId, voter_token: token, ...action }),
+            });
+            const data = await response.json();
+            if (!response.ok) throw new Error(data.error || "操作を完了できませんでした");
+            render(data);
+            return true;
+        } catch (error) {
+            setStatus(error.message, true);
+            return false;
+        } finally {
+            submitButton.disabled = false;
+        }
+    }
+
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const success = await sendAction({
+            action: "create",
+            nickname: nicknameInput.value,
+            body: bodyInput.value,
+            parent_id: replyTarget?.id ?? null,
+        });
+        if (success) {
+            bodyInput.value = "";
+            replyTarget = null;
+            document.getElementById("reply-target").hidden = true;
+        }
+    });
+
+    document.getElementById("reply-cancel").addEventListener("click", () => {
+        replyTarget = null;
+        document.getElementById("reply-target").hidden = true;
+    });
+
+    fetchComments();
+    window.setInterval(fetchComments, POLL_INTERVAL_MS);
+})();
+

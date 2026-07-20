@@ -58,6 +58,7 @@ jobs:
       - name: Run tests
         run: |
           php -l list_html/api/prediction_votes.php
+          php -l list_html/api/prediction_comments.php
           python -m unittest discover -s tests -v
 
       - name: Commit generated files

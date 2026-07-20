@@ -29,6 +29,8 @@ class PredictionPageTests(unittest.TestCase):
         self.assertIn("次回バランス調整予想", html)
         self.assertIn("data-prediction-id=\"lixin-nerf\"", html)
         self.assertIn("../hok_pics/lixin.png", html)
+        self.assertIn("id=\"comment-form\"", html)
+        self.assertIn("src=\"comments.js\"", html)
         self.assertEqual("balance-2026-07-30", deployed_round["round_id"])
 
 
