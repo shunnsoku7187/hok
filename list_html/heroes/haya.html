@@ -188,6 +188,37 @@
         .chart-y-label { text-anchor: end; }
         .chart-x-label { text-anchor: middle; }
         .chart-latest-label { fill: #145f30; font-size: 14px; font-weight: 700; }
+        .history-disclosure {
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .history-summary {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 24px;
+            align-items: center;
+            min-height: 62px;
+            padding: 14px 18px;
+            cursor: pointer;
+            list-style: none;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .history-summary::-webkit-details-marker { display: none; }
+        .history-summary::after {
+            color: var(--muted);
+            content: "›";
+            font-size: 25px;
+            line-height: 1;
+            transform-origin: center;
+            transition: transform 150ms ease;
+        }
+        .history-summary:hover { background: #edf3ee; }
+        .history-summary:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .history-disclosure[open] .history-summary::after { transform: rotate(90deg); }
+        .history-hide-label { display: none; }
+        .history-disclosure[open] .history-show-label { display: none; }
+        .history-disclosure[open] .history-hide-label { display: inline; }
         .table-wrap { overflow-x: auto; border-top: 1px solid var(--line); }
         table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 14px; }
         th, td { border-bottom: 1px solid var(--line); padding: 12px 14px; text-align: right; white-space: nowrap; }
@@ -268,66 +299,72 @@
         <section aria-labelledby="history-title">
             <h2 id="history-title">週次履歴</h2>
             <p class="section-note">新しい週から順に表示</p>
-            <div class="table-wrap">
-                <table>
-                    <thead><tr><th>日付</th><th>スコア</th><th>Tier</th><th>順位</th><th>勝率</th><th>使用率</th><th>BAN率</th></tr></thead>
-                    <tbody>
+            <details class="history-disclosure">
+                <summary class="history-summary">
+                    <span class="history-show-label">週次履歴を表示</span>
+                    <span class="history-hide-label">週次履歴を非表示</span>
+                </summary>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>日付</th><th>スコア</th><th>Tier</th><th>順位</th><th>勝率</th><th>使用率</th><th>BAN率</th></tr></thead>
+                        <tbody>
 
-                        <tr><td>2026/07/17</td><td>50.65</td><td>B</td><td>74 / 116</td><td>49.34%</td><td>0.96%</td><td>2.29%</td></tr>
+                            <tr><td>2026/07/17</td><td>50.65</td><td>B</td><td>74 / 116</td><td>49.34%</td><td>0.96%</td><td>2.29%</td></tr>
 
-                        <tr><td>2026/07/10</td><td>49.95</td><td>C</td><td>73 / 116</td><td>49.02%</td><td>0.98%</td><td>2.08%</td></tr>
+                            <tr><td>2026/07/10</td><td>49.95</td><td>C</td><td>73 / 116</td><td>49.02%</td><td>0.98%</td><td>2.08%</td></tr>
 
-                        <tr><td>2026/07/03</td><td>49.82</td><td>C</td><td>76 / 116</td><td>49.18%</td><td>0.87%</td><td>1.84%</td></tr>
+                            <tr><td>2026/07/03</td><td>49.82</td><td>C</td><td>76 / 116</td><td>49.18%</td><td>0.87%</td><td>1.84%</td></tr>
 
-                        <tr><td>2026/06/26</td><td>50.63</td><td>B</td><td>66 / 116</td><td>49.37%</td><td>1.08%</td><td>1.81%</td></tr>
+                            <tr><td>2026/06/26</td><td>50.63</td><td>B</td><td>66 / 116</td><td>49.37%</td><td>1.08%</td><td>1.81%</td></tr>
 
-                        <tr><td>2026/06/19</td><td>52.76</td><td>B</td><td>44 / 116</td><td>50.31%</td><td>1.03%</td><td>2.35%</td></tr>
+                            <tr><td>2026/06/19</td><td>52.76</td><td>B</td><td>44 / 116</td><td>50.31%</td><td>1.03%</td><td>2.35%</td></tr>
 
-                        <tr><td>2026/06/12</td><td>53.54</td><td>B</td><td>31 / 112</td><td>50.59%</td><td>0.93%</td><td>2.99%</td></tr>
+                            <tr><td>2026/06/12</td><td>53.54</td><td>B</td><td>31 / 112</td><td>50.59%</td><td>0.93%</td><td>2.99%</td></tr>
 
-                        <tr><td>2026/06/05</td><td>52.70</td><td>B</td><td>44 / 112</td><td>50.20%</td><td>0.92%</td><td>2.99%</td></tr>
+                            <tr><td>2026/06/05</td><td>52.70</td><td>B</td><td>44 / 112</td><td>50.20%</td><td>0.92%</td><td>2.99%</td></tr>
 
-                        <tr><td>2026/05/29</td><td>51.90</td><td>B</td><td>59 / 112</td><td>49.78%</td><td>0.93%</td><td>3.01%</td></tr>
+                            <tr><td>2026/05/29</td><td>51.90</td><td>B</td><td>59 / 112</td><td>49.78%</td><td>0.93%</td><td>3.01%</td></tr>
 
-                        <tr><td>2026/05/22</td><td>51.97</td><td>B</td><td>61 / 112</td><td>49.78%</td><td>0.94%</td><td>3.08%</td></tr>
+                            <tr><td>2026/05/22</td><td>51.97</td><td>B</td><td>61 / 112</td><td>49.78%</td><td>0.94%</td><td>3.08%</td></tr>
 
-                        <tr><td>2026/05/15</td><td>52.08</td><td>B</td><td>59 / 112</td><td>49.81%</td><td>0.97%</td><td>3.06%</td></tr>
+                            <tr><td>2026/05/15</td><td>52.08</td><td>B</td><td>59 / 112</td><td>49.81%</td><td>0.97%</td><td>3.06%</td></tr>
 
-                        <tr><td>2026/05/08</td><td>51.94</td><td>B</td><td>58 / 112</td><td>49.74%</td><td>0.99%</td><td>2.99%</td></tr>
+                            <tr><td>2026/05/08</td><td>51.94</td><td>B</td><td>58 / 112</td><td>49.74%</td><td>0.99%</td><td>2.99%</td></tr>
 
-                        <tr><td>2026/05/01</td><td>52.39</td><td>B</td><td>51 / 112</td><td>49.81%</td><td>1.09%</td><td>3.11%</td></tr>
+                            <tr><td>2026/05/01</td><td>52.39</td><td>B</td><td>51 / 112</td><td>49.81%</td><td>1.09%</td><td>3.11%</td></tr>
 
-                        <tr><td>2026/04/24</td><td>52.24</td><td>B</td><td>55 / 112</td><td>49.71%</td><td>1.10%</td><td>3.14%</td></tr>
+                            <tr><td>2026/04/24</td><td>52.24</td><td>B</td><td>55 / 112</td><td>49.71%</td><td>1.10%</td><td>3.14%</td></tr>
 
-                        <tr><td>2026/04/17</td><td>52.80</td><td>B</td><td>52 / 112</td><td>49.89%</td><td>1.21%</td><td>3.06%</td></tr>
+                            <tr><td>2026/04/17</td><td>52.80</td><td>B</td><td>52 / 112</td><td>49.89%</td><td>1.21%</td><td>3.06%</td></tr>
 
-                        <tr><td>2026/04/10</td><td>52.48</td><td>B</td><td>49 / 112</td><td>49.73%</td><td>1.25%</td><td>2.92%</td></tr>
+                            <tr><td>2026/04/10</td><td>52.48</td><td>B</td><td>49 / 112</td><td>49.73%</td><td>1.25%</td><td>2.92%</td></tr>
 
-                        <tr><td>2026/04/03</td><td>51.66</td><td>B</td><td>58 / 112</td><td>49.16%</td><td>1.26%</td><td>3.23%</td></tr>
+                            <tr><td>2026/04/03</td><td>51.66</td><td>B</td><td>58 / 112</td><td>49.16%</td><td>1.26%</td><td>3.23%</td></tr>
 
-                        <tr><td>2026/03/27</td><td>52.14</td><td>B</td><td>54 / 112</td><td>49.19%</td><td>1.28%</td><td>3.73%</td></tr>
+                            <tr><td>2026/03/27</td><td>52.14</td><td>B</td><td>54 / 112</td><td>49.19%</td><td>1.28%</td><td>3.73%</td></tr>
 
-                        <tr><td>2026/03/20</td><td>52.14</td><td>B</td><td>54 / 112</td><td>49.19%</td><td>1.28%</td><td>3.73%</td></tr>
+                            <tr><td>2026/03/20</td><td>52.14</td><td>B</td><td>54 / 112</td><td>49.19%</td><td>1.28%</td><td>3.73%</td></tr>
 
-                        <tr><td>2026/03/13</td><td>53.03</td><td>B</td><td>46 / 112</td><td>49.17%</td><td>1.86%</td><td>3.17%</td></tr>
+                            <tr><td>2026/03/13</td><td>53.03</td><td>B</td><td>46 / 112</td><td>49.17%</td><td>1.86%</td><td>3.17%</td></tr>
 
-                        <tr><td>2026/03/06</td><td>51.49</td><td>B</td><td>59 / 111</td><td>49.20%</td><td>1.26%</td><td>2.93%</td></tr>
+                            <tr><td>2026/03/06</td><td>51.49</td><td>B</td><td>59 / 111</td><td>49.20%</td><td>1.26%</td><td>2.93%</td></tr>
 
-                        <tr><td>2026/02/27</td><td>51.49</td><td>B</td><td>59 / 111</td><td>49.20%</td><td>1.26%</td><td>2.93%</td></tr>
+                            <tr><td>2026/02/27</td><td>51.49</td><td>B</td><td>59 / 111</td><td>49.20%</td><td>1.26%</td><td>2.93%</td></tr>
 
-                        <tr><td>2026/02/20</td><td>51.01</td><td>B</td><td>63 / 111</td><td>48.89%</td><td>1.30%</td><td>2.91%</td></tr>
+                            <tr><td>2026/02/20</td><td>51.01</td><td>B</td><td>63 / 111</td><td>48.89%</td><td>1.30%</td><td>2.91%</td></tr>
 
-                        <tr><td>2026/02/13</td><td>50.66</td><td>B</td><td>66 / 111</td><td>48.43%</td><td>1.42%</td><td>3.12%</td></tr>
+                            <tr><td>2026/02/13</td><td>50.66</td><td>B</td><td>66 / 111</td><td>48.43%</td><td>1.42%</td><td>3.12%</td></tr>
 
-                        <tr><td>2026/02/06</td><td>50.66</td><td>B</td><td>65 / 111</td><td>48.03%</td><td>1.64%</td><td>3.31%</td></tr>
+                            <tr><td>2026/02/06</td><td>50.66</td><td>B</td><td>65 / 111</td><td>48.03%</td><td>1.64%</td><td>3.31%</td></tr>
 
-                        <tr><td>2026/01/30</td><td>50.48</td><td>B</td><td>66 / 111</td><td>47.16%</td><td>2.50%</td><td>3.10%</td></tr>
+                            <tr><td>2026/01/30</td><td>50.48</td><td>B</td><td>66 / 111</td><td>47.16%</td><td>2.50%</td><td>3.10%</td></tr>
 
-                        <tr><td>2026/01/23</td><td>44.25</td><td>D</td><td>108 / 111</td><td>46.18%</td><td>0.97%</td><td>0.61%</td></tr>
+                            <tr><td>2026/01/23</td><td>44.25</td><td>D</td><td>108 / 111</td><td>46.18%</td><td>0.97%</td><td>0.61%</td></tr>
 
-                    </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
         </section>
     </main>
     <footer><div class="footer-inner">HOK Score List / 最終更新 2026/07/17</div></footer>

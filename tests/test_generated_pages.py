@@ -63,6 +63,12 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn("上方修正", chicha)
         self.assertLess(chicha.index('id="score-trend-title"'), chicha.index('id="adjustment-title"'))
         self.assertLess(chicha.index('id="adjustment-title"'), chicha.index('id="history-title"'))
+        self.assertIn('<details class="history-disclosure">', chicha)
+        self.assertIn('<summary class="history-summary">', chicha)
+        self.assertNotIn('<details class="history-disclosure" open>', chicha)
+        self.assertIn("週次履歴を表示", chicha)
+        self.assertIn("週次履歴を非表示", chicha)
+        self.assertGreater(chicha.index("<table>"), chicha.index('<details class="history-disclosure">'))
         self.assertIn("HOKCAMPに掲載された能力調整はありません。", garuda)
 
 

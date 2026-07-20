@@ -188,6 +188,37 @@
         .chart-y-label { text-anchor: end; }
         .chart-x-label { text-anchor: middle; }
         .chart-latest-label { fill: #145f30; font-size: 14px; font-weight: 700; }
+        .history-disclosure {
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .history-summary {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 24px;
+            align-items: center;
+            min-height: 62px;
+            padding: 14px 18px;
+            cursor: pointer;
+            list-style: none;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .history-summary::-webkit-details-marker { display: none; }
+        .history-summary::after {
+            color: var(--muted);
+            content: "›";
+            font-size: 25px;
+            line-height: 1;
+            transform-origin: center;
+            transition: transform 150ms ease;
+        }
+        .history-summary:hover { background: #edf3ee; }
+        .history-summary:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .history-disclosure[open] .history-summary::after { transform: rotate(90deg); }
+        .history-hide-label { display: none; }
+        .history-disclosure[open] .history-show-label { display: none; }
+        .history-disclosure[open] .history-hide-label { display: inline; }
         .table-wrap { overflow-x: auto; border-top: 1px solid var(--line); }
         table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 14px; }
         th, td { border-bottom: 1px solid var(--line); padding: 12px 14px; text-align: right; white-space: nowrap; }
@@ -340,152 +371,158 @@
         <section aria-labelledby="history-title">
             <h2 id="history-title">週次履歴</h2>
             <p class="section-note">新しい週から順に表示</p>
-            <div class="table-wrap">
-                <table>
-                    <thead><tr><th>日付</th><th>スコア</th><th>Tier</th><th>順位</th><th>勝率</th><th>使用率</th><th>BAN率</th></tr></thead>
-                    <tbody>
+            <details class="history-disclosure">
+                <summary class="history-summary">
+                    <span class="history-show-label">週次履歴を表示</span>
+                    <span class="history-hide-label">週次履歴を非表示</span>
+                </summary>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>日付</th><th>スコア</th><th>Tier</th><th>順位</th><th>勝率</th><th>使用率</th><th>BAN率</th></tr></thead>
+                        <tbody>
 
-                        <tr><td>2026/07/17</td><td>51.28</td><td>B</td><td>59 / 116</td><td>50.71%</td><td>0.74%</td><td>0.07%</td></tr>
+                            <tr><td>2026/07/17</td><td>51.28</td><td>B</td><td>59 / 116</td><td>50.71%</td><td>0.74%</td><td>0.07%</td></tr>
 
-                        <tr><td>2026/07/10</td><td>51.20</td><td>B</td><td>59 / 116</td><td>50.67%</td><td>0.74%</td><td>0.07%</td></tr>
+                            <tr><td>2026/07/10</td><td>51.20</td><td>B</td><td>59 / 116</td><td>50.67%</td><td>0.74%</td><td>0.07%</td></tr>
 
-                        <tr><td>2026/07/03</td><td>50.75</td><td>B</td><td>63 / 116</td><td>50.55%</td><td>0.63%</td><td>0.07%</td></tr>
+                            <tr><td>2026/07/03</td><td>50.75</td><td>B</td><td>63 / 116</td><td>50.55%</td><td>0.63%</td><td>0.07%</td></tr>
 
-                        <tr><td>2026/06/26</td><td>52.13</td><td>B</td><td>52 / 116</td><td>51.07%</td><td>0.77%</td><td>0.07%</td></tr>
+                            <tr><td>2026/06/26</td><td>52.13</td><td>B</td><td>52 / 116</td><td>51.07%</td><td>0.77%</td><td>0.07%</td></tr>
 
-                        <tr><td>2026/06/19</td><td>52.12</td><td>B</td><td>51 / 116</td><td>51.05%</td><td>0.78%</td><td>0.09%</td></tr>
+                            <tr><td>2026/06/19</td><td>52.12</td><td>B</td><td>51 / 116</td><td>51.05%</td><td>0.78%</td><td>0.09%</td></tr>
 
-                        <tr><td>2026/06/12</td><td>51.94</td><td>B</td><td>51 / 112</td><td>50.92%</td><td>0.86%</td><td>0.10%</td></tr>
+                            <tr><td>2026/06/12</td><td>51.94</td><td>B</td><td>51 / 112</td><td>50.92%</td><td>0.86%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/06/05</td><td>52.19</td><td>B</td><td>52 / 112</td><td>51.06%</td><td>0.83%</td><td>0.10%</td></tr>
+                            <tr><td>2026/06/05</td><td>52.19</td><td>B</td><td>52 / 112</td><td>51.06%</td><td>0.83%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/05/29</td><td>52.68</td><td>B</td><td>45 / 112</td><td>51.28%</td><td>0.83%</td><td>0.10%</td></tr>
+                            <tr><td>2026/05/29</td><td>52.68</td><td>B</td><td>45 / 112</td><td>51.28%</td><td>0.83%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/05/22</td><td>52.49</td><td>B</td><td>46 / 112</td><td>51.17%</td><td>0.86%</td><td>0.10%</td></tr>
+                            <tr><td>2026/05/22</td><td>52.49</td><td>B</td><td>46 / 112</td><td>51.17%</td><td>0.86%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/05/15</td><td>52.22</td><td>B</td><td>54 / 112</td><td>51.05%</td><td>0.86%</td><td>0.10%</td></tr>
+                            <tr><td>2026/05/15</td><td>52.22</td><td>B</td><td>54 / 112</td><td>51.05%</td><td>0.86%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/05/08</td><td>52.02</td><td>B</td><td>56 / 112</td><td>50.96%</td><td>0.86%</td><td>0.09%</td></tr>
+                            <tr><td>2026/05/08</td><td>52.02</td><td>B</td><td>56 / 112</td><td>50.96%</td><td>0.86%</td><td>0.09%</td></tr>
 
-                        <tr><td>2026/05/01</td><td>52.76</td><td>B</td><td>48 / 112</td><td>51.27%</td><td>0.88%</td><td>0.10%</td></tr>
+                            <tr><td>2026/05/01</td><td>52.76</td><td>B</td><td>48 / 112</td><td>51.27%</td><td>0.88%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/04/24</td><td>52.47</td><td>B</td><td>53 / 112</td><td>51.15%</td><td>0.87%</td><td>0.11%</td></tr>
+                            <tr><td>2026/04/24</td><td>52.47</td><td>B</td><td>53 / 112</td><td>51.15%</td><td>0.87%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/04/17</td><td>52.25</td><td>B</td><td>56 / 112</td><td>51.03%</td><td>0.89%</td><td>0.11%</td></tr>
+                            <tr><td>2026/04/17</td><td>52.25</td><td>B</td><td>56 / 112</td><td>51.03%</td><td>0.89%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/04/10</td><td>52.34</td><td>B</td><td>51 / 112</td><td>51.04%</td><td>0.92%</td><td>0.12%</td></tr>
+                            <tr><td>2026/04/10</td><td>52.34</td><td>B</td><td>51 / 112</td><td>51.04%</td><td>0.92%</td><td>0.12%</td></tr>
 
-                        <tr><td>2026/04/03</td><td>52.16</td><td>B</td><td>53 / 112</td><td>50.97%</td><td>0.91%</td><td>0.12%</td></tr>
+                            <tr><td>2026/04/03</td><td>52.16</td><td>B</td><td>53 / 112</td><td>50.97%</td><td>0.91%</td><td>0.12%</td></tr>
 
-                        <tr><td>2026/03/27</td><td>52.57</td><td>B</td><td>45 / 112</td><td>51.22%</td><td>0.84%</td><td>0.11%</td></tr>
+                            <tr><td>2026/03/27</td><td>52.57</td><td>B</td><td>45 / 112</td><td>51.22%</td><td>0.84%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/03/20</td><td>52.57</td><td>B</td><td>45 / 112</td><td>51.22%</td><td>0.84%</td><td>0.11%</td></tr>
+                            <tr><td>2026/03/20</td><td>52.57</td><td>B</td><td>45 / 112</td><td>51.22%</td><td>0.84%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/03/13</td><td>52.36</td><td>B</td><td>54 / 112</td><td>51.11%</td><td>0.86%</td><td>0.11%</td></tr>
+                            <tr><td>2026/03/13</td><td>52.36</td><td>B</td><td>54 / 112</td><td>51.11%</td><td>0.86%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/03/06</td><td>52.26</td><td>B</td><td>50 / 111</td><td>51.08%</td><td>0.85%</td><td>0.11%</td></tr>
+                            <tr><td>2026/03/06</td><td>52.26</td><td>B</td><td>50 / 111</td><td>51.08%</td><td>0.85%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/02/27</td><td>52.26</td><td>B</td><td>50 / 111</td><td>51.08%</td><td>0.85%</td><td>0.11%</td></tr>
+                            <tr><td>2026/02/27</td><td>52.26</td><td>B</td><td>50 / 111</td><td>51.08%</td><td>0.85%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/02/20</td><td>52.26</td><td>B</td><td>52 / 111</td><td>51.11%</td><td>0.82%</td><td>0.10%</td></tr>
+                            <tr><td>2026/02/20</td><td>52.26</td><td>B</td><td>52 / 111</td><td>51.11%</td><td>0.82%</td><td>0.10%</td></tr>
 
-                        <tr><td>2026/02/13</td><td>51.53</td><td>B</td><td>58 / 111</td><td>50.73%</td><td>0.87%</td><td>0.11%</td></tr>
+                            <tr><td>2026/02/13</td><td>51.53</td><td>B</td><td>58 / 111</td><td>50.73%</td><td>0.87%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/02/06</td><td>50.94</td><td>B</td><td>63 / 111</td><td>50.44%</td><td>0.88%</td><td>0.11%</td></tr>
+                            <tr><td>2026/02/06</td><td>50.94</td><td>B</td><td>63 / 111</td><td>50.44%</td><td>0.88%</td><td>0.11%</td></tr>
 
-                        <tr><td>2026/01/30</td><td>51.54</td><td>B</td><td>60 / 111</td><td>50.74%</td><td>0.86%</td><td>0.12%</td></tr>
+                            <tr><td>2026/01/30</td><td>51.54</td><td>B</td><td>60 / 111</td><td>50.74%</td><td>0.86%</td><td>0.12%</td></tr>
 
-                        <tr><td>2026/01/23</td><td>51.51</td><td>B</td><td>58 / 111</td><td>50.64%</td><td>0.94%</td><td>0.14%</td></tr>
+                            <tr><td>2026/01/23</td><td>51.51</td><td>B</td><td>58 / 111</td><td>50.64%</td><td>0.94%</td><td>0.14%</td></tr>
 
-                        <tr><td>2026/01/16</td><td>51.93</td><td>B</td><td>57 / 110</td><td>50.82%</td><td>0.96%</td><td>0.15%</td></tr>
+                            <tr><td>2026/01/16</td><td>51.93</td><td>B</td><td>57 / 110</td><td>50.82%</td><td>0.96%</td><td>0.15%</td></tr>
 
-                        <tr><td>2026/01/09</td><td>52.51</td><td>B</td><td>49 / 110</td><td>51.04%</td><td>1.00%</td><td>0.17%</td></tr>
+                            <tr><td>2026/01/09</td><td>52.51</td><td>B</td><td>49 / 110</td><td>51.04%</td><td>1.00%</td><td>0.17%</td></tr>
 
-                        <tr><td>2026/01/02</td><td>52.71</td><td>B</td><td>45 / 110</td><td>51.13%</td><td>0.99%</td><td>0.19%</td></tr>
+                            <tr><td>2026/01/02</td><td>52.71</td><td>B</td><td>45 / 110</td><td>51.13%</td><td>0.99%</td><td>0.19%</td></tr>
 
-                        <tr><td>2025/12/26</td><td>53.71</td><td>B</td><td>33 / 110</td><td>51.61%</td><td>0.94%</td><td>0.20%</td></tr>
+                            <tr><td>2025/12/26</td><td>53.71</td><td>B</td><td>33 / 110</td><td>51.61%</td><td>0.94%</td><td>0.20%</td></tr>
 
-                        <tr><td>2025/12/19</td><td>54.47</td><td>B</td><td>24 / 110</td><td>51.78%</td><td>1.09%</td><td>0.23%</td></tr>
+                            <tr><td>2025/12/19</td><td>54.47</td><td>B</td><td>24 / 110</td><td>51.78%</td><td>1.09%</td><td>0.23%</td></tr>
 
-                        <tr><td>2025/12/12</td><td>52.72</td><td>B</td><td>29 / 109</td><td>51.00%</td><td>1.11%</td><td>0.26%</td></tr>
+                            <tr><td>2025/12/12</td><td>52.72</td><td>B</td><td>29 / 109</td><td>51.00%</td><td>1.11%</td><td>0.26%</td></tr>
 
-                        <tr><td>2025/12/05</td><td>52.98</td><td>B</td><td>26 / 109</td><td>51.03%</td><td>1.18%</td><td>0.30%</td></tr>
+                            <tr><td>2025/12/05</td><td>52.98</td><td>B</td><td>26 / 109</td><td>51.03%</td><td>1.18%</td><td>0.30%</td></tr>
 
-                        <tr><td>2025/11/28</td><td>55.47</td><td>A</td><td>13 / 109</td><td>52.00%</td><td>1.26%</td><td>0.34%</td></tr>
+                            <tr><td>2025/11/28</td><td>55.47</td><td>A</td><td>13 / 109</td><td>52.00%</td><td>1.26%</td><td>0.34%</td></tr>
 
-                        <tr><td>2025/11/21</td><td>57.82</td><td>A</td><td>4 / 109</td><td>52.87%</td><td>1.31%</td><td>0.35%</td></tr>
+                            <tr><td>2025/11/21</td><td>57.82</td><td>A</td><td>4 / 109</td><td>52.87%</td><td>1.31%</td><td>0.35%</td></tr>
 
-                        <tr><td>2025/11/14</td><td>57.64</td><td>A</td><td>4 / 108</td><td>52.82%</td><td>1.30%</td><td>0.35%</td></tr>
+                            <tr><td>2025/11/14</td><td>57.64</td><td>A</td><td>4 / 108</td><td>52.82%</td><td>1.30%</td><td>0.35%</td></tr>
 
-                        <tr><td>2025/11/07</td><td>57.36</td><td>A</td><td>5 / 108</td><td>52.74%</td><td>1.28%</td><td>0.33%</td></tr>
+                            <tr><td>2025/11/07</td><td>57.36</td><td>A</td><td>5 / 108</td><td>52.74%</td><td>1.28%</td><td>0.33%</td></tr>
 
-                        <tr><td>2025/10/31</td><td>57.12</td><td>A</td><td>7 / 108</td><td>52.75%</td><td>1.19%</td><td>0.27%</td></tr>
+                            <tr><td>2025/10/31</td><td>57.12</td><td>A</td><td>7 / 108</td><td>52.75%</td><td>1.19%</td><td>0.27%</td></tr>
 
-                        <tr><td>2025/10/24</td><td>56.30</td><td>A</td><td>15 / 108</td><td>52.28%</td><td>1.33%</td><td>0.33%</td></tr>
+                            <tr><td>2025/10/24</td><td>56.30</td><td>A</td><td>15 / 108</td><td>52.28%</td><td>1.33%</td><td>0.33%</td></tr>
 
-                        <tr><td>2025/10/17</td><td>58.08</td><td>A</td><td>5 / 107</td><td>52.86%</td><td>1.45%</td><td>0.33%</td></tr>
+                            <tr><td>2025/10/17</td><td>58.08</td><td>A</td><td>5 / 107</td><td>52.86%</td><td>1.45%</td><td>0.33%</td></tr>
 
-                        <tr><td>2025/10/10</td><td>56.28</td><td>A</td><td>15 / 106</td><td>52.42%</td><td>1.24%</td><td>0.19%</td></tr>
+                            <tr><td>2025/10/10</td><td>56.28</td><td>A</td><td>15 / 106</td><td>52.42%</td><td>1.24%</td><td>0.19%</td></tr>
 
-                        <tr><td>2025/08/01</td><td>56.28</td><td>A</td><td>15 / 106</td><td>52.42%</td><td>1.24%</td><td>0.19%</td></tr>
+                            <tr><td>2025/08/01</td><td>56.28</td><td>A</td><td>15 / 106</td><td>52.42%</td><td>1.24%</td><td>0.19%</td></tr>
 
-                        <tr><td>2025/07/25</td><td>56.03</td><td>A</td><td>20 / 105</td><td>52.20%</td><td>1.37%</td><td>0.20%</td></tr>
+                            <tr><td>2025/07/25</td><td>56.03</td><td>A</td><td>20 / 105</td><td>52.20%</td><td>1.37%</td><td>0.20%</td></tr>
 
-                        <tr><td>2025/07/18</td><td>56.03</td><td>A</td><td>20 / 105</td><td>52.20%</td><td>1.37%</td><td>0.20%</td></tr>
+                            <tr><td>2025/07/18</td><td>56.03</td><td>A</td><td>20 / 105</td><td>52.20%</td><td>1.37%</td><td>0.20%</td></tr>
 
-                        <tr><td>2025/07/11</td><td>56.08</td><td>A</td><td>17 / 105</td><td>52.47%</td><td>1.12%</td><td>0.16%</td></tr>
+                            <tr><td>2025/07/11</td><td>56.08</td><td>A</td><td>17 / 105</td><td>52.47%</td><td>1.12%</td><td>0.16%</td></tr>
 
-                        <tr><td>2025/07/04</td><td>55.28</td><td>A</td><td>20 / 104</td><td>52.26%</td><td>1.01%</td><td>0.14%</td></tr>
+                            <tr><td>2025/07/04</td><td>55.28</td><td>A</td><td>20 / 104</td><td>52.26%</td><td>1.01%</td><td>0.14%</td></tr>
 
-                        <tr><td>2025/06/27</td><td>55.29</td><td>A</td><td>19 / 104</td><td>52.01%</td><td>1.29%</td><td>0.13%</td></tr>
+                            <tr><td>2025/06/27</td><td>55.29</td><td>A</td><td>19 / 104</td><td>52.01%</td><td>1.29%</td><td>0.13%</td></tr>
 
-                        <tr><td>2025/06/20</td><td>51.30</td><td>B</td><td>39 / 103</td><td>50.28%</td><td>1.27%</td><td>0.09%</td></tr>
+                            <tr><td>2025/06/20</td><td>51.30</td><td>B</td><td>39 / 103</td><td>50.28%</td><td>1.27%</td><td>0.09%</td></tr>
 
-                        <tr><td>2025/06/13</td><td>51.02</td><td>B</td><td>50 / 103</td><td>50.13%</td><td>1.28%</td><td>0.09%</td></tr>
+                            <tr><td>2025/06/13</td><td>51.02</td><td>B</td><td>50 / 103</td><td>50.13%</td><td>1.28%</td><td>0.09%</td></tr>
 
-                        <tr><td>2025/06/06</td><td>51.52</td><td>B</td><td>40 / 102</td><td>50.40%</td><td>1.27%</td><td>0.09%</td></tr>
+                            <tr><td>2025/06/06</td><td>51.52</td><td>B</td><td>40 / 102</td><td>50.40%</td><td>1.27%</td><td>0.09%</td></tr>
 
-                        <tr><td>2025/05/30</td><td>51.02</td><td>B</td><td>47 / 102</td><td>50.10%</td><td>1.32%</td><td>0.08%</td></tr>
+                            <tr><td>2025/05/30</td><td>51.02</td><td>B</td><td>47 / 102</td><td>50.10%</td><td>1.32%</td><td>0.08%</td></tr>
 
-                        <tr><td>2025/05/23</td><td>51.66</td><td>B</td><td>40 / 102</td><td>50.40%</td><td>1.33%</td><td>0.08%</td></tr>
+                            <tr><td>2025/05/23</td><td>51.66</td><td>B</td><td>40 / 102</td><td>50.40%</td><td>1.33%</td><td>0.08%</td></tr>
 
-                        <tr><td>2025/05/16</td><td>51.94</td><td>B</td><td>39 / 102</td><td>50.53%</td><td>1.33%</td><td>0.08%</td></tr>
+                            <tr><td>2025/05/16</td><td>51.94</td><td>B</td><td>39 / 102</td><td>50.53%</td><td>1.33%</td><td>0.08%</td></tr>
 
-                        <tr><td>2025/05/09</td><td>52.07</td><td>B</td><td>40 / 102</td><td>50.61%</td><td>1.32%</td><td>0.07%</td></tr>
+                            <tr><td>2025/05/09</td><td>52.07</td><td>B</td><td>40 / 102</td><td>50.61%</td><td>1.32%</td><td>0.07%</td></tr>
 
-                        <tr><td>2025/05/02</td><td>51.51</td><td>B</td><td>41 / 102</td><td>50.44%</td><td>1.24%</td><td>0.06%</td></tr>
+                            <tr><td>2025/05/02</td><td>51.51</td><td>B</td><td>41 / 102</td><td>50.44%</td><td>1.24%</td><td>0.06%</td></tr>
 
-                        <tr><td>2025/04/25</td><td>51.35</td><td>B</td><td>40 / 101</td><td>50.47%</td><td>1.15%</td><td>0.06%</td></tr>
+                            <tr><td>2025/04/25</td><td>51.35</td><td>B</td><td>40 / 101</td><td>50.47%</td><td>1.15%</td><td>0.06%</td></tr>
 
-                        <tr><td>2025/04/18</td><td>50.94</td><td>B</td><td>41 / 101</td><td>50.29%</td><td>1.14%</td><td>0.05%</td></tr>
+                            <tr><td>2025/04/18</td><td>50.94</td><td>B</td><td>41 / 101</td><td>50.29%</td><td>1.14%</td><td>0.05%</td></tr>
 
-                        <tr><td>2025/04/11</td><td>51.98</td><td>B</td><td>36 / 101</td><td>50.74%</td><td>1.18%</td><td>0.05%</td></tr>
+                            <tr><td>2025/04/11</td><td>51.98</td><td>B</td><td>36 / 101</td><td>50.74%</td><td>1.18%</td><td>0.05%</td></tr>
 
-                        <tr><td>2025/04/04</td><td>51.44</td><td>B</td><td>41 / 101</td><td>50.51%</td><td>1.16%</td><td>0.05%</td></tr>
+                            <tr><td>2025/04/04</td><td>51.44</td><td>B</td><td>41 / 101</td><td>50.51%</td><td>1.16%</td><td>0.05%</td></tr>
 
-                        <tr><td>2025/03/28</td><td>51.13</td><td>B</td><td>40 / 100</td><td>50.36%</td><td>1.17%</td><td>0.05%</td></tr>
+                            <tr><td>2025/03/28</td><td>51.13</td><td>B</td><td>40 / 100</td><td>50.36%</td><td>1.17%</td><td>0.05%</td></tr>
 
-                        <tr><td>2025/03/21</td><td>50.85</td><td>B</td><td>42 / 100</td><td>50.09%</td><td>1.28%</td><td>0.07%</td></tr>
+                            <tr><td>2025/03/21</td><td>50.85</td><td>B</td><td>42 / 100</td><td>50.09%</td><td>1.28%</td><td>0.07%</td></tr>
 
-                        <tr><td>2025/03/14</td><td>50.72</td><td>B</td><td>45 / 100</td><td>49.94%</td><td>1.35%</td><td>0.07%</td></tr>
+                            <tr><td>2025/03/14</td><td>50.72</td><td>B</td><td>45 / 100</td><td>49.94%</td><td>1.35%</td><td>0.07%</td></tr>
 
-                        <tr><td>2025/03/07</td><td>48.30</td><td>C</td><td>68 / 100</td><td>48.94%</td><td>1.13%</td><td>0.05%</td></tr>
+                            <tr><td>2025/03/07</td><td>48.30</td><td>C</td><td>68 / 100</td><td>48.94%</td><td>1.13%</td><td>0.05%</td></tr>
 
-                        <tr><td>2025/02/28</td><td>46.46</td><td>C</td><td>76 / 99</td><td>48.17%</td><td>0.89%</td><td>0.03%</td></tr>
+                            <tr><td>2025/02/28</td><td>46.46</td><td>C</td><td>76 / 99</td><td>48.17%</td><td>0.89%</td><td>0.03%</td></tr>
 
-                        <tr><td>2025/02/21</td><td>46.09</td><td>C</td><td>80 / 99</td><td>47.96%</td><td>0.88%</td><td>0.03%</td></tr>
+                            <tr><td>2025/02/21</td><td>46.09</td><td>C</td><td>80 / 99</td><td>47.96%</td><td>0.88%</td><td>0.03%</td></tr>
 
-                        <tr><td>2025/02/14</td><td>46.04</td><td>C</td><td>74 / 99</td><td>47.98%</td><td>0.83%</td><td>0.03%</td></tr>
+                            <tr><td>2025/02/14</td><td>46.04</td><td>C</td><td>74 / 99</td><td>47.98%</td><td>0.83%</td><td>0.03%</td></tr>
 
-                        <tr><td>2025/02/07</td><td>46.21</td><td>C</td><td>75 / 98</td><td>48.05%</td><td>0.87%</td><td>0.03%</td></tr>
+                            <tr><td>2025/02/07</td><td>46.21</td><td>C</td><td>75 / 98</td><td>48.05%</td><td>0.87%</td><td>0.03%</td></tr>
 
-                        <tr><td>2025/01/31</td><td>46.01</td><td>C</td><td>76 / 98</td><td>47.93%</td><td>0.87%</td><td>0.03%</td></tr>
+                            <tr><td>2025/01/31</td><td>46.01</td><td>C</td><td>76 / 98</td><td>47.93%</td><td>0.87%</td><td>0.03%</td></tr>
 
-                        <tr><td>2025/01/24</td><td>46.51</td><td>C</td><td>75 / 98</td><td>48.11%</td><td>0.98%</td><td>0.04%</td></tr>
+                            <tr><td>2025/01/24</td><td>46.51</td><td>C</td><td>75 / 98</td><td>48.11%</td><td>0.98%</td><td>0.04%</td></tr>
 
-                    </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
         </section>
     </main>
     <footer><div class="footer-inner">HOK Score List / 最終更新 2026/07/17</div></footer>
