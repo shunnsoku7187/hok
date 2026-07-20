@@ -98,15 +98,37 @@
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
         .adjustment-list { border-top: 1px solid var(--line); }
-        .adjustment-item {
+        .adjustment-item { border-bottom: 1px solid var(--line); }
+        .adjustment-summary {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr) 24px;
+            align-items: center;
+            gap: 26px;
+            min-height: 64px;
+            padding: 14px 40px 14px 0;
+            cursor: pointer;
+            list-style: none;
+        }
+        .adjustment-summary::-webkit-details-marker { display: none; }
+        .adjustment-summary::after {
+            color: var(--muted);
+            content: "›";
+            font-size: 25px;
+            line-height: 1;
+            transform-origin: center;
+            transition: transform 150ms ease;
+        }
+        .adjustment-item[open] .adjustment-summary::after { transform: rotate(90deg); }
+        .adjustment-summary:hover { background: #edf3ee; }
+        .adjustment-summary:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .adjustment-date { font-size: 15px; font-weight: 700; }
+        .adjustment-detail {
             display: grid;
             grid-template-columns: 150px minmax(0, 1fr);
             gap: 26px;
-            padding: 24px 0;
-            border-bottom: 1px solid var(--line);
+            padding: 4px 40px 24px 0;
         }
-        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
-        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-season { color: var(--muted); font-size: 13px; }
         .adjustment-heading {
             display: flex;
             align-items: center;
@@ -190,7 +212,13 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
-            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
+            .adjustment-summary {
+                grid-template-columns: minmax(0, 1fr) auto 18px;
+                gap: 14px;
+                min-height: 58px;
+                padding-right: 10px;
+            }
+            .adjustment-detail { grid-template-columns: 1fr; gap: 12px; padding-right: 10px; }
         }
     </style>
 </head>
@@ -223,46 +251,53 @@
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.77% / 0.18%</span></div>
         </div>
 
+        <section aria-labelledby="score-trend-title">
+            <h2 id="score-trend-title">スコア推移</h2>
+            <p class="section-note">2025/01/24から2026/07/17まで、69週分</p>
+            <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="司馬懿のスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">40</text><line class="chart-grid" x1="62" y1="250.0" x2="936" y2="250.0" /><text class="chart-y-label" x="50" y="254.0">45</text><line class="chart-grid" x1="62" y1="194.0" x2="936" y2="194.0" /><text class="chart-y-label" x="50" y="198.0">50</text><line class="chart-grid" x1="62" y1="138.0" x2="936" y2="138.0" /><text class="chart-y-label" x="50" y="142.0">55</text><line class="chart-grid" x1="62" y1="82.0" x2="936" y2="82.0" /><text class="chart-y-label" x="50" y="86.0">60</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">65</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,209.5 74.9,222.1 87.7,221.6 100.6,219.5 113.4,232.9 126.3,235.9 139.1,171.8 152.0,83.0 164.8,104.2 177.7,110.5 190.5,107.5 203.4,116.7 216.2,80.9 229.1,88.5 241.9,85.2 254.8,75.0 267.6,93.5 280.5,90.0 293.4,115.5 306.2,155.2 319.1,166.7 331.9,208.7 344.8,178.4 357.6,96.7 370.5,147.8 383.3,161.6 396.2,161.6 409.0,172.0 421.9,172.0 434.7,182.7 447.6,179.5 460.4,173.2 473.3,170.3 486.1,171.2 499.0,178.7 511.9,192.3 524.7,206.6 537.6,218.9 550.4,256.7 563.3,250.2 576.1,233.2 589.0,241.7 601.8,248.8 614.7,252.8 627.5,268.1 640.4,272.9 653.2,268.4 666.1,259.2 678.9,265.1 691.8,265.1 704.6,273.1 717.5,256.3 730.4,256.3 743.2,271.4 756.1,275.3 768.9,276.1 781.8,266.1 794.6,270.3 807.5,273.5 820.3,272.1 833.2,265.5 846.0,274.9 858.9,274.9 871.7,275.4 884.6,167.6 897.4,128.9 910.3,109.3 923.1,126.3 936.0,126.3" /><circle class="chart-point" cx="62.0" cy="209.5" r="4"><title>2025/01/24: 48.62</title></circle><circle class="chart-point" cx="74.9" cy="222.1" r="4"><title>2025/01/31: 47.49</title></circle><circle class="chart-point" cx="87.7" cy="221.6" r="4"><title>2025/02/07: 47.54</title></circle><circle class="chart-point" cx="100.6" cy="219.5" r="4"><title>2025/02/14: 47.72</title></circle><circle class="chart-point" cx="113.4" cy="232.9" r="4"><title>2025/02/21: 46.53</title></circle><circle class="chart-point" cx="126.3" cy="235.9" r="4"><title>2025/02/28: 46.26</title></circle><circle class="chart-point" cx="139.1" cy="171.8" r="4"><title>2025/03/07: 51.98</title></circle><circle class="chart-point" cx="152.0" cy="83.0" r="4"><title>2025/03/14: 59.91</title></circle><circle class="chart-point" cx="164.8" cy="104.2" r="4"><title>2025/03/21: 58.02</title></circle><circle class="chart-point" cx="177.7" cy="110.5" r="4"><title>2025/03/28: 57.46</title></circle><circle class="chart-point" cx="190.5" cy="107.5" r="4"><title>2025/04/04: 57.72</title></circle><circle class="chart-point" cx="203.4" cy="116.7" r="4"><title>2025/04/11: 56.91</title></circle><circle class="chart-point" cx="216.2" cy="80.9" r="4"><title>2025/04/18: 60.10</title></circle><circle class="chart-point" cx="229.1" cy="88.5" r="4"><title>2025/04/25: 59.42</title></circle><circle class="chart-point" cx="241.9" cy="85.2" r="4"><title>2025/05/02: 59.72</title></circle><circle class="chart-point" cx="254.8" cy="75.0" r="4"><title>2025/05/09: 60.63</title></circle><circle class="chart-point" cx="267.6" cy="93.5" r="4"><title>2025/05/16: 58.97</title></circle><circle class="chart-point" cx="280.5" cy="90.0" r="4"><title>2025/05/23: 59.29</title></circle><circle class="chart-point" cx="293.4" cy="115.5" r="4"><title>2025/05/30: 57.01</title></circle><circle class="chart-point" cx="306.2" cy="155.2" r="4"><title>2025/06/06: 53.46</title></circle><circle class="chart-point" cx="319.1" cy="166.7" r="4"><title>2025/06/13: 52.44</title></circle><circle class="chart-point" cx="331.9" cy="208.7" r="4"><title>2025/06/20: 48.69</title></circle><circle class="chart-point" cx="344.8" cy="178.4" r="4"><title>2025/06/27: 51.39</title></circle><circle class="chart-point" cx="357.6" cy="96.7" r="4"><title>2025/07/04: 58.69</title></circle><circle class="chart-point" cx="370.5" cy="147.8" r="4"><title>2025/07/11: 54.13</title></circle><circle class="chart-point" cx="383.3" cy="161.6" r="4"><title>2025/07/18: 52.89</title></circle><circle class="chart-point" cx="396.2" cy="161.6" r="4"><title>2025/07/25: 52.89</title></circle><circle class="chart-point" cx="409.0" cy="172.0" r="4"><title>2025/08/01: 51.97</title></circle><circle class="chart-point" cx="421.9" cy="172.0" r="4"><title>2025/10/10: 51.97</title></circle><circle class="chart-point" cx="434.7" cy="182.7" r="4"><title>2025/10/17: 51.01</title></circle><circle class="chart-point" cx="447.6" cy="179.5" r="4"><title>2025/10/24: 51.30</title></circle><circle class="chart-point" cx="460.4" cy="173.2" r="4"><title>2025/10/31: 51.86</title></circle><circle class="chart-point" cx="473.3" cy="170.3" r="4"><title>2025/11/07: 52.11</title></circle><circle class="chart-point" cx="486.1" cy="171.2" r="4"><title>2025/11/14: 52.03</title></circle><circle class="chart-point" cx="499.0" cy="178.7" r="4"><title>2025/11/21: 51.37</title></circle><circle class="chart-point" cx="511.9" cy="192.3" r="4"><title>2025/11/28: 50.15</title></circle><circle class="chart-point" cx="524.7" cy="206.6" r="4"><title>2025/12/05: 48.87</title></circle><circle class="chart-point" cx="537.6" cy="218.9" r="4"><title>2025/12/12: 47.78</title></circle><circle class="chart-point" cx="550.4" cy="256.7" r="4"><title>2025/12/19: 44.40</title></circle><circle class="chart-point" cx="563.3" cy="250.2" r="4"><title>2025/12/26: 44.98</title></circle><circle class="chart-point" cx="576.1" cy="233.2" r="4"><title>2026/01/02: 46.50</title></circle><circle class="chart-point" cx="589.0" cy="241.7" r="4"><title>2026/01/09: 45.74</title></circle><circle class="chart-point" cx="601.8" cy="248.8" r="4"><title>2026/01/16: 45.11</title></circle><circle class="chart-point" cx="614.7" cy="252.8" r="4"><title>2026/01/23: 44.75</title></circle><circle class="chart-point" cx="627.5" cy="268.1" r="4"><title>2026/01/30: 43.38</title></circle><circle class="chart-point" cx="640.4" cy="272.9" r="4"><title>2026/02/06: 42.96</title></circle><circle class="chart-point" cx="653.2" cy="268.4" r="4"><title>2026/02/13: 43.36</title></circle><circle class="chart-point" cx="666.1" cy="259.2" r="4"><title>2026/02/20: 44.18</title></circle><circle class="chart-point" cx="678.9" cy="265.1" r="4"><title>2026/02/27: 43.65</title></circle><circle class="chart-point" cx="691.8" cy="265.1" r="4"><title>2026/03/06: 43.65</title></circle><circle class="chart-point" cx="704.6" cy="273.1" r="4"><title>2026/03/13: 42.94</title></circle><circle class="chart-point" cx="717.5" cy="256.3" r="4"><title>2026/03/20: 44.43</title></circle><circle class="chart-point" cx="730.4" cy="256.3" r="4"><title>2026/03/27: 44.43</title></circle><circle class="chart-point" cx="743.2" cy="271.4" r="4"><title>2026/04/03: 43.09</title></circle><circle class="chart-point" cx="756.1" cy="275.3" r="4"><title>2026/04/10: 42.74</title></circle><circle class="chart-point" cx="768.9" cy="276.1" r="4"><title>2026/04/17: 42.67</title></circle><circle class="chart-point" cx="781.8" cy="266.1" r="4"><title>2026/04/24: 43.56</title></circle><circle class="chart-point" cx="794.6" cy="270.3" r="4"><title>2026/05/01: 43.18</title></circle><circle class="chart-point" cx="807.5" cy="273.5" r="4"><title>2026/05/08: 42.90</title></circle><circle class="chart-point" cx="820.3" cy="272.1" r="4"><title>2026/05/15: 43.03</title></circle><circle class="chart-point" cx="833.2" cy="265.5" r="4"><title>2026/05/22: 43.62</title></circle><circle class="chart-point" cx="846.0" cy="274.9" r="4"><title>2026/05/29: 42.78</title></circle><circle class="chart-point" cx="858.9" cy="274.9" r="4"><title>2026/06/05: 42.78</title></circle><circle class="chart-point" cx="871.7" cy="275.4" r="4"><title>2026/06/12: 42.73</title></circle><circle class="chart-point" cx="884.6" cy="167.6" r="4"><title>2026/06/19: 52.35</title></circle><circle class="chart-point" cx="897.4" cy="128.9" r="4"><title>2026/06/26: 55.82</title></circle><circle class="chart-point" cx="910.3" cy="109.3" r="4"><title>2026/07/03: 57.56</title></circle><circle class="chart-point" cx="923.1" cy="126.3" r="4"><title>2026/07/10: 56.05</title></circle><circle class="chart-point" cx="936.0" cy="126.3" r="4"><title>2026/07/17: 56.04</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="126.3" r="6" /><text class="chart-latest-label" x="926.0" y="114.3" text-anchor="end">56.04</text><text class="chart-x-label" x="62.0" y="342">25/01/24</text><text class="chart-x-label" x="241.9" y="342">25/05/02</text><text class="chart-x-label" x="409.0" y="342">25/08/01</text><text class="chart-x-label" x="589.0" y="342">26/01/09</text><text class="chart-x-label" x="756.1" y="342">26/04/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
+        </section>
+
         <section aria-labelledby="adjustment-title">
             <h2 id="adjustment-title">能力調整履歴</h2>
-            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=137" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
+            <p class="section-note">日付を選択すると詳細を表示します。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=137" target="_blank" rel="noopener noreferrer">HOKCAMP公式ページ</a></p>
 
             <div class="adjustment-list">
 
-                <article class="adjustment-item">
-                    <div>
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
                         <time class="adjustment-date">2026/06/17</time>
-                        <span class="adjustment-season">S15</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag buff">制度レベルアップ</span>
-                            <h3>スキルアップデート</h3>
-                        </div>
+                        <span class="adjustment-tag buff">上方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S15</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>スキルアップデート</h3>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>静寂の言葉</h4>
-                            <p class="adjustment-description">調整：範囲2000内でスキルを発動した敵ヒーローの視界を獲得し、幽影の力を10獲得する（上限50～100）。
+                            <div class="adjustment-attribute">
+                                <h4>静寂の言葉</h4>
+                                <p class="adjustment-description">調整：範囲2000内でスキルを発動した敵ヒーローの視界を獲得し、幽影の力を10獲得する（上限50～100）。
 スキルを発動すると幽影の力により鎌を召喚し、通常攻撃を強化して5秒間移動速度が20～40増加する。強化通常攻撃は幽影の力を全て消費し、幽影の力20ごとに強化通常攻撃の範囲が3％増加する。鎌での攻撃は1回ごとに230～460（+魔法攻撃の46％）の魔法ダメージと+幽影の力と同量の確定ダメージを与える。鎌召喚後の1回目の攻撃は、ターゲットの後ろに移動して300〜600（+魔法攻撃の60％）の魔法ダメージを与える（確定ダメージは2倍）
 変更：エネルギーゲージからMPゲージへ変更。スキル発動時にMPを消費する
 初回ダメージ：
 調整前：330～660（+魔法攻撃の70％）
 調整後：300～600（+魔法攻撃の60％）</p>
-                        </div>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>幽影の噛みつき</h4>
-                            <p class="adjustment-description">基本ダメージ：
+                            <div class="adjustment-attribute">
+                                <h4>幽影の噛みつき</h4>
+                                <p class="adjustment-description">基本ダメージ：
 調整前：100（スキルLv.ごとに+20）（+魔法攻撃の20％）
 調整後：115（スキルLv.ごとに+23）（+魔法攻撃の23％）
 効果調整：
 調整前：スキル発動時にクールダウン開始
 調整後：スキル終了時にクールダウン開始。非ヒーローユニットへの追加ダメージを削除</p>
-                        </div>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>荒廃の地</h4>
-                            <p class="adjustment-description">パッシブ効果調整：
+                            <div class="adjustment-attribute">
+                                <h4>荒廃の地</h4>
+                                <p class="adjustment-description">パッシブ効果調整：
 調整前：魔法ダメージを受けると、2秒かけてHPを被ダメージの50％回復
 調整後：魔法ダメージを受けると、3秒かけてHPを被ダメージの25％回復。物理ダメージの場合は回復効果半減
 新効果：
@@ -273,116 +308,119 @@
 基本ダメージ：
 調整前：250（スキルLv.ごとに+50）（+魔法攻撃の35％）
 調整後：250（スキルLv.ごとに+50）（+魔法攻撃の50％）</p>
-                        </div>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>死神降臨</h4>
-                            <p class="adjustment-description">新効果：
+                            <div class="adjustment-attribute">
+                                <h4>死神降臨</h4>
+                                <p class="adjustment-description">新効果：
 スキルの発動が中断されると、クールダウンが90％短縮する</p>
+                            </div>
+
                         </div>
-
                     </div>
-                </article>
+                </details>
 
-                <article class="adjustment-item">
-                    <div>
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
                         <time class="adjustment-date">2025/11/27</time>
-                        <span class="adjustment-season">S12</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag adjust">数値調整</span>
-                            <h3>スキルダメージ調整</h3>
-                        </div>
+                        <span class="adjustment-tag adjust">調整</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S12</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>スキルダメージ調整</h3>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>静寂の言葉</h4>
-                            <p class="adjustment-description">基本ダメージ：
+                            <div class="adjustment-attribute">
+                                <h4>静寂の言葉</h4>
+                                <p class="adjustment-description">基本ダメージ：
 調整前：250～390（+魔法攻撃の40％）
 調整後：230～370（+魔法攻撃の40％）</p>
-                        </div>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>荒廃の地</h4>
-                            <p class="adjustment-description">基本ダメージ：
+                            <div class="adjustment-attribute">
+                                <h4>荒廃の地</h4>
+                                <p class="adjustment-description">基本ダメージ：
 調整前：260（スキルLv.ごとに+52）（+魔法攻撃の35％）
 調整後：250（スキルLv.ごとに+50）（+魔法攻撃の35％）</p>
+                            </div>
+
                         </div>
-
                     </div>
-                </article>
+                </details>
 
-                <article class="adjustment-item">
-                    <div>
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
                         <time class="adjustment-date">2025/06/12</time>
-                        <span class="adjustment-season">S10</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag nerf">数値弱体化</span>
-                            <h3>パッシブ効果の効果量</h3>
-                        </div>
+                        <span class="adjustment-tag nerf">下方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S10</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>パッシブ効果の効果量</h3>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>荒廃の地</h4>
-                            <p class="adjustment-description">パッシブのHP変換効果：
+                            <div class="adjustment-attribute">
+                                <h4>荒廃の地</h4>
+                                <p class="adjustment-description">パッシブのHP変換効果：
 調整前：60％
 調整後：50％</p>
+                            </div>
+
                         </div>
-
                     </div>
-                </article>
+                </details>
 
-                <article class="adjustment-item">
-                    <div>
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
                         <time class="adjustment-date">2025/05/29</time>
-                        <span class="adjustment-season">S10</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag nerf">数値弱体化</span>
-                            <h3>スキル3のダメージ下方修正</h3>
-                        </div>
+                        <span class="adjustment-tag nerf">下方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S10</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>スキル3のダメージ下方修正</h3>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>死神降臨</h4>
-                            <p class="adjustment-description">基本ダメージ
+                            <div class="adjustment-attribute">
+                                <h4>死神降臨</h4>
+                                <p class="adjustment-description">基本ダメージ
 調整前：600（スキルLv.ごとに+300）（+魔法攻撃の120％）
 調整後：500（スキルLv.ごとに+250）（+魔法攻撃の100％）</p>
+                            </div>
+
                         </div>
-
                     </div>
-                </article>
+                </details>
 
-                <article class="adjustment-item">
-                    <div>
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
                         <time class="adjustment-date">2025/03/20</time>
-                        <span class="adjustment-season">S9</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag adjust">数値調整</span>
-                            <h3>数値調整</h3>
-                        </div>
+                        <span class="adjustment-tag adjust">調整</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S9</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>数値調整</h3>
+                            </div>
 
-                        <div class="adjustment-attribute">
-                            <h4>静寂の言葉</h4>
-                            <p class="adjustment-description">基本ダメージ
+                            <div class="adjustment-attribute">
+                                <h4>静寂の言葉</h4>
+                                <p class="adjustment-description">基本ダメージ
 調整前：400（ヒーローLv.ごとに+20）（+魔法攻撃の65％）
 調整後：330～660（+魔法攻撃の70％）</p>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
-                </article>
+                </details>
 
             </div>
 
-        </section>
-
-        <section aria-labelledby="score-trend-title">
-            <h2 id="score-trend-title">スコア推移</h2>
-            <p class="section-note">2025/01/24から2026/07/17まで、69週分</p>
-            <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="司馬懿のスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">40</text><line class="chart-grid" x1="62" y1="250.0" x2="936" y2="250.0" /><text class="chart-y-label" x="50" y="254.0">45</text><line class="chart-grid" x1="62" y1="194.0" x2="936" y2="194.0" /><text class="chart-y-label" x="50" y="198.0">50</text><line class="chart-grid" x1="62" y1="138.0" x2="936" y2="138.0" /><text class="chart-y-label" x="50" y="142.0">55</text><line class="chart-grid" x1="62" y1="82.0" x2="936" y2="82.0" /><text class="chart-y-label" x="50" y="86.0">60</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">65</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,209.5 74.9,222.1 87.7,221.6 100.6,219.5 113.4,232.9 126.3,235.9 139.1,171.8 152.0,83.0 164.8,104.2 177.7,110.5 190.5,107.5 203.4,116.7 216.2,80.9 229.1,88.5 241.9,85.2 254.8,75.0 267.6,93.5 280.5,90.0 293.4,115.5 306.2,155.2 319.1,166.7 331.9,208.7 344.8,178.4 357.6,96.7 370.5,147.8 383.3,161.6 396.2,161.6 409.0,172.0 421.9,172.0 434.7,182.7 447.6,179.5 460.4,173.2 473.3,170.3 486.1,171.2 499.0,178.7 511.9,192.3 524.7,206.6 537.6,218.9 550.4,256.7 563.3,250.2 576.1,233.2 589.0,241.7 601.8,248.8 614.7,252.8 627.5,268.1 640.4,272.9 653.2,268.4 666.1,259.2 678.9,265.1 691.8,265.1 704.6,273.1 717.5,256.3 730.4,256.3 743.2,271.4 756.1,275.3 768.9,276.1 781.8,266.1 794.6,270.3 807.5,273.5 820.3,272.1 833.2,265.5 846.0,274.9 858.9,274.9 871.7,275.4 884.6,167.6 897.4,128.9 910.3,109.3 923.1,126.3 936.0,126.3" /><circle class="chart-point" cx="62.0" cy="209.5" r="4"><title>2025/01/24: 48.62</title></circle><circle class="chart-point" cx="74.9" cy="222.1" r="4"><title>2025/01/31: 47.49</title></circle><circle class="chart-point" cx="87.7" cy="221.6" r="4"><title>2025/02/07: 47.54</title></circle><circle class="chart-point" cx="100.6" cy="219.5" r="4"><title>2025/02/14: 47.72</title></circle><circle class="chart-point" cx="113.4" cy="232.9" r="4"><title>2025/02/21: 46.53</title></circle><circle class="chart-point" cx="126.3" cy="235.9" r="4"><title>2025/02/28: 46.26</title></circle><circle class="chart-point" cx="139.1" cy="171.8" r="4"><title>2025/03/07: 51.98</title></circle><circle class="chart-point" cx="152.0" cy="83.0" r="4"><title>2025/03/14: 59.91</title></circle><circle class="chart-point" cx="164.8" cy="104.2" r="4"><title>2025/03/21: 58.02</title></circle><circle class="chart-point" cx="177.7" cy="110.5" r="4"><title>2025/03/28: 57.46</title></circle><circle class="chart-point" cx="190.5" cy="107.5" r="4"><title>2025/04/04: 57.72</title></circle><circle class="chart-point" cx="203.4" cy="116.7" r="4"><title>2025/04/11: 56.91</title></circle><circle class="chart-point" cx="216.2" cy="80.9" r="4"><title>2025/04/18: 60.10</title></circle><circle class="chart-point" cx="229.1" cy="88.5" r="4"><title>2025/04/25: 59.42</title></circle><circle class="chart-point" cx="241.9" cy="85.2" r="4"><title>2025/05/02: 59.72</title></circle><circle class="chart-point" cx="254.8" cy="75.0" r="4"><title>2025/05/09: 60.63</title></circle><circle class="chart-point" cx="267.6" cy="93.5" r="4"><title>2025/05/16: 58.97</title></circle><circle class="chart-point" cx="280.5" cy="90.0" r="4"><title>2025/05/23: 59.29</title></circle><circle class="chart-point" cx="293.4" cy="115.5" r="4"><title>2025/05/30: 57.01</title></circle><circle class="chart-point" cx="306.2" cy="155.2" r="4"><title>2025/06/06: 53.46</title></circle><circle class="chart-point" cx="319.1" cy="166.7" r="4"><title>2025/06/13: 52.44</title></circle><circle class="chart-point" cx="331.9" cy="208.7" r="4"><title>2025/06/20: 48.69</title></circle><circle class="chart-point" cx="344.8" cy="178.4" r="4"><title>2025/06/27: 51.39</title></circle><circle class="chart-point" cx="357.6" cy="96.7" r="4"><title>2025/07/04: 58.69</title></circle><circle class="chart-point" cx="370.5" cy="147.8" r="4"><title>2025/07/11: 54.13</title></circle><circle class="chart-point" cx="383.3" cy="161.6" r="4"><title>2025/07/18: 52.89</title></circle><circle class="chart-point" cx="396.2" cy="161.6" r="4"><title>2025/07/25: 52.89</title></circle><circle class="chart-point" cx="409.0" cy="172.0" r="4"><title>2025/08/01: 51.97</title></circle><circle class="chart-point" cx="421.9" cy="172.0" r="4"><title>2025/10/10: 51.97</title></circle><circle class="chart-point" cx="434.7" cy="182.7" r="4"><title>2025/10/17: 51.01</title></circle><circle class="chart-point" cx="447.6" cy="179.5" r="4"><title>2025/10/24: 51.30</title></circle><circle class="chart-point" cx="460.4" cy="173.2" r="4"><title>2025/10/31: 51.86</title></circle><circle class="chart-point" cx="473.3" cy="170.3" r="4"><title>2025/11/07: 52.11</title></circle><circle class="chart-point" cx="486.1" cy="171.2" r="4"><title>2025/11/14: 52.03</title></circle><circle class="chart-point" cx="499.0" cy="178.7" r="4"><title>2025/11/21: 51.37</title></circle><circle class="chart-point" cx="511.9" cy="192.3" r="4"><title>2025/11/28: 50.15</title></circle><circle class="chart-point" cx="524.7" cy="206.6" r="4"><title>2025/12/05: 48.87</title></circle><circle class="chart-point" cx="537.6" cy="218.9" r="4"><title>2025/12/12: 47.78</title></circle><circle class="chart-point" cx="550.4" cy="256.7" r="4"><title>2025/12/19: 44.40</title></circle><circle class="chart-point" cx="563.3" cy="250.2" r="4"><title>2025/12/26: 44.98</title></circle><circle class="chart-point" cx="576.1" cy="233.2" r="4"><title>2026/01/02: 46.50</title></circle><circle class="chart-point" cx="589.0" cy="241.7" r="4"><title>2026/01/09: 45.74</title></circle><circle class="chart-point" cx="601.8" cy="248.8" r="4"><title>2026/01/16: 45.11</title></circle><circle class="chart-point" cx="614.7" cy="252.8" r="4"><title>2026/01/23: 44.75</title></circle><circle class="chart-point" cx="627.5" cy="268.1" r="4"><title>2026/01/30: 43.38</title></circle><circle class="chart-point" cx="640.4" cy="272.9" r="4"><title>2026/02/06: 42.96</title></circle><circle class="chart-point" cx="653.2" cy="268.4" r="4"><title>2026/02/13: 43.36</title></circle><circle class="chart-point" cx="666.1" cy="259.2" r="4"><title>2026/02/20: 44.18</title></circle><circle class="chart-point" cx="678.9" cy="265.1" r="4"><title>2026/02/27: 43.65</title></circle><circle class="chart-point" cx="691.8" cy="265.1" r="4"><title>2026/03/06: 43.65</title></circle><circle class="chart-point" cx="704.6" cy="273.1" r="4"><title>2026/03/13: 42.94</title></circle><circle class="chart-point" cx="717.5" cy="256.3" r="4"><title>2026/03/20: 44.43</title></circle><circle class="chart-point" cx="730.4" cy="256.3" r="4"><title>2026/03/27: 44.43</title></circle><circle class="chart-point" cx="743.2" cy="271.4" r="4"><title>2026/04/03: 43.09</title></circle><circle class="chart-point" cx="756.1" cy="275.3" r="4"><title>2026/04/10: 42.74</title></circle><circle class="chart-point" cx="768.9" cy="276.1" r="4"><title>2026/04/17: 42.67</title></circle><circle class="chart-point" cx="781.8" cy="266.1" r="4"><title>2026/04/24: 43.56</title></circle><circle class="chart-point" cx="794.6" cy="270.3" r="4"><title>2026/05/01: 43.18</title></circle><circle class="chart-point" cx="807.5" cy="273.5" r="4"><title>2026/05/08: 42.90</title></circle><circle class="chart-point" cx="820.3" cy="272.1" r="4"><title>2026/05/15: 43.03</title></circle><circle class="chart-point" cx="833.2" cy="265.5" r="4"><title>2026/05/22: 43.62</title></circle><circle class="chart-point" cx="846.0" cy="274.9" r="4"><title>2026/05/29: 42.78</title></circle><circle class="chart-point" cx="858.9" cy="274.9" r="4"><title>2026/06/05: 42.78</title></circle><circle class="chart-point" cx="871.7" cy="275.4" r="4"><title>2026/06/12: 42.73</title></circle><circle class="chart-point" cx="884.6" cy="167.6" r="4"><title>2026/06/19: 52.35</title></circle><circle class="chart-point" cx="897.4" cy="128.9" r="4"><title>2026/06/26: 55.82</title></circle><circle class="chart-point" cx="910.3" cy="109.3" r="4"><title>2026/07/03: 57.56</title></circle><circle class="chart-point" cx="923.1" cy="126.3" r="4"><title>2026/07/10: 56.05</title></circle><circle class="chart-point" cx="936.0" cy="126.3" r="4"><title>2026/07/17: 56.04</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="126.3" r="6" /><text class="chart-latest-label" x="926.0" y="114.3" text-anchor="end">56.04</text><text class="chart-x-label" x="62.0" y="342">25/01/24</text><text class="chart-x-label" x="241.9" y="342">25/05/02</text><text class="chart-x-label" x="409.0" y="342">25/08/01</text><text class="chart-x-label" x="589.0" y="342">26/01/09</text><text class="chart-x-label" x="756.1" y="342">26/04/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
         </section>
 
         <section aria-labelledby="history-title">

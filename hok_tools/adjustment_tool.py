@@ -59,6 +59,15 @@ def adjustment_class(tag_text):
     return "adjust"
 
 
+def adjustment_direction(tag_text):
+    direction = adjustment_class(tag_text)
+    return {
+        "buff": "上方修正",
+        "nerf": "下方修正",
+        "adjust": "調整",
+    }[direction]
+
+
 def prepare_hero_adjustments(hero_entry):
     if not hero_entry:
         return []
@@ -86,6 +95,7 @@ def prepare_hero_adjustments(hero_entry):
                 "summary": content.get("shortDesc") or content.get("desc") or "能力調整",
                 "tag_text": tag_text,
                 "tag_class": adjustment_class(tag_text),
+                "direction_label": adjustment_direction(tag_text),
                 "attributes": attributes,
             }
         )

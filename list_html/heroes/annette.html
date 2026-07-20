@@ -98,15 +98,37 @@
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
         .adjustment-list { border-top: 1px solid var(--line); }
-        .adjustment-item {
+        .adjustment-item { border-bottom: 1px solid var(--line); }
+        .adjustment-summary {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr) 24px;
+            align-items: center;
+            gap: 26px;
+            min-height: 64px;
+            padding: 14px 40px 14px 0;
+            cursor: pointer;
+            list-style: none;
+        }
+        .adjustment-summary::-webkit-details-marker { display: none; }
+        .adjustment-summary::after {
+            color: var(--muted);
+            content: "›";
+            font-size: 25px;
+            line-height: 1;
+            transform-origin: center;
+            transition: transform 150ms ease;
+        }
+        .adjustment-item[open] .adjustment-summary::after { transform: rotate(90deg); }
+        .adjustment-summary:hover { background: #edf3ee; }
+        .adjustment-summary:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .adjustment-date { font-size: 15px; font-weight: 700; }
+        .adjustment-detail {
             display: grid;
             grid-template-columns: 150px minmax(0, 1fr);
             gap: 26px;
-            padding: 24px 0;
-            border-bottom: 1px solid var(--line);
+            padding: 4px 40px 24px 0;
         }
-        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
-        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-season { color: var(--muted); font-size: 13px; }
         .adjustment-heading {
             display: flex;
             align-items: center;
@@ -190,7 +212,13 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
-            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
+            .adjustment-summary {
+                grid-template-columns: minmax(0, 1fr) auto 18px;
+                gap: 14px;
+                min-height: 58px;
+                padding-right: 10px;
+            }
+            .adjustment-detail { grid-template-columns: 1fr; gap: 12px; padding-right: 10px; }
         }
     </style>
 </head>
@@ -223,18 +251,18 @@
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.59% / 0.54%</span></div>
         </div>
 
-        <section aria-labelledby="adjustment-title">
-            <h2 id="adjustment-title">能力調整履歴</h2>
-            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=640" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
-
-            <p class="empty-adjustments">HOKCAMPに掲載された能力調整はありません。</p>
-
-        </section>
-
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>
             <p class="section-note">2026/06/19から2026/07/17まで、5週分</p>
             <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="アネットのスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">45</text><line class="chart-grid" x1="62" y1="166.0" x2="936" y2="166.0" /><text class="chart-y-label" x="50" y="170.0">50</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">55</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,148.8 280.5,85.6 499.0,141.6 717.5,192.8 936.0,178.1" /><circle class="chart-point" cx="62.0" cy="148.8" r="4"><title>2026/06/19: 50.61</title></circle><circle class="chart-point" cx="280.5" cy="85.6" r="4"><title>2026/06/26: 52.87</title></circle><circle class="chart-point" cx="499.0" cy="141.6" r="4"><title>2026/07/03: 50.87</title></circle><circle class="chart-point" cx="717.5" cy="192.8" r="4"><title>2026/07/10: 49.04</title></circle><circle class="chart-point" cx="936.0" cy="178.1" r="4"><title>2026/07/17: 49.57</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="178.1" r="6" /><text class="chart-latest-label" x="926.0" y="166.1" text-anchor="end">49.57</text><text class="chart-x-label" x="62.0" y="342">26/06/19</text><text class="chart-x-label" x="280.5" y="342">26/06/26</text><text class="chart-x-label" x="499.0" y="342">26/07/03</text><text class="chart-x-label" x="717.5" y="342">26/07/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
+        </section>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">日付を選択すると詳細を表示します。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=640" target="_blank" rel="noopener noreferrer">HOKCAMP公式ページ</a></p>
+
+            <p class="empty-adjustments">HOKCAMPに掲載された能力調整はありません。</p>
+
         </section>
 
         <section aria-labelledby="history-title">

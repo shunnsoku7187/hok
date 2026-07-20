@@ -6,6 +6,7 @@ from pathlib import Path
 
 from get_adjustments import merge_adjustments
 from hok_tools.adjustment_tool import (
+    adjustment_direction,
     format_adjustment_date,
     has_adjustment_between,
     html_to_text,
@@ -28,6 +29,12 @@ class AdjustmentTests(unittest.TestCase):
             html_to_text("調整前：100<br>調整後：120"),
             "調整前：100\n調整後：120",
         )
+
+    def test_normalizes_adjustment_direction_labels(self):
+        self.assertEqual(adjustment_direction("数値強化"), "上方修正")
+        self.assertEqual(adjustment_direction("制度レベルアップ"), "上方修正")
+        self.assertEqual(adjustment_direction("数値弱体化"), "下方修正")
+        self.assertEqual(adjustment_direction("制度調整"), "調整")
 
     def test_detects_adjustment_in_weekly_window(self):
         hero = {"adjustments": [{"versionName": "2026/07/16"}]}
@@ -82,6 +89,7 @@ class AdjustmentTests(unittest.TestCase):
         self.assertTrue(prepared)
         self.assertEqual(prepared[0]["date_label"], "2026/07/16")
         self.assertEqual(prepared[0]["tag_text"], "数値強化")
+        self.assertEqual(prepared[0]["direction_label"], "上方修正")
         self.assertIn("調整前", prepared[0]["attributes"][0]["description"])
         self.assertIn("調整後", prepared[0]["attributes"][0]["description"])
 

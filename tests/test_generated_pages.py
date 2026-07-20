@@ -57,6 +57,12 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn("2026/07/16", chicha)
         self.assertIn("調整前", chicha)
         self.assertIn("調整後", chicha)
+        self.assertIn('<details class="adjustment-item">', chicha)
+        self.assertIn('<summary class="adjustment-summary">', chicha)
+        self.assertNotIn('<details class="adjustment-item" open>', chicha)
+        self.assertIn("上方修正", chicha)
+        self.assertLess(chicha.index('id="score-trend-title"'), chicha.index('id="adjustment-title"'))
+        self.assertLess(chicha.index('id="adjustment-title"'), chicha.index('id="history-title"'))
         self.assertIn("HOKCAMPに掲載された能力調整はありません。", garuda)
 
 

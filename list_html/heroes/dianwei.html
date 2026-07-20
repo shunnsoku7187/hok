@@ -98,15 +98,37 @@
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
         .adjustment-list { border-top: 1px solid var(--line); }
-        .adjustment-item {
+        .adjustment-item { border-bottom: 1px solid var(--line); }
+        .adjustment-summary {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr) 24px;
+            align-items: center;
+            gap: 26px;
+            min-height: 64px;
+            padding: 14px 40px 14px 0;
+            cursor: pointer;
+            list-style: none;
+        }
+        .adjustment-summary::-webkit-details-marker { display: none; }
+        .adjustment-summary::after {
+            color: var(--muted);
+            content: "›";
+            font-size: 25px;
+            line-height: 1;
+            transform-origin: center;
+            transition: transform 150ms ease;
+        }
+        .adjustment-item[open] .adjustment-summary::after { transform: rotate(90deg); }
+        .adjustment-summary:hover { background: #edf3ee; }
+        .adjustment-summary:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .adjustment-date { font-size: 15px; font-weight: 700; }
+        .adjustment-detail {
             display: grid;
             grid-template-columns: 150px minmax(0, 1fr);
             gap: 26px;
-            padding: 24px 0;
-            border-bottom: 1px solid var(--line);
+            padding: 4px 40px 24px 0;
         }
-        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
-        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-season { color: var(--muted); font-size: 13px; }
         .adjustment-heading {
             display: flex;
             align-items: center;
@@ -190,7 +212,13 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
-            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
+            .adjustment-summary {
+                grid-template-columns: minmax(0, 1fr) auto 18px;
+                gap: 14px;
+                min-height: 58px;
+                padding-right: 10px;
+            }
+            .adjustment-detail { grid-template-columns: 1fr; gap: 12px; padding-right: 10px; }
         }
     </style>
 </head>
@@ -223,177 +251,189 @@
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">1.15% / 0.24%</span></div>
         </div>
 
-        <section aria-labelledby="adjustment-title">
-            <h2 id="adjustment-title">能力調整履歴</h2>
-            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=129" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
-
-            <div class="adjustment-list">
-
-                <article class="adjustment-item">
-                    <div>
-                        <time class="adjustment-date">2026/05/14</time>
-                        <span class="adjustment-season">S14</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag buff">数値強化</span>
-                            <h3>スキルダメージ増加</h3>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>紅眼</h4>
-                            <p class="adjustment-description">基本ダメージ
-調整前：200（スキルLv.ごとに+40）（+追加物理攻撃の50％）
-調整後：220（スキルLv.ごとに+44）（+追加物理攻撃の50％）</p>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>暴走</h4>
-                            <p class="adjustment-description">基本ダメージ
-調整前：250（スキルLv.ごとに+30）（+物理攻撃の100％）
-調整後：350（スキルLv.ごとに+70）（+追加物理攻撃の110％）</p>
-                        </div>
-
-                    </div>
-                </article>
-
-                <article class="adjustment-item">
-                    <div>
-                        <time class="adjustment-date">2025/06/24</time>
-                        <span class="adjustment-season">S11</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag nerf">数値弱体化</span>
-                            <h3>奥義のダメージ減少</h3>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>飢血</h4>
-                            <p class="adjustment-description">追加ダメージ：
-調整前：ターゲットの最大HPの2.5%
-調整後：ターゲットの最大HPの2%</p>
-                        </div>
-
-                    </div>
-                </article>
-
-                <article class="adjustment-item">
-                    <div>
-                        <time class="adjustment-date">2025/04/10</time>
-                        <span class="adjustment-season">S9</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag adjust">数値調整</span>
-                            <h3>序盤・終盤における強化通常攻撃のダメージを調整</h3>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>紅眼</h4>
-                            <p class="adjustment-description">強化通常攻撃の追加ダメージ
-調整前：300（スキルLv.ごとに+50）
-調整後：200（スキルLv.ごとに+40）（+追加物理攻撃の50％）</p>
-                        </div>
-
-                    </div>
-                </article>
-
-                <article class="adjustment-item">
-                    <div>
-                        <time class="adjustment-date">2025/02/13</time>
-                        <span class="adjustment-season">S8</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag adjust">数値調整</span>
-                            <h3>CC効果の調整</h3>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>暴走</h4>
-                            <p class="adjustment-description">移動速度減少効果
-調整前：50％
-調整後：25％（スキルLv.ごとに+5％）</p>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>飢血</h4>
-                            <p class="adjustment-description">移動速度減少効果
-調整前：50％
-調整後：30％（スキルLv.ごとに+15％）</p>
-                        </div>
-
-                    </div>
-                </article>
-
-                <article class="adjustment-item">
-                    <div>
-                        <time class="adjustment-date">2025/01/09</time>
-                        <span class="adjustment-season">S8</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag buff">制度レベルアップ</span>
-                            <h3>強化通常攻撃の仕様を統一</h3>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>紅眼</h4>
-                            <p class="adjustment-description">強化通常攻撃の仕様追加：
-追加内容：ターゲットがいない状態で発動すると前方に一定距離突進する
-強化通常攻撃に付帯する突進効果の最適化：
-調整前：ターゲットがいる状態で発動すると、ターゲットに向かって突進する
-調整後：ターゲットがいる状態で発動すると、ターゲットに向かって突進する（通常攻撃範囲外の敵にも突進可能）</p>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>暴走</h4>
-                            <p class="adjustment-description">仕様追加：
-追加内容：通常攻撃が敵に命中するたびにHPを30（スキルLv.ごとに+6）回復する
-ライフスティール率：
-調整前：25％（スキルLv.ごとに+5％）
-調整後：20％（スキルLv.ごとに+4％）</p>
-                        </div>
-
-                    </div>
-                </article>
-
-                <article class="adjustment-item">
-                    <div>
-                        <time class="adjustment-date">2024/07/25</time>
-                        <span class="adjustment-season">S6</span>
-                    </div>
-                    <div>
-                        <div class="adjustment-heading">
-                            <span class="adjustment-tag buff">制度レベルアップ</span>
-                            <h3>スキル1に突進効果を追加し、奥義の確定ダメージを引き下げ</h3>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>紅眼</h4>
-                            <p class="adjustment-description">新たな効果を追加：
-強化された通常攻撃時、ターゲットに向かって突進し、パッシブが最大までスタックした際と同じ攻撃範囲になる</p>
-                        </div>
-
-                        <div class="adjustment-attribute">
-                            <h4>飢血</h4>
-                            <p class="adjustment-description">自身を強化し、ダメージを与えるごとに追加されるダメージ量：
-調整前：ターゲット最大HPの3％の確定ダメージ
-調整後：ターゲット最大HPの2.5％の確定ダメージ</p>
-                        </div>
-
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>
             <p class="section-note">2025/01/24から2026/07/17まで、69週分</p>
             <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="典韋のスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">45</text><line class="chart-grid" x1="62" y1="250.0" x2="936" y2="250.0" /><text class="chart-y-label" x="50" y="254.0">50</text><line class="chart-grid" x1="62" y1="194.0" x2="936" y2="194.0" /><text class="chart-y-label" x="50" y="198.0">55</text><line class="chart-grid" x1="62" y1="138.0" x2="936" y2="138.0" /><text class="chart-y-label" x="50" y="142.0">60</text><line class="chart-grid" x1="62" y1="82.0" x2="936" y2="82.0" /><text class="chart-y-label" x="50" y="86.0">65</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">70</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,80.9 74.9,85.8 87.7,80.0 100.6,95.8 113.4,95.9 126.3,94.7 139.1,87.4 152.0,109.1 164.8,109.8 177.7,101.7 190.5,101.0 203.4,100.1 216.2,112.3 229.1,110.8 241.9,100.2 254.8,104.3 267.6,107.0 280.5,118.1 293.4,126.5 306.2,124.1 319.1,125.0 331.9,130.0 344.8,148.8 357.6,162.3 370.5,166.9 383.3,181.3 396.2,181.3 409.0,186.5 421.9,186.5 434.7,188.4 447.6,196.3 460.4,193.1 473.3,195.6 486.1,199.4 499.0,203.6 511.9,203.7 524.7,210.2 537.6,197.6 550.4,206.1 563.3,217.8 576.1,204.9 589.0,205.6 601.8,205.7 614.7,190.9 627.5,188.6 640.4,187.7 653.2,191.0 666.1,199.0 678.9,207.4 691.8,207.4 704.6,210.8 717.5,199.7 730.4,199.7 743.2,205.1 756.1,195.1 768.9,201.9 781.8,208.2 794.6,205.0 807.5,186.6 820.3,193.3 833.2,193.5 846.0,196.4 858.9,224.7 871.7,230.4 884.6,214.8 897.4,213.0 910.3,215.5 923.1,197.9 936.0,195.9" /><circle class="chart-point" cx="62.0" cy="80.9" r="4"><title>2025/01/24: 65.10</title></circle><circle class="chart-point" cx="74.9" cy="85.8" r="4"><title>2025/01/31: 64.66</title></circle><circle class="chart-point" cx="87.7" cy="80.0" r="4"><title>2025/02/07: 65.17</title></circle><circle class="chart-point" cx="100.6" cy="95.8" r="4"><title>2025/02/14: 63.77</title></circle><circle class="chart-point" cx="113.4" cy="95.9" r="4"><title>2025/02/21: 63.76</title></circle><circle class="chart-point" cx="126.3" cy="94.7" r="4"><title>2025/02/28: 63.87</title></circle><circle class="chart-point" cx="139.1" cy="87.4" r="4"><title>2025/03/07: 64.51</title></circle><circle class="chart-point" cx="152.0" cy="109.1" r="4"><title>2025/03/14: 62.58</title></circle><circle class="chart-point" cx="164.8" cy="109.8" r="4"><title>2025/03/21: 62.52</title></circle><circle class="chart-point" cx="177.7" cy="101.7" r="4"><title>2025/03/28: 63.24</title></circle><circle class="chart-point" cx="190.5" cy="101.0" r="4"><title>2025/04/04: 63.31</title></circle><circle class="chart-point" cx="203.4" cy="100.1" r="4"><title>2025/04/11: 63.38</title></circle><circle class="chart-point" cx="216.2" cy="112.3" r="4"><title>2025/04/18: 62.29</title></circle><circle class="chart-point" cx="229.1" cy="110.8" r="4"><title>2025/04/25: 62.43</title></circle><circle class="chart-point" cx="241.9" cy="100.2" r="4"><title>2025/05/02: 63.38</title></circle><circle class="chart-point" cx="254.8" cy="104.3" r="4"><title>2025/05/09: 63.01</title></circle><circle class="chart-point" cx="267.6" cy="107.0" r="4"><title>2025/05/16: 62.77</title></circle><circle class="chart-point" cx="280.5" cy="118.1" r="4"><title>2025/05/23: 61.77</title></circle><circle class="chart-point" cx="293.4" cy="126.5" r="4"><title>2025/05/30: 61.03</title></circle><circle class="chart-point" cx="306.2" cy="124.1" r="4"><title>2025/06/06: 61.24</title></circle><circle class="chart-point" cx="319.1" cy="125.0" r="4"><title>2025/06/13: 61.16</title></circle><circle class="chart-point" cx="331.9" cy="130.0" r="4"><title>2025/06/20: 60.71</title></circle><circle class="chart-point" cx="344.8" cy="148.8" r="4"><title>2025/06/27: 59.03</title></circle><circle class="chart-point" cx="357.6" cy="162.3" r="4"><title>2025/07/04: 57.83</title></circle><circle class="chart-point" cx="370.5" cy="166.9" r="4"><title>2025/07/11: 57.42</title></circle><circle class="chart-point" cx="383.3" cy="181.3" r="4"><title>2025/07/18: 56.13</title></circle><circle class="chart-point" cx="396.2" cy="181.3" r="4"><title>2025/07/25: 56.13</title></circle><circle class="chart-point" cx="409.0" cy="186.5" r="4"><title>2025/08/01: 55.67</title></circle><circle class="chart-point" cx="421.9" cy="186.5" r="4"><title>2025/10/10: 55.67</title></circle><circle class="chart-point" cx="434.7" cy="188.4" r="4"><title>2025/10/17: 55.50</title></circle><circle class="chart-point" cx="447.6" cy="196.3" r="4"><title>2025/10/24: 54.80</title></circle><circle class="chart-point" cx="460.4" cy="193.1" r="4"><title>2025/10/31: 55.08</title></circle><circle class="chart-point" cx="473.3" cy="195.6" r="4"><title>2025/11/07: 54.85</title></circle><circle class="chart-point" cx="486.1" cy="199.4" r="4"><title>2025/11/14: 54.52</title></circle><circle class="chart-point" cx="499.0" cy="203.6" r="4"><title>2025/11/21: 54.14</title></circle><circle class="chart-point" cx="511.9" cy="203.7" r="4"><title>2025/11/28: 54.14</title></circle><circle class="chart-point" cx="524.7" cy="210.2" r="4"><title>2025/12/05: 53.55</title></circle><circle class="chart-point" cx="537.6" cy="197.6" r="4"><title>2025/12/12: 54.67</title></circle><circle class="chart-point" cx="550.4" cy="206.1" r="4"><title>2025/12/19: 53.92</title></circle><circle class="chart-point" cx="563.3" cy="217.8" r="4"><title>2025/12/26: 52.88</title></circle><circle class="chart-point" cx="576.1" cy="204.9" r="4"><title>2026/01/02: 54.03</title></circle><circle class="chart-point" cx="589.0" cy="205.6" r="4"><title>2026/01/09: 53.96</title></circle><circle class="chart-point" cx="601.8" cy="205.7" r="4"><title>2026/01/16: 53.96</title></circle><circle class="chart-point" cx="614.7" cy="190.9" r="4"><title>2026/01/23: 55.28</title></circle><circle class="chart-point" cx="627.5" cy="188.6" r="4"><title>2026/01/30: 55.48</title></circle><circle class="chart-point" cx="640.4" cy="187.7" r="4"><title>2026/02/06: 55.57</title></circle><circle class="chart-point" cx="653.2" cy="191.0" r="4"><title>2026/02/13: 55.27</title></circle><circle class="chart-point" cx="666.1" cy="199.0" r="4"><title>2026/02/20: 54.55</title></circle><circle class="chart-point" cx="678.9" cy="207.4" r="4"><title>2026/02/27: 53.80</title></circle><circle class="chart-point" cx="691.8" cy="207.4" r="4"><title>2026/03/06: 53.80</title></circle><circle class="chart-point" cx="704.6" cy="210.8" r="4"><title>2026/03/13: 53.50</title></circle><circle class="chart-point" cx="717.5" cy="199.7" r="4"><title>2026/03/20: 54.49</title></circle><circle class="chart-point" cx="730.4" cy="199.7" r="4"><title>2026/03/27: 54.49</title></circle><circle class="chart-point" cx="743.2" cy="205.1" r="4"><title>2026/04/03: 54.01</title></circle><circle class="chart-point" cx="756.1" cy="195.1" r="4"><title>2026/04/10: 54.91</title></circle><circle class="chart-point" cx="768.9" cy="201.9" r="4"><title>2026/04/17: 54.29</title></circle><circle class="chart-point" cx="781.8" cy="208.2" r="4"><title>2026/04/24: 53.73</title></circle><circle class="chart-point" cx="794.6" cy="205.0" r="4"><title>2026/05/01: 54.01</title></circle><circle class="chart-point" cx="807.5" cy="186.6" r="4"><title>2026/05/08: 55.66</title></circle><circle class="chart-point" cx="820.3" cy="193.3" r="4"><title>2026/05/15: 55.07</title></circle><circle class="chart-point" cx="833.2" cy="193.5" r="4"><title>2026/05/22: 55.04</title></circle><circle class="chart-point" cx="846.0" cy="196.4" r="4"><title>2026/05/29: 54.78</title></circle><circle class="chart-point" cx="858.9" cy="224.7" r="4"><title>2026/06/05: 52.26</title></circle><circle class="chart-point" cx="871.7" cy="230.4" r="4"><title>2026/06/12: 51.75</title></circle><circle class="chart-point" cx="884.6" cy="214.8" r="4"><title>2026/06/19: 53.15</title></circle><circle class="chart-point" cx="897.4" cy="213.0" r="4"><title>2026/06/26: 53.30</title></circle><circle class="chart-point" cx="910.3" cy="215.5" r="4"><title>2026/07/03: 53.08</title></circle><circle class="chart-point" cx="923.1" cy="197.9" r="4"><title>2026/07/10: 54.65</title></circle><circle class="chart-point" cx="936.0" cy="195.9" r="4"><title>2026/07/17: 54.83</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="195.9" r="6" /><text class="chart-latest-label" x="926.0" y="183.9" text-anchor="end">54.83</text><text class="chart-x-label" x="62.0" y="342">25/01/24</text><text class="chart-x-label" x="241.9" y="342">25/05/02</text><text class="chart-x-label" x="409.0" y="342">25/08/01</text><text class="chart-x-label" x="589.0" y="342">26/01/09</text><text class="chart-x-label" x="756.1" y="342">26/04/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
+        </section>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">日付を選択すると詳細を表示します。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=129" target="_blank" rel="noopener noreferrer">HOKCAMP公式ページ</a></p>
+
+            <div class="adjustment-list">
+
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
+                        <time class="adjustment-date">2026/05/14</time>
+                        <span class="adjustment-tag buff">上方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S14</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>スキルダメージ増加</h3>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>紅眼</h4>
+                                <p class="adjustment-description">基本ダメージ
+調整前：200（スキルLv.ごとに+40）（+追加物理攻撃の50％）
+調整後：220（スキルLv.ごとに+44）（+追加物理攻撃の50％）</p>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>暴走</h4>
+                                <p class="adjustment-description">基本ダメージ
+調整前：250（スキルLv.ごとに+30）（+物理攻撃の100％）
+調整後：350（スキルLv.ごとに+70）（+追加物理攻撃の110％）</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </details>
+
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
+                        <time class="adjustment-date">2025/06/24</time>
+                        <span class="adjustment-tag nerf">下方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S11</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>奥義のダメージ減少</h3>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>飢血</h4>
+                                <p class="adjustment-description">追加ダメージ：
+調整前：ターゲットの最大HPの2.5%
+調整後：ターゲットの最大HPの2%</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </details>
+
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
+                        <time class="adjustment-date">2025/04/10</time>
+                        <span class="adjustment-tag adjust">調整</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S9</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>序盤・終盤における強化通常攻撃のダメージを調整</h3>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>紅眼</h4>
+                                <p class="adjustment-description">強化通常攻撃の追加ダメージ
+調整前：300（スキルLv.ごとに+50）
+調整後：200（スキルLv.ごとに+40）（+追加物理攻撃の50％）</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </details>
+
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
+                        <time class="adjustment-date">2025/02/13</time>
+                        <span class="adjustment-tag adjust">調整</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S8</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>CC効果の調整</h3>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>暴走</h4>
+                                <p class="adjustment-description">移動速度減少効果
+調整前：50％
+調整後：25％（スキルLv.ごとに+5％）</p>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>飢血</h4>
+                                <p class="adjustment-description">移動速度減少効果
+調整前：50％
+調整後：30％（スキルLv.ごとに+15％）</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </details>
+
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
+                        <time class="adjustment-date">2025/01/09</time>
+                        <span class="adjustment-tag buff">上方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S8</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>強化通常攻撃の仕様を統一</h3>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>紅眼</h4>
+                                <p class="adjustment-description">強化通常攻撃の仕様追加：
+追加内容：ターゲットがいない状態で発動すると前方に一定距離突進する
+強化通常攻撃に付帯する突進効果の最適化：
+調整前：ターゲットがいる状態で発動すると、ターゲットに向かって突進する
+調整後：ターゲットがいる状態で発動すると、ターゲットに向かって突進する（通常攻撃範囲外の敵にも突進可能）</p>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>暴走</h4>
+                                <p class="adjustment-description">仕様追加：
+追加内容：通常攻撃が敵に命中するたびにHPを30（スキルLv.ごとに+6）回復する
+ライフスティール率：
+調整前：25％（スキルLv.ごとに+5％）
+調整後：20％（スキルLv.ごとに+4％）</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </details>
+
+                <details class="adjustment-item">
+                    <summary class="adjustment-summary">
+                        <time class="adjustment-date">2024/07/25</time>
+                        <span class="adjustment-tag buff">上方修正</span>
+                    </summary>
+                    <div class="adjustment-detail">
+                        <div><span class="adjustment-season">S6</span></div>
+                        <div>
+                            <div class="adjustment-heading">
+                                <h3>スキル1に突進効果を追加し、奥義の確定ダメージを引き下げ</h3>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>紅眼</h4>
+                                <p class="adjustment-description">新たな効果を追加：
+強化された通常攻撃時、ターゲットに向かって突進し、パッシブが最大までスタックした際と同じ攻撃範囲になる</p>
+                            </div>
+
+                            <div class="adjustment-attribute">
+                                <h4>飢血</h4>
+                                <p class="adjustment-description">自身を強化し、ダメージを与えるごとに追加されるダメージ量：
+調整前：ターゲット最大HPの3％の確定ダメージ
+調整後：ターゲット最大HPの2.5％の確定ダメージ</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </details>
+
+            </div>
+
         </section>
 
         <section aria-labelledby="history-title">

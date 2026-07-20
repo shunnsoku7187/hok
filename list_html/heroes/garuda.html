@@ -98,15 +98,37 @@
         h2 { margin: 0 0 8px; font-size: 23px; }
         .section-note { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
         .adjustment-list { border-top: 1px solid var(--line); }
-        .adjustment-item {
+        .adjustment-item { border-bottom: 1px solid var(--line); }
+        .adjustment-summary {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr) 24px;
+            align-items: center;
+            gap: 26px;
+            min-height: 64px;
+            padding: 14px 40px 14px 0;
+            cursor: pointer;
+            list-style: none;
+        }
+        .adjustment-summary::-webkit-details-marker { display: none; }
+        .adjustment-summary::after {
+            color: var(--muted);
+            content: "›";
+            font-size: 25px;
+            line-height: 1;
+            transform-origin: center;
+            transition: transform 150ms ease;
+        }
+        .adjustment-item[open] .adjustment-summary::after { transform: rotate(90deg); }
+        .adjustment-summary:hover { background: #edf3ee; }
+        .adjustment-summary:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .adjustment-date { font-size: 15px; font-weight: 700; }
+        .adjustment-detail {
             display: grid;
             grid-template-columns: 150px minmax(0, 1fr);
             gap: 26px;
-            padding: 24px 0;
-            border-bottom: 1px solid var(--line);
+            padding: 4px 40px 24px 0;
         }
-        .adjustment-date { display: block; font-size: 15px; font-weight: 700; }
-        .adjustment-season { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
+        .adjustment-season { color: var(--muted); font-size: 13px; }
         .adjustment-heading {
             display: flex;
             align-items: center;
@@ -190,7 +212,13 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
-            .adjustment-item { grid-template-columns: 1fr; gap: 12px; }
+            .adjustment-summary {
+                grid-template-columns: minmax(0, 1fr) auto 18px;
+                gap: 14px;
+                min-height: 58px;
+                padding-right: 10px;
+            }
+            .adjustment-detail { grid-template-columns: 1fr; gap: 12px; padding-right: 10px; }
         }
     </style>
 </head>
@@ -223,18 +251,18 @@
             <div class="metric"><span class="metric-label">使用率 / BAN率</span><span class="metric-value small">0.79% / 0.03%</span></div>
         </div>
 
-        <section aria-labelledby="adjustment-title">
-            <h2 id="adjustment-title">能力調整履歴</h2>
-            <p class="section-note">HOKCAMP掲載情報。新しい調整から順に表示。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=110" target="_blank" rel="noopener noreferrer">公式ページ</a></p>
-
-            <p class="empty-adjustments">HOKCAMPに掲載された能力調整はありません。</p>
-
-        </section>
-
         <section aria-labelledby="score-trend-title">
             <h2 id="score-trend-title">スコア推移</h2>
             <p class="section-note">2025/10/24から2026/07/17まで、39週分</p>
             <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="カルラのスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">45</text><line class="chart-grid" x1="62" y1="212.7" x2="936" y2="212.7" /><text class="chart-y-label" x="50" y="216.7">50</text><line class="chart-grid" x1="62" y1="119.3" x2="936" y2="119.3" /><text class="chart-y-label" x="50" y="123.3">55</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">60</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><polyline class="chart-line" points="62.0,179.8 85.0,145.6 108.0,165.0 131.0,175.8 154.0,186.9 177.0,185.3 200.0,191.2 223.0,198.5 246.0,209.9 269.0,205.1 292.0,183.2 315.0,186.9 338.0,184.3 361.0,195.3 384.0,203.6 407.0,213.3 430.0,206.8 453.0,198.9 476.0,189.9 499.0,189.9 522.0,173.6 545.0,167.1 568.0,167.1 591.0,153.5 614.0,148.0 637.0,157.6 660.0,164.3 683.0,174.2 706.0,153.4 729.0,157.9 752.0,156.9 775.0,172.7 798.0,161.3 821.0,172.8 844.0,142.4 867.0,144.2 890.0,180.6 913.0,168.7 936.0,177.4" /><circle class="chart-point" cx="62.0" cy="179.8" r="4"><title>2025/10/24: 51.76</title></circle><circle class="chart-point" cx="85.0" cy="145.6" r="4"><title>2025/10/31: 53.59</title></circle><circle class="chart-point" cx="108.0" cy="165.0" r="4"><title>2025/11/07: 52.55</title></circle><circle class="chart-point" cx="131.0" cy="175.8" r="4"><title>2025/11/14: 51.97</title></circle><circle class="chart-point" cx="154.0" cy="186.9" r="4"><title>2025/11/21: 51.38</title></circle><circle class="chart-point" cx="177.0" cy="185.3" r="4"><title>2025/11/28: 51.47</title></circle><circle class="chart-point" cx="200.0" cy="191.2" r="4"><title>2025/12/05: 51.15</title></circle><circle class="chart-point" cx="223.0" cy="198.5" r="4"><title>2025/12/12: 50.76</title></circle><circle class="chart-point" cx="246.0" cy="209.9" r="4"><title>2025/12/19: 50.15</title></circle><circle class="chart-point" cx="269.0" cy="205.1" r="4"><title>2025/12/26: 50.41</title></circle><circle class="chart-point" cx="292.0" cy="183.2" r="4"><title>2026/01/02: 51.58</title></circle><circle class="chart-point" cx="315.0" cy="186.9" r="4"><title>2026/01/09: 51.38</title></circle><circle class="chart-point" cx="338.0" cy="184.3" r="4"><title>2026/01/16: 51.52</title></circle><circle class="chart-point" cx="361.0" cy="195.3" r="4"><title>2026/01/23: 50.93</title></circle><circle class="chart-point" cx="384.0" cy="203.6" r="4"><title>2026/01/30: 50.48</title></circle><circle class="chart-point" cx="407.0" cy="213.3" r="4"><title>2026/02/06: 49.96</title></circle><circle class="chart-point" cx="430.0" cy="206.8" r="4"><title>2026/02/13: 50.31</title></circle><circle class="chart-point" cx="453.0" cy="198.9" r="4"><title>2026/02/20: 50.74</title></circle><circle class="chart-point" cx="476.0" cy="189.9" r="4"><title>2026/02/27: 51.22</title></circle><circle class="chart-point" cx="499.0" cy="189.9" r="4"><title>2026/03/06: 51.22</title></circle><circle class="chart-point" cx="522.0" cy="173.6" r="4"><title>2026/03/13: 52.09</title></circle><circle class="chart-point" cx="545.0" cy="167.1" r="4"><title>2026/03/20: 52.44</title></circle><circle class="chart-point" cx="568.0" cy="167.1" r="4"><title>2026/03/27: 52.44</title></circle><circle class="chart-point" cx="591.0" cy="153.5" r="4"><title>2026/04/03: 53.17</title></circle><circle class="chart-point" cx="614.0" cy="148.0" r="4"><title>2026/04/10: 53.46</title></circle><circle class="chart-point" cx="637.0" cy="157.6" r="4"><title>2026/04/17: 52.95</title></circle><circle class="chart-point" cx="660.0" cy="164.3" r="4"><title>2026/04/24: 52.59</title></circle><circle class="chart-point" cx="683.0" cy="174.2" r="4"><title>2026/05/01: 52.06</title></circle><circle class="chart-point" cx="706.0" cy="153.4" r="4"><title>2026/05/08: 53.18</title></circle><circle class="chart-point" cx="729.0" cy="157.9" r="4"><title>2026/05/15: 52.94</title></circle><circle class="chart-point" cx="752.0" cy="156.9" r="4"><title>2026/05/22: 52.99</title></circle><circle class="chart-point" cx="775.0" cy="172.7" r="4"><title>2026/05/29: 52.14</title></circle><circle class="chart-point" cx="798.0" cy="161.3" r="4"><title>2026/06/05: 52.75</title></circle><circle class="chart-point" cx="821.0" cy="172.8" r="4"><title>2026/06/12: 52.14</title></circle><circle class="chart-point" cx="844.0" cy="142.4" r="4"><title>2026/06/19: 53.77</title></circle><circle class="chart-point" cx="867.0" cy="144.2" r="4"><title>2026/06/26: 53.67</title></circle><circle class="chart-point" cx="890.0" cy="180.6" r="4"><title>2026/07/03: 51.72</title></circle><circle class="chart-point" cx="913.0" cy="168.7" r="4"><title>2026/07/10: 52.36</title></circle><circle class="chart-point" cx="936.0" cy="177.4" r="4"><title>2026/07/17: 51.89</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="177.4" r="6" /><text class="chart-latest-label" x="926.0" y="165.4" text-anchor="end">51.89</text><text class="chart-x-label" x="62.0" y="342">25/10/24</text><text class="chart-x-label" x="246.0" y="342">25/12/19</text><text class="chart-x-label" x="407.0" y="342">26/02/06</text><text class="chart-x-label" x="591.0" y="342">26/04/03</text><text class="chart-x-label" x="752.0" y="342">26/05/22</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
+        </section>
+
+        <section aria-labelledby="adjustment-title">
+            <h2 id="adjustment-title">能力調整履歴</h2>
+            <p class="section-note">日付を選択すると詳細を表示します。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=110" target="_blank" rel="noopener noreferrer">HOKCAMP公式ページ</a></p>
+
+            <p class="empty-adjustments">HOKCAMPに掲載された能力調整はありません。</p>
+
         </section>
 
         <section aria-labelledby="history-title">
