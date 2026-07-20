@@ -142,7 +142,7 @@ def _chart_label_indices(point_count, max_labels=6):
     return sorted({round(index * (point_count - 1) / (max_labels - 1)) for index in range(max_labels)})
 
 
-def build_score_chart(history):
+def build_score_chart(history, adjustments=None):
     width, height = 960, 360
     left, right, top, bottom = 62, 24, 26, 54
     plot_width = width - left - right
@@ -163,6 +163,26 @@ def build_score_chart(history):
     def y_position(score):
         return top + (y_max - score) * plot_height / (y_max - y_min)
 
+    def adjustment_x_position(adjustment_date):
+        if not adjustment_date or not history[0]["date"] <= adjustment_date <= history[-1]["date"]:
+            return None
+        if len(history) == 1:
+            return x_position(0)
+
+        for index in range(1, len(history)):
+            previous_date = history[index - 1]["date"]
+            current_date = history[index]["date"]
+            if adjustment_date > current_date:
+                continue
+            day_span = (current_date - previous_date).days
+            fraction = (
+                (adjustment_date - previous_date).days / day_span
+                if day_span > 0
+                else 1
+            )
+            return x_position(index - 1) + (x_position(index) - x_position(index - 1)) * fraction
+        return x_position(len(history) - 1)
+
     grid = []
     for tick in range(y_min, y_max + 1, 5):
         y = y_position(tick)
@@ -177,6 +197,39 @@ def build_score_chart(history):
         label = history[index]["date"].strftime("%y/%m/%d")
         x_labels.append(
             f'<text class="chart-x-label" x="{x:.1f}" y="{height - 18}">{label}</text>'
+        )
+
+    adjustment_markers = []
+    visible_adjustments = []
+    for adjustment in adjustments or []:
+        x = adjustment_x_position(adjustment.get("date"))
+        if x is not None:
+            visible_adjustments.append((adjustment, x))
+    visible_adjustments.sort(key=lambda item: item[0]["date"])
+
+    for index, (adjustment, x) in enumerate(visible_adjustments):
+        label_y = top + 15 + (index % 2) * 17
+        if x < left + 34:
+            anchor = "start"
+            label_x = x + 5
+        elif x > width - right - 34:
+            anchor = "end"
+            label_x = x - 5
+        else:
+            anchor = "middle"
+            label_x = x
+        title = html.escape(
+            f'{adjustment["date_label"]} {adjustment["direction_label"]}'
+        )
+        marker_class = html.escape(adjustment["tag_class"])
+        adjustment_markers.append(
+            f'<g class="chart-adjustment {marker_class}"><title>{title}</title>'
+            f'<line class="chart-adjustment-line" x1="{x:.1f}" y1="{top}" '
+            f'x2="{x:.1f}" y2="{height - bottom}" />'
+            f'<circle class="chart-adjustment-point" cx="{x:.1f}" '
+            f'cy="{height - bottom}" r="4" />'
+            f'<text class="chart-adjustment-label" x="{label_x:.1f}" y="{label_y}" '
+            f'text-anchor="{anchor}">調整</text></g>'
         )
 
     points = [f'{x_position(index):.1f},{y_position(item["score"]):.1f}' for index, item in enumerate(history)]
@@ -202,6 +255,7 @@ def build_score_chart(history):
         f'{"".join(grid)}'
         f'<line class="chart-axis" x1="{left}" y1="{top}" x2="{left}" y2="{height - bottom}" />'
         f'<line class="chart-axis" x1="{left}" y1="{height - bottom}" x2="{width - right}" y2="{height - bottom}" />'
+        f'{"".join(adjustment_markers)}'
         f'<polyline class="chart-line" points="{" ".join(points)}" />'
         f'{"".join(circles)}'
         f'<circle class="chart-point chart-point-latest" cx="{latest_x:.1f}" cy="{latest_y:.1f}" r="6" />'
@@ -228,6 +282,7 @@ def _page_data(hero_name, english_name, history, roles, adjustment_entry=None):
     score_change = latest["score"] - previous["score"] if previous else 0
     change_class = "positive" if score_change > 0 else "negative" if score_change < 0 else "flat"
     role_label = " / ".join(sorted(roles)) if roles else "All"
+    hero_adjustments = prepare_hero_adjustments(adjustment_entry)
 
     return {
         "name": hero_name,
@@ -241,9 +296,9 @@ def _page_data(hero_name, english_name, history, roles, adjustment_entry=None):
         "change_class": change_class,
         "first_date_label": history[0]["date_label"],
         "period_count": len(history),
-        "chart_svg": build_score_chart(history),
+        "chart_svg": build_score_chart(history, hero_adjustments),
         "history": list(reversed(history)),
-        "adjustments": prepare_hero_adjustments(adjustment_entry),
+        "adjustments": hero_adjustments,
         "adjustment_source_url": hero_adjustment_url(adjustment_entry),
     }
 

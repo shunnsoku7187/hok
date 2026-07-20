@@ -76,6 +76,7 @@ def prepare_hero_adjustments(hero_entry):
     for adjustment in hero_entry.get("adjustments", []):
         content = adjustment.get("adjustContent") or {}
         tag_text = (content.get("contentTag") or {}).get("text") or "数値調整"
+        adjustment_date = parse_adjustment_date(adjustment.get("versionName", ""))
         attributes = []
         for attribute in content.get("attribute") or []:
             description = html_to_text(attribute.get("attributeDesc", ""))
@@ -90,6 +91,7 @@ def prepare_hero_adjustments(hero_entry):
 
         prepared.append(
             {
+                "date": adjustment_date,
                 "date_label": format_adjustment_date(adjustment.get("versionName", "")),
                 "season_name": adjustment.get("seasonName", ""),
                 "summary": content.get("shortDesc") or content.get("desc") or "能力調整",

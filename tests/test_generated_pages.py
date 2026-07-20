@@ -69,6 +69,9 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn("週次履歴を表示", chicha)
         self.assertIn("週次履歴を非表示", chicha)
         self.assertGreater(chicha.index("<table>"), chicha.index('<details class="history-disclosure">'))
+        self.assertEqual(chicha.count('class="chart-adjustment '), 3)
+        self.assertIn('<title>2026/07/16 上方修正</title>', chicha)
+        self.assertIn('class="chart-adjustment-line"', chicha)
         self.assertIn("HOKCAMPに掲載された能力調整はありません。", garuda)
 
 

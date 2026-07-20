@@ -5,10 +5,27 @@ from unittest.mock import patch
 
 from hok_tools import csv_tool
 from hok_tools.csv_tool import hero_page_slug
-from hok_tools.hero_history_tool import resolve_snapshot_dates
+from hok_tools.hero_history_tool import build_score_chart, resolve_snapshot_dates
 
 
 class HeroHistoryTests(unittest.TestCase):
+    def test_score_chart_places_adjustment_between_weekly_points(self):
+        history = [
+            {"date": date(2026, 1, 1), "date_label": "2026/01/01", "score": 50, "score_label": "50.00", "hero_name": "テスト"},
+            {"date": date(2026, 1, 9), "date_label": "2026/01/09", "score": 55, "score_label": "55.00", "hero_name": "テスト"},
+        ]
+        adjustments = [
+            {"date": date(2026, 1, 5), "date_label": "2026/01/05", "direction_label": "上方修正", "tag_class": "buff"},
+            {"date": date(2025, 12, 1), "date_label": "2025/12/01", "direction_label": "下方修正", "tag_class": "nerf"},
+        ]
+
+        chart = build_score_chart(history, adjustments)
+
+        self.assertIn('class="chart-adjustment buff"', chart)
+        self.assertIn('<title>2026/01/05 上方修正</title>', chart)
+        self.assertIn('x1="499.0"', chart)
+        self.assertNotIn("2025/12/01", chart)
+
     def test_resolves_legacy_ambiguous_dates_using_adjacent_weeks(self):
         paths = [
             Path("csv/20251031_heroes.csv"),
