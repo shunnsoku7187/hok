@@ -12,3 +12,4 @@ from .categories_tool import load_hero_categories,add_hero_to_json,remove_hero_f
 
 from .csv_tool import save_heroes_to_csv,generate_pick_up_html
 from .hero_history_tool import generate_hero_history_pages
+from .prediction_tool import generate_prediction_page

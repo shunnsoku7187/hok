@@ -1,0 +1,76 @@
+{
+  "round_id": "balance-2026-07-30",
+  "title": "次回バランス調整予想",
+  "target_label": "2026/07/30 前後",
+  "published_at": "2026-07-21T00:00:00+09:00",
+  "closes_at": "2026-07-29T23:59:59+09:00",
+  "method_note": "全期間のスコア推移、直近成績、調整履歴、同一ヒーローへの短期再調整の少なさを合わせた編集部予想です。表示確率はAIモデルの生出力ではなく、過去データを基にした予想確度です。",
+  "predictions": [
+    {
+      "id": "lixin-nerf",
+      "rank": "鉄板",
+      "hero_name": "李信",
+      "english_name": "lixin",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 78,
+      "reason": "S帯の64.11点。勝率53.64%に加えてBAN率2.84%も高く、6月の上方修正後も高水準が続いています。",
+      "metrics": "Score 64.11 / Win 53.64% / Pick 2.64% / Ban 2.84%"
+    },
+    {
+      "id": "dun-nerf",
+      "rank": "大本命",
+      "hero_name": "夏侯惇",
+      "english_name": "dun",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 68,
+      "reason": "S帯の60.01点、勝率53.26%。5月の上方修正後に上位を維持しており、次の抑制対象になりやすい位置です。",
+      "metrics": "Score 60.01 / Win 53.26% / Pick 1.73% / Ban 0.35%"
+    },
+    {
+      "id": "luna-buff",
+      "rank": "本命",
+      "hero_name": "ルナ",
+      "english_name": "luna",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 63,
+      "reason": "D帯の43.49点、勝率46.27%。全期間モデルでも上方候補の上位で、人気を壊さず救済しやすい低迷水準です。",
+      "metrics": "Score 43.49 / Win 46.27% / Pick 0.63% / Ban 0.20%"
+    },
+    {
+      "id": "yango-buff",
+      "rank": "対抗",
+      "hero_name": "元歌",
+      "english_name": "yango",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 55,
+      "reason": "C帯の45.85点でPick率0.33%。実装後の利用率が伸びず、初回の底上げ調整が入る余地があります。",
+      "metrics": "Score 45.85 / Win 48.17% / Pick 0.33% / Ban 0.06%"
+    },
+    {
+      "id": "garo-nerf",
+      "rank": "穴",
+      "hero_name": "伽羅",
+      "english_name": "garo",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 43,
+      "reason": "S帯の60.32点、勝率53.77%。突出したBAN率ではないものの、静かに高勝率を保つため数値調整の候補です。",
+      "metrics": "Score 60.32 / Win 53.77% / Pick 1.29% / Ban 0.21%"
+    },
+    {
+      "id": "dolia-buff",
+      "rank": "大穴",
+      "hero_name": "ドリア",
+      "english_name": "dolia",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 31,
+      "reason": "C帯の45.67点、勝率45.94%。Pick率は残っているため緊急度は低めですが、体験改善を兼ねた小幅上方ならあり得ます。",
+      "metrics": "Score 45.67 / Win 45.94% / Pick 1.73% / Ban 0.40%"
+    }
+  ]
+}

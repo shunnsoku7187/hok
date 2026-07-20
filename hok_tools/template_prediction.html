@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#16784a">
+    <title>{{ round.title }} | HOK Score List</title>
+    <link rel="stylesheet" href="prediction.css">
+</head>
+<body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}">
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="../index.html" aria-label="HOK Score List トップへ">HOK Score List</a>
+            <a class="hero-link" href="../heroes/index.html">ヒーロー別データ</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="page-title">
+            <p class="eyebrow">NEXT BALANCE FORECAST</p>
+            <div class="intro-heading">
+                <div>
+                    <h1 id="page-title">{{ round.title }}</h1>
+                    <p class="target">予想対象 <strong>{{ round.target_label }}</strong></p>
+                </div>
+                <span class="live-status" id="live-status"><span aria-hidden="true"></span>集計サーバーへ接続中</span>
+            </div>
+            <p class="method-note">{{ round.method_note }}</p>
+            <div class="summary-strip" aria-label="予想概要">
+                <div><span>候補</span><strong>{{ round.predictions|length }}人</strong></div>
+                <div><span>投票締切</span><strong>7/29 23:59</strong></div>
+                <div><span>集計更新</span><strong>5秒ごと</strong></div>
+            </div>
+        </section>
+
+        <section class="predictions" aria-labelledby="prediction-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">AI PICKS</p>
+                    <h2 id="prediction-heading">修正候補</h2>
+                </div>
+                <p><b>DO</b> は修正あり、<b>NOT</b> は修正なし</p>
+            </div>
+
+            <div class="prediction-list">
+                {% for item in round.predictions %}
+                <article class="prediction-card" data-prediction-id="{{ item.id }}">
+                    <div class="pick-rank">{{ item.rank }}</div>
+                    <a class="hero-identity" href="../heroes/{{ item.english_name }}.html">
+                        <img src="../hok_pics/{{ item.english_name }}.png" alt="" width="88" height="88">
+                        <div>
+                            <h3>{{ item.hero_name }}</h3>
+                            <span class="direction direction-{{ item.direction }}">{{ item.direction_label }}</span>
+                        </div>
+                    </a>
+
+                    <div class="ai-forecast">
+                        <div class="forecast-label"><span>AI予想確率</span><strong>{{ item.probability }}%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 {{ item.probability }}パーセント">
+                            <span style="width: {{ item.probability }}%"></span>
+                        </div>
+                        <p>{{ item.reason }}</p>
+                        <small>{{ item.metrics }}</small>
+                    </div>
+
+                    <div class="community-vote">
+                        <div class="vote-heading">
+                            <span>みんなの予想</span>
+                            <strong class="vote-total">0票</strong>
+                        </div>
+                        <div class="crowd-track" aria-label="投票割合">
+                            <span class="crowd-do" style="width: 50%"></span>
+                            <span class="crowd-not" style="width: 50%"></span>
+                        </div>
+                        <div class="vote-split">
+                            <span class="do-count">DO 0票</span>
+                            <span class="not-count">NOT 0票</span>
+                        </div>
+                        <div class="vote-actions" role="group" aria-label="{{ item.hero_name }}への投票">
+                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
+                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="prediction.js" defer></script>
+</body>
+</html>

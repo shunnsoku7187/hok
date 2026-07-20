@@ -8,7 +8,8 @@ from hok_tools import (
     save_heroes_to_csv,
     load_hero_categories,
     generate_pick_up_html,
-    generate_hero_history_pages
+    generate_hero_history_pages,
+    generate_prediction_page,
 )
 import matplotlib.pyplot as plt
 #import japanize_matplotlib
@@ -46,6 +47,7 @@ def generate_html():
         generate_pick_up_html(category_name, filename=h_mb_filename, device='mobile')
 
     generate_hero_history_pages()
+    generate_prediction_page()
 
 if __name__ == "__main__":
     generate_html()
