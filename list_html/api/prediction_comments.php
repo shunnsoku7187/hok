@@ -28,6 +28,17 @@ function load_round_config(): array
     return $config;
 }
 
+function load_hero_assets(): array
+{
+    $path = dirname(__DIR__) . '/predictions/hero_assets.json';
+    $json = @file_get_contents($path);
+    $assets = $json === false ? null : json_decode($json, true);
+    if (!is_array($assets)) {
+        respond(503, ['error' => 'ヒーロー画像データを読み込めません']);
+    }
+    return $assets;
+}
+
 function data_path(string $roundId): string
 {
     $documentRoot = realpath((string) ($_SERVER['DOCUMENT_ROOT'] ?? ''));
@@ -160,6 +171,7 @@ function public_state(array $state, ?string $voterHash): array
             'nickname' => $deleted ? '削除済み' : (string) ($comment['nickname'] ?? ''),
             'body' => $deleted ? '管理者により削除されました' : (string) ($comment['body'] ?? ''),
             'hero' => $deleted ? null : ($comment['hero'] ?? null),
+            'hero_asset' => $deleted ? null : ($comment['hero_asset'] ?? null),
             'direction' => $deleted ? null : ($comment['direction'] ?? null),
             'created_at' => (string) ($comment['created_at'] ?? ''),
             'updated_at' => $comment['updated_at'] ?? null,
@@ -250,6 +262,7 @@ if ($method === 'POST') {
             $state['comments'][$index]['nickname'] = '';
             $state['comments'][$index]['body'] = '';
             $state['comments'][$index]['hero'] = null;
+            $state['comments'][$index]['hero_asset'] = null;
             $state['comments'][$index]['direction'] = null;
             $state['comments'][$index]['likes'] = [];
             $state['comments'][$index]['updated_at'] = gmdate('c');
@@ -289,6 +302,7 @@ if ($method === 'POST') {
             respond(400, ['error' => $fieldName . 'は1〜500文字、URLは2件以内で入力してください']);
         }
         $hero = null;
+        $heroAsset = null;
         $direction = null;
         if ($parentId === null) {
             $hero = clean_hero_name($payload['hero'] ?? null);
@@ -296,6 +310,11 @@ if ($method === 'POST') {
             if ($hero === null) {
                 respond(400, ['error' => 'ヒーローは1〜40文字で入力してください']);
             }
+            $heroAssets = load_hero_assets();
+            if (!isset($heroAssets[$hero]) || !is_string($heroAssets[$hero])) {
+                respond(400, ['error' => '候補からヒーローを選択してください']);
+            }
+            $heroAsset = $heroAssets[$hero];
             if (!in_array($direction, ['buff', 'nerf'], true)) {
                 respond(400, ['error' => '予想される修正を選択してください']);
             }
@@ -308,6 +327,7 @@ if ($method === 'POST') {
             'nickname' => $nickname,
             'body' => $body,
             'hero' => $hero,
+            'hero_asset' => $heroAsset,
             'direction' => $direction,
             'created_at' => gmdate('c'),
             'updated_at' => null,

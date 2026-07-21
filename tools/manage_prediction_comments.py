@@ -100,7 +100,8 @@ def list_comments(args):
         print(f"#{comment['id']}{parent} {comment['nickname']} 賛成:{comment['like_count']}{deleted}")
         if comment.get("hero") and comment.get("direction"):
             direction = "上方修正" if comment["direction"] == "buff" else "下方修正"
-            print(f"  [{comment['hero']} / {direction}]")
+            asset = f" / {comment['hero_asset']}" if comment.get("hero_asset") else ""
+            print(f"  [{comment['hero']} / {direction}{asset}]")
         print(f"  {body}")
 
 

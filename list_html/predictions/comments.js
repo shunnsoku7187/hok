@@ -30,6 +30,12 @@
     }
 
     const token = voterToken();
+    const heroOptions = new Map(
+        [...document.querySelectorAll("#hero-name-options option")].map((option) => [
+            option.value,
+            option.dataset.asset,
+        ]),
+    );
 
     function formatDate(value) {
         const date = new Date(value);
@@ -88,12 +94,26 @@
         if (comment.parent_id === null && comment.hero && comment.direction) {
             const prediction = document.createElement("div");
             prediction.className = "comment-prediction";
+            if (comment.hero_asset) {
+                const icon = document.createElement("img");
+                icon.className = "comment-hero-icon";
+                icon.src = `../hok_pics/${encodeURIComponent(comment.hero_asset)}.png`;
+                icon.alt = comment.hero;
+                icon.width = 56;
+                icon.height = 56;
+                icon.loading = "lazy";
+                icon.addEventListener("error", () => { icon.hidden = true; }, { once: true });
+                prediction.append(icon);
+            }
+            const predictionText = document.createElement("div");
+            predictionText.className = "comment-prediction-text";
             const hero = document.createElement("strong");
             hero.textContent = comment.hero;
             const direction = document.createElement("span");
             direction.className = `comment-direction ${comment.direction}`;
             direction.textContent = comment.direction === "buff" ? "上方修正" : "下方修正";
-            prediction.append(hero, direction);
+            predictionText.append(hero, direction);
+            prediction.append(predictionText);
             item.append(header, prediction);
         } else {
             item.append(header);
@@ -188,6 +208,12 @@
 
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
+        if (!replyTarget && !heroOptions.has(heroInput.value)) {
+            heroInput.setCustomValidity("候補からヒーローを選択してください");
+            heroInput.reportValidity();
+            return;
+        }
+        heroInput.setCustomValidity("");
         const success = await sendAction({
             action: "create",
             nickname: nicknameInput.value,
@@ -208,6 +234,8 @@
     document.getElementById("reply-cancel").addEventListener("click", () => {
         setReplyTarget();
     });
+
+    heroInput.addEventListener("input", () => heroInput.setCustomValidity(""));
 
     fetchComments();
     window.setInterval(fetchComments, POLL_INTERVAL_MS);
