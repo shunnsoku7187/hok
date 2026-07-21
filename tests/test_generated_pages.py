@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 HERO_DIR = ROOT / "list_html" / "heroes"
+LEGAL_DIR = ROOT / "list_html" / "legal"
 
 
 class GeneratedPageTests(unittest.TestCase):
@@ -18,6 +19,8 @@ class GeneratedPageTests(unittest.TestCase):
         for page in list_pages:
             content = page.read_text(encoding="utf-8")
             self.assertNotRegex(content, r'(?:href|src)="[^"]*\\')
+            self.assertNotIn("created by", content.lower(), page.name)
+            self.assertIn('href="../legal/terms.html"', content, page.name)
             links = re.findall(r'href="\.\./heroes/([^"]+\.html)"', content)
             self.assertTrue(links, page.name)
             for link in links:
@@ -38,6 +41,7 @@ class GeneratedPageTests(unittest.TestCase):
         for page in hero_pages:
             content = page.read_text(encoding="utf-8")
             self.assertNotRegex(content, r'(?:href|src)="[^"]*\\')
+            self.assertIn('href="../legal/terms.html"', content, page.name)
             if page.name == "index.html":
                 continue
             self.assertIn('class="score-chart"', content, page.name)
@@ -70,6 +74,28 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn('<title>2026/07/16 上方修正</title>', chicha)
         self.assertIn('class="chart-adjustment-line"', chicha)
         self.assertIn("HOKCAMPに掲載された能力調整はありません。", garuda)
+
+    def test_policy_pages_and_footer_links_exist(self):
+        expected = {
+            "terms.html": "利用規約",
+            "privacy.html": "プライバシーポリシー",
+            "disclaimer.html": "免責事項",
+            "community-guidelines.html": "投稿ガイドライン",
+        }
+        for filename, heading in expected.items():
+            content = (LEGAL_DIR / filename).read_text(encoding="utf-8")
+            self.assertIn(f"<h1>{heading}</h1>", content)
+            for linked_file in expected:
+                self.assertIn(f'href="{linked_file}"', content, filename)
+
+        for filename in ["index.html", "for_mobile.html"]:
+            content = (ROOT / "list_html" / filename).read_text(encoding="utf-8")
+            self.assertIn('href="legal/terms.html"', content, filename)
+
+        prediction = (ROOT / "list_html" / "predictions" / "index.html").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn('href="../legal/terms.html"', prediction)
 
 
 if __name__ == "__main__":

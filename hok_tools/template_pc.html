@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ title }}</title>
+        <link rel="stylesheet" href="../legal/site-footer.css">
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -85,7 +86,7 @@
         </style>
     </head>
     <body>
-        <h1>{{ title }} (created by {{ author }})</h1>
+        <h1>{{ title }}</h1>
         <div class="scrollable">
             <table>
                 <thead>
@@ -113,5 +114,8 @@
                 <li><a href="../index.html">TOPへ戻る</a></li>
             </ul>
         </div>
+        <footer class="site-footer">
+            <div class="site-footer-inner"><span>HOK Score List</span>{% include "hok_tools/template_policy_links.html" %}</div>
+        </footer>
     </body>
     </html>

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ヒーロー別スコア推移 | HOK Score List</title>
+    <link rel="stylesheet" href="../legal/site-footer.css">
     <style>
         :root { --green: #2fbd57; --ink: #17201b; --muted: #68726b; --line: #d8ded9; --surface: #fff; --canvas: #f3f5f2; }
         * { box-sizing: border-box; }
         body { margin: 0; background: var(--canvas); color: var(--ink); font-family: Arial, "Noto Sans JP", sans-serif; letter-spacing: 0; }
         .site-header { border-bottom: 4px solid var(--green); background: #202923; color: #fff; }
-        .site-header-inner, main { width: min(980px, calc(100% - 40px)); margin: 0 auto; }
+        .site-header-inner, main, .footer-inner { width: min(980px, calc(100% - 40px)); margin: 0 auto; }
         .site-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 58px; gap: 20px; }
         .brand, .back-link { color: #fff; text-decoration: none; }
         .brand { font-size: 18px; font-weight: 700; }
@@ -31,8 +32,11 @@
         .score { font-size: 19px; font-weight: 700; }
         .tier { color: #187c3a; font-weight: 700; text-align: center; }
         .empty { display: none; padding: 30px 12px; text-align: center; color: var(--muted); }
+        footer { border-top: 1px solid var(--line); background: #e7ebe7; }
+        .footer-inner { padding: 22px 0 28px; color: var(--muted); font-size: 13px; }
+        .credit-link { color: inherit; font-weight: 700; text-underline-offset: 3px; }
         @media (max-width: 620px) {
-            .site-header-inner, main { width: min(100% - 24px, 980px); }
+            .site-header-inner, main, .footer-inner { width: min(100% - 24px, 980px); }
             main { padding-top: 28px; }
             h1 { font-size: 27px; }
             .hero-row { grid-template-columns: 58px minmax(0, 1fr) 72px; min-height: 76px; }
@@ -985,6 +989,12 @@
         </div>
         <p class="empty" id="empty-message">該当するヒーローが見つかりません。</p>
     </main>
+    <footer class="site-footer"><div class="footer-inner site-footer-inner"><span>データ出典: <a class="credit-link" href="https://camp.honorofkings.com/h5/app/index.html" target="_blank" rel="noopener noreferrer">HOKCAMP</a></span><nav class="policy-links" aria-label="サイトポリシー">
+    <a href="../legal/terms.html">利用規約</a>
+    <a href="../legal/privacy.html">プライバシーポリシー</a>
+    <a href="../legal/disclaimer.html">免責事項</a>
+    <a href="../legal/community-guidelines.html">投稿ガイドライン</a>
+</nav></div></footer>
     <script>
         const search = document.getElementById('hero-search');
         const rows = Array.from(document.querySelectorAll('.hero-row'));
