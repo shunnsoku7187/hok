@@ -114,6 +114,8 @@ h1 {
 }
 
 .live-status.online span { background: #22a561; }
+.live-status.closed span { background: var(--amber); }
+.live-status.result span { background: var(--blue); }
 .live-status.error span { background: var(--red); }
 
 .method-note {
@@ -143,6 +145,24 @@ h1 {
 .section-heading { align-items: end; margin-bottom: 18px; }
 .section-heading h2 { margin: 0; font-size: 24px; }
 .section-heading > p { margin: 0; color: var(--muted); font-size: 13px; }
+
+.result-announcement {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 22px;
+    align-items: center;
+    margin-bottom: 18px;
+    padding: 16px 18px;
+    border: 1px solid #a9c4d2;
+    background: #edf4f7;
+}
+
+.result-announcement > div { display: grid; gap: 3px; }
+.result-announcement span { color: var(--blue); font-size: 11px; font-weight: 800; }
+.result-announcement strong { font-size: 17px; }
+.result-announcement p { margin: 0; color: var(--muted); font-size: 13px; }
+.result-announcement p b { color: var(--ink); }
+.result-announcement a { color: var(--blue); font-size: 12px; font-weight: 800; text-underline-offset: 3px; }
 
 .prediction-list { border-top: 1px solid var(--line); }
 
@@ -190,6 +210,8 @@ h1 {
 }
 
 .hero-identity h3 { margin: 0 0 9px; font-size: 22px; }
+.hero-identity > div { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.hero-identity h3 { flex-basis: 100%; }
 
 .direction {
     display: inline-block;
@@ -201,6 +223,21 @@ h1 {
 
 .direction-buff { background: var(--green-soft); color: var(--green); }
 .direction-nerf { background: var(--red-soft); color: var(--red); }
+
+.result-badge {
+    display: inline-block;
+    padding: 4px 7px;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.result-hit { color: var(--green); background: var(--green-soft); }
+.result-partial { color: var(--blue); background: #edf4f7; }
+.result-opposite { color: var(--red); background: var(--red-soft); }
+.result-miss { color: var(--muted); background: #eef1ef; }
 
 .forecast-label { margin-bottom: 8px; font-size: 13px; }
 .forecast-label span { color: var(--muted); font-weight: 700; }
@@ -224,6 +261,9 @@ h1 {
 }
 
 .ai-forecast small { color: var(--muted); font-size: 11px; }
+.ai-forecast .actual-result { margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+.actual-result strong { color: var(--ink); }
+.actual-result a { margin-left: 7px; color: var(--blue); font-weight: 700; text-underline-offset: 3px; }
 
 .community-vote {
     padding-left: 28px;
@@ -261,6 +301,42 @@ h1 {
 .vote-do.selected { border-color: var(--green); background: var(--green); color: white; }
 .vote-not.selected { border-color: #66736c; background: #66736c; color: white; }
 
+.result-history {
+    margin-top: 58px;
+    padding-top: 34px;
+    border-top: 2px solid var(--ink);
+}
+
+.result-round { border-top: 1px solid var(--line); background: var(--surface); }
+.result-round:last-child { border-bottom: 1px solid var(--line); }
+.result-round summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 58px;
+    padding: 13px 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.result-round summary strong { color: var(--green); }
+.result-list { border-top: 1px solid var(--line); }
+.result-item {
+    display: grid;
+    grid-template-columns: 52px minmax(180px, 1fr) auto minmax(150px, auto);
+    gap: 14px;
+    align-items: center;
+    min-height: 76px;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--line);
+}
+.result-item:last-child { border-bottom: 0; }
+.result-item img { width: 52px; height: 52px; border: 1px solid var(--line); border-radius: 4px; object-fit: cover; }
+.result-item-main { display: grid; gap: 5px; }
+.result-item-main strong { font-size: 15px; }
+.result-item-main span, .result-vote-summary { color: var(--muted); font-size: 12px; }
+.result-vote-summary { text-align: right; }
+
 .comment-board {
     margin-top: 58px;
     padding-top: 34px;
@@ -276,6 +352,18 @@ h1 {
     font-size: 14px;
     line-height: 1.7;
 }
+
+.comment-closed {
+    margin: 0 0 18px;
+    padding: 13px 15px;
+    border-left: 4px solid var(--amber);
+    background: #f7f1e5;
+    color: #6d4b13;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.comment-closed[hidden], .comment-form[hidden] { display: none; }
 
 .comment-form {
     display: grid;
@@ -490,6 +578,8 @@ h1 {
 .toast.visible { opacity: 1; transform: translateY(0); }
 
 @media (max-width: 880px) {
+    .result-announcement { grid-template-columns: 1fr auto; }
+    .result-announcement p { grid-column: 1 / -1; grid-row: 2; }
     .prediction-card {
         grid-template-columns: 180px minmax(0, 1fr);
         gap: 24px;
@@ -500,6 +590,8 @@ h1 {
         border-top: 1px solid var(--line);
         border-left: 0;
     }
+    .result-item { grid-template-columns: 52px minmax(0, 1fr) auto; }
+    .result-vote-summary { grid-column: 2 / -1; text-align: left; }
 }
 
 @media (max-width: 600px) {
@@ -512,6 +604,8 @@ h1 {
     .summary-strip div { padding: 12px 4px; border-top: 1px solid var(--line); border-left: 0; }
     .summary-strip div:first-child { border-top: 0; }
     .section-heading > p { line-height: 1.6; }
+    .result-announcement { grid-template-columns: 1fr; gap: 9px; }
+    .result-announcement p { grid-column: auto; grid-row: auto; line-height: 1.6; }
     .prediction-card {
         grid-template-columns: 1fr;
         gap: 22px;
@@ -520,6 +614,11 @@ h1 {
     .hero-identity img { width: 78px; height: 78px; flex-basis: 78px; }
     .ai-forecast small { display: block; line-height: 1.5; }
     .community-vote { grid-column: auto; padding-top: 18px; }
+    .result-history { margin-top: 42px; }
+    .result-round summary { align-items: flex-start; flex-direction: column; gap: 5px; padding: 13px 14px; }
+    .result-item { grid-template-columns: 52px minmax(0, 1fr); padding: 12px 10px; }
+    .result-item .result-badge { grid-column: 2; justify-self: start; }
+    .result-vote-summary { grid-column: 2; }
     .comment-board { margin-top: 42px; }
     .comment-form { grid-template-columns: 1fr; padding: 16px; }
     .comment-form > label, .form-label { padding-top: 2px; }

@@ -8,7 +8,6 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 from hok_tools.adjustment_tool import (
-    hero_adjustment_url,
     load_adjustment_data,
     prepare_hero_adjustments,
 )
@@ -299,7 +298,6 @@ def _page_data(hero_name, english_name, history, roles, adjustment_entry=None):
         "chart_svg": build_score_chart(history, hero_adjustments),
         "history": list(reversed(history)),
         "adjustments": hero_adjustments,
-        "adjustment_source_url": hero_adjustment_url(adjustment_entry),
     }
 
 

@@ -5,7 +5,9 @@
     const POLL_INTERVAL_MS = 5000;
     const roundId = document.body.dataset.roundId;
     const closesAt = new Date(document.body.dataset.closesAt);
+    const resultReady = document.body.dataset.resultReady === "true";
     const cards = [...document.querySelectorAll("[data-prediction-id]")];
+    const resultRounds = [...document.querySelectorAll("[data-result-round-id]")];
     const liveStatus = document.getElementById("live-status");
     const toast = document.getElementById("toast");
     let toastTimer;
@@ -76,7 +78,10 @@
 
         const closed = data.closed || Date.now() > closesAt.getTime();
         setButtonsEnabled(!closed);
-        setConnection("online", closed ? "投票終了" : "リアルタイム集計中");
+        setConnection(
+            closed ? (resultReady ? "result" : "closed") : "online",
+            closed ? (resultReady ? "結果発表中" : "投票終了") : "リアルタイム集計中",
+        );
     }
 
     async function fetchVotes() {
@@ -125,6 +130,29 @@
         });
     });
 
+    async function fetchArchivedResults() {
+        await Promise.all(resultRounds.map(async (resultRound) => {
+            const resultRoundId = resultRound.dataset.resultRoundId;
+            try {
+                const url = `${API_URL}?round_id=${encodeURIComponent(resultRoundId)}&_=${Date.now()}`;
+                const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error || "最終票を取得できませんでした");
+                resultRound.querySelectorAll("[data-result-prediction-id]").forEach((item) => {
+                    const market = data.markets?.[item.dataset.resultPredictionId];
+                    item.querySelector(".result-vote-summary").textContent = market
+                        ? `最終投票 DO ${market.do} / NOT ${market.not}`
+                        : "最終投票データなし";
+                });
+            } catch (_error) {
+                resultRound.querySelectorAll(".result-vote-summary").forEach((label) => {
+                    label.textContent = "最終投票を取得できません";
+                });
+            }
+        }));
+    }
+
     fetchVotes();
+    fetchArchivedResults();
     window.setInterval(fetchVotes, POLL_INTERVAL_MS);
 })();

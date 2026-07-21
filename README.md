@@ -13,6 +13,18 @@ GitHub Actionsが毎週日曜日の午前6時に[HOK CAMP](https://camp.honorofk
 週次一覧には直近1週間に能力調整されたヒーローだけ「調整あり」と簡易表示する。調整履歴の取得に一時的に失敗した場合は保存済みの`data/hero_adjustments.json`を利用し、通常の週次更新は継続する。
 `main`ブランチへのpushでも同じ処理を実行できる。
 
+# ●バランス調整予想の更新
+予想ページは`data/prediction_round.json`に全ラウンドを追記して管理する。各ラウンドは`closes_at`になるとDO/NOT投票、コメント、返信、賛成をまとめて自動締切する。
+締切後、`get_adjustments.py`が`result_after`以降の最初の調整データを取得すると、予想方向との一致を自動判定して同じページで結果発表する。新しいラウンドを公開した後も、完了したラウンドは「過去の予想結果」に残る。
+
+新ラウンド用JSONを作成したら、次のコマンドで履歴へ追加し、公開対象を切り替える。
+
+```bash
+python tools/manage_prediction_rounds.py publish path/to/new_round.json
+```
+
+現在のラウンドと結果取得状況は`python tools/manage_prediction_rounds.py status`で確認できる。
+
 # ●新ヒーロー実装時
 `sync_new_heroes.py`がHOKCAMPの日本語名・英語アセット名・ロール・アイコンを取得し、`names.csv`、`hero_categories.json`、`list_html/hok_pics`へ自動追加する。
 日本語名と英語アセット名は初回検出時に保存し、以後の週次更新では保存済みの対応を利用する。

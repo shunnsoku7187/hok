@@ -36,9 +36,12 @@ class PredictionCommentApiTests(unittest.TestCase):
             ROOT / "list_html" / "api" / "prediction_comments.php",
             cls.web_root / "api" / "prediction_comments.php",
         )
-        shutil.copy2(
-            ROOT / "list_html" / "predictions" / "round.json",
-            cls.web_root / "predictions" / "round.json",
+        round_config = json.loads(
+            (ROOT / "list_html" / "predictions" / "round.json").read_text(encoding="utf-8")
+        )
+        round_config["closes_at"] = "2099-07-29T23:59:59+09:00"
+        (cls.web_root / "predictions" / "round.json").write_text(
+            json.dumps(round_config, ensure_ascii=False), encoding="utf-8"
         )
         shutil.copy2(
             ROOT / "list_html" / "predictions" / "hero_assets.json",
@@ -196,6 +199,36 @@ class PredictionCommentApiTests(unittest.TestCase):
             admin_token=ADMIN_TOKEN,
         )
         self.assertEqual([], root_deleted["comments"])
+
+    def test_z_closed_round_rejects_all_community_actions(self):
+        config_path = self.web_root / "predictions" / "round.json"
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+        config["closes_at"] = "2000-01-01T00:00:00+09:00"
+        config_path.write_text(json.dumps(config, ensure_ascii=False), encoding="utf-8")
+
+        closed = self._request("GET", query={"round_id": ROUND_ID})
+        self.assertTrue(closed["closed"])
+        for payload in (
+            {
+                "action": "create",
+                "nickname": "締切確認",
+                "hero": "ルナ",
+                "direction": "buff",
+                "body": "締切後の投稿",
+                "parent_id": None,
+            },
+            {"action": "like", "comment_id": 1},
+        ):
+            with self.assertRaises(urllib.error.HTTPError) as rejected:
+                self._request(
+                    "POST",
+                    payload={
+                        "round_id": ROUND_ID,
+                        "voter_token": "comment-voter-token-closed",
+                        **payload,
+                    },
+                )
+            self.assertEqual(403, rejected.exception.code)
 
 
 if __name__ == "__main__":
