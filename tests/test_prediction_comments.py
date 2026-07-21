@@ -40,6 +40,10 @@ class PredictionCommentApiTests(unittest.TestCase):
             ROOT / "list_html" / "predictions" / "round.json",
             cls.web_root / "predictions" / "round.json",
         )
+        shutil.copy2(
+            ROOT / "list_html" / "predictions" / "hero_assets.json",
+            cls.web_root / "predictions" / "hero_assets.json",
+        )
 
         cls.port = _free_port()
         environment = os.environ.copy()
@@ -82,6 +86,22 @@ class PredictionCommentApiTests(unittest.TestCase):
             return json.loads(response.read())
 
     def test_create_reply_like_toggle_and_admin_delete(self):
+        with self.assertRaises(urllib.error.HTTPError) as invalid_hero:
+            self._request(
+                "POST",
+                payload={
+                    "round_id": ROUND_ID,
+                    "action": "create",
+                    "nickname": "予想屋A",
+                    "hero": "存在しないヒーロー",
+                    "direction": "buff",
+                    "body": "候補外入力の確認",
+                    "parent_id": None,
+                    "voter_token": "comment-voter-token-invalid",
+                },
+            )
+        self.assertEqual(400, invalid_hero.exception.code)
+
         created = self._request(
             "POST",
             payload={
@@ -99,6 +119,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         self.assertEqual(1, root["id"])
         self.assertEqual("予想屋A", root["nickname"])
         self.assertEqual("ルナ", root["hero"])
+        self.assertEqual("luna", root["hero_asset"])
         self.assertEqual("buff", root["direction"])
 
         replied = self._request(
@@ -115,6 +136,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         reply = replied["comments"][-1]
         self.assertEqual(root["id"], reply["parent_id"])
         self.assertIsNone(reply["hero"])
+        self.assertIsNone(reply["hero_asset"])
         self.assertIsNone(reply["direction"])
 
         liked = self._request(

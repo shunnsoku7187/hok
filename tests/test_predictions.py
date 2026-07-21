@@ -25,6 +25,7 @@ class PredictionPageTests(unittest.TestCase):
 
             html = (output_dir / "index.html").read_text(encoding="utf-8")
             deployed_round = json.loads((output_dir / "round.json").read_text(encoding="utf-8"))
+            hero_assets = json.loads((output_dir / "hero_assets.json").read_text(encoding="utf-8"))
 
         self.assertIn("次回バランス調整予想", html)
         self.assertIn("data-prediction-id=\"lixin-nerf\"", html)
@@ -32,8 +33,10 @@ class PredictionPageTests(unittest.TestCase):
         self.assertIn("id=\"comment-form\"", html)
         self.assertIn("value=\"匿名希望\"", html)
         self.assertIn("予想される修正", html)
+        self.assertIn('value="妲己" data-asset="daji"', html)
         self.assertIn("src=\"comments.js\"", html)
         self.assertEqual("balance-2026-07-30", deployed_round["round_id"])
+        self.assertEqual("daji", hero_assets["妲己"])
 
 
 if __name__ == "__main__":

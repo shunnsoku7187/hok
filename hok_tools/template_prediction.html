@@ -103,7 +103,7 @@
                     <label for="comment-hero">ヒーロー <span class="required">必須</span></label>
                     <input id="comment-hero" name="hero" type="text" list="hero-name-options" maxlength="40" required>
                     <datalist id="hero-name-options">
-                        {% for hero_name in hero_names %}<option value="{{ hero_name }}"></option>{% endfor %}
+                        {% for hero in hero_options %}<option value="{{ hero.name }}" data-asset="{{ hero.asset }}"></option>{% endfor %}
                     </datalist>
                     <span class="form-label" id="direction-label">予想される修正 <b class="required">必須</b></span>
                     <div class="direction-options" role="radiogroup" aria-labelledby="direction-label">

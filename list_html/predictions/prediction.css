@@ -408,11 +408,29 @@ h1 {
 .comment-prediction {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 12px;
     margin-top: 12px;
 }
 
-.comment-prediction strong { font-size: 17px; }
+.comment-hero-icon {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.comment-hero-icon[hidden] { display: none; }
+
+.comment-prediction-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.comment-prediction-text strong { font-size: 17px; }
 
 .comment-direction {
     padding: 3px 7px;
