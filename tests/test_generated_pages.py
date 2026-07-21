@@ -28,10 +28,7 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertTrue(all_links.issubset(generated_hero_pages))
 
         index_content = (HERO_DIR / "index.html").read_text(encoding="utf-8")
-        index_links = set(re.findall(r'href="([^"]+\.html)"', index_content)) - {
-            "../index.html",
-            "../for_pc/All_pc_table.html",
-        }
+        index_links = set(re.findall(r'class="hero-row" href="([^"]+\.html)"', index_content))
         self.assertEqual(index_links, generated_hero_pages)
 
     def test_each_hero_page_contains_chart_and_existing_icon(self):
