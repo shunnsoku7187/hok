@@ -207,6 +207,57 @@
         .chart-y-label { text-anchor: end; }
         .chart-x-label { text-anchor: middle; }
         .chart-latest-label { fill: #145f30; font-size: 14px; font-weight: 700; }
+        .relationship-columns {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 32px;
+            border-top: 1px solid var(--line);
+        }
+        .relationship-group h3 {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+            padding: 16px 0 12px;
+            font-size: 16px;
+        }
+        .relationship-group h3::before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--positive);
+            content: "";
+        }
+        .relationship-group.inverse h3::before { background: var(--negative); }
+        .relationship-list { border-bottom: 1px solid var(--line); }
+        .relationship-row {
+            display: grid;
+            grid-template-columns: 54px minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 13px;
+            min-height: 76px;
+            padding: 10px 8px;
+            border-top: 1px solid var(--line);
+            color: inherit;
+            text-decoration: none;
+        }
+        .relationship-row:hover { background: #edf3ee; }
+        .relationship-row:focus-visible { outline: 3px solid #76bd8a; outline-offset: 2px; }
+        .relationship-icon {
+            width: 52px;
+            height: 52px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .relationship-name { display: block; font-size: 16px; font-weight: 700; }
+        .relationship-role { display: block; margin-top: 3px; color: var(--muted); font-size: 12px; }
+        .relationship-stats { text-align: right; }
+        .relationship-correlation { display: block; color: var(--positive); font-size: 18px; font-weight: 700; }
+        .inverse .relationship-correlation { color: var(--negative); }
+        .relationship-match, .relationship-sample { display: block; color: var(--muted); font-size: 11px; white-space: nowrap; }
+        .relationship-match { margin-top: 3px; }
+        .relationship-method { margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+        .empty-relationships { margin: 0; padding: 18px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
         .history-disclosure {
             border-top: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
@@ -262,6 +313,7 @@
             section { padding-top: 32px; }
             h2 { font-size: 21px; }
             .chart-wrap { margin: 0 -12px; padding-left: 0; padding-right: 0; }
+            .relationship-columns { grid-template-columns: 1fr; gap: 10px; }
             .adjustment-summary {
                 grid-template-columns: minmax(0, 1fr) auto 18px;
                 gap: 14px;
@@ -306,6 +358,68 @@
             <h2 id="score-trend-title">スコア推移</h2>
             <p class="section-note">2025/01/24から2026/07/17まで、69週分</p>
             <div class="chart-wrap"><svg class="score-chart" viewBox="0 0 960 360" role="img" aria-label="大司命のスコア推移"><title>スコア推移</title><line class="chart-grid" x1="62" y1="306.0" x2="936" y2="306.0" /><text class="chart-y-label" x="50" y="310.0">45</text><line class="chart-grid" x1="62" y1="212.7" x2="936" y2="212.7" /><text class="chart-y-label" x="50" y="216.7">50</text><line class="chart-grid" x1="62" y1="119.3" x2="936" y2="119.3" /><text class="chart-y-label" x="50" y="123.3">55</text><line class="chart-grid" x1="62" y1="26.0" x2="936" y2="26.0" /><text class="chart-y-label" x="50" y="30.0">60</text><line class="chart-axis" x1="62" y1="26" x2="62" y2="306" /><line class="chart-axis" x1="62" y1="306" x2="936" y2="306" /><g class="chart-adjustment buff"><title>2026/06/17 上方修正</title><line class="chart-adjustment-line" x1="880.9" y1="26" x2="880.9" y2="306" /><circle class="chart-adjustment-point" cx="880.9" cy="306" r="4" /><text class="chart-adjustment-label" x="880.9" y="41" text-anchor="middle">調整</text></g><polyline class="chart-line" points="62.0,126.1 74.9,138.5 87.7,136.1 100.6,140.4 113.4,133.7 126.3,136.6 139.1,104.1 152.0,79.1 164.8,96.2 177.7,108.2 190.5,101.1 203.4,113.4 216.2,117.8 229.1,115.5 241.9,129.9 254.8,133.1 267.6,117.2 280.5,129.7 293.4,133.4 306.2,128.0 319.1,125.2 331.9,129.7 344.8,132.1 357.6,118.1 370.5,105.8 383.3,80.8 396.2,80.8 409.0,95.6 421.9,95.6 434.7,187.6 447.6,185.1 460.4,176.2 473.3,178.3 486.1,185.3 499.0,178.1 511.9,188.6 524.7,172.7 537.6,188.9 550.4,226.3 563.3,236.1 576.1,214.1 589.0,216.8 601.8,210.4 614.7,189.4 627.5,178.6 640.4,182.8 653.2,184.2 666.1,202.7 678.9,202.6 691.8,202.6 704.6,225.8 717.5,244.2 730.4,244.2 743.2,236.0 756.1,231.8 768.9,235.2 781.8,234.8 794.6,220.6 807.5,218.1 820.3,217.9 833.2,227.0 846.0,228.5 858.9,227.9 871.7,227.5 884.6,169.0 897.4,133.0 910.3,143.8 923.1,142.2 936.0,125.1" /><circle class="chart-point" cx="62.0" cy="126.1" r="4"><title>2025/01/24: 54.64</title></circle><circle class="chart-point" cx="74.9" cy="138.5" r="4"><title>2025/01/31: 53.97</title></circle><circle class="chart-point" cx="87.7" cy="136.1" r="4"><title>2025/02/07: 54.10</title></circle><circle class="chart-point" cx="100.6" cy="140.4" r="4"><title>2025/02/14: 53.87</title></circle><circle class="chart-point" cx="113.4" cy="133.7" r="4"><title>2025/02/21: 54.23</title></circle><circle class="chart-point" cx="126.3" cy="136.6" r="4"><title>2025/02/28: 54.08</title></circle><circle class="chart-point" cx="139.1" cy="104.1" r="4"><title>2025/03/07: 55.82</title></circle><circle class="chart-point" cx="152.0" cy="79.1" r="4"><title>2025/03/14: 57.16</title></circle><circle class="chart-point" cx="164.8" cy="96.2" r="4"><title>2025/03/21: 56.24</title></circle><circle class="chart-point" cx="177.7" cy="108.2" r="4"><title>2025/03/28: 55.60</title></circle><circle class="chart-point" cx="190.5" cy="101.1" r="4"><title>2025/04/04: 55.98</title></circle><circle class="chart-point" cx="203.4" cy="113.4" r="4"><title>2025/04/11: 55.32</title></circle><circle class="chart-point" cx="216.2" cy="117.8" r="4"><title>2025/04/18: 55.08</title></circle><circle class="chart-point" cx="229.1" cy="115.5" r="4"><title>2025/04/25: 55.20</title></circle><circle class="chart-point" cx="241.9" cy="129.9" r="4"><title>2025/05/02: 54.44</title></circle><circle class="chart-point" cx="254.8" cy="133.1" r="4"><title>2025/05/09: 54.26</title></circle><circle class="chart-point" cx="267.6" cy="117.2" r="4"><title>2025/05/16: 55.11</title></circle><circle class="chart-point" cx="280.5" cy="129.7" r="4"><title>2025/05/23: 54.44</title></circle><circle class="chart-point" cx="293.4" cy="133.4" r="4"><title>2025/05/30: 54.24</title></circle><circle class="chart-point" cx="306.2" cy="128.0" r="4"><title>2025/06/06: 54.54</title></circle><circle class="chart-point" cx="319.1" cy="125.2" r="4"><title>2025/06/13: 54.69</title></circle><circle class="chart-point" cx="331.9" cy="129.7" r="4"><title>2025/06/20: 54.44</title></circle><circle class="chart-point" cx="344.8" cy="132.1" r="4"><title>2025/06/27: 54.32</title></circle><circle class="chart-point" cx="357.6" cy="118.1" r="4"><title>2025/07/04: 55.07</title></circle><circle class="chart-point" cx="370.5" cy="105.8" r="4"><title>2025/07/11: 55.72</title></circle><circle class="chart-point" cx="383.3" cy="80.8" r="4"><title>2025/07/18: 57.07</title></circle><circle class="chart-point" cx="396.2" cy="80.8" r="4"><title>2025/07/25: 57.07</title></circle><circle class="chart-point" cx="409.0" cy="95.6" r="4"><title>2025/08/01: 56.27</title></circle><circle class="chart-point" cx="421.9" cy="95.6" r="4"><title>2025/10/10: 56.27</title></circle><circle class="chart-point" cx="434.7" cy="187.6" r="4"><title>2025/10/17: 51.34</title></circle><circle class="chart-point" cx="447.6" cy="185.1" r="4"><title>2025/10/24: 51.48</title></circle><circle class="chart-point" cx="460.4" cy="176.2" r="4"><title>2025/10/31: 51.95</title></circle><circle class="chart-point" cx="473.3" cy="178.3" r="4"><title>2025/11/07: 51.84</title></circle><circle class="chart-point" cx="486.1" cy="185.3" r="4"><title>2025/11/14: 51.47</title></circle><circle class="chart-point" cx="499.0" cy="178.1" r="4"><title>2025/11/21: 51.85</title></circle><circle class="chart-point" cx="511.9" cy="188.6" r="4"><title>2025/11/28: 51.29</title></circle><circle class="chart-point" cx="524.7" cy="172.7" r="4"><title>2025/12/05: 52.14</title></circle><circle class="chart-point" cx="537.6" cy="188.9" r="4"><title>2025/12/12: 51.27</title></circle><circle class="chart-point" cx="550.4" cy="226.3" r="4"><title>2025/12/19: 49.27</title></circle><circle class="chart-point" cx="563.3" cy="236.1" r="4"><title>2025/12/26: 48.75</title></circle><circle class="chart-point" cx="576.1" cy="214.1" r="4"><title>2026/01/02: 49.92</title></circle><circle class="chart-point" cx="589.0" cy="216.8" r="4"><title>2026/01/09: 49.78</title></circle><circle class="chart-point" cx="601.8" cy="210.4" r="4"><title>2026/01/16: 50.12</title></circle><circle class="chart-point" cx="614.7" cy="189.4" r="4"><title>2026/01/23: 51.25</title></circle><circle class="chart-point" cx="627.5" cy="178.6" r="4"><title>2026/01/30: 51.83</title></circle><circle class="chart-point" cx="640.4" cy="182.8" r="4"><title>2026/02/06: 51.60</title></circle><circle class="chart-point" cx="653.2" cy="184.2" r="4"><title>2026/02/13: 51.52</title></circle><circle class="chart-point" cx="666.1" cy="202.7" r="4"><title>2026/02/20: 50.54</title></circle><circle class="chart-point" cx="678.9" cy="202.6" r="4"><title>2026/02/27: 50.54</title></circle><circle class="chart-point" cx="691.8" cy="202.6" r="4"><title>2026/03/06: 50.54</title></circle><circle class="chart-point" cx="704.6" cy="225.8" r="4"><title>2026/03/13: 49.29</title></circle><circle class="chart-point" cx="717.5" cy="244.2" r="4"><title>2026/03/20: 48.31</title></circle><circle class="chart-point" cx="730.4" cy="244.2" r="4"><title>2026/03/27: 48.31</title></circle><circle class="chart-point" cx="743.2" cy="236.0" r="4"><title>2026/04/03: 48.75</title></circle><circle class="chart-point" cx="756.1" cy="231.8" r="4"><title>2026/04/10: 48.98</title></circle><circle class="chart-point" cx="768.9" cy="235.2" r="4"><title>2026/04/17: 48.79</title></circle><circle class="chart-point" cx="781.8" cy="234.8" r="4"><title>2026/04/24: 48.82</title></circle><circle class="chart-point" cx="794.6" cy="220.6" r="4"><title>2026/05/01: 49.57</title></circle><circle class="chart-point" cx="807.5" cy="218.1" r="4"><title>2026/05/08: 49.71</title></circle><circle class="chart-point" cx="820.3" cy="217.9" r="4"><title>2026/05/15: 49.72</title></circle><circle class="chart-point" cx="833.2" cy="227.0" r="4"><title>2026/05/22: 49.23</title></circle><circle class="chart-point" cx="846.0" cy="228.5" r="4"><title>2026/05/29: 49.15</title></circle><circle class="chart-point" cx="858.9" cy="227.9" r="4"><title>2026/06/05: 49.18</title></circle><circle class="chart-point" cx="871.7" cy="227.5" r="4"><title>2026/06/12: 49.20</title></circle><circle class="chart-point" cx="884.6" cy="169.0" r="4"><title>2026/06/19: 52.34</title></circle><circle class="chart-point" cx="897.4" cy="133.0" r="4"><title>2026/06/26: 54.27</title></circle><circle class="chart-point" cx="910.3" cy="143.8" r="4"><title>2026/07/03: 53.69</title></circle><circle class="chart-point" cx="923.1" cy="142.2" r="4"><title>2026/07/10: 53.77</title></circle><circle class="chart-point" cx="936.0" cy="125.1" r="4"><title>2026/07/17: 54.69</title></circle><circle class="chart-point chart-point-latest" cx="936.0" cy="125.1" r="6" /><text class="chart-latest-label" x="926.0" y="113.1" text-anchor="end">54.69</text><text class="chart-x-label" x="62.0" y="342">25/01/24</text><text class="chart-x-label" x="241.9" y="342">25/05/02</text><text class="chart-x-label" x="409.0" y="342">25/08/01</text><text class="chart-x-label" x="589.0" y="342">26/01/09</text><text class="chart-x-label" x="756.1" y="342">26/04/10</text><text class="chart-x-label" x="936.0" y="342">26/07/17</text></svg></div>
+        </section>
+
+        <section aria-labelledby="relationship-title">
+            <h2 id="relationship-title">連動ヒーロー</h2>
+            <p class="section-note">直近13週のスコア変化を比較</p>
+
+            <div class="relationship-columns">
+                <div class="relationship-group">
+                    <h3>同方向に動きやすい</h3>
+
+                    <div class="relationship-list">
+
+                        <a class="relationship-row" href="menki.html">
+                            <img class="relationship-icon" src="../hok_pics/menki.png" alt="">
+                            <span><span class="relationship-name">モンキ</span><span class="relationship-role">Jg</span></span>
+                            <span class="relationship-stats"><span class="relationship-correlation">+0.86</span><span class="relationship-match">同方向 10 / 13週</span><span class="relationship-sample">共通データ 13週</span></span>
+                        </a>
+
+                        <a class="relationship-row" href="miyue.html">
+                            <img class="relationship-icon" src="../hok_pics/miyue.png" alt="">
+                            <span><span class="relationship-name">ミーユエ</span><span class="relationship-role">Clash</span></span>
+                            <span class="relationship-stats"><span class="relationship-correlation">+0.81</span><span class="relationship-match">同方向 11 / 13週</span><span class="relationship-sample">共通データ 13週</span></span>
+                        </a>
+
+                        <a class="relationship-row" href="lianpo.html">
+                            <img class="relationship-icon" src="../hok_pics/lianpo.png" alt="">
+                            <span><span class="relationship-name">廉頗</span><span class="relationship-role">Clash / Roam</span></span>
+                            <span class="relationship-stats"><span class="relationship-correlation">+0.76</span><span class="relationship-match">同方向 10 / 13週</span><span class="relationship-sample">共通データ 13週</span></span>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="relationship-group inverse">
+                    <h3>逆方向に動きやすい</h3>
+
+                    <div class="relationship-list">
+
+                        <a class="relationship-row" href="ukyotachibana.html">
+                            <img class="relationship-icon" src="../hok_pics/ukyotachibana.png" alt="">
+                            <span><span class="relationship-name">橘右京</span><span class="relationship-role">Jg</span></span>
+                            <span class="relationship-stats"><span class="relationship-correlation">-0.71</span><span class="relationship-match">逆方向 9 / 13週</span><span class="relationship-sample">共通データ 13週</span></span>
+                        </a>
+
+                        <a class="relationship-row" href="shouyue.html">
+                            <img class="relationship-icon" src="../hok_pics/shouyue.png" alt="">
+                            <span><span class="relationship-name">百里守約</span><span class="relationship-role">Farm</span></span>
+                            <span class="relationship-stats"><span class="relationship-correlation">-0.63</span><span class="relationship-match">逆方向 9 / 13週</span><span class="relationship-sample">共通データ 13週</span></span>
+                        </a>
+
+                        <a class="relationship-row" href="ao-yin.html">
+                            <img class="relationship-icon" src="../hok_pics/ao&#39;yin.png" alt="">
+                            <span><span class="relationship-name">白龍</span><span class="relationship-role">Farm</span></span>
+                            <span class="relationship-stats"><span class="relationship-correlation">-0.58</span><span class="relationship-match">逆方向 7 / 13週</span><span class="relationship-sample">共通データ 13週</span></span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <p class="relationship-method">相関値は-1から+1。各週の全ヒーロー中央値を差し引いた変化をSpearman相関で比較しています。相関は因果関係を示すものではありません。</p>
+
         </section>
 
         <section aria-labelledby="adjustment-title">
