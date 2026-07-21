@@ -75,6 +75,39 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn('class="chart-adjustment-line"', chicha)
         self.assertIn("HOKCAMPに掲載された能力調整はありません。", garuda)
 
+    def test_hero_pages_contain_valid_relationships(self):
+        relationship_count = 0
+        for page in HERO_DIR.glob("*.html"):
+            if page.name == "index.html":
+                continue
+            content = page.read_text(encoding="utf-8")
+            self.assertIn('id="relationship-title"', content, page.name)
+            self.assertLess(
+                content.index('id="score-trend-title"'),
+                content.index('id="relationship-title"'),
+                page.name,
+            )
+            self.assertLess(
+                content.index('id="relationship-title"'),
+                content.index('id="adjustment-title"'),
+                page.name,
+            )
+
+            links = re.findall(r'class="relationship-row" href="([^"]+\.html)"', content)
+            icons = re.findall(r'class="relationship-icon" src="\.\./hok_pics/([^"]+)"', content)
+            self.assertEqual(len(links), len(icons), page.name)
+            for link in links:
+                self.assertTrue((HERO_DIR / link).is_file(), f"Broken relationship in {page.name}: {link}")
+            for icon in icons:
+                image_name = html.unescape(icon)
+                self.assertTrue(
+                    (ROOT / "list_html" / "hok_pics" / image_name).is_file(),
+                    f"Missing relationship icon in {page.name}: {image_name}",
+                )
+            relationship_count += len(links)
+
+        self.assertGreater(relationship_count, 0)
+
     def test_policy_pages_and_footer_links_exist(self):
         expected = {
             "terms.html": "利用規約",

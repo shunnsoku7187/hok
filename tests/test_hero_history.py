@@ -5,10 +5,57 @@ from unittest.mock import patch
 
 from hok_tools import csv_tool
 from hok_tools.csv_tool import hero_page_slug
-from hok_tools.hero_history_tool import build_score_chart, resolve_snapshot_dates
+from hok_tools.hero_history_tool import (
+    build_market_adjusted_change_series,
+    build_score_chart,
+    calculate_hero_relationships,
+    resolve_snapshot_dates,
+)
 
 
 class HeroHistoryTests(unittest.TestCase):
+    @staticmethod
+    def _history_from_changes(changes):
+        history = [{"date": date(2026, 1, 1), "score": 50.0}]
+        score = 50.0
+        for day, change in enumerate(changes, 2):
+            score += change
+            history.append({"date": date(2026, 1, day), "score": score})
+        return history
+
+    def test_relationships_find_positive_and_inverse_movement(self):
+        histories = {
+            "基準": self._history_from_changes([1, 2, 3, 4]),
+            "連動": self._history_from_changes([2, 4, 6, 8]),
+            "逆連動A": self._history_from_changes([-1, -2, -3, -4]),
+            "逆連動B": self._history_from_changes([-2, -4, -6, -8]),
+            "中央値": self._history_from_changes([0, 0, 0, 0]),
+        }
+
+        relationships = calculate_hero_relationships(
+            histories, window=4, min_samples=4, limit=3
+        )["基準"]
+
+        self.assertEqual(relationships["positive"][0]["name"], "連動")
+        self.assertEqual(relationships["positive"][0]["correlation_label"], "+1.00")
+        self.assertIn(
+            relationships["negative"][0]["name"], {"逆連動A", "逆連動B", "中央値"}
+        )
+        self.assertEqual(relationships["negative"][0]["correlation_label"], "-1.00")
+
+    def test_market_adjustment_subtracts_each_weeks_median_change(self):
+        histories = {
+            "上": self._history_from_changes([3, 5]),
+            "中央": self._history_from_changes([2, 4]),
+            "下": self._history_from_changes([1, 3]),
+        }
+
+        series = build_market_adjusted_change_series(histories, window=2)
+
+        self.assertEqual(list(series["上"].values()), [1.0, 1.0])
+        self.assertEqual(list(series["中央"].values()), [0.0, 0.0])
+        self.assertEqual(list(series["下"].values()), [-1.0, -1.0])
+
     def test_hokcamp_credit_is_in_page_footers(self):
         hero_template = Path("hok_tools/template_hero.html").read_text(encoding="utf-8")
         index_template = Path("hok_tools/template_hero_index.html").read_text(encoding="utf-8")

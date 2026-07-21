@@ -4,6 +4,7 @@ import math
 from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
+from statistics import median
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -17,6 +18,9 @@ from hok_tools.csv_tool import hero_page_slug, load_name_dict, transrate_name
 
 CSV_DIR = Path("csv")
 OUTPUT_DIR = Path("list_html/heroes")
+RELATIONSHIP_WINDOW = 13
+MIN_RELATIONSHIP_SAMPLES = 8
+RELATIONSHIP_LIMIT = 3
 
 
 def _date_candidates(path):
@@ -274,6 +278,121 @@ def _role_map(hero_categories):
     return result
 
 
+def _average_ranks(values):
+    ranks = [0.0] * len(values)
+    ordered = sorted(enumerate(values), key=lambda item: item[1])
+    start = 0
+    while start < len(ordered):
+        end = start + 1
+        while end < len(ordered) and ordered[end][1] == ordered[start][1]:
+            end += 1
+        average_rank = (start + 1 + end) / 2
+        for index, _ in ordered[start:end]:
+            ranks[index] = average_rank
+        start = end
+    return ranks
+
+
+def _spearman_correlation(left, right):
+    if len(left) != len(right) or len(left) < 2:
+        return None
+
+    left_ranks = _average_ranks(left)
+    right_ranks = _average_ranks(right)
+    left_mean = sum(left_ranks) / len(left_ranks)
+    right_mean = sum(right_ranks) / len(right_ranks)
+    numerator = sum(
+        (left_value - left_mean) * (right_value - right_mean)
+        for left_value, right_value in zip(left_ranks, right_ranks)
+    )
+    left_variance = sum((value - left_mean) ** 2 for value in left_ranks)
+    right_variance = sum((value - right_mean) ** 2 for value in right_ranks)
+    denominator = math.sqrt(left_variance * right_variance)
+    return numerator / denominator if denominator else None
+
+
+def build_market_adjusted_change_series(histories, window=RELATIONSHIP_WINDOW):
+    snapshot_dates = sorted({item["date"] for history in histories.values() for item in history})
+    transitions = list(zip(snapshot_dates, snapshot_dates[1:]))[-window:]
+    scores_by_hero = {
+        hero_name: {item["date"]: item["score"] for item in history}
+        for hero_name, history in histories.items()
+    }
+    series = defaultdict(dict)
+
+    for previous_date, current_date in transitions:
+        changes = {
+            hero_name: scores[current_date] - scores[previous_date]
+            for hero_name, scores in scores_by_hero.items()
+            if previous_date in scores and current_date in scores
+        }
+        if not changes:
+            continue
+        market_change = median(changes.values())
+        for hero_name, change in changes.items():
+            series[hero_name][current_date] = change - market_change
+
+    return dict(series)
+
+
+def calculate_hero_relationships(
+    histories,
+    window=RELATIONSHIP_WINDOW,
+    min_samples=MIN_RELATIONSHIP_SAMPLES,
+    limit=RELATIONSHIP_LIMIT,
+):
+    change_series = build_market_adjusted_change_series(histories, window)
+    relationships = {}
+
+    for hero_name, hero_series in change_series.items():
+        candidates = []
+        for candidate_name, candidate_series in change_series.items():
+            if candidate_name == hero_name:
+                continue
+            shared_dates = sorted(set(hero_series) & set(candidate_series))
+            if len(shared_dates) < min_samples:
+                continue
+
+            hero_changes = [hero_series[item_date] for item_date in shared_dates]
+            candidate_changes = [candidate_series[item_date] for item_date in shared_dates]
+            correlation = _spearman_correlation(hero_changes, candidate_changes)
+            if correlation is None:
+                continue
+
+            comparable_pairs = [
+                (hero_change, candidate_change)
+                for hero_change, candidate_change in zip(hero_changes, candidate_changes)
+                if hero_change != 0 and candidate_change != 0
+            ]
+            same_direction = sum(left * right > 0 for left, right in comparable_pairs)
+            opposite_direction = sum(left * right < 0 for left, right in comparable_pairs)
+            candidates.append({
+                "name": candidate_name,
+                "correlation": correlation,
+                "correlation_label": f"{correlation:+.2f}",
+                "sample_count": len(shared_dates),
+                "direction_count": len(comparable_pairs),
+                "same_direction_count": same_direction,
+                "opposite_direction_count": opposite_direction,
+            })
+
+        positive = sorted(
+            (item for item in candidates if item["correlation"] > 0),
+            key=lambda item: (-item["correlation"], item["name"]),
+        )[:limit]
+        negative = sorted(
+            (item for item in candidates if item["correlation"] < 0),
+            key=lambda item: (item["correlation"], item["name"]),
+        )[:limit]
+        relationships[hero_name] = {
+            "positive": positive,
+            "negative": negative,
+            "window": window,
+        }
+
+    return relationships
+
+
 def _page_data(hero_name, english_name, history, roles, adjustment_entry=None):
     history = [dict(item, hero_name=hero_name) for item in history]
     latest = history[-1]
@@ -316,6 +435,7 @@ def generate_hero_history_pages(
     name_dict = load_name_dict(names_file)
     roles = _role_map(load_hero_categories(categories_file))
     adjustments = load_adjustment_data(adjustments_file)
+    relationships = calculate_hero_relationships(histories)
     missing_names = sorted(name for name in histories if transrate_name(name, name_dict) is None)
     if missing_names:
         raise ValueError(f"Missing English hero names in {names_file}: {', '.join(missing_names)}")
@@ -331,6 +451,29 @@ def generate_hero_history_pages(
         for hero_name, history in histories.items()
     ]
     pages.sort(key=lambda hero: (-hero["latest"]["score"], hero["name"]))
+
+    page_by_name = {hero["name"]: hero for hero in pages}
+    for hero in pages:
+        hero_relationships = relationships.get(hero["name"], {})
+        hero["relationships"] = {
+            "window": hero_relationships.get("window", RELATIONSHIP_WINDOW),
+            "positive": [],
+            "negative": [],
+        }
+        for direction in ("positive", "negative"):
+            for relationship in hero_relationships.get(direction, []):
+                related_hero = page_by_name[relationship["name"]]
+                hero["relationships"][direction].append({
+                    **relationship,
+                    "page_slug": related_hero["page_slug"],
+                    "image_filename": related_hero["image_filename"],
+                    "role_label": related_hero["role_label"],
+                    "direction_match_count": (
+                        relationship["same_direction_count"]
+                        if direction == "positive"
+                        else relationship["opposite_direction_count"]
+                    ),
+                })
 
     page_slugs = [hero["page_slug"] for hero in pages]
     if len(page_slugs) != len(set(page_slugs)):
