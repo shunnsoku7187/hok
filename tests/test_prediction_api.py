@@ -1,3 +1,4 @@
+import copy
 import json
 import shutil
 import socket
@@ -27,13 +28,23 @@ class PredictionApiTests(unittest.TestCase):
         cls.web_root = Path(cls.temp_dir.name) / "public_html"
         (cls.web_root / "api").mkdir(parents=True)
         (cls.web_root / "predictions").mkdir()
+        (cls.web_root / "predictions" / "rounds").mkdir()
         shutil.copy2(
             ROOT / "list_html" / "api" / "prediction_votes.php",
             cls.web_root / "api" / "prediction_votes.php",
         )
-        shutil.copy2(
-            ROOT / "list_html" / "predictions" / "round.json",
-            cls.web_root / "predictions" / "round.json",
+        round_config = json.loads(
+            (ROOT / "list_html" / "predictions" / "round.json").read_text(encoding="utf-8")
+        )
+        round_config["closes_at"] = "2099-07-29T23:59:59+09:00"
+        (cls.web_root / "predictions" / "round.json").write_text(
+            json.dumps(round_config, ensure_ascii=False), encoding="utf-8"
+        )
+        archived = copy.deepcopy(round_config)
+        archived["round_id"] = "balance-2026-06-01"
+        archived["closes_at"] = "2026-05-31T23:59:59+09:00"
+        (cls.web_root / "predictions" / "rounds" / "balance-2026-06-01.json").write_text(
+            json.dumps(archived, ensure_ascii=False), encoding="utf-8"
         )
 
         cls.port = _free_port()
@@ -83,6 +94,22 @@ class PredictionApiTests(unittest.TestCase):
         voted_not = self._request("POST", payload={**base_payload, "choice": "not"})
         self.assertEqual({"do": 0, "not": 1}, voted_not["markets"]["lixin-nerf"])
         self.assertEqual("not", voted_not["own_votes"]["lixin-nerf"])
+
+    def test_archived_round_is_read_only(self):
+        archived = self._request("GET", "?round_id=balance-2026-06-01")
+        self.assertTrue(archived["closed"])
+
+        with self.assertRaises(urllib.error.HTTPError) as rejected:
+            self._request(
+                "POST",
+                payload={
+                    "round_id": "balance-2026-06-01",
+                    "prediction_id": "lixin-nerf",
+                    "choice": "do",
+                    "voter_token": "test-voter-token-archive",
+                },
+            )
+        self.assertEqual(409, rejected.exception.code)
 
 
 if __name__ == "__main__":

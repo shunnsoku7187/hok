@@ -9,6 +9,15 @@ from hok_tools.hero_history_tool import build_score_chart, resolve_snapshot_date
 
 
 class HeroHistoryTests(unittest.TestCase):
+    def test_hokcamp_credit_is_in_page_footers(self):
+        hero_template = Path("hok_tools/template_hero.html").read_text(encoding="utf-8")
+        index_template = Path("hok_tools/template_hero_index.html").read_text(encoding="utf-8")
+
+        self.assertNotIn("hero.adjustment_source_url", hero_template)
+        self.assertNotIn("HOKCAMP公式ページ", hero_template)
+        self.assertIn("データ出典:", hero_template)
+        self.assertIn("データ出典:", index_template)
+
     def test_score_chart_places_adjustment_between_weekly_points(self):
         history = [
             {"date": date(2026, 1, 1), "date_label": "2026/01/01", "score": 50, "score_label": "50.00", "hero_name": "テスト"},

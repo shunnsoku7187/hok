@@ -7,7 +7,7 @@
     <title>{{ round.title }} | HOK Score List</title>
     <link rel="stylesheet" href="prediction.css">
 </head>
-<body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}">
+<body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}" data-result-ready="{{ 'true' if round.result.ready else 'false' }}">
     <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="../index.html" aria-label="HOK Score List トップへ">HOK Score List</a>
@@ -28,7 +28,7 @@
             <p class="method-note">{{ round.method_note }}</p>
             <div class="summary-strip" aria-label="予想概要">
                 <div><span>候補</span><strong>{{ round.predictions|length }}人</strong></div>
-                <div><span>投票締切</span><strong>7/29 23:59</strong></div>
+                <div><span>投票締切</span><strong>{{ round.closes_label }}</strong></div>
                 <div><span>集計更新</span><strong>5秒ごと</strong></div>
             </div>
         </section>
@@ -42,6 +42,17 @@
                 <p><b>DO</b> は修正あり、<b>NOT</b> は修正なし</p>
             </div>
 
+            {% if round.result.ready %}
+            <div class="result-announcement" role="status">
+                <div>
+                    <span>RESULT</span>
+                    <strong>{{ round.result.version_label }} 調整結果</strong>
+                </div>
+                <p>予想方向まで一致したヒーローは <b>{{ round.result.hit_count }}/{{ round.result.prediction_count }}</b> 人でした。</p>
+                <a href="{{ round.result.source_url }}">HOKCAMPで調整内容を見る</a>
+            </div>
+            {% endif %}
+
             <div class="prediction-list">
                 {% for item in round.predictions %}
                 <article class="prediction-card" data-prediction-id="{{ item.id }}">
@@ -51,6 +62,9 @@
                         <div>
                             <h3>{{ item.hero_name }}</h3>
                             <span class="direction direction-{{ item.direction }}">{{ item.direction_label }}</span>
+                            {% if item.result %}
+                            <span class="result-badge result-{{ item.result.outcome }}">{{ item.result.outcome_label }}</span>
+                            {% endif %}
                         </div>
                     </a>
 
@@ -61,6 +75,9 @@
                         </div>
                         <p>{{ item.reason }}</p>
                         <small>{{ item.metrics }}</small>
+                        {% if item.result %}
+                        <p class="actual-result">実際の結果 <strong>{{ item.result.actual_direction }}</strong> <a href="{{ item.result.source_url }}">詳細</a></p>
+                        {% endif %}
                     </div>
 
                     <div class="community-vote">
@@ -86,6 +103,39 @@
             </div>
         </section>
 
+        {% if previous_rounds %}
+        <section class="result-history" aria-labelledby="result-history-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PAST RESULTS</p>
+                    <h2 id="result-history-heading">過去の予想結果</h2>
+                </div>
+                <p>各ラウンドの最終投票と実際の調整結果</p>
+            </div>
+            {% for previous in previous_rounds %}
+            <details class="result-round"{% if loop.first %} open{% endif %}>
+                <summary>
+                    <span>{{ previous.target_label }}</span>
+                    <strong>{{ previous.result.hit_count }}/{{ previous.result.prediction_count }} 的中</strong>
+                </summary>
+                <div class="result-list" data-result-round-id="{{ previous.round_id }}">
+                    {% for item in previous.predictions %}
+                    <article class="result-item" data-result-prediction-id="{{ item.id }}">
+                        <img src="../hok_pics/{{ item.english_name }}.png" alt="" width="52" height="52">
+                        <div class="result-item-main">
+                            <strong>{{ item.hero_name }}</strong>
+                            <span>予想 {{ item.direction_label }} → {{ item.result.actual_direction }}</span>
+                        </div>
+                        <span class="result-badge result-{{ item.result.outcome }}">{{ item.result.outcome_label }}</span>
+                        <span class="result-vote-summary">最終票を読込中</span>
+                    </article>
+                    {% endfor %}
+                </div>
+            </details>
+            {% endfor %}
+        </section>
+        {% endif %}
+
         <section class="comment-board" aria-labelledby="comment-heading">
             <div class="section-heading comment-board-heading">
                 <div>
@@ -95,6 +145,7 @@
                 <strong id="comment-count">0件</strong>
             </div>
             <p class="comment-lead">候補にいないヒーローの予想や、修正理由について自由に投稿できます。</p>
+            <p class="comment-closed" id="comment-closed" hidden>このラウンドは締め切りました。投稿・返信・賛成はできません。</p>
 
             <form class="comment-form" id="comment-form">
                 <label for="comment-nickname">ユーザーネーム <span class="required">必須</span></label>

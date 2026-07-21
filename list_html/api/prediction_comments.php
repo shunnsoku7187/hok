@@ -22,7 +22,7 @@ function load_round_config(): array
     $path = dirname(__DIR__) . '/predictions/round.json';
     $json = @file_get_contents($path);
     $config = $json === false ? null : json_decode($json, true);
-    if (!is_array($config) || !isset($config['round_id'])) {
+    if (!is_array($config) || !isset($config['round_id'], $config['closes_at'])) {
         respond(503, ['error' => '予想データを読み込めません']);
     }
     return $config;
@@ -159,7 +159,7 @@ function comment_depth(array $comments, int $commentId): int
     return $depth;
 }
 
-function public_state(array $state, ?string $voterHash): array
+function public_state(array $state, array $config, ?string $voterHash): array
 {
     $comments = [];
     foreach ($state['comments'] as $comment) {
@@ -183,6 +183,7 @@ function public_state(array $state, ?string $voterHash): array
     return [
         'round_id' => $state['round_id'],
         'updated_at' => $state['updated_at'] ?? null,
+        'closed' => time() > strtotime((string) $config['closes_at']),
         'comment_count' => count(array_filter($comments, static fn(array $comment): bool => !$comment['deleted'])),
         'comments' => $comments,
     ];
@@ -239,6 +240,12 @@ $state = read_or_initialize_state($handle, $requestedRound);
 if ($method === 'POST') {
     $action = (string) ($payload['action'] ?? '');
     $now = time();
+
+    if ($action !== 'admin_delete' && $now > strtotime((string) $config['closes_at'])) {
+        flock($handle, LOCK_UN);
+        fclose($handle);
+        respond(403, ['error' => 'このラウンドの受付は終了しました']);
+    }
 
     if ($action === 'admin_delete') {
         if (!is_admin_request()) {
@@ -369,7 +376,7 @@ if ($method === 'POST') {
     save_state($handle, $state);
 }
 
-$response = public_state($state, $voterHash);
+$response = public_state($state, $config, $voterHash);
 flock($handle, LOCK_UN);
 fclose($handle);
 respond(200, $response);

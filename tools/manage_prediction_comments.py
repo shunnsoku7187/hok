@@ -15,7 +15,8 @@ DEFAULT_API_URL = "https://ss1.xrea.com/shunnsoku.s324.xrea.com/api/prediction_c
 
 def default_round_id():
     with (ROOT / "data" / "prediction_round.json").open(encoding="utf-8") as file:
-        return json.load(file)["round_id"]
+        config = json.load(file)
+    return config.get("current_round_id") or config["round_id"]
 
 
 def request_json_with_powershell(url, payload=None, admin_token=None):

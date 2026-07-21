@@ -14,15 +14,32 @@ function respond(int $status, array $body): void
     exit;
 }
 
-function load_round_config(): array
+function read_round_config(string $path): ?array
 {
-    $path = dirname(__DIR__) . '/predictions/round.json';
     $json = @file_get_contents($path);
     $config = $json === false ? null : json_decode($json, true);
-    if (!is_array($config) || !isset($config['round_id'], $config['predictions'])) {
+    return is_array($config) && isset($config['round_id'], $config['predictions'], $config['closes_at'])
+        ? $config
+        : null;
+}
+
+function load_round_config(string $roundId): array
+{
+    $current = read_round_config(dirname(__DIR__) . '/predictions/round.json');
+    if ($current === null) {
         respond(503, ['error' => '予想データを読み込めません']);
     }
-    return $config;
+    if (hash_equals((string) $current['round_id'], $roundId)) {
+        return ['config' => $current, 'current' => true];
+    }
+    if (!preg_match('/^[a-zA-Z0-9_-]{1,80}$/', $roundId)) {
+        respond(409, ['error' => 'この投票ラウンドは終了しました']);
+    }
+    $archived = read_round_config(dirname(__DIR__) . '/predictions/rounds/' . $roundId . '.json');
+    if ($archived === null || !hash_equals((string) $archived['round_id'], $roundId)) {
+        respond(409, ['error' => 'この投票ラウンドは終了しました']);
+    }
+    return ['config' => $archived, 'current' => false];
 }
 
 function data_path(string $roundId): string
@@ -106,7 +123,6 @@ if (!in_array($method, ['GET', 'POST'], true)) {
     respond(405, ['error' => '許可されていない操作です']);
 }
 
-$config = load_round_config();
 $requestedRound = $method === 'GET' ? ($_GET['round_id'] ?? '') : null;
 $voterHash = $method === 'GET' ? valid_voter_token($_GET['voter_token'] ?? null) : null;
 
@@ -125,7 +141,9 @@ if ($method === 'POST') {
     }
 }
 
-if (!hash_equals($config['round_id'], (string) $requestedRound)) {
+$loadedRound = load_round_config((string) $requestedRound);
+$config = $loadedRound['config'];
+if ($method === 'POST' && !$loadedRound['current']) {
     respond(409, ['error' => 'この投票ラウンドは終了しました']);
 }
 

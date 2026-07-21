@@ -4,7 +4,9 @@
     const API_URL = "../api/prediction_comments.php";
     const POLL_INTERVAL_MS = 10000;
     const roundId = document.body.dataset.roundId;
+    const closesAt = new Date(document.body.dataset.closesAt);
     const form = document.getElementById("comment-form");
+    const closedNotice = document.getElementById("comment-closed");
     const nicknameInput = document.getElementById("comment-nickname");
     const heroInput = document.getElementById("comment-hero");
     const bodyInput = document.getElementById("comment-body");
@@ -16,6 +18,7 @@
     const status = document.getElementById("comment-status");
     let requestInFlight = false;
     let replyTarget = null;
+    let boardClosed = false;
 
     function voterToken() {
         const storageKey = "hok-prediction-voter-token";
@@ -62,6 +65,7 @@
     }
 
     function setReplyTarget(comment = null) {
+        if (boardClosed && comment !== null) return;
         replyTarget = comment;
         const replying = comment !== null;
         predictionFields.hidden = replying;
@@ -124,7 +128,7 @@
         body.textContent = comment.body;
 
         item.append(body);
-        if (!comment.deleted) {
+        if (!comment.deleted && !boardClosed) {
             const actions = document.createElement("div");
             actions.className = "comment-actions";
             const like = actionButton(
@@ -151,6 +155,10 @@
     }
 
     function render(data) {
+        boardClosed = Boolean(data.closed) || Date.now() > closesAt.getTime();
+        form.hidden = boardClosed;
+        closedNotice.hidden = !boardClosed;
+        if (boardClosed) setReplyTarget();
         count.textContent = `${data.comment_count}件`;
         list.replaceChildren();
         const childrenByParent = new Map();
@@ -167,7 +175,7 @@
             empty.textContent = "まだコメントはありません。最初の予想を書いてみましょう。";
             list.append(empty);
         }
-        setStatus("コメントを更新しました");
+        setStatus(boardClosed ? "受付終了時点のコメントを表示しています" : "コメントを更新しました");
     }
 
     async function fetchComments() {
@@ -187,6 +195,10 @@
     }
 
     async function sendAction(action) {
+        if (boardClosed) {
+            setStatus("このラウンドの受付は終了しました", true);
+            return false;
+        }
         submitButton.disabled = true;
         try {
             const response = await fetch(API_URL, {
@@ -208,6 +220,10 @@
 
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
+        if (boardClosed) {
+            setStatus("このラウンドの受付は終了しました", true);
+            return;
+        }
         if (!replyTarget && !heroOptions.has(heroInput.value)) {
             heroInput.setCustomValidity("候補からヒーローを選択してください");
             heroInput.reportValidity();
