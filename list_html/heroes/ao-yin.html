@@ -163,7 +163,7 @@
             line-height: 1.7;
             white-space: pre-line;
         }
-        .source-link { color: var(--green-dark); font-weight: 700; }
+        .credit-link { color: inherit; font-weight: 700; text-underline-offset: 3px; }
         .empty-adjustments {
             margin: 22px 0 0;
             padding: 18px 0;
@@ -244,7 +244,7 @@
         th:first-child, td:first-child { text-align: left; }
         tbody tr:hover { background: #f2f7f3; }
         footer { border-top: 1px solid var(--line); background: #e7ebe7; }
-        .footer-inner { padding: 24px 0 32px; color: var(--muted); font-size: 13px; }
+        .footer-inner { display: flex; justify-content: space-between; gap: 16px; padding: 24px 0 32px; color: var(--muted); font-size: 13px; }
         @media (max-width: 760px) {
             .site-header-inner, main, .footer-inner { width: min(100% - 24px, 1120px); }
             .site-header-inner { min-height: 52px; }
@@ -268,6 +268,7 @@
                 padding-right: 10px;
             }
             .adjustment-detail { grid-template-columns: 1fr; gap: 12px; padding-right: 10px; }
+            .footer-inner { align-items: flex-start; flex-direction: column; }
         }
     </style>
 </head>
@@ -308,7 +309,7 @@
 
         <section aria-labelledby="adjustment-title">
             <h2 id="adjustment-title">能力調整履歴</h2>
-            <p class="section-note">日付を選択すると詳細を表示します。 <a class="source-link" href="https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=519" target="_blank" rel="noopener noreferrer">HOKCAMP公式ページ</a></p>
+            <p class="section-note">日付を選択すると詳細を表示します。</p>
 
             <div class="adjustment-list">
 
@@ -550,6 +551,6 @@
             </details>
         </section>
     </main>
-    <footer><div class="footer-inner">HOK Score List / 最終更新 2026/07/17</div></footer>
+    <footer><div class="footer-inner"><span>HOK Score List / 最終更新 2026/07/17</span><span>データ出典: <a class="credit-link" href="https://camp.honorofkings.com/h5/app/index.html" target="_blank" rel="noopener noreferrer">HOKCAMP</a></span></div></footer>
 </body>
 </html>
