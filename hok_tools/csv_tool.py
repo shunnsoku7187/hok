@@ -132,7 +132,7 @@ def transrate_name(japanese_name, name_dict=None):
     else:
         return None
         
-def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html", author="Picachu", device="pc"):
+def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html", device="pc"):
     name_dict = load_name_dict()
     adjustment_data = load_adjustment_data()
     data = csv_to_list(roll=roll)
@@ -172,7 +172,6 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
     # テンプレートにデータを埋め込む
     html_content = template.render(
         title=f"{y}/{m}/{d} Score List",
-        author=author,
         data=hero_data
     )
     html_content = "\n".join(line.rstrip() for line in html_content.splitlines()) + "\n"

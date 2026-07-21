@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#16784a">
     <title>{{ round.title }} | HOK Score List</title>
     <link rel="stylesheet" href="prediction.css">
+    <link rel="stylesheet" href="../legal/site-footer.css">
 </head>
 <body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}" data-result-ready="{{ 'true' if round.result.ready else 'false' }}">
     <header class="site-header">
@@ -184,6 +185,10 @@
             <div class="comment-list" id="comment-list" aria-live="polite"></div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner"><span>HOK Score List / バランス調整予想</span>{% include "hok_tools/template_policy_links.html" %}</div>
+    </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="prediction.js" defer></script>

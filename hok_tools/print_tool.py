@@ -6,7 +6,7 @@ from hok_tools.csv_tool import get_period
 plt.rcParams['font.family'] = 'IPAexGothic'
 
 ###  画像出力本体
-def generate_meta_list_image(roll_name,roll, heroes, filename="meta_list.png",author = "Picachu"):
+def generate_meta_list_image(roll_name,roll, heroes, filename="meta_list.png"):
 
     year,month,day = get_period()
     # 対象ロールのヒーローを抽出
@@ -44,7 +44,7 @@ def generate_meta_list_image(roll_name,roll, heroes, filename="meta_list.png",au
     plt.ylabel("Hero Name",fontsize= font_size,fontweight=font_weight)
     plt.xticks(fontsize=font_size)
     plt.yticks(fontsize=font_size)
-    plt.title(f"～{year}/{month}/{day}'s {roll_name} Meta report (created by {author})", fontsize=font_size,fontweight=font_weight)
+    plt.title(f"～{year}/{month}/{day}'s {roll_name} Meta report", fontsize=font_size,fontweight=font_weight)
     plt.axvline(x=0, color="gray", linestyle="--", linewidth=line_width)
     plt.gca().invert_yaxis()  # 上位を上に表示
     plt.grid(axis="x", linestyle="--", alpha=0.6,linewidth = line_width)
