@@ -3,15 +3,25 @@ import csv
 import json
 from datetime import datetime
 from pathlib import Path
+from statistics import mean, pstdev
 from urllib.parse import quote
 
 from jinja2 import Environment, FileSystemLoader
 
-from .adjustment_tool import ADJUSTMENTS_FILE, SOURCE_URL, adjustment_class, parse_adjustment_date
+from .adjustment_tool import (
+    ADJUSTMENTS_FILE,
+    SOURCE_URL,
+    adjustment_class,
+    parse_adjustment_date,
+    prepare_hero_adjustments,
+)
+from .csv_tool import hero_page_slug
+from .hero_history_tool import calculate_hero_relationships, load_hero_histories
 
 
 DEFAULT_CONFIG = Path("data/prediction_round.json")
 DEFAULT_OUTPUT = Path("list_html/predictions")
+EVIDENCE_WINDOW = 13
 
 
 def load_hero_options(path="names.csv", image_dir="list_html/hok_pics"):
@@ -37,6 +47,129 @@ def load_hero_options(path="names.csv", image_dir="list_html/hok_pics"):
 
 def _normalized_html(content):
     return "\n".join(line.rstrip() for line in content.splitlines()) + "\n"
+
+
+def _change_summary(value):
+    if value is None:
+        return {"label": "--", "class": "flat"}
+    return {
+        "label": f"{value:+.2f}",
+        "class": "positive" if value > 0 else "negative" if value < 0 else "flat",
+    }
+
+
+def _related_hero_summary(relationship, asset_by_name, direction):
+    if not relationship:
+        return None
+    asset = asset_by_name.get(relationship["name"])
+    if not asset:
+        return None
+    direction_count = (
+        relationship["same_direction_count"]
+        if direction == "positive"
+        else relationship["opposite_direction_count"]
+    )
+    return {
+        "name": relationship["name"],
+        "page_slug": hero_page_slug(asset),
+        "correlation_label": relationship["correlation_label"],
+        "direction_count": direction_count,
+        "sample_count": relationship["sample_count"],
+    }
+
+
+def build_prediction_evidence(
+    hero_name,
+    history,
+    relationship=None,
+    adjustment_entry=None,
+    asset_by_name=None,
+):
+    if not history:
+        return None
+
+    asset_by_name = asset_by_name or {}
+    latest = history[-1]
+    weekly_changes = [
+        current["score"] - previous["score"]
+        for previous, current in zip(history, history[1:])
+    ][-EVIDENCE_WINDOW:]
+    four_week_change = (
+        latest["score"] - history[-5]["score"]
+        if len(history) >= 5
+        else None
+    )
+    thirteen_week_change = (
+        latest["score"] - history[-14]["score"]
+        if len(history) >= 14
+        else None
+    )
+    adjustments = prepare_hero_adjustments(adjustment_entry)
+    latest_adjustment = (
+        {
+            "date_label": adjustments[0]["date_label"],
+            "direction_label": adjustments[0]["direction_label"],
+        }
+        if adjustments
+        else None
+    )
+    relationship = relationship or {}
+
+    return {
+        "hero_name": hero_name,
+        "latest_date_label": latest["date_label"],
+        "score_label": latest["score_label"],
+        "tier": latest["tier"],
+        "rank": latest["rank"],
+        "hero_count": latest["hero_count"],
+        "four_week": _change_summary(four_week_change),
+        "thirteen_week": _change_summary(thirteen_week_change),
+        "volatility_label": (
+            f"{pstdev(weekly_changes):.2f}" if len(weekly_changes) >= 2 else "--"
+        ),
+        "average_change_label": (
+            f"{mean(weekly_changes):+.2f}" if weekly_changes else "--"
+        ),
+        "up_count": sum(change > 0 for change in weekly_changes),
+        "down_count": sum(change < 0 for change in weekly_changes),
+        "flat_count": sum(change == 0 for change in weekly_changes),
+        "sample_count": len(weekly_changes),
+        "latest_adjustment": latest_adjustment,
+        "positive_relation": _related_hero_summary(
+            next(iter(relationship.get("positive", [])), None),
+            asset_by_name,
+            "positive",
+        ),
+        "negative_relation": _related_hero_summary(
+            next(iter(relationship.get("negative", [])), None),
+            asset_by_name,
+            "negative",
+        ),
+    }
+
+
+def attach_prediction_evidence(
+    prediction_round,
+    histories,
+    relationships,
+    adjustment_payload,
+    hero_options,
+):
+    asset_by_name = {option["name"]: option["asset"] for option in hero_options}
+    adjustments_by_name = {
+        hero.get("hero_name", ""): hero
+        for hero in adjustment_payload.get("heroes", [])
+        if hero.get("hero_name")
+    }
+    for prediction in prediction_round["predictions"]:
+        hero_name = prediction["hero_name"]
+        prediction["evidence"] = build_prediction_evidence(
+            hero_name,
+            histories.get(hero_name),
+            relationships.get(hero_name),
+            adjustments_by_name.get(hero_name),
+            asset_by_name,
+        )
 
 
 def _validate_round(prediction_round):
@@ -200,6 +333,7 @@ def generate_prediction_page(
     output_dir=DEFAULT_OUTPUT,
     template_path="hok_tools/template_prediction.html",
     adjustment_path=ADJUSTMENTS_FILE,
+    csv_dir="csv",
 ):
     prediction_round, previous_rounds, all_rounds = load_prediction_rounds(config_path, adjustment_path)
     output_dir = Path(output_dir)
@@ -208,6 +342,15 @@ def generate_prediction_page(
     env = Environment(loader=FileSystemLoader("."), autoescape=True)
     template = env.get_template(template_path)
     hero_options = load_hero_options()
+    histories = load_hero_histories(csv_dir)
+    relationships = calculate_hero_relationships(histories)
+    attach_prediction_evidence(
+        prediction_round,
+        histories,
+        relationships,
+        _load_adjustment_payload(adjustment_path),
+        hero_options,
+    )
     html = template.render(
         round=prediction_round,
         previous_rounds=previous_rounds,
