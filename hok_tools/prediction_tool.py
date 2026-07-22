@@ -22,6 +22,7 @@ from .hero_history_tool import calculate_hero_relationships, load_hero_histories
 DEFAULT_CONFIG = Path("data/prediction_round.json")
 DEFAULT_OUTPUT = Path("list_html/predictions")
 EVIDENCE_WINDOW = 13
+FLAT_CHANGE_THRESHOLD = 0.20
 
 
 def load_hero_options(path="names.csv", image_dir="list_html/hok_pics"):
@@ -91,7 +92,7 @@ def build_prediction_evidence(
     asset_by_name = asset_by_name or {}
     latest = history[-1]
     weekly_changes = [
-        current["score"] - previous["score"]
+        round(current["score"] - previous["score"], 2)
         for previous, current in zip(history, history[1:])
     ][-EVIDENCE_WINDOW:]
     four_week_change = (
@@ -130,9 +131,12 @@ def build_prediction_evidence(
         "average_change_label": (
             f"{mean(weekly_changes):+.2f}" if weekly_changes else "--"
         ),
-        "up_count": sum(change > 0 for change in weekly_changes),
-        "down_count": sum(change < 0 for change in weekly_changes),
-        "flat_count": sum(change == 0 for change in weekly_changes),
+        "up_count": sum(change >= FLAT_CHANGE_THRESHOLD for change in weekly_changes),
+        "down_count": sum(change <= -FLAT_CHANGE_THRESHOLD for change in weekly_changes),
+        "flat_count": sum(
+            abs(change) < FLAT_CHANGE_THRESHOLD for change in weekly_changes
+        ),
+        "flat_threshold_label": f"{FLAT_CHANGE_THRESHOLD:.2f}",
         "sample_count": len(weekly_changes),
         "latest_adjustment": latest_adjustment,
         "positive_relation": _related_hero_summary(
