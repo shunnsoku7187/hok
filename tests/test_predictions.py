@@ -36,6 +36,26 @@ class PredictionPageTests(unittest.TestCase):
         self.assertEqual("+1.00", evidence["average_change_label"])
         self.assertEqual("1.41", evidence["volatility_label"])
 
+    def test_weekly_direction_uses_practical_flat_threshold(self):
+        history = []
+        scores = [50.00, 50.19, 50.39, 50.20, 50.00]
+        for index, score in enumerate(scores, 1):
+            history.append({
+                "date_label": f"2026/01/{index:02d}",
+                "score": score,
+                "score_label": f"{score:.2f}",
+                "tier": "B",
+                "rank": 10,
+                "hero_count": 100,
+            })
+
+        evidence = build_prediction_evidence("Test", history)
+
+        self.assertEqual(1, evidence["up_count"])
+        self.assertEqual(1, evidence["down_count"])
+        self.assertEqual(2, evidence["flat_count"])
+        self.assertEqual("0.20", evidence["flat_threshold_label"])
+
     def test_prediction_round_has_unique_valid_markets(self):
         prediction_round = load_prediction_round()
         predictions = prediction_round["predictions"]

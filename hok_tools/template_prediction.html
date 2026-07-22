@@ -88,7 +88,7 @@
                                 <dl class="evidence-facts">
                                     <div><dt>現在位置</dt><dd>{{ item.evidence.tier }} Tier・{{ item.evidence.rank }} / {{ item.evidence.hero_count }}位</dd></div>
                                     <div><dt>平均週間変化</dt><dd>{{ item.evidence.average_change_label }}</dd></div>
-                                    <div><dt>直近{{ item.evidence.sample_count }}週</dt><dd>上昇 {{ item.evidence.up_count }}・下降 {{ item.evidence.down_count }}・横ばい {{ item.evidence.flat_count }}</dd></div>
+                                    <div><dt>直近{{ item.evidence.sample_count }}週</dt><dd>上昇 {{ item.evidence.up_count }}・下降 {{ item.evidence.down_count }}・横ばい {{ item.evidence.flat_count }}（±{{ item.evidence.flat_threshold_label }}未満）</dd></div>
                                     <div><dt>直近調整</dt><dd>{% if item.evidence.latest_adjustment %}{{ item.evidence.latest_adjustment.date_label }} {{ item.evidence.latest_adjustment.direction_label }}{% else %}取得履歴なし{% endif %}</dd></div>
                                 </dl>
                                 <div class="evidence-relations">
