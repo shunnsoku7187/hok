@@ -17,7 +17,47 @@
       "probability": 78,
       "reason": "S帯の64.11点。勝率53.64%に加えてBAN率2.84%も高く、6月の上方修正後も高水準が続いています。",
       "metrics": "Score 64.11 / Win 53.64% / Pick 2.64% / Ban 2.84%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "李信",
+        "latest_date_label": "2026/07/17",
+        "score_label": "64.11",
+        "tier": "S",
+        "rank": 1,
+        "hero_count": 116,
+        "four_week": {
+          "label": "+2.07",
+          "class": "positive"
+        },
+        "thirteen_week": {
+          "label": "+3.96",
+          "class": "positive"
+        },
+        "volatility_label": "1.20",
+        "average_change_label": "+0.30",
+        "up_count": 6,
+        "down_count": 7,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2026/06/17",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "廉頗",
+          "page_slug": "lianpo",
+          "correlation_label": "+0.84",
+          "direction_count": 12,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "関羽",
+          "page_slug": "guanyu",
+          "correlation_label": "-0.76",
+          "direction_count": 10,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "dun-nerf",
@@ -29,7 +69,47 @@
       "probability": 68,
       "reason": "S帯の60.01点、勝率53.26%。5月の上方修正後に上位を維持しており、次の抑制対象になりやすい位置です。",
       "metrics": "Score 60.01 / Win 53.26% / Pick 1.73% / Ban 0.35%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "夏侯惇",
+        "latest_date_label": "2026/07/17",
+        "score_label": "60.01",
+        "tier": "S",
+        "rank": 4,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-1.36",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "+6.58",
+          "class": "positive"
+        },
+        "volatility_label": "1.70",
+        "average_change_label": "+0.51",
+        "up_count": 8,
+        "down_count": 5,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2026/05/28",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "棋星",
+          "page_slug": "yixing",
+          "correlation_label": "+0.65",
+          "direction_count": 10,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "伽羅",
+          "page_slug": "garo",
+          "correlation_label": "-0.87",
+          "direction_count": 11,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "luna-buff",
@@ -41,7 +121,47 @@
       "probability": 63,
       "reason": "D帯の43.49点、勝率46.27%。全期間モデルでも上方候補の上位で、人気を壊さず救済しやすい低迷水準です。",
       "metrics": "Score 43.49 / Win 46.27% / Pick 0.63% / Ban 0.20%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "ルナ",
+        "latest_date_label": "2026/07/17",
+        "score_label": "43.49",
+        "tier": "D",
+        "rank": 114,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-2.58",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-3.19",
+          "class": "negative"
+        },
+        "volatility_label": "0.73",
+        "average_change_label": "-0.25",
+        "up_count": 5,
+        "down_count": 8,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/10/30",
+          "direction_label": "調整"
+        },
+        "positive_relation": {
+          "name": "楊貴妃",
+          "page_slug": "yuhuan",
+          "correlation_label": "+0.72",
+          "direction_count": 9,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "司馬懿",
+          "page_slug": "simayi",
+          "correlation_label": "-0.72",
+          "direction_count": 9,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "yango-buff",
@@ -53,7 +173,44 @@
       "probability": 55,
       "reason": "C帯の45.85点でPick率0.33%。実装後の利用率が伸びず、初回の底上げ調整が入る余地があります。",
       "metrics": "Score 45.85 / Win 48.17% / Pick 0.33% / Ban 0.06%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "元歌",
+        "latest_date_label": "2026/07/17",
+        "score_label": "45.85",
+        "tier": "C",
+        "rank": 108,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-1.84",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-0.86",
+          "class": "negative"
+        },
+        "volatility_label": "0.91",
+        "average_change_label": "-0.07",
+        "up_count": 7,
+        "down_count": 6,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": null,
+        "positive_relation": {
+          "name": "バタフライ",
+          "page_slug": "butterfly",
+          "correlation_label": "+0.66",
+          "direction_count": 9,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "モンキ",
+          "page_slug": "menki",
+          "correlation_label": "-0.63",
+          "direction_count": 9,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "cirrus-buff",
@@ -65,7 +222,47 @@
       "probability": 52,
       "reason": "C帯の49.43点でPick率0.18%。全期間モデルでは上方候補の上位で、昨年3月の下方修正後も利用率が低い状態です。",
       "metrics": "Score 49.43 / Win 50.21% / Pick 0.18% / Ban 0.01%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "雲中君",
+        "latest_date_label": "2026/07/17",
+        "score_label": "49.43",
+        "tier": "C",
+        "rank": 80,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-0.41",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-5.01",
+          "class": "negative"
+        },
+        "volatility_label": "1.40",
+        "average_change_label": "-0.39",
+        "up_count": 4,
+        "down_count": 9,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/03/20",
+          "direction_label": "下方修正"
+        },
+        "positive_relation": {
+          "name": "ラプール",
+          "page_slug": "lapulapu",
+          "correlation_label": "+0.86",
+          "direction_count": 10,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "タイガー",
+          "page_slug": "pei",
+          "correlation_label": "-0.68",
+          "direction_count": 8,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "ukyotachibana-buff",
@@ -77,7 +274,47 @@
       "probability": 48,
       "reason": "C帯の48.15点でPick率0.38%。勝率は極端ではありませんが、存在感が薄く、小幅な底上げ候補に入りやすい位置です。",
       "metrics": "Score 48.15 / Win 49.45% / Pick 0.38% / Ban 0.02%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "橘右京",
+        "latest_date_label": "2026/07/17",
+        "score_label": "48.15",
+        "tier": "C",
+        "rank": 93,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-2.08",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-1.46",
+          "class": "negative"
+        },
+        "volatility_label": "0.61",
+        "average_change_label": "-0.11",
+        "up_count": 5,
+        "down_count": 8,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/04/10",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "鏡",
+          "page_slug": "jing",
+          "correlation_label": "+0.71",
+          "direction_count": 11,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "大司命",
+          "page_slug": "augran",
+          "correlation_label": "-0.71",
+          "direction_count": 9,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "garo-nerf",
@@ -89,7 +326,47 @@
       "probability": 43,
       "reason": "S帯の60.32点、勝率53.77%。突出したBAN率ではないものの、静かに高勝率を保つため数値調整の候補です。",
       "metrics": "Score 60.32 / Win 53.77% / Pick 1.29% / Ban 0.21%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "伽羅",
+        "latest_date_label": "2026/07/17",
+        "score_label": "60.32",
+        "tier": "S",
+        "rank": 3,
+        "hero_count": 116,
+        "four_week": {
+          "label": "+2.43",
+          "class": "positive"
+        },
+        "thirteen_week": {
+          "label": "-1.39",
+          "class": "negative"
+        },
+        "volatility_label": "1.00",
+        "average_change_label": "-0.11",
+        "up_count": 5,
+        "down_count": 8,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/12/16",
+          "direction_label": "調整"
+        },
+        "positive_relation": {
+          "name": "司馬懿",
+          "page_slug": "simayi",
+          "correlation_label": "+0.64",
+          "direction_count": 8,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "夏侯惇",
+          "page_slug": "dun",
+          "correlation_label": "-0.87",
+          "direction_count": 11,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "mengya-nerf",
@@ -101,7 +378,47 @@
       "probability": 40,
       "reason": "A帯の58.78点、勝率53.82%。Pick率とBAN率は低いものの勝率が高く、局所的な数値抑制が入る可能性があります。",
       "metrics": "Score 58.78 / Win 53.82% / Pick 0.57% / Ban 0.01%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "蒙牙",
+        "latest_date_label": "2026/07/17",
+        "score_label": "58.78",
+        "tier": "A",
+        "rank": 8,
+        "hero_count": 116,
+        "four_week": {
+          "label": "+1.25",
+          "class": "positive"
+        },
+        "thirteen_week": {
+          "label": "+0.43",
+          "class": "positive"
+        },
+        "volatility_label": "0.72",
+        "average_change_label": "+0.03",
+        "up_count": 6,
+        "down_count": 7,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/12/16",
+          "direction_label": "調整"
+        },
+        "positive_relation": {
+          "name": "女媧",
+          "page_slug": "nuwa",
+          "correlation_label": "+0.64",
+          "direction_count": 8,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "孫尚香",
+          "page_slug": "ladysun",
+          "correlation_label": "-0.57",
+          "direction_count": 10,
+          "sample_count": 13
+        }
+      }
     },
     {
       "id": "annette-buff",
@@ -113,7 +430,32 @@
       "probability": 35,
       "reason": "C帯の49.57点でPick率0.59%。調整履歴がなく優先度は低めですが、ローム内の選択肢を広げる小幅上方なら候補です。",
       "metrics": "Score 49.57 / Win 49.83% / Pick 0.59% / Ban 0.54%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "アネット",
+        "latest_date_label": "2026/07/17",
+        "score_label": "49.57",
+        "tier": "C",
+        "rank": 79,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-1.05",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "--",
+          "class": "flat"
+        },
+        "volatility_label": "1.76",
+        "average_change_label": "-0.26",
+        "up_count": 2,
+        "down_count": 2,
+        "flat_count": 0,
+        "sample_count": 4,
+        "latest_adjustment": null,
+        "positive_relation": null,
+        "negative_relation": null
+      }
     },
     {
       "id": "dolia-buff",
@@ -125,7 +467,47 @@
       "probability": 31,
       "reason": "C帯の45.67点、勝率45.94%。Pick率は残っているため緊急度は低めですが、体験改善を兼ねた小幅上方ならあり得ます。",
       "metrics": "Score 45.67 / Win 45.94% / Pick 1.73% / Ban 0.40%",
-      "result": null
+      "result": null,
+      "evidence": {
+        "hero_name": "ドリア",
+        "latest_date_label": "2026/07/17",
+        "score_label": "45.67",
+        "tier": "C",
+        "rank": 109,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-0.32",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-0.14",
+          "class": "negative"
+        },
+        "volatility_label": "0.19",
+        "average_change_label": "-0.01",
+        "up_count": 8,
+        "down_count": 5,
+        "flat_count": 0,
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2026/01/08",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "張良",
+          "page_slug": "liang",
+          "correlation_label": "+0.68",
+          "direction_count": 11,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "項羽",
+          "page_slug": "xiangyu",
+          "correlation_label": "-0.65",
+          "direction_count": 10,
+          "sample_count": 13
+        }
+      }
     }
   ],
   "closes_label": "7/29 23:59",

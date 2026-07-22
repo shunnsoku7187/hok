@@ -74,8 +74,32 @@
                         <div class="probability-track" role="img" aria-label="AI予想確率 {{ item.probability }}パーセント">
                             <span style="width: {{ item.probability }}%"></span>
                         </div>
-                        <p>{{ item.reason }}</p>
-                        <small>{{ item.metrics }}</small>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>{{ item.reason }}</p>
+                        {% if item.evidence %}
+                        <div class="evidence-strip" aria-label="{{ item.hero_name }}の最新判断材料">
+                            <div><span>現在スコア</span><strong>{{ item.evidence.score_label }}</strong></div>
+                            <div><span>直近4週</span><strong class="{{ item.evidence.four_week.class }}">{{ item.evidence.four_week.label }}</strong></div>
+                            <div><span>直近13週</span><strong class="{{ item.evidence.thirteen_week.class }}">{{ item.evidence.thirteen_week.label }}</strong></div>
+                            <div><span>週間変動幅</span><strong>{{ item.evidence.volatility_label }}</strong></div>
+                        </div>
+                        <details class="evidence-disclosure">
+                            <summary><span>詳しい判断材料</span><small>{{ item.evidence.latest_date_label }}更新</small></summary>
+                            <div class="evidence-detail">
+                                <dl class="evidence-facts">
+                                    <div><dt>現在位置</dt><dd>{{ item.evidence.tier }} Tier・{{ item.evidence.rank }} / {{ item.evidence.hero_count }}位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>{{ item.evidence.average_change_label }}</dd></div>
+                                    <div><dt>直近{{ item.evidence.sample_count }}週</dt><dd>上昇 {{ item.evidence.up_count }}・下降 {{ item.evidence.down_count }}・横ばい {{ item.evidence.flat_count }}</dd></div>
+                                    <div><dt>直近調整</dt><dd>{% if item.evidence.latest_adjustment %}{{ item.evidence.latest_adjustment.date_label }} {{ item.evidence.latest_adjustment.direction_label }}{% else %}取得履歴なし{% endif %}</dd></div>
+                                </dl>
+                                <div class="evidence-relations">
+                                    <span>連動傾向</span>
+                                    {% if item.evidence.positive_relation %}<a href="../heroes/{{ item.evidence.positive_relation.page_slug }}.html">同方向 {{ item.evidence.positive_relation.name }} {{ item.evidence.positive_relation.correlation_label }}</a>{% endif %}
+                                    {% if item.evidence.negative_relation %}<a href="../heroes/{{ item.evidence.negative_relation.page_slug }}.html">逆方向 {{ item.evidence.negative_relation.name }} {{ item.evidence.negative_relation.correlation_label }}</a>{% endif %}
+                                    {% if not item.evidence.positive_relation and not item.evidence.negative_relation %}<small>共通データの蓄積待ち</small>{% endif %}
+                                </div>
+                            </div>
+                        </details>
+                        {% endif %}
                         {% if item.result %}
                         <p class="actual-result">実際の結果 <strong>{{ item.result.actual_direction }}</strong> <a href="{{ item.result.source_url }}">詳細</a></p>
                         {% endif %}

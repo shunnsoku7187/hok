@@ -4,10 +4,38 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from hok_tools.prediction_tool import generate_prediction_page, load_prediction_round, load_prediction_rounds
+from hok_tools.hero_history_tool import load_hero_histories
+from hok_tools.prediction_tool import (
+    build_prediction_evidence,
+    generate_prediction_page,
+    load_prediction_round,
+    load_prediction_rounds,
+)
 
 
 class PredictionPageTests(unittest.TestCase):
+    def test_builds_weekly_evidence_for_prediction_cards(self):
+        history = []
+        scores = [50, 51, 50, 53, 54]
+        for index, score in enumerate(scores, 1):
+            history.append({
+                "date_label": f"2026/01/{index:02d}",
+                "score": score,
+                "score_label": f"{score:.2f}",
+                "tier": "B",
+                "rank": 10,
+                "hero_count": 100,
+            })
+
+        evidence = build_prediction_evidence("テスト", history)
+
+        self.assertEqual("+4.00", evidence["four_week"]["label"])
+        self.assertEqual("--", evidence["thirteen_week"]["label"])
+        self.assertEqual(3, evidence["up_count"])
+        self.assertEqual(1, evidence["down_count"])
+        self.assertEqual("+1.00", evidence["average_change_label"])
+        self.assertEqual("1.41", evidence["volatility_label"])
+
     def test_prediction_round_has_unique_valid_markets(self):
         prediction_round = load_prediction_round()
         predictions = prediction_round["predictions"]
@@ -21,6 +49,7 @@ class PredictionPageTests(unittest.TestCase):
         self.assertIsInstance(prediction_round["result"]["ready"], bool)
 
     def test_generated_page_contains_predictions_and_round_config(self):
+        expected_latest_date = load_hero_histories()["李信"][-1]["date_label"]
         with tempfile.TemporaryDirectory() as temp_dir:
             output_dir = Path(temp_dir)
             generate_prediction_page(output_dir=output_dir)
@@ -32,6 +61,10 @@ class PredictionPageTests(unittest.TestCase):
 
         self.assertIn("次回バランス調整予想", html)
         self.assertIn("data-prediction-id=\"lixin-nerf\"", html)
+        self.assertIn("最新判断材料", html)
+        self.assertIn("詳しい判断材料", html)
+        self.assertIn("直近13週", html)
+        self.assertIn("連動傾向", html)
         self.assertIn("../hok_pics/lixin.png", html)
         self.assertIn("id=\"comment-form\"", html)
         self.assertIn("value=\"匿名希望\"", html)
@@ -41,6 +74,11 @@ class PredictionPageTests(unittest.TestCase):
         self.assertEqual("balance-2026-07-30", deployed_round["round_id"])
         self.assertEqual("7/29 23:59", deployed_round["closes_label"])
         self.assertEqual("daji", hero_assets["妲己"])
+        self.assertIn("evidence", deployed_round["predictions"][0])
+        self.assertEqual(
+            expected_latest_date,
+            deployed_round["predictions"][0]["evidence"]["latest_date_label"],
+        )
         self.assertTrue(archived_round_exists)
 
     def test_completed_round_is_kept_as_result_history(self):
