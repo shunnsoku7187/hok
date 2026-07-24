@@ -1,9 +1,11 @@
 import copy
+import csv
 import json
 import tempfile
 import unittest
 from pathlib import Path
 
+from hok_tools.csv_tool import hero_page_slug
 from hok_tools.hero_history_tool import load_hero_histories
 from hok_tools.prediction_tool import (
     build_prediction_evidence,
@@ -100,6 +102,18 @@ class PredictionPageTests(unittest.TestCase):
             deployed_round["predictions"][0]["evidence"]["latest_date_label"],
         )
         self.assertTrue(archived_round_exists)
+
+    def test_comment_hero_links_resolve_for_every_asset(self):
+        comments_js = Path("list_html/predictions/comments.js").read_text(encoding="utf-8")
+        self.assertIn("function heroPageUrl(asset)", comments_js)
+        self.assertIn('heroIdentity.className = "comment-hero-link"', comments_js)
+
+        with Path("names.csv").open(newline="", encoding="utf-8") as file:
+            assets = [row["English"] for row in csv.DictReader(file)]
+
+        for asset in assets:
+            page = Path("list_html/heroes") / f"{hero_page_slug(asset)}.html"
+            self.assertTrue(page.exists(), f"Missing comment hero link target: {page}")
 
     def test_completed_round_is_kept_as_result_history(self):
         with Path("data/prediction_round.json").open(encoding="utf-8") as file:

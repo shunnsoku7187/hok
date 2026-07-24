@@ -50,6 +50,12 @@
             }).format(date);
     }
 
+    function heroPageUrl(asset) {
+        if (typeof asset !== "string") return null;
+        const slug = asset.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+        return slug ? `../heroes/${slug}.html` : null;
+    }
+
     function setStatus(message, isError = false) {
         status.textContent = message;
         status.classList.toggle("error", isError);
@@ -98,6 +104,13 @@
         if (comment.parent_id === null && comment.hero && comment.direction) {
             const prediction = document.createElement("div");
             prediction.className = "comment-prediction";
+            const pageUrl = heroPageUrl(comment.hero_asset);
+            const heroIdentity = document.createElement(pageUrl ? "a" : "div");
+            heroIdentity.className = "comment-hero-link";
+            if (pageUrl) {
+                heroIdentity.href = pageUrl;
+                heroIdentity.setAttribute("aria-label", `${comment.hero}の個別ページ`);
+            }
             if (comment.hero_asset) {
                 const icon = document.createElement("img");
                 icon.className = "comment-hero-icon";
@@ -107,17 +120,15 @@
                 icon.height = 56;
                 icon.loading = "lazy";
                 icon.addEventListener("error", () => { icon.hidden = true; }, { once: true });
-                prediction.append(icon);
+                heroIdentity.append(icon);
             }
-            const predictionText = document.createElement("div");
-            predictionText.className = "comment-prediction-text";
             const hero = document.createElement("strong");
             hero.textContent = comment.hero;
+            heroIdentity.append(hero);
             const direction = document.createElement("span");
             direction.className = `comment-direction ${comment.direction}`;
             direction.textContent = comment.direction === "buff" ? "上方修正" : "下方修正";
-            predictionText.append(hero, direction);
-            prediction.append(predictionText);
+            prediction.append(heroIdentity, direction);
             item.append(header, prediction);
         } else {
             item.append(header);
