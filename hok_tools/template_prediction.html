@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#16784a">
     <title>{{ round.title }} | HOK Score List</title>
-    <link rel="stylesheet" href="prediction.css">
+    <link rel="stylesheet" href="prediction.css?v=20260724-1">
     <link rel="stylesheet" href="../legal/site-footer.css">
 </head>
 <body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}" data-result-ready="{{ 'true' if round.result.ready else 'false' }}">
@@ -216,6 +216,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="prediction.js" defer></script>
-    <script src="comments.js" defer></script>
+    <script src="comments.js?v=20260724-1" defer></script>
 </body>
 </html>
