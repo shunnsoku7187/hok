@@ -8,6 +8,7 @@ from pathlib import Path
 from hok_tools.csv_tool import hero_page_slug
 from hok_tools.hero_history_tool import load_hero_histories
 from hok_tools.prediction_tool import (
+    build_retrospective_adjustment_scores,
     build_prediction_evidence,
     generate_prediction_page,
     load_prediction_round,
@@ -100,8 +101,10 @@ class PredictionPageTests(unittest.TestCase):
         self.assertIn("直近13週", html)
         self.assertIn("連動傾向", html)
         self.assertIn("今回調整された10人", html)
-        self.assertIn("事前候補 2位・<b>68%</b>", html)
-        self.assertIn("候補外・事前確率未算出", html)
+        self.assertIn("7/17事後モデル", html)
+        self.assertIn("15.2%", html)
+        self.assertIn("12/116位", html)
+        self.assertIn("TOP10外", html)
         self.assertIn("../hok_pics/lixin.png", html)
         self.assertIn("id=\"comment-form\"", html)
         self.assertIn("value=\"匿名希望\"", html)
@@ -118,6 +121,45 @@ class PredictionPageTests(unittest.TestCase):
             deployed_round["predictions"][0]["evidence"]["latest_date_label"],
         )
         self.assertTrue(archived_round_exists)
+
+        retrospective = deployed_round["result"]["retrospective_evaluation"]
+        self.assertEqual("2026/07/17", retrospective["as_of_label"])
+        self.assertEqual(21, retrospective["horizon_days"])
+        self.assertEqual(7050, retrospective["training_sample_count"])
+        dun = next(
+            item
+            for item in deployed_round["result"]["actual_adjustments"]
+            if item["hero_name"] == "夏侯惇"
+        )
+        self.assertEqual(12, dun["retrospective"]["rank"])
+        self.assertAlmostEqual(15.2, dun["retrospective"]["probability"], places=1)
+
+    def test_retrospective_model_excludes_adjustments_after_cutoff(self):
+        histories = load_hero_histories()
+        with Path("data/hero_adjustments.json").open(encoding="utf-8") as file:
+            payload = json.load(file)
+        frozen_payload = copy.deepcopy(payload)
+        for hero in frozen_payload["heroes"]:
+            hero["adjustments"] = [
+                adjustment
+                for adjustment in hero["adjustments"]
+                if adjustment.get("versionName", "") <= "2026/07/17"
+            ]
+
+        current = build_retrospective_adjustment_scores(
+            histories,
+            payload,
+            "2026/07/17",
+            21,
+        )
+        frozen = build_retrospective_adjustment_scores(
+            histories,
+            frozen_payload,
+            "2026/07/17",
+            21,
+        )
+
+        self.assertEqual(current, frozen)
 
     def test_comment_hero_links_resolve_for_every_asset(self):
         comments_js = Path("list_html/predictions/comments.js").read_text(encoding="utf-8")

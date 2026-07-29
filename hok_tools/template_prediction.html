@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#16784a">
     <title>{{ round.title }} | HOK Score List</title>
-    <link rel="stylesheet" href="prediction.css?v=20260730-1">
+    <link rel="stylesheet" href="prediction.css?v=20260730-2">
     <link rel="stylesheet" href="../legal/site-footer.css">
 </head>
 <body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}" data-result-ready="{{ 'true' if round.result.ready else 'false' }}">
@@ -58,7 +58,12 @@
                     <span>今回調整された{{ round.result.actual_count }}人</span>
                     <small>公開時のAI評価と照合</small>
                 </summary>
-                <p class="actual-adjustments-note">公開時は候補10人だけに確率を付けており、候補外の順位と確率は保存していません。結果を見た後の数字は足さず、候補外は「事前確率未算出」と表示します。</p>
+                {% set retrospective = round.result.retrospective_evaluation %}
+                <p class="actual-adjustments-note">
+                    公開時評価に加え、{{ retrospective.as_of_label }}までのデータだけで全{{ retrospective.hero_count }}人を再評価しました。
+                    過去{{ retrospective.training_sample_count }}件から「{{ retrospective.horizon_days }}日以内に調整される確率」を推定し、7/30の結果は入力・学習に使用していません。
+                    基準発生率は{{ retrospective.base_rate_label }}です。
+                </p>
                 <div class="actual-adjustment-list">
                     {% for actual in round.result.actual_adjustments %}
                     <article class="actual-adjustment-item">
@@ -72,10 +77,17 @@
                         {% endif %}
                         <span class="direction direction-{{ actual.direction_class }}">{{ actual.actual_direction }}</span>
                         {% if actual.forecast.published %}
-                        <span class="actual-forecast">事前候補 {{ actual.forecast.candidate_position }}位・<b>{{ actual.forecast.probability }}%</b>（{{ actual.forecast.predicted_direction_label }}）</span>
+                        <span class="actual-forecast"><small>公開時</small><b>{{ actual.forecast.probability }}%</b>・候補{{ actual.forecast.candidate_position }}位（{{ actual.forecast.predicted_direction_label }}）</span>
                         <span class="result-badge result-{{ actual.forecast.outcome }}">{{ actual.forecast.outcome_label }}</span>
                         {% else %}
-                        <span class="actual-forecast actual-forecast-outside">候補外・事前確率未算出</span>
+                        <span class="actual-forecast actual-forecast-outside"><small>公開時</small>TOP10外</span>
+                        {% endif %}
+                        {% if actual.retrospective %}
+                        <span class="retrospective-forecast">
+                            <small>7/17事後モデル</small>
+                            <b>{{ actual.retrospective.probability_label }}</b>
+                            <span>{{ actual.retrospective.rank }}/{{ actual.retrospective.hero_count }}位</span>
+                        </span>
                         {% endif %}
                         <a class="actual-source" href="{{ actual.source_url }}">調整詳細</a>
                     </article>

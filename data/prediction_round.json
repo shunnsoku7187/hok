@@ -8,6 +8,10 @@
             "published_at": "2026-07-21T00:00:00+09:00",
             "closes_at": "2026-07-29T23:59:59+09:00",
             "result_after": "2026/07/30",
+            "retrospective_evaluation": {
+                "as_of": "2026/07/17",
+                "horizon_days": 21
+            },
             "result_direction_overrides": {
                 "廉頗": "nerf",
                 "荘子": "nerf",

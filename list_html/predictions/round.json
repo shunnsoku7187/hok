@@ -5,6 +5,10 @@
   "published_at": "2026-07-21T00:00:00+09:00",
   "closes_at": "2026-07-29T23:59:59+09:00",
   "result_after": "2026/07/30",
+  "retrospective_evaluation": {
+    "as_of": "2026/07/17",
+    "horizon_days": 21
+  },
   "result_direction_overrides": {
     "廉頗": "nerf",
     "荘子": "nerf",
@@ -596,7 +600,13 @@
           "published": false
         },
         "english_name": "lianpo",
-        "page_slug": "lianpo"
+        "page_slug": "lianpo",
+        "retrospective": {
+          "probability": 6.7,
+          "probability_label": "6.7%",
+          "rank": 53,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "趙雲",
@@ -608,7 +618,13 @@
           "published": false
         },
         "english_name": "zilong",
-        "page_slug": "zilong"
+        "page_slug": "zilong",
+        "retrospective": {
+          "probability": 6.4,
+          "probability_label": "6.4%",
+          "rank": 57,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "荘子",
@@ -620,7 +636,13 @@
           "published": false
         },
         "english_name": "zhuangzi",
-        "page_slug": "zhuangzi"
+        "page_slug": "zhuangzi",
+        "retrospective": {
+          "probability": 2.4,
+          "probability_label": "2.4%",
+          "rank": 109,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "鐘無艶",
@@ -632,7 +654,13 @@
           "published": false
         },
         "english_name": "wuyan",
-        "page_slug": "wuyan"
+        "page_slug": "wuyan",
+        "retrospective": {
+          "probability": 4.4,
+          "probability_label": "4.4%",
+          "rank": 86,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "夏侯惇",
@@ -649,7 +677,13 @@
           "outcome_label": "的中"
         },
         "english_name": "dun",
-        "page_slug": "dun"
+        "page_slug": "dun",
+        "retrospective": {
+          "probability": 15.2,
+          "probability_label": "15.2%",
+          "rank": 12,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "李白",
@@ -661,7 +695,13 @@
           "published": false
         },
         "english_name": "libai",
-        "page_slug": "libai"
+        "page_slug": "libai",
+        "retrospective": {
+          "probability": 5.5,
+          "probability_label": "5.5%",
+          "rank": 69,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "アーサー",
@@ -673,7 +713,13 @@
           "published": false
         },
         "english_name": "arthur",
-        "page_slug": "arthur"
+        "page_slug": "arthur",
+        "retrospective": {
+          "probability": 5.2,
+          "probability_label": "5.2%",
+          "rank": 73,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "楊戩",
@@ -685,7 +731,13 @@
           "published": false
         },
         "english_name": "yangjian",
-        "page_slug": "yangjian"
+        "page_slug": "yangjian",
+        "retrospective": {
+          "probability": 3.8,
+          "probability_label": "3.8%",
+          "rank": 95,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "蔡文姫",
@@ -697,7 +749,13 @@
           "published": false
         },
         "english_name": "caiyan",
-        "page_slug": "caiyan"
+        "page_slug": "caiyan",
+        "retrospective": {
+          "probability": 5.4,
+          "probability_label": "5.4%",
+          "rank": 70,
+          "hero_count": 116
+        }
       },
       {
         "hero_name": "白龍",
@@ -709,9 +767,24 @@
           "published": false
         },
         "english_name": "ao'yin",
-        "page_slug": "ao-yin"
+        "page_slug": "ao-yin",
+        "retrospective": {
+          "probability": 1.2,
+          "probability_label": "1.2%",
+          "rank": 116,
+          "hero_count": 116
+        }
       }
     ],
-    "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+    "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail",
+    "retrospective_evaluation": {
+      "as_of": "2026-07-17",
+      "as_of_label": "2026/07/17",
+      "horizon_days": 21,
+      "training_sample_count": 7050,
+      "training_positive_count": 581,
+      "base_rate_label": "8.2%",
+      "hero_count": 116
+    }
   }
 }

@@ -200,7 +200,7 @@ h1 {
 .actual-adjustment-list { border-top: 1px solid var(--line); }
 .actual-adjustment-item {
     display: grid;
-    grid-template-columns: minmax(180px, 1fr) auto minmax(230px, 1fr) auto auto;
+    grid-template-columns: minmax(180px, 1fr) auto minmax(180px, .9fr) auto minmax(150px, .75fr) auto;
     gap: 14px;
     align-items: center;
     min-height: 72px;
@@ -214,7 +214,17 @@ h1 {
 .actual-hero img { width: 52px; height: 52px; border: 1px solid var(--line); border-radius: 4px; object-fit: cover; }
 .actual-forecast { color: var(--muted); font-size: 12px; }
 .actual-forecast b { color: var(--ink); }
-.actual-forecast-outside { color: #6d4b13; }
+.actual-forecast small,
+.retrospective-forecast small {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 800;
+}
+.actual-forecast-outside { color: #6d4b13; font-weight: 700; }
+.retrospective-forecast { color: var(--muted); font-size: 11px; }
+.retrospective-forecast b { margin-right: 6px; color: var(--blue); font-size: 15px; }
 .actual-source { color: var(--blue); font-size: 12px; font-weight: 700; text-underline-offset: 3px; white-space: nowrap; }
 .direction-adjust { background: #edf4f7; color: var(--blue); }
 
@@ -709,8 +719,9 @@ h1 {
         border-top: 1px solid var(--line);
         border-left: 0;
     }
-    .actual-adjustment-item { grid-template-columns: minmax(180px, 1fr) auto minmax(220px, 1fr) auto; }
-    .actual-adjustment-item .actual-source { grid-column: 3 / -1; }
+    .actual-adjustment-item { grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr) auto; }
+    .actual-adjustment-item .retrospective-forecast { grid-column: 3; }
+    .actual-adjustment-item .actual-source { grid-column: 4; }
     .result-item { grid-template-columns: 52px minmax(0, 1fr) auto; }
     .result-vote-summary { grid-column: 2 / -1; text-align: left; }
 }
@@ -732,8 +743,9 @@ h1 {
     .actual-adjustments-note { padding: 12px 14px; }
     .actual-adjustment-item { grid-template-columns: minmax(0, 1fr) auto; padding: 12px 10px; }
     .actual-adjustment-item .actual-forecast { grid-column: 1 / -1; }
+    .actual-adjustment-item .retrospective-forecast { grid-column: 1 / -1; }
     .actual-adjustment-item .result-badge { grid-column: 1; justify-self: start; }
-    .actual-adjustment-item .actual-source { grid-column: 2; grid-row: 3; }
+    .actual-adjustment-item .actual-source { grid-column: 2; grid-row: 4; }
     .prediction-card {
         grid-template-columns: 1fr;
         gap: 22px;

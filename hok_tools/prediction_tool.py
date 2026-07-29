@@ -1,11 +1,13 @@
 import copy
 import csv
 import json
-from datetime import datetime
+import math
+from datetime import datetime, timedelta
 from pathlib import Path
 from statistics import mean, pstdev
 from urllib.parse import quote
 
+import numpy as np
 from jinja2 import Environment, FileSystemLoader
 
 from .adjustment_tool import (
@@ -23,6 +25,7 @@ DEFAULT_CONFIG = Path("data/prediction_round.json")
 DEFAULT_OUTPUT = Path("list_html/predictions")
 EVIDENCE_WINDOW = 13
 FLAT_CHANGE_THRESHOLD = 0.20
+RETROSPECTIVE_REGULARIZATION = 0.15
 
 
 def load_hero_options(path="names.csv", image_dir="list_html/hok_pics"):
@@ -176,6 +179,216 @@ def attach_prediction_evidence(
         )
 
 
+def _retrospective_feature_vector(history, index, hero_name, adjustment_dates):
+    point = history[index]
+    history_to_date = history[:index + 1]
+    weekly_changes = [
+        current["score"] - previous["score"]
+        for previous, current in zip(history_to_date, history_to_date[1:])
+    ][-EVIDENCE_WINDOW:]
+
+    def score_change(weeks):
+        if len(history_to_date) <= weeks:
+            return 0.0
+        return point["score"] - history_to_date[-weeks - 1]["score"]
+
+    one_week_change = score_change(1)
+    four_week_change = score_change(4)
+    thirteen_week_change = score_change(13)
+    prior_adjustments = [
+        adjustment_date
+        for adjustment_date in adjustment_dates.get(hero_name, [])
+        if adjustment_date <= point["date"]
+    ]
+    days_since_adjustment = (
+        min((point["date"] - prior_adjustments[-1]).days, 730)
+        if prior_adjustments
+        else 730
+    )
+    rank_ratio = point["rank"] / point["hero_count"]
+
+    return [
+        point["score"],
+        abs(point["score"] - 50),
+        point["win_rate"],
+        abs(point["win_rate"] - 50),
+        point["pick_rate"],
+        point["ban_rate"],
+        rank_ratio,
+        abs(rank_ratio - 0.5),
+        one_week_change,
+        four_week_change,
+        thirteen_week_change,
+        abs(four_week_change),
+        abs(thirteen_week_change),
+        pstdev(weekly_changes) if len(weekly_changes) >= 2 else 0.0,
+        days_since_adjustment,
+        sum(
+            (point["date"] - adjustment_date).days <= 90
+            for adjustment_date in prior_adjustments
+        ),
+        sum(
+            (point["date"] - adjustment_date).days <= 180
+            for adjustment_date in prior_adjustments
+        ),
+        int(not prior_adjustments),
+    ]
+
+
+def _fit_retrospective_model(features, labels):
+    feature_matrix = np.asarray(features, dtype=float)
+    label_vector = np.asarray(labels, dtype=float)
+    feature_mean = feature_matrix.mean(axis=0)
+    feature_std = feature_matrix.std(axis=0)
+    feature_std[feature_std < 1e-8] = 1.0
+    standardized = (feature_matrix - feature_mean) / feature_std
+    design = np.column_stack([np.ones(len(standardized)), standardized])
+    weights = np.zeros(design.shape[1])
+    sample_count = len(label_vector)
+
+    penalty = np.eye(design.shape[1]) * (
+        RETROSPECTIVE_REGULARIZATION / sample_count
+    )
+    penalty[0, 0] = 0.0
+
+    for _ in range(50):
+        logits = np.clip(design @ weights, -30, 30)
+        probabilities = 1 / (1 + np.exp(-logits))
+        gradient = design.T @ (probabilities - label_vector) / sample_count
+        gradient[1:] += (
+            RETROSPECTIVE_REGULARIZATION * weights[1:] / sample_count
+        )
+        variance = probabilities * (1 - probabilities)
+        hessian = design.T @ (design * variance[:, None]) / sample_count
+        hessian += penalty
+        step = np.linalg.solve(hessian, gradient)
+        weights -= step
+        if np.max(np.abs(step)) < 1e-8:
+            break
+
+    return weights, feature_mean, feature_std
+
+
+def build_retrospective_adjustment_scores(
+    histories,
+    adjustment_payload,
+    as_of,
+    horizon_days=21,
+):
+    as_of_date = parse_adjustment_date(as_of)
+    if as_of_date is None:
+        raise ValueError(f"Invalid retrospective evaluation date: {as_of}")
+    if horizon_days <= 0:
+        raise ValueError("Retrospective horizon_days must be positive")
+
+    adjustment_dates = {
+        hero.get("hero_name", ""): sorted(
+            adjustment_date
+            for adjustment in hero.get("adjustments", [])
+            if (
+                adjustment_date := parse_adjustment_date(
+                    adjustment.get("versionName", "")
+                )
+            )
+            and adjustment_date <= as_of_date
+        )
+        for hero in adjustment_payload.get("heroes", [])
+    }
+    horizon = timedelta(days=horizon_days)
+    features = []
+    labels = []
+
+    for hero_name, history in histories.items():
+        for index, point in enumerate(history):
+            if point["date"] + horizon > as_of_date:
+                continue
+            features.append(
+                _retrospective_feature_vector(
+                    history,
+                    index,
+                    hero_name,
+                    adjustment_dates,
+                )
+            )
+            labels.append(
+                int(
+                    any(
+                        point["date"] < adjustment_date <= point["date"] + horizon
+                        for adjustment_date in adjustment_dates.get(hero_name, [])
+                    )
+                )
+            )
+
+    if not features or len(set(labels)) < 2:
+        raise ValueError("Insufficient historical data for retrospective evaluation")
+
+    weights, feature_mean, feature_std = _fit_retrospective_model(features, labels)
+    scores = []
+    for hero_name, history in histories.items():
+        eligible_indices = [
+            index
+            for index, point in enumerate(history)
+            if point["date"] <= as_of_date
+        ]
+        if not eligible_indices:
+            continue
+        latest_index = eligible_indices[-1]
+        vector = np.asarray(
+            _retrospective_feature_vector(
+                history,
+                latest_index,
+                hero_name,
+                adjustment_dates,
+            )
+        )
+        standardized = (vector - feature_mean) / feature_std
+        logit = float(np.r_[1.0, standardized] @ weights)
+        probability = 1 / (1 + math.exp(-max(-30, min(30, logit))))
+        scores.append((probability, hero_name))
+
+    scores.sort(key=lambda item: (-item[0], item[1]))
+    hero_scores = {
+        hero_name: {
+            "probability": round(probability * 100, 1),
+            "probability_label": f"{probability * 100:.1f}%",
+            "rank": rank,
+            "hero_count": len(scores),
+        }
+        for rank, (probability, hero_name) in enumerate(scores, 1)
+    }
+    return {
+        "as_of": as_of_date.isoformat(),
+        "as_of_label": as_of_date.strftime("%Y/%m/%d"),
+        "horizon_days": horizon_days,
+        "training_sample_count": len(labels),
+        "training_positive_count": sum(labels),
+        "base_rate_label": f"{mean(labels) * 100:.1f}%",
+        "hero_count": len(scores),
+        "heroes": hero_scores,
+    }
+
+
+def attach_retrospective_evaluation(
+    prediction_round,
+    histories,
+    adjustment_payload,
+):
+    config = prediction_round.get("retrospective_evaluation")
+    if not config or not prediction_round["result"].get("ready"):
+        return
+
+    evaluation = build_retrospective_adjustment_scores(
+        histories,
+        adjustment_payload,
+        config["as_of"],
+        config.get("horizon_days", 21),
+    )
+    hero_scores = evaluation.pop("heroes")
+    prediction_round["result"]["retrospective_evaluation"] = evaluation
+    for actual in prediction_round["result"].get("actual_adjustments", []):
+        actual["retrospective"] = hero_scores.get(actual["hero_name"])
+
+
 def _validate_round(prediction_round):
     required = {"round_id", "title", "target_label", "published_at", "closes_at", "result_after", "predictions"}
     missing = sorted(required - prediction_round.keys())
@@ -189,6 +402,16 @@ def _validate_round(prediction_round):
         raise ValueError(f"Invalid prediction round datetime: {prediction_round['round_id']}") from error
     if parse_adjustment_date(prediction_round["result_after"]) is None:
         raise ValueError(f"Invalid result_after: {prediction_round['round_id']}")
+    retrospective = prediction_round.get("retrospective_evaluation")
+    if retrospective:
+        if parse_adjustment_date(retrospective.get("as_of", "")) is None:
+            raise ValueError(
+                f"Invalid retrospective evaluation date: {prediction_round['round_id']}"
+            )
+        if retrospective.get("horizon_days", 0) <= 0:
+            raise ValueError(
+                f"Invalid retrospective horizon: {prediction_round['round_id']}"
+            )
 
     prediction_ids = [item["id"] for item in prediction_round["predictions"]]
     if len(prediction_ids) != len(set(prediction_ids)):
@@ -418,12 +641,18 @@ def generate_prediction_page(
             result_item["english_name"] = asset
             result_item["page_slug"] = hero_page_slug(asset)
     histories = load_hero_histories(csv_dir)
+    adjustment_payload = _load_adjustment_payload(adjustment_path)
+    attach_retrospective_evaluation(
+        prediction_round,
+        histories,
+        adjustment_payload,
+    )
     relationships = calculate_hero_relationships(histories)
     attach_prediction_evidence(
         prediction_round,
         histories,
         relationships,
-        _load_adjustment_payload(adjustment_path),
+        adjustment_payload,
         hero_options,
     )
     html = template.render(
