@@ -222,6 +222,22 @@ def _actual_direction(classes):
     return "修正なし"
 
 
+def _actual_direction_class(classes):
+    if "buff" in classes and "nerf" in classes:
+        return "adjust"
+    if "buff" in classes:
+        return "buff"
+    if "nerf" in classes:
+        return "nerf"
+    return "adjust"
+
+
+def _result_source_url(hero_id, result_version):
+    if not hero_id:
+        return SOURCE_URL
+    return f"{SOURCE_URL}?heroId={hero_id}&versionName={quote(result_version, safe='')}"
+
+
 def _prepare_round_result(prediction_round, adjustment_payload):
     result_after = parse_adjustment_date(prediction_round["result_after"])
     versions = sorted(
@@ -241,6 +257,7 @@ def _prepare_round_result(prediction_round, adjustment_payload):
 
     result_date = versions[0]
     result_version = result_date.strftime("%Y/%m/%d")
+    direction_overrides = prediction_round.get("result_direction_overrides") or {}
     adjustments_by_hero = {}
     for hero in adjustment_payload.get("heroes", []):
         matching = [
@@ -257,12 +274,17 @@ def _prepare_round_result(prediction_round, adjustment_payload):
     hit_count = 0
     for prediction in prediction_round["predictions"]:
         actual = adjustments_by_hero.get(prediction["hero_name"])
-        classes = {
-            adjustment_class(
-                (((adjustment.get("adjustContent") or {}).get("contentTag") or {}).get("text") or "")
-            )
-            for adjustment in (actual or {}).get("adjustments", [])
-        }
+        override = direction_overrides.get(prediction["hero_name"])
+        classes = (
+            {override}
+            if override
+            else {
+                adjustment_class(
+                    (((adjustment.get("adjustContent") or {}).get("contentTag") or {}).get("text") or "")
+                )
+                for adjustment in (actual or {}).get("adjustments", [])
+            }
+        )
         classes.discard(None)
         if prediction["direction"] in classes:
             outcome = "hit"
@@ -279,22 +301,65 @@ def _prepare_round_result(prediction_round, adjustment_payload):
             outcome_label = "修正なし"
 
         hero_id = (actual or {}).get("hero_id")
-        source_url = SOURCE_URL
-        if hero_id:
-            source_url = f"{SOURCE_URL}?heroId={hero_id}&versionName={quote(result_version, safe='')}"
         prediction["result"] = {
             "outcome": outcome,
             "outcome_label": outcome_label,
             "actual_direction": _actual_direction(classes),
-            "source_url": source_url,
+            "source_url": _result_source_url(hero_id, result_version),
         }
 
+    predictions_by_name = {
+        prediction["hero_name"]: (index, prediction)
+        for index, prediction in enumerate(prediction_round["predictions"], 1)
+    }
+    actual_adjustments = []
+    for hero_name, actual in adjustments_by_hero.items():
+        override = direction_overrides.get(hero_name)
+        classes = (
+            {override}
+            if override
+            else {
+                adjustment_class(
+                    (((adjustment.get("adjustContent") or {}).get("contentTag") or {}).get("text") or "")
+                )
+                for adjustment in actual["adjustments"]
+            }
+        )
+        classes.discard(None)
+        prediction_match = predictions_by_name.get(hero_name)
+        forecast = {"published": False}
+        if prediction_match:
+            position, prediction = prediction_match
+            forecast = {
+                "published": True,
+                "candidate_position": position,
+                "probability": prediction["probability"],
+                "predicted_direction_label": prediction["direction_label"],
+                "outcome": prediction["result"]["outcome"],
+                "outcome_label": prediction["result"]["outcome_label"],
+            }
+        actual_adjustments.append({
+            "hero_name": hero_name,
+            "hero_id": actual["hero_id"],
+            "actual_direction": _actual_direction(classes),
+            "direction_class": _actual_direction_class(classes),
+            "source_url": _result_source_url(actual["hero_id"], result_version),
+            "forecast": forecast,
+        })
+    actual_adjustments.sort(key=lambda item: item["hero_id"])
+    predicted_actual_count = sum(
+        item["forecast"]["published"] for item in actual_adjustments
+    )
     prediction_round["result"] = {
         "ready": True,
         "version": result_version,
         "version_label": f"{result_date.year}/{result_date.month}/{result_date.day}",
         "hit_count": hit_count,
         "prediction_count": len(prediction_round["predictions"]),
+        "actual_count": len(actual_adjustments),
+        "predicted_actual_count": predicted_actual_count,
+        "unpredicted_actual_count": len(actual_adjustments) - predicted_actual_count,
+        "actual_adjustments": actual_adjustments,
         "source_url": SOURCE_URL,
     }
 
@@ -346,6 +411,12 @@ def generate_prediction_page(
     env = Environment(loader=FileSystemLoader("."), autoescape=True)
     template = env.get_template(template_path)
     hero_options = load_hero_options()
+    asset_by_name = {option["name"]: option["asset"] for option in hero_options}
+    for result_item in prediction_round["result"].get("actual_adjustments", []):
+        asset = asset_by_name.get(result_item["hero_name"])
+        if asset:
+            result_item["english_name"] = asset
+            result_item["page_slug"] = hero_page_slug(asset)
     histories = load_hero_histories(csv_dir)
     relationships = calculate_hero_relationships(histories)
     attach_prediction_evidence(

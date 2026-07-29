@@ -1,13 +1,48 @@
 {
   "source": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail",
   "hero_count": 116,
-  "adjustment_count": 312,
-  "latest_version": "2026/07/16",
+  "adjustment_count": 322,
+  "latest_version": "2026/07/30",
   "heroes": [
     {
       "hero_id": 105,
       "hero_name": "廉頗",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "溶岩重撃",
+                "attributeDesc": "シールド：<br>調整前：400（スキルLv.ごとに+80）（+追加HPの10％）<br>調整後：360（スキルLv.ごとに+72）（+追加HPの8.5％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 10520,
+                  "skillName": "溶岩重撃",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30520.png",
+                  "skillDesc": "その場でチャージし、<color=#6bc872>シールド</color>を獲得する。チャージ中は範囲内の敵の<color=#2dc6ff>移動速度を減少</color>させる。また非ヒーローの敵ユニットを中心に引き寄せ、短時間後に範囲<color=#ff6600>ダメージ</color>を与える。\nスキル範囲内に敵がいる場合、スキル1のクールダウンを<color=#ffc834>リセット</color>する。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "15",
           "seasonName": "S15",
@@ -216,6 +251,69 @@
       "hero_id": 107,
       "hero_name": "趙雲",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 2,
+              "text": "制度レベルアップ",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "迅雷の龍",
+                "attributeDesc": "クールダウン：<br>調整前：7秒（スキルLv.ごとに-0.3秒）<br>調整後：8秒（スキルLv.ごとに-0.3秒）<br>効果調整：<br>移動距離増加がパッシブ段階変化に応じてではなく、スキルレベルに応じて0～100増加する仕様に変更。パッシブ段階変化時、スキル1を1回発動可能",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 10730,
+                  "skillName": "迅雷の龍",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15030.png",
+                  "skillDesc": "前方に<color=#6bc872>突撃</color>し、<color=#ff6600>ダメージ</color>を与えて次回の通常攻撃を<color=#6bc872>強化</color>する。趙雲のパッシブ状態が変化する時に「迅雷の龍」のクールダウンを<color=#ffc834>リセット</color>する。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "雲破の龍",
+                "attributeDesc": "追加効果：<br>攻撃1回ごとに与ダメージおよびHP回復が8％～4％減少（スキルLv.ごとに-0.8%）<br>効果調整：<br>パッシブ段階変化に応じた攻撃回数の増加を削除<br>パッシブ段階変化に応じた感電ダメージを削除<br>龍槍の基本攻撃回数：<br>調整前：4<br>調整後：5<br>基本ダメージ：<br>調整前：185（スキルLv.ごとに+37）（+追加物理攻撃の55％）<br>調整後：200（スキルLv.ごとに+40）（+追加物理攻撃の65％）<br>基本回復量：<br>調整前：60（スキルLv.ごとに+12）（+追加HPの2.5％）<br>調整後：65（スキルLv.ごとに+13）（+追加HPの2.5％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 10720,
+                  "skillName": "雲破の龍",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15020.png",
+                  "skillDesc": "指定方向に連続突きをして<color=#ff6600>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6bc872>回復</color>する。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              },
+              {
+                "type": 3,
+                "title": "天翔の龍",
+                "attributeDesc": "追加効果：<br>命中した敵に5秒間感電効果を付与する。趙雲のスキルが感電状態のターゲットに命中すると、追加で30〜60（+追加物理攻撃の10%）の魔法ダメージを与える",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 10710,
+                  "skillName": "天翔の龍",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15010.png",
+                  "skillDesc": "指定範囲に<color=#6bc872>飛び込み</color><color=#ff6600>ダメージ</color>を与え、エリアの中心にいる敵を<color=#2dc6ff>ノックアップ</color>する。\nヒーローに命中しなかった場合、クールダウンが50％短縮する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "14",
           "seasonName": "S14",
@@ -662,7 +760,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルダメージ調整",
             "desc": "",
@@ -922,6 +1020,41 @@
       "hero_id": 113,
       "hero_name": "荘子",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキル効果調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "天人合一",
+                "attributeDesc": "CC無効・シールド時間：<br>調整前：2秒<br>調整後：1.5秒<br>シールド効果：<br>調整前：700（スキルLv.ごとに+350）（+追加HPの13％）<br>調整後：600（スキルLv.ごとに+300）（+追加HPの12％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 11330,
+                  "skillName": "天人合一",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11330.png",
+                  "skillDesc": "一定範囲内の味方ヒーローの<color=#ffc834>CCを解除</color>し、<color=#6bc872>シールド</color>を付与する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "15",
           "seasonName": "S15",
@@ -1436,6 +1569,41 @@
       "hero_id": 117,
       "hero_name": "鐘無艶",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 4,
+              "text": "数値強化",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "ストームハンマー",
+                "attributeDesc": "基本ダメージ：<br>調整前：300（スキルLv.ごとに+150）（+追加物理攻撃の95％）<br>調整後：300（スキルLv.ごとに+150）（+追加物理攻撃の100％）<br>1スタックごとのシールド効果：<br>調整前：70（スキルLv.ごとに+35）（+追加HPの3％）<br>調整後：80（スキルLv.ごとに+40）（+追加HPの3％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 11730,
+                  "skillName": "ストームハンマー",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11730.png",
+                  "skillDesc": "ハンマーを振り回し続け、一定範囲内の敵に持続的に<color=#ff6600>ダメージ</color>を与える。\nスキル発動中は自身の<color=#6bc872>移動速度</color>が増加し、<color=#6bc872>シールド</color>を獲得する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "13",
           "seasonName": "S13",
@@ -2358,6 +2526,55 @@
       "hero_id": 126,
       "hero_name": "夏侯惇",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "豪気斬",
+                "attributeDesc": "基本ダメージ：<br>調整前：420（スキルLv.ごとに+84）（+追加物理攻撃の130％）<br>調整後：400（スキルLv.ごとに+80）（+追加物理攻撃の130％）<br>2回目ダメージ：<br>調整前：420（スキルLv.ごとに+84）（+追加物理攻撃の130％）<br>調整後：400（スキルLv.ごとに+80）（+追加物理攻撃の130％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 12610,
+                  "skillName": "豪気斬",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12610.png",
+                  "skillDesc": "指定方向に<color=#6bc872>斬撃</color>を放ち、範囲内の敵にダメージを与えて<color=#2bc6ff>移動速度を減少</color>させる。\n敵に命中するとクールダウンに入る前に指定方向に再度スキルを発動でき、範囲内の敵に<color=#ff6600>ダメージ</color>を与え、<color=#2bc6ff>ノックアップ</color>する。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "放縦の鎌",
+                "attributeDesc": "基本ダメージ：<br>調整前：420（スキルLv.ごとに+210）（+追加HPの10％）<br>調整後：400（スキルLv.ごとに+200）（+追加HPの10％）<br>範囲ダメージ：<br>調整前：420（スキルLv.ごとに+210）（+追加HPの10％）<br>調整後：400（スキルLv.ごとに+200）（+追加HPの10％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 12630,
+                  "skillName": "放縦の鎌",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12630.png",
+                  "skillDesc": "指定方向にチェーンブレイドを投げ、命中した敵に<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>スタン</color>させる。\n最長距離まで到達するか敵に命中すると、チェーンブレイドの位置に<color=#6bc872>移動</color>し、付近の敵に<color=#ff6600>ダメージ</color>を与える。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "14",
           "seasonName": "S14",
@@ -3438,6 +3655,41 @@
       "hero_id": 131,
       "hero_name": "李白",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキル効果調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 2,
+              "text": "制度レベルアップ",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "神の一筆",
+                "attributeDesc": "追加効果：<br>剣陣内にいる場合、10％～20％の確率（スキルレベルに応じて増加）で剣陣内にいる敵の通常攻撃を回避する。<br>なお、剣陣外の敵からの攻撃に対しては、回避率が2倍になる",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 13120,
+                  "skillName": "神の一筆",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13120.png",
+                  "skillDesc": "<color=#ffc834>自身のデバフを解除</color>して<color=#ffc834>ターゲット不可状態</color>になる。\n範囲内の敵に<color=#ff6600>ダメージ</color>を与えて剣陣を召喚する。\n以降、剣陣に触れた敵に<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>移動速度を減少</color>させ、<color=#2bc6ff>破甲</color>効果を付与する。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "12",
           "seasonName": "S12",
@@ -5461,7 +5713,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルダメージ強化",
             "desc": "",
@@ -5739,7 +5991,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルクールダウン調整",
             "desc": "",
@@ -6783,6 +7035,55 @@
       "hero_name": "アーサー",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 2,
+              "text": "制度レベルアップ",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "聖光の守護",
+                "attributeDesc": "HP回復：<br>調整前：120～240（+追加HPの2.5％）<br>調整後：100～200（+追加HPの2.5％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 16600,
+                  "skillName": "聖光の守護",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16600.png",
+                  "skillDesc": "聖光の守護を獲得し、HPを持続的に<color=#6bc872>回復</color>する。移動速度が減少している場合、「聖光の守護」の<color=#6bc872>回復</color>効果が倍になる。",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              },
+              {
+                "type": 3,
+                "title": "誓約の盾",
+                "attributeDesc": "追加効果：<br>強化通常攻撃を指定方向に空打ちできるように仕様変更。範囲内にターゲットがいない場合、空打ちすると前方に一定距離移動できる<br>基本ダメージ：<br>調整前：350（スキルLv.ごとに+70）（+追加物理攻撃の120％）<br>調整後：325（スキルLv.ごとに+65）（+追加物理攻撃の100％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 16610,
+                  "skillName": "誓約の盾",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16610.png",
+                  "skillDesc": "次回の通常攻撃を<color=#6bc872>強化</color>し、<color=#6bc872>突進</color>効果を獲得して敵に追加<color=#ff6600>ダメージ</color>と<color=#2bc6ff>沈黙</color>効果を与える。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "14",
           "seasonName": "S14",
           "versionName": "2026/03/11",
@@ -7086,7 +7387,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルダメージ調整",
             "desc": "",
@@ -7740,7 +8041,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルダメージ強化",
             "desc": "",
@@ -8507,6 +8808,41 @@
       "hero_name": "楊戩",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 2,
+              "text": "制度レベルアップ",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "精神浸蝕",
+                "attributeDesc": "追加効果：<br>エネルギーバーがフル状態時に、1250より遠い距離からダメージを受けても「法天象地」効果が発動しない",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 17800,
+                  "skillName": "精神浸蝕",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17800.png",
+                  "skillDesc": "通常攻撃やスキルにより耐性が増加し、最大までスタックするとスーパーアーマーを獲得できる。ヒーローと戦闘状態になると法天象地モードに変わる。",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "13",
           "seasonName": "S13",
           "versionName": "2026/01/08",
@@ -8692,7 +9028,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルダメージ強化",
             "desc": "",
@@ -9326,7 +9662,43 @@
     {
       "hero_id": 184,
       "hero_name": "蔡文姫",
-      "adjustments": []
+      "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルクールダウン調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 4,
+              "text": "数値強化",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "忘憂曲",
+                "attributeDesc": "クールダウン：<br>調整前：60秒<br>調整後：60秒（スキルLv.ごとに-6秒）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 18430,
+                  "skillName": "忘憂曲",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18430.png",
+                  "skillDesc": "一定範囲内にいるHPが最も低い味方ヒーローを持続的に<color=#6bc872>回復</color>する。回復されたヒーローは<color=#6bc872>物理および魔法防御</color>が増加する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "hero_id": 187,
@@ -12376,6 +12748,97 @@
       "hero_name": "白龍",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/07/30",
+          "versionPublishTime": "2026-07-30T01:00:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 2,
+              "text": "制度レベルアップ",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "龍影",
+                "attributeDesc": "サブ属性のダメージ：<br>調整前：物理攻撃の30％～60％（クリティカルヒット不可）<br>調整後：物理攻撃の35％～70％（クリティカルヒット可）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 51900,
+                  "skillName": "龍影",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51900.png",
+                  "skillDesc": "最後に使用したスキル2回分に応じた属性を保持する（スキルの使用毎に更新）。メイン属性は物理<color=#ff6600>ダメージ</color>を与える。サブ属性は付近の他の敵に物理<color=#ff6600>ダメージ</color>を与える。\nスキルを発動すると龍魂の刻印を1スタック獲得する（最大3スタック）。刻印獲得後、次回の通常攻撃ですべての刻印を消費し、龍魂でターゲットを攻撃する。刻印を1スタック消費するごとに攻撃回数が1回増加する。この強化通常攻撃は、現在のメイン属性に応じて異なる効果をもつ。\n<color=#4f6f95>龍魂の刻印を消費して行われる追加攻撃時、2回目以降の攻撃によるダメージは50％のみとなる。属性を切り替えるとき、優先的に同じ属性が保持される。</color>",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              },
+              {
+                "type": 3,
+                "title": "薄陽の掌炎",
+                "attributeDesc": "追加効果：<br>発動速度が攻撃速度に応じて増加<br>クールダウン：<br>調整前：12秒（スキルLv.ごとに-0.8秒）<br>調整後：12.5秒（スキルLv.ごとに-0.8秒）<br>基本ダメージ：<br>調整前：300（スキルLv.ごとに+100）（+追加物理攻撃の60％）<br>調整後：270（スキルLv.ごとに+90）（+追加物理攻撃の70％）<br>基本確定ダメージ：<br>調整前：75～150（+追加物理攻撃の15％）<br>調整後：70～140（+追加物理攻撃の16％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 51910,
+                  "skillName": "薄陽の掌炎",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
+                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与え、さらに龍魂の刻印を1スタック獲得する。\n「薄陽の掌炎」を発動すると火属性を1スタック獲得し、通常攻撃時に追加で物理<color=#ff6600>ダメージ</color>を与える。メインとサブが両方火属性の場合、物理<color=#ff6600>ダメージ</color>がさらに増加する。メイン属性が火属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与える。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "蒼天斬雨",
+                "attributeDesc": "追加効果：<br>発動速度が攻撃速度に応じて増加<br>クールダウン：<br>調整前：12秒（スキルLv.ごとに-0.8秒）<br>調整後：12.5秒（スキルLv.ごとに-0.8秒）<br>基本ダメージ：<br>調整前：240（スキルLv.ごとに+80）（+追加物理攻撃の35％）<br>調整後：180（スキルLv.ごとに+60）（+追加物理攻撃の45％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 51920,
+                  "skillName": "蒼天斬雨",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
+                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与え、命中するとHPを<color=#6bc872>回復</color>する。\n「蒼天斬雨」を発動すると水属性を1スタック獲得し、通常攻撃時にHPとMPを<color=#6bc872>回復</color>する。メインとサブが両方水属性の場合、<color=#6bc872>回復</color>効果が追加で増加する。メイン属性が水属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え、攻撃が命中するとHPを<color=#6bc872>回復</color>する。\n<color=#4f6f95>非ヒーローユニットに命中時は回復効果が減少する。</color>",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              },
+              {
+                "type": 3,
+                "title": "疾風斬",
+                "attributeDesc": "追加効果：<br>発動速度が攻撃速度に応じて増加<br>クールダウン：<br>調整前：12秒（スキルLv.ごとに-0.8秒）<br>調整後：12.5秒（スキルLv.ごとに-0.8秒）<br>基本ダメージ：<br>調整前：240（スキルLv.ごとに+80）（+追加物理攻撃の35％）<br>調整後：180（スキルLv.ごとに+60）（+追加物理攻撃の45％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 51940,
+                  "skillName": "疾風斬",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51940.png",
+                  "skillDesc": "剣気を放ち、自身の<color=#6bc872>移動速度</color>を増加させ（持続的に減少）、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>ノックバック</color>する。\n「疾風斬」を発動すると風属性を1スタック獲得し、自身の<color=#6bc872>移動速度</color>が増加する。メインとサブが両方風属性の場合、<color=#6bc872>移動速度</color>が追加で50％増加する。メイン属性が風属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え<color=#2bc6ff>ノックバック</color>する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "スキル3"
+                }
+              },
+              {
+                "type": 3,
+                "title": "夢玄龍",
+                "attributeDesc": "効果調整：<br>龍に変身後の基本移動速度がスキル4のレベルに応じて増加",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 51930,
+                  "skillName": "夢玄龍",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51930.png",
+                  "skillDesc": "白龍は最大4.5秒間、白龍となって空に舞い上がり、<color=#ffc834>攻撃不可、地形無視、ターゲット不可状態</color>となる（途中で中断可能）。その後前方に急降下し、ルート上の敵に物理<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>移動速度を減少</color>させ、着地時に再度同じダメージと1秒間の怖龍効果を与える。\nその後、真龍剣を取り出し、10秒間<color=#6bc872>攻撃速度</color>と<color=#6bc872>射程</color>が増加する。この間、真龍剣で敵を攻撃し、付近のターゲット最大2体に対して追加攻撃を行う。\n<color=#4f6f95>怖龍効果を持つターゲットは白龍から自動的に遠ざかる。飛行中、白龍は現在保持している属性を自由に調整できる。</color>",
+                  "skillIndex": 4,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "13",
           "seasonName": "S13",
           "versionName": "2026/01/08",
@@ -13629,7 +14092,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルダメージ強化",
             "desc": "",
@@ -13872,7 +14335,7 @@
           "seasonName": "S15",
           "versionName": "2026/07/16",
           "versionPublishTime": "2026-07-16T01:00:00Z",
-          "isCurrent": true,
+          "isCurrent": false,
           "adjustContent": {
             "shortDesc": "スキルクールダウン短縮",
             "desc": "",
