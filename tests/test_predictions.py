@@ -69,6 +69,18 @@ class PredictionPageTests(unittest.TestCase):
             [item["rank"] for item in predictions],
         )
         self.assertIsInstance(prediction_round["result"]["ready"], bool)
+        self.assertTrue(prediction_round["result"]["ready"])
+        self.assertEqual(10, prediction_round["result"]["actual_count"])
+        self.assertEqual(1, prediction_round["result"]["predicted_actual_count"])
+        self.assertEqual(1, prediction_round["result"]["hit_count"])
+        dun = next(
+            item
+            for item in prediction_round["result"]["actual_adjustments"]
+            if item["hero_name"] == "夏侯惇"
+        )
+        self.assertEqual(2, dun["forecast"]["candidate_position"])
+        self.assertEqual(68, dun["forecast"]["probability"])
+        self.assertEqual("下方修正", dun["actual_direction"])
 
     def test_generated_page_contains_predictions_and_round_config(self):
         expected_latest_date = load_hero_histories()["李信"][-1]["date_label"]
@@ -87,6 +99,9 @@ class PredictionPageTests(unittest.TestCase):
         self.assertIn("詳しい判断材料", html)
         self.assertIn("直近13週", html)
         self.assertIn("連動傾向", html)
+        self.assertIn("今回調整された10人", html)
+        self.assertIn("事前候補 2位・<b>68%</b>", html)
+        self.assertIn("候補外・事前確率未算出", html)
         self.assertIn("../hok_pics/lixin.png", html)
         self.assertIn("id=\"comment-form\"", html)
         self.assertIn("value=\"匿名希望\"", html)

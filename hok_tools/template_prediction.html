@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#16784a">
     <title>{{ round.title }} | HOK Score List</title>
-    <link rel="stylesheet" href="prediction.css?v=20260724-1">
+    <link rel="stylesheet" href="prediction.css?v=20260730-1">
     <link rel="stylesheet" href="../legal/site-footer.css">
 </head>
 <body data-round-id="{{ round.round_id }}" data-closes-at="{{ round.closes_at }}" data-result-ready="{{ 'true' if round.result.ready else 'false' }}">
@@ -49,9 +49,39 @@
                     <span>RESULT</span>
                     <strong>{{ round.result.version_label }} 調整結果</strong>
                 </div>
-                <p>予想方向まで一致したヒーローは <b>{{ round.result.hit_count }}/{{ round.result.prediction_count }}</b> 人でした。</p>
+                <p>実際の調整は <b>{{ round.result.actual_count }}人</b>。公開候補に含められたのは <b>{{ round.result.predicted_actual_count }}人</b>で、方向まで一致したのは <b>{{ round.result.hit_count }}人</b>でした。</p>
                 <a href="{{ round.result.source_url }}">HOKCAMPで調整内容を見る</a>
             </div>
+
+            <details class="actual-adjustments" open>
+                <summary>
+                    <span>今回調整された{{ round.result.actual_count }}人</span>
+                    <small>公開時のAI評価と照合</small>
+                </summary>
+                <p class="actual-adjustments-note">公開時は候補10人だけに確率を付けており、候補外の順位と確率は保存していません。結果を見た後の数字は足さず、候補外は「事前確率未算出」と表示します。</p>
+                <div class="actual-adjustment-list">
+                    {% for actual in round.result.actual_adjustments %}
+                    <article class="actual-adjustment-item">
+                        {% if actual.page_slug %}
+                        <a class="actual-hero" href="../heroes/{{ actual.page_slug }}.html">
+                            <img src="../hok_pics/{{ actual.english_name }}.png" alt="" width="52" height="52">
+                            <strong>{{ actual.hero_name }}</strong>
+                        </a>
+                        {% else %}
+                        <div class="actual-hero"><strong>{{ actual.hero_name }}</strong></div>
+                        {% endif %}
+                        <span class="direction direction-{{ actual.direction_class }}">{{ actual.actual_direction }}</span>
+                        {% if actual.forecast.published %}
+                        <span class="actual-forecast">事前候補 {{ actual.forecast.candidate_position }}位・<b>{{ actual.forecast.probability }}%</b>（{{ actual.forecast.predicted_direction_label }}）</span>
+                        <span class="result-badge result-{{ actual.forecast.outcome }}">{{ actual.forecast.outcome_label }}</span>
+                        {% else %}
+                        <span class="actual-forecast actual-forecast-outside">候補外・事前確率未算出</span>
+                        {% endif %}
+                        <a class="actual-source" href="{{ actual.source_url }}">調整詳細</a>
+                    </article>
+                    {% endfor %}
+                </div>
+            </details>
             {% endif %}
 
             <div class="prediction-list">
