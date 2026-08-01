@@ -275,10 +275,10 @@
                 "attributeDesc": "クールダウン：<br>調整前：7秒（スキルLv.ごとに-0.3秒）<br>調整後：8秒（スキルLv.ごとに-0.3秒）<br>効果調整：<br>移動距離増加がパッシブ段階変化に応じてではなく、スキルレベルに応じて0～100増加する仕様に変更。パッシブ段階変化時、スキル1を1回発動可能",
                 "preEquipInfo": [],
                 "heroSkillInfo": {
-                  "skillId": 10730,
+                  "skillId": 10710,
                   "skillName": "迅雷の龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15030.png",
-                  "skillDesc": "前方に<color=#6bc872>突撃</color>し、<color=#ff6600>ダメージ</color>を与えて次回の通常攻撃を<color=#6bc872>強化</color>する。趙雲のパッシブ状態が変化する時に「迅雷の龍」のクールダウンを<color=#ffc834>リセット</color>する。",
+                  "skillDesc": "前方に向かって突撃し、<color=#fa863a>ダメージ</color>を与えて次回の通常攻撃を強化する。パッシブ段階変化時に「迅雷の龍」を1回スタックする。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -292,7 +292,7 @@
                   "skillId": 10720,
                   "skillName": "雲破の龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15020.png",
-                  "skillDesc": "指定方向に連続突きをして<color=#ff6600>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6bc872>回復</color>する。",
+                  "skillDesc": "指定方向に連続突きをして<color=#fa863a>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6fc075>回復</color>する。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -303,10 +303,10 @@
                 "attributeDesc": "追加効果：<br>命中した敵に5秒間感電効果を付与する。趙雲のスキルが感電状態のターゲットに命中すると、追加で30〜60（+追加物理攻撃の10%）の魔法ダメージを与える",
                 "preEquipInfo": [],
                 "heroSkillInfo": {
-                  "skillId": 10710,
+                  "skillId": 10730,
                   "skillName": "天翔の龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15010.png",
-                  "skillDesc": "指定範囲に<color=#6bc872>飛び込み</color><color=#ff6600>ダメージ</color>を与え、エリアの中心にいる敵を<color=#2dc6ff>ノックアップ</color>する。\nヒーローに命中しなかった場合、クールダウンが50％短縮する。",
+                  "skillDesc": "指定範囲に飛びかかり、<color=#ff6600>ダメージ</color>を与えてエリアの中心にいる敵を<color=#2dc6ff>ノックアップ</color>する。\nヒーローに命中しなかった場合、クールダウンが50％短縮する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "奥義"
                 }
@@ -341,7 +341,7 @@
                   "skillId": 10700,
                   "skillName": "龍の咆哮",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/10700.png",
-                  "skillDesc": "HPが減少すると潜在能力を解放し、<color=#6bc872>被ダメージ軽減効果</color>や基本スキル効果が段階別に<color=#6bc872>強化</color>される。",
+                  "skillDesc": "HPが減少すると潜在能力を解放し、<color=#6fc075>被ダメージ軽減効果</color>や基本スキル効果を段階的に強化する。",
                   "skillIndex": 0,
                   "skillIndexDesc": "パッシブ"
                 }
@@ -376,7 +376,7 @@
                   "skillId": 10720,
                   "skillName": "雲破の龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15020.png",
-                  "skillDesc": "指定方向に連続突きをして<color=#ff6600>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6bc872>回復</color>する。",
+                  "skillDesc": "指定方向に連続突きをして<color=#fa863a>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6fc075>回復</color>する。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -411,7 +411,7 @@
                   "skillId": 10720,
                   "skillName": "雲破の龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15020.png",
-                  "skillDesc": "指定方向に連続突きをして<color=#ff6600>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6bc872>回復</color>する。",
+                  "skillDesc": "指定方向に連続突きをして<color=#fa863a>ダメージ</color>を与える。ユニットに命中すると自身のHPを<color=#6fc075>回復</color>する。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -422,10 +422,10 @@
                 "attributeDesc": "調整前：18秒（スキルLv.ごとに-3秒）<br>調整後：18秒（スキルLv.ごとに-1.5秒）<br>新たな効果を追加：<br>ヒーローに命中しなかった場合、クールダウンの半分が短縮される。また、飛び上がっていた時間がクールダウンから差し引かれる",
                 "preEquipInfo": [],
                 "heroSkillInfo": {
-                  "skillId": 10710,
+                  "skillId": 10730,
                   "skillName": "天翔の龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15010.png",
-                  "skillDesc": "指定範囲に<color=#6bc872>飛び込み</color><color=#ff6600>ダメージ</color>を与え、エリアの中心にいる敵を<color=#2dc6ff>ノックアップ</color>する。\nヒーローに命中しなかった場合、クールダウンが50％短縮する。",
+                  "skillDesc": "指定範囲に飛びかかり、<color=#ff6600>ダメージ</color>を与えてエリアの中心にいる敵を<color=#2dc6ff>ノックアップ</color>する。\nヒーローに命中しなかった場合、クールダウンが50％短縮する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "奥義"
                 }
@@ -7061,7 +7061,7 @@
                   "skillId": 16600,
                   "skillName": "聖光の守護",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16600.png",
-                  "skillDesc": "聖光の守護を獲得し、HPを持続的に<color=#6bc872>回復</color>する。移動速度が減少している場合、「聖光の守護」の<color=#6bc872>回復</color>効果が倍になる。",
+                  "skillDesc": "1秒ごとにHPを<color=#6fc075>回復</color>する。移動速度が減少している場合、回復量が増加する。",
                   "skillIndex": 0,
                   "skillIndexDesc": "パッシブ"
                 }
@@ -7075,7 +7075,7 @@
                   "skillId": 16610,
                   "skillName": "誓約の盾",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16610.png",
-                  "skillDesc": "次回の通常攻撃を<color=#6bc872>強化</color>し、<color=#6bc872>突進</color>効果を獲得して敵に追加<color=#ff6600>ダメージ</color>と<color=#2bc6ff>沈黙</color>効果を与える。",
+                  "skillDesc": "<color=#6fc075>移動速度が増加</color>し、次回の通常攻撃を強化する。強化通常攻撃は敵に向かって突撃し、<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>沈黙</color>効果を付与する。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -7110,7 +7110,7 @@
                   "skillId": 16600,
                   "skillName": "聖光の守護",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16600.png",
-                  "skillDesc": "聖光の守護を獲得し、HPを持続的に<color=#6bc872>回復</color>する。移動速度が減少している場合、「聖光の守護」の<color=#6bc872>回復</color>効果が倍になる。",
+                  "skillDesc": "1秒ごとにHPを<color=#6fc075>回復</color>する。移動速度が減少している場合、回復量が増加する。",
                   "skillIndex": 0,
                   "skillIndexDesc": "パッシブ"
                 }
@@ -7124,7 +7124,7 @@
                   "skillId": 16620,
                   "skillName": "回転攻撃",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16620.png",
-                  "skillDesc": "一定範囲内の敵に持続<color=#ff6600>ダメージ</color>を与える。",
+                  "skillDesc": "範囲内の敵に1秒ごとに<color=#fa863a>ダメージ</color>を与える。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -7159,7 +7159,7 @@
                   "skillId": 16610,
                   "skillName": "誓約の盾",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16610.png",
-                  "skillDesc": "次回の通常攻撃を<color=#6bc872>強化</color>し、<color=#6bc872>突進</color>効果を獲得して敵に追加<color=#ff6600>ダメージ</color>と<color=#2bc6ff>沈黙</color>効果を与える。",
+                  "skillDesc": "<color=#6fc075>移動速度が増加</color>し、次回の通常攻撃を強化する。強化通常攻撃は敵に向かって突撃し、<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>沈黙</color>効果を付与する。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -7222,7 +7222,7 @@
                   "skillId": 16610,
                   "skillName": "誓約の盾",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16610.png",
-                  "skillDesc": "次回の通常攻撃を<color=#6bc872>強化</color>し、<color=#6bc872>突進</color>効果を獲得して敵に追加<color=#ff6600>ダメージ</color>と<color=#2bc6ff>沈黙</color>効果を与える。",
+                  "skillDesc": "<color=#6fc075>移動速度が増加</color>し、次回の通常攻撃を強化する。強化通常攻撃は敵に向かって突撃し、<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>沈黙</color>効果を付与する。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -12774,7 +12774,7 @@
                   "skillId": 51900,
                   "skillName": "龍影",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51900.png",
-                  "skillDesc": "最後に使用したスキル2回分に応じた属性を保持する（スキルの使用毎に更新）。メイン属性は物理<color=#ff6600>ダメージ</color>を与える。サブ属性は付近の他の敵に物理<color=#ff6600>ダメージ</color>を与える。\nスキルを発動すると龍魂の刻印を1スタック獲得する（最大3スタック）。刻印獲得後、次回の通常攻撃ですべての刻印を消費し、龍魂でターゲットを攻撃する。刻印を1スタック消費するごとに攻撃回数が1回増加する。この強化通常攻撃は、現在のメイン属性に応じて異なる効果をもつ。\n<color=#4f6f95>龍魂の刻印を消費して行われる追加攻撃時、2回目以降の攻撃によるダメージは50％のみとなる。属性を切り替えるとき、優先的に同じ属性が保持される。</color>",
+                  "skillDesc": "最後に発動したスキル2回分に応じた属性を保持し、通常攻撃時に追加でターゲット1体に<color=#fa863a>ダメージ</color>を与える。\n<color=#ffce49>スキルを発動すると龍魂の刻印をスタックし、次回の通常攻撃を強化する。</color>\n<color=#4f6f95>龍魂の刻印を消費しての追加攻撃時、2回目以降の攻撃によるダメージは1％となる。属性変更時は、優先的に同じ属性が保持される。</color>",
                   "skillIndex": 0,
                   "skillIndexDesc": "パッシブ"
                 }
@@ -12788,7 +12788,7 @@
                   "skillId": 51910,
                   "skillName": "薄陽の掌炎",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
-                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与え、さらに龍魂の刻印を1スタック獲得する。\n「薄陽の掌炎」を発動すると火属性を1スタック獲得し、通常攻撃時に追加で物理<color=#ff6600>ダメージ</color>を与える。メインとサブが両方火属性の場合、物理<color=#ff6600>ダメージ</color>がさらに増加する。メイン属性が火属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与える。",
+                  "skillDesc": "剣気を放ち、範囲内の敵に<color=#fa863a>物理ダメージ</color>と<color=#d9d9d9>確定ダメージ</color>を与える。\n以降の通常攻撃で追加<color=#fa863a>ダメージ</color>を与える。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -12802,7 +12802,7 @@
                   "skillId": 51920,
                   "skillName": "蒼天斬雨",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
-                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与え、命中するとHPを<color=#6bc872>回復</color>する。\n「蒼天斬雨」を発動すると水属性を1スタック獲得し、通常攻撃時にHPとMPを<color=#6bc872>回復</color>する。メインとサブが両方水属性の場合、<color=#6bc872>回復</color>効果が追加で増加する。メイン属性が水属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え、攻撃が命中するとHPを<color=#6bc872>回復</color>する。\n<color=#4f6f95>非ヒーローユニットに命中時は回復効果が減少する。</color>",
+                  "skillDesc": "剣気を放ち、範囲内の敵に<color=#fa863a>物理ダメージ</color>を与える。命中すると<color=#6fc075>HPを回復</color>する。\n以降の通常攻撃で<color=#6fc075>HPとMPを回復</color>する。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -12816,7 +12816,7 @@
                   "skillId": 51940,
                   "skillName": "疾風斬",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51940.png",
-                  "skillDesc": "剣気を放ち、自身の<color=#6bc872>移動速度</color>を増加させ（持続的に減少）、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>ノックバック</color>する。\n「疾風斬」を発動すると風属性を1スタック獲得し、自身の<color=#6bc872>移動速度</color>が増加する。メインとサブが両方風属性の場合、<color=#6bc872>移動速度</color>が追加で50％増加する。メイン属性が風属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え<color=#2bc6ff>ノックバック</color>する。",
+                  "skillDesc": "剣気を放つ。<color=#6fc075>移動速度が増加</color>し、範囲内の敵に<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>ノックバック</color>する。\nその後も<color=#6fc075>移動速度が増加</color>する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "スキル3"
                 }
@@ -12830,7 +12830,7 @@
                   "skillId": 51930,
                   "skillName": "夢玄龍",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51930.png",
-                  "skillDesc": "白龍は最大4.5秒間、白龍となって空に舞い上がり、<color=#ffc834>攻撃不可、地形無視、ターゲット不可状態</color>となる（途中で中断可能）。その後前方に急降下し、ルート上の敵に物理<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>移動速度を減少</color>させ、着地時に再度同じダメージと1秒間の怖龍効果を与える。\nその後、真龍剣を取り出し、10秒間<color=#6bc872>攻撃速度</color>と<color=#6bc872>射程</color>が増加する。この間、真龍剣で敵を攻撃し、付近のターゲット最大2体に対して追加攻撃を行う。\n<color=#4f6f95>怖龍効果を持つターゲットは白龍から自動的に遠ざかる。飛行中、白龍は現在保持している属性を自由に調整できる。</color>",
+                  "skillDesc": "真龍となって空に舞い上がった後に前方に急降下し、ルート上の敵に<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>移動速度を減少</color>させ、着地点にいる敵に再度同量の<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>怖龍効果</color>を付与する。\nその後、真龍剣により自身を<color=#ffce49>強化</color>し、保持属性により追加で最大2体のターゲットに対して攻撃する。",
                   "skillIndex": 4,
                   "skillIndexDesc": "奥義"
                 }
@@ -12865,7 +12865,7 @@
                   "skillId": 51910,
                   "skillName": "薄陽の掌炎",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
-                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与え、さらに龍魂の刻印を1スタック獲得する。\n「薄陽の掌炎」を発動すると火属性を1スタック獲得し、通常攻撃時に追加で物理<color=#ff6600>ダメージ</color>を与える。メインとサブが両方火属性の場合、物理<color=#ff6600>ダメージ</color>がさらに増加する。メイン属性が火属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与える。",
+                  "skillDesc": "剣気を放ち、範囲内の敵に<color=#fa863a>物理ダメージ</color>と<color=#d9d9d9>確定ダメージ</color>を与える。\n以降の通常攻撃で追加<color=#fa863a>ダメージ</color>を与える。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -12879,7 +12879,7 @@
                   "skillId": 51920,
                   "skillName": "蒼天斬雨",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
-                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与え、命中するとHPを<color=#6bc872>回復</color>する。\n「蒼天斬雨」を発動すると水属性を1スタック獲得し、通常攻撃時にHPとMPを<color=#6bc872>回復</color>する。メインとサブが両方水属性の場合、<color=#6bc872>回復</color>効果が追加で増加する。メイン属性が水属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え、攻撃が命中するとHPを<color=#6bc872>回復</color>する。\n<color=#4f6f95>非ヒーローユニットに命中時は回復効果が減少する。</color>",
+                  "skillDesc": "剣気を放ち、範囲内の敵に<color=#fa863a>物理ダメージ</color>を与える。命中すると<color=#6fc075>HPを回復</color>する。\n以降の通常攻撃で<color=#6fc075>HPとMPを回復</color>する。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -12893,7 +12893,7 @@
                   "skillId": 51940,
                   "skillName": "疾風斬",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51940.png",
-                  "skillDesc": "剣気を放ち、自身の<color=#6bc872>移動速度</color>を増加させ（持続的に減少）、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>ノックバック</color>する。\n「疾風斬」を発動すると風属性を1スタック獲得し、自身の<color=#6bc872>移動速度</color>が増加する。メインとサブが両方風属性の場合、<color=#6bc872>移動速度</color>が追加で50％増加する。メイン属性が風属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え<color=#2bc6ff>ノックバック</color>する。",
+                  "skillDesc": "剣気を放つ。<color=#6fc075>移動速度が増加</color>し、範囲内の敵に<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>ノックバック</color>する。\nその後も<color=#6fc075>移動速度が増加</color>する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "スキル3"
                 }
@@ -12928,7 +12928,7 @@
                   "skillId": 51910,
                   "skillName": "薄陽の掌炎",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
-                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与え、さらに龍魂の刻印を1スタック獲得する。\n「薄陽の掌炎」を発動すると火属性を1スタック獲得し、通常攻撃時に追加で物理<color=#ff6600>ダメージ</color>を与える。メインとサブが両方火属性の場合、物理<color=#ff6600>ダメージ</color>がさらに増加する。メイン属性が火属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>及び確定<color=#ffffff>ダメージ</color>を与える。",
+                  "skillDesc": "剣気を放ち、範囲内の敵に<color=#fa863a>物理ダメージ</color>と<color=#d9d9d9>確定ダメージ</color>を与える。\n以降の通常攻撃で追加<color=#fa863a>ダメージ</color>を与える。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -12942,7 +12942,7 @@
                   "skillId": 51920,
                   "skillName": "蒼天斬雨",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
-                  "skillDesc": "剣気を放ち、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与え、命中するとHPを<color=#6bc872>回復</color>する。\n「蒼天斬雨」を発動すると水属性を1スタック獲得し、通常攻撃時にHPとMPを<color=#6bc872>回復</color>する。メインとサブが両方水属性の場合、<color=#6bc872>回復</color>効果が追加で増加する。メイン属性が水属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え、攻撃が命中するとHPを<color=#6bc872>回復</color>する。\n<color=#4f6f95>非ヒーローユニットに命中時は回復効果が減少する。</color>",
+                  "skillDesc": "剣気を放ち、範囲内の敵に<color=#fa863a>物理ダメージ</color>を与える。命中すると<color=#6fc075>HPを回復</color>する。\n以降の通常攻撃で<color=#6fc075>HPとMPを回復</color>する。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -12956,7 +12956,7 @@
                   "skillId": 51940,
                   "skillName": "疾風斬",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51940.png",
-                  "skillDesc": "剣気を放ち、自身の<color=#6bc872>移動速度</color>を増加させ（持続的に減少）、範囲内の敵に物理<color=#ff6600>ダメージ</color>を与えて<color=#2bc6ff>ノックバック</color>する。\n「疾風斬」を発動すると風属性を1スタック獲得し、自身の<color=#6bc872>移動速度</color>が増加する。メインとサブが両方風属性の場合、<color=#6bc872>移動速度</color>が追加で50％増加する。メイン属性が風属性の場合、強化通常攻撃時に物理<color=#ff6600>ダメージ</color>を与え<color=#2bc6ff>ノックバック</color>する。",
+                  "skillDesc": "剣気を放つ。<color=#6fc075>移動速度が増加</color>し、範囲内の敵に<color=#fa863a>ダメージ</color>を与えて<color=#50c1eb>ノックバック</color>する。\nその後も<color=#6fc075>移動速度が増加</color>する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "スキル3"
                 }
