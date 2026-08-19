@@ -31,47 +31,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "李信",
-        "latest_date_label": "2026/08/07",
-        "score_label": "64.97",
-        "tier": "S",
-        "rank": 1,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+2.00",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "+6.02",
-          "class": "positive"
-        },
-        "volatility_label": "1.19",
-        "average_change_label": "+0.46",
-        "up_count": 6,
-        "down_count": 4,
-        "flat_count": 3,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2026/06/17",
-          "direction_label": "上方修正"
-        },
-        "positive_relation": {
-          "name": "大司命",
-          "page_slug": "augran",
-          "correlation_label": "+0.73",
-          "direction_count": 11,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "百里玄策",
-          "page_slug": "xuance",
-          "correlation_label": "-0.84",
-          "direction_count": 10,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -89,47 +48,6 @@
         "outcome_label": "的中",
         "actual_direction": "下方修正",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=126&versionName=2026%2F07%2F30"
-      },
-      "evidence": {
-        "hero_name": "夏侯惇",
-        "latest_date_label": "2026/08/07",
-        "score_label": "57.40",
-        "tier": "A",
-        "rank": 13,
-        "hero_count": 116,
-        "four_week": {
-          "label": "-3.45",
-          "class": "negative"
-        },
-        "thirteen_week": {
-          "label": "+2.80",
-          "class": "positive"
-        },
-        "volatility_label": "1.85",
-        "average_change_label": "+0.21",
-        "up_count": 4,
-        "down_count": 7,
-        "flat_count": 2,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2026/07/30",
-          "direction_label": "調整"
-        },
-        "positive_relation": {
-          "name": "宮本武蔵",
-          "page_slug": "musashi",
-          "correlation_label": "+0.66",
-          "direction_count": 12,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "女媧",
-          "page_slug": "nuwa",
-          "correlation_label": "-0.54",
-          "direction_count": 9,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -147,47 +65,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "ルナ",
-        "latest_date_label": "2026/08/07",
-        "score_label": "44.32",
-        "tier": "D",
-        "rank": 114,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.28",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-2.72",
-          "class": "negative"
-        },
-        "volatility_label": "0.74",
-        "average_change_label": "-0.21",
-        "up_count": 5,
-        "down_count": 5,
-        "flat_count": 3,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2025/10/30",
-          "direction_label": "調整"
-        },
-        "positive_relation": {
-          "name": "楊貴妃",
-          "page_slug": "yuhuan",
-          "correlation_label": "+0.82",
-          "direction_count": 11,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "司馬懿",
-          "page_slug": "simayi",
-          "correlation_label": "-0.78",
-          "direction_count": 10,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -205,44 +82,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "元歌",
-        "latest_date_label": "2026/08/07",
-        "score_label": "46.83",
-        "tier": "C",
-        "rank": 102,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.02",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-1.76",
-          "class": "negative"
-        },
-        "volatility_label": "0.84",
-        "average_change_label": "-0.13",
-        "up_count": 4,
-        "down_count": 4,
-        "flat_count": 5,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": null,
-        "positive_relation": {
-          "name": "アグド",
-          "page_slug": "agudo",
-          "correlation_label": "+0.60",
-          "direction_count": 11,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "元流の子（メイジ）",
-          "page_slug": "flowborn-mage",
-          "correlation_label": "-0.66",
-          "direction_count": 11,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -260,47 +99,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "雲中君",
-        "latest_date_label": "2026/08/07",
-        "score_label": "51.50",
-        "tier": "B",
-        "rank": 54,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.57",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-2.60",
-          "class": "negative"
-        },
-        "volatility_label": "1.28",
-        "average_change_label": "-0.20",
-        "up_count": 4,
-        "down_count": 8,
-        "flat_count": 1,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2025/03/20",
-          "direction_label": "下方修正"
-        },
-        "positive_relation": {
-          "name": "エリン",
-          "page_slug": "erin",
-          "correlation_label": "+0.73",
-          "direction_count": 10,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "鐘馗",
-          "page_slug": "kui",
-          "correlation_label": "-0.72",
-          "direction_count": 10,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -318,47 +116,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "橘右京",
-        "latest_date_label": "2026/08/07",
-        "score_label": "46.58",
-        "tier": "C",
-        "rank": 107,
-        "hero_count": 116,
-        "four_week": {
-          "label": "-2.18",
-          "class": "negative"
-        },
-        "thirteen_week": {
-          "label": "-4.39",
-          "class": "negative"
-        },
-        "volatility_label": "0.92",
-        "average_change_label": "-0.34",
-        "up_count": 3,
-        "down_count": 7,
-        "flat_count": 3,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2025/04/10",
-          "direction_label": "上方修正"
-        },
-        "positive_relation": {
-          "name": "雲中君",
-          "page_slug": "cirrus",
-          "correlation_label": "+0.59",
-          "direction_count": 9,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "ミーユエ",
-          "page_slug": "miyue",
-          "correlation_label": "-0.74",
-          "direction_count": 11,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -376,47 +133,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "伽羅",
-        "latest_date_label": "2026/08/07",
-        "score_label": "60.03",
-        "tier": "S",
-        "rank": 5,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+0.44",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "+0.70",
-          "class": "positive"
-        },
-        "volatility_label": "0.94",
-        "average_change_label": "+0.05",
-        "up_count": 6,
-        "down_count": 6,
-        "flat_count": 1,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2025/12/16",
-          "direction_label": "調整"
-        },
-        "positive_relation": {
-          "name": "司馬懿",
-          "page_slug": "simayi",
-          "correlation_label": "+0.64",
-          "direction_count": 8,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "鏡",
-          "page_slug": "jing",
-          "correlation_label": "-0.74",
-          "direction_count": 13,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -434,47 +150,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "蒙牙",
-        "latest_date_label": "2026/08/07",
-        "score_label": "59.78",
-        "tier": "A",
-        "rank": 6,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.72",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "+0.43",
-          "class": "positive"
-        },
-        "volatility_label": "0.73",
-        "average_change_label": "+0.03",
-        "up_count": 5,
-        "down_count": 5,
-        "flat_count": 3,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2025/12/16",
-          "direction_label": "調整"
-        },
-        "positive_relation": {
-          "name": "元流の子（マークスマン）",
-          "page_slug": "flowborn-marksman",
-          "correlation_label": "+0.69",
-          "direction_count": 8,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "瀾",
-          "page_slug": "lam",
-          "correlation_label": "-0.64",
-          "direction_count": 9,
-          "sample_count": 13
-        }
       }
     },
     {
@@ -492,32 +167,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "アネット",
-        "latest_date_label": "2026/08/07",
-        "score_label": "49.41",
-        "tier": "C",
-        "rank": 83,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+0.37",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "--",
-          "class": "flat"
-        },
-        "volatility_label": "1.45",
-        "average_change_label": "-0.17",
-        "up_count": 3,
-        "down_count": 4,
-        "flat_count": 0,
-        "flat_threshold_label": "0.20",
-        "sample_count": 7,
-        "latest_adjustment": null,
-        "positive_relation": null,
-        "negative_relation": null
       }
     },
     {
@@ -535,47 +184,6 @@
         "outcome_label": "修正なし",
         "actual_direction": "修正なし",
         "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
-      },
-      "evidence": {
-        "hero_name": "ドリア",
-        "latest_date_label": "2026/08/07",
-        "score_label": "46.64",
-        "tier": "C",
-        "rank": 105,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.19",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "+0.79",
-          "class": "positive"
-        },
-        "volatility_label": "0.36",
-        "average_change_label": "+0.06",
-        "up_count": 3,
-        "down_count": 3,
-        "flat_count": 7,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2026/01/08",
-          "direction_label": "上方修正"
-        },
-        "positive_relation": {
-          "name": "関羽",
-          "page_slug": "guanyu",
-          "correlation_label": "+0.66",
-          "direction_count": 10,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "西施",
-          "page_slug": "shi",
-          "correlation_label": "-0.57",
-          "direction_count": 9,
-          "sample_count": 13
-        }
       }
     }
   ],

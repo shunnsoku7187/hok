@@ -1,8 +1,8 @@
 {
   "source": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail",
   "hero_count": 116,
-  "adjustment_count": 322,
-  "latest_version": "2026/07/30",
+  "adjustment_count": 331,
+  "latest_version": "2026/08/14",
   "heroes": [
     {
       "hero_id": 105,
@@ -3029,6 +3029,41 @@
       "hero_name": "ファーティフ",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキル回復効果強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 4,
+              "text": "数値強化",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "争覇",
+                "attributeDesc": "HP回復：<br>調整前：90～180（+追加HPの1.4％）<br>調整後：100～200（+追加HPの1.6％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 12800,
+                  "skillName": "争覇",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12800.png",
+                  "skillDesc": "スキルを発動すると通常攻撃を強化する。<color=#6bc872>攻撃速度が増加</color>し、剣気で遠距離<color=#ff6600>ダメージ</color>を与えてHPを<color=#6bc872>回復</color>する。\n<color=#4f6f95>「聖樹の祝福」発動中は強化通常攻撃時に剣気を追加で1回放つ。</color>",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "14",
           "seasonName": "S14",
           "versionName": "2026/03/11",
@@ -4170,6 +4205,55 @@
       "hero_id": 134,
       "hero_name": "達磨",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキル効果調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "真言・無相",
+                "attributeDesc": "基本ダメージ：<br>調整前：150（スキルLv.ごとに+30）（+追加物理攻撃の100％）<br>調整後：180（スキルLv.ごとに+36）（+追加物理攻撃の100％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 13410,
+                  "skillName": "真言・無相",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13410.png",
+                  "skillDesc": "前方に<color=#6bc872>移動</color>し、敵に<color=#2dc6ff>CC</color>と<color=#ff6600>ダメージ</color>を与える。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "真言・明王",
+                "attributeDesc": "HP回復：<br>調整前：65（スキルLv.ごとに+13）（+追加HPの2.5％）<br>調整後：85（スキルLv.ごとに+17）（+追加HPの2.5％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 13420,
+                  "skillName": "真言・明王",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13420.png",
+                  "skillDesc": "前方の敵に<color=#ff6600>ダメージ</color>を与え、HPを<color=#6bc872>回復</color>する。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "14",
           "seasonName": "S14",
@@ -6348,6 +6432,55 @@
       "hero_name": "エリン",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "舞・敬葉",
+                "attributeDesc": "基本ダメージ：<br>調整前：525（スキルLv.ごとに+105）（+追加物理攻撃の120％）（+魔法攻撃の110％）<br>調整後：510（スキルLv.ごとに+102）（+追加物理攻撃の115％）（+魔法攻撃の100％）<br>接触ダメージ：<br>調整前：175（スキルLv.ごとに+35）（+追加物理攻撃の40％）（+魔法攻撃の37％）<br>調整後：170（スキルLv.ごとに+34）（+追加物理攻撃の38％）（+魔法攻撃の33％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 15510,
+                  "skillName": "舞・敬葉",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15510.png",
+                  "skillDesc": "葉を射出し、命中した敵に<color=#f264ff>ダメージ</color>を与え、<color=#ffc834>刻印</color>を獲得する。葉は輪を展開し、触れたターゲットに<color=#f264ff>ダメージ</color>を与え、<color=#2bc6ff>移動速度を減少</color>させる\n<color=#4f6f95>魔法強度が増加するたびにクールダウンが短縮する。</color>",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "月桂の舞・満開",
+                "attributeDesc": "基本ダメージ：<br>調整前：72（スキルLv.ごとに+36）（+物理攻撃の35％）（+魔法攻撃の30％）<br>調整後：72（スキルLv.ごとに+36）（+物理攻撃の35％）（+魔法攻撃の25％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 15530,
+                  "skillName": "月桂の舞・満開",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15530.png",
+                  "skillDesc": "刻印のスタック数が一定数に達するとこのスキルがアンロックされる。スキルを発動すると刻印を消費し、<color=#f264ff>ダメージ</color>を与えると共に自身に<color=#6bc872>移動速度増加</color>効果を付与する。同時に、スキル2の<color=#6bc872>クールダウン</color>を短縮する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "13",
           "seasonName": "S13",
           "versionName": "2025/12/16",
@@ -6513,6 +6646,55 @@
       "hero_id": 157,
       "hero_name": "不知火舞",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 4,
+              "text": "数値強化",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "飛翔龍炎陣",
+                "attributeDesc": "クールダウン：<br>調整前：10秒（スキルLv.ごとに-0.8秒）<br>調整後：9秒（スキルLv.ごとに-0.6秒）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 15710,
+                  "skillName": "飛翔龍炎陣",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15710.png",
+                  "skillDesc": "指定方向に<color=#6bc872>突撃</color>し、<color=#f264ff>ダメージ</color>を与えながら、目標エリアにいる敵を<color=#2bc6ff>ノックアップ</color>する。ターゲットに命中した場合は<color=#6bc872>エネルギーを回復</color>する。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "花蝶扇",
+                "attributeDesc": "基本ダメージ：<br>調整前：450（スキルLv.ごとに+90）（+魔法攻撃の90％）<br>調整後：470（スキルLv.ごとに+94）（+魔法攻撃の90％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 15720,
+                  "skillName": "花蝶扇",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15720.png",
+                  "skillDesc": "扇子を投げ、ターゲットに<color=#f264ff>ダメージ</color>を与え、魔法防御と<color=#2bc6ff>移動速度</color>を<color=#2bc6ff>減少</color>させる。スキルが命中すると自身の<color=#6bc872>エネルギーを回復</color>する。命中するとターゲットの後ろにいる一番近いユニットに魔法<color=#f264ff>ダメージ</color>を与える。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "8",
           "seasonName": "S8",
@@ -7486,6 +7668,41 @@
       "hero_id": 169,
       "hero_name": "后羿",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "乱れ矢雨",
+                "attributeDesc": "調整前：5秒<br>調整後：4秒<br>基本ダメージ：<br>調整前：90（スキルLv.ごとに+28）（+物理攻撃の75％）<br>調整後：100（スキルLv.ごとに+20）（+物理攻撃の75％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 16910,
+                  "skillName": "乱れ矢雨",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16910.png",
+                  "skillDesc": "通常攻撃のダメージが増加し、同時に射程内の敵に<color=#6bc872>矢</color>を発射する。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "13",
           "seasonName": "S13",
@@ -10525,6 +10742,69 @@
       "hero_name": "百里玄策",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 4,
+              "text": "数値強化",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "狂気の序章",
+                "attributeDesc": "基本ダメージ：<br>調整前：物理攻撃の33％<br>調整後：物理攻撃の35％",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 19503,
+                  "skillName": "狂気の序章",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19500.png",
+                  "skillDesc": "離れている敵に追加<color=#ff6600>ダメージ</color>を与えて<color=#2dc6ff>移動速度を減少</color>させ、自身の<color=#6bc872>移動速度を増加</color>させる。",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              },
+              {
+                "type": 3,
+                "title": "夢魔の鎖鎌",
+                "attributeDesc": "基本ダメージ：<br>調整前：320（スキルLv.ごとに+64）（+追加物理攻撃の140％）<br>調整後：380（スキルLv.ごとに+76）（+追加物理攻撃の140％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 19520,
+                  "skillName": "夢魔の鎖鎌",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19520.png",
+                  "skillDesc": "チャージしながら<color=#6bc872>移動速度を増加</color>し、鎖鎌を指定方向に投げ、接触した敵を拘束し<color=#ff6600>ダメージ</color>を与える。鎖鎌の回収途中、最初に命中した敵に狩猟の刻印を付与し、再度スキルをタップすると、敵を後方に<color=#2dc6ff>投げ飛ばして</color><color=#ff6600>ダメージ</color>を与える。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              },
+              {
+                "type": 3,
+                "title": "鎌一閃",
+                "attributeDesc": "鎖鎌ダメージ：<br>調整前：200（スキルLv.ごとに+100）（+追加物理攻撃の100％）<br>調整後：280（スキルLv.ごとに+140）（+追加物理攻撃の130％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 19530,
+                  "skillName": "鎌一閃",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19530.png",
+                  "skillDesc": "「夢魔の鎖鎌」が命中したターゲットの背後に<color=#6bc872>突進</color>し、ルート上の敵に<color=#ff6600>ダメージ</color>を与える。敵が範囲外にいる場合は鎖鎌の方向に一定距離<color=#6bc872>移動</color>する。\n「夢魔の鎖鎌」の命中ターゲットがいない場合は「夢魔の鎖鎌」でターゲットを拘束し<color=#ff6600>ダメージ</color>を与える。 移動中、自身の被ダメージを<color=#ffc834>50％減少</color>する。\n<color=#ffc834>パッシブ：撃破またはアシストするごとに移動速度と攻撃速度が増加する。最大3スタックまで。</color>",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "12",
           "seasonName": "S12",
           "versionName": "20251030",
@@ -13219,6 +13499,41 @@
       "hero_name": "蒙牙",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "狂乱の炎",
+                "attributeDesc": "基本ダメージ：<br>調整前：40（スキルLv.ごとに+8）（+物理攻撃の34％）<br>調整後：35（スキルLv.ごとに+7）（+物理攻撃の32％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 52410,
+                  "skillName": "狂乱の炎",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52410.png",
+                  "skillDesc": "「渾天」で掃射し続け、<color=#ff6600>ダメージ</color>を与える。\n<color=#ffc834>興奮状態</color>：弾丸に<color=#6bc872>貫通</color>するようになり、貫通後の敵へのダメージは半分になる。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "13",
           "seasonName": "S13",
           "versionName": "2025/12/16",
@@ -13753,6 +14068,41 @@
       "hero_id": 534,
       "hero_name": "啓",
       "adjustments": [
+        {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ調整",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 6,
+              "text": "数値調整",
+              "fontColor": "e3f3ff",
+              "bgColor": "5ca9e3",
+              "fontColorH5": "#0DAFEB",
+              "bgColorH5": "#0DAFEB26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "蛍火の守護",
+                "attributeDesc": "味方の回復：<br>調整前：60～120（+魔法攻撃の10％）（+追加HPの1.5％）<br>調整後：50～100（+魔法攻撃の10％）（+追加HPの1.5％）<br>自身の回復：<br>調整前：60～120（+魔法攻撃の10％）（+追加HPの1.5％）<br>調整後：50～100（+魔法攻撃の10％）（+追加HPの1.5％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 53400,
+                  "skillName": "蛍火の守護",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53400.png",
+                  "skillDesc": "通常攻撃またはスキルを発動するごとにホタルを召喚して敵に追加<color=#f264ff>ダメージ</color>を与え、<color=#ffc834>視界</color>を獲得し、一定間隔で味方ヒーローを<color=#6bc872>回復</color>する。チャージすると自身を<color=#6bc872>回復</color>できる。",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              }
+            ]
+          }
+        },
         {
           "seasonId": "12",
           "seasonName": "S12",
@@ -14574,6 +14924,90 @@
       "hero_name": "ルアンナ",
       "adjustments": [
         {
+          "seasonId": "15",
+          "seasonName": "S15",
+          "versionName": "2026/08/14",
+          "versionPublishTime": "2026-08-13T15:09:00Z",
+          "isCurrent": true,
+          "adjustContent": {
+            "shortDesc": "スキルダメージ強化",
+            "desc": "",
+            "contentTag": {
+              "tagEnum": 2,
+              "text": "制度レベルアップ",
+              "fontColor": "c4ffb1",
+              "bgColor": "6dae58",
+              "fontColorH5": "#30B13A",
+              "bgColorH5": "#30B13A26"
+            },
+            "attribute": [
+              {
+                "type": 3,
+                "title": "",
+                "attributeDesc": "基本HP：<br>調整前：3204<br>調整後：3304",
+                "preEquipInfo": [],
+                "heroSkillInfo": null
+              },
+              {
+                "type": 3,
+                "title": "蛇炎の使者",
+                "attributeDesc": "追加効果：<br>スキルを発動すると攻撃速度が3秒間、5%～10%増加する（最大3スタックまで）<br>効果調整：<br>調整前：円月刀にスキル効果の30％を付与<br>調整後：円月刀の断斬3回で通常攻撃1回とみなし、断斬したターゲットの視界を獲得し、メインターゲット以外の敵に50％のダメージを与える",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 54700,
+                  "skillName": "蛇炎の使者",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54700.png",
+                  "skillDesc": "通常攻撃時に円月刀で敵を断斬し、スキルを発動するごとに攻撃速度が増加する。",
+                  "skillIndex": 0,
+                  "skillIndexDesc": "パッシブ"
+                }
+              },
+              {
+                "type": 3,
+                "title": "血潮の牙",
+                "attributeDesc": "追加効果：<br>壁を飛び越えた後、移動速度が200増加する（0.6秒かけて持続的に減少）<br>効果調整：<br>円月刀の断斬速度がレベルに応じた増加から攻撃速度に応じた増加に変更<br>効果調整：<br>円月刀による断斬後、「血潮の牙」のクールダウンを0.15秒短縮する効果を削除<br>円月刀持続時間：<br>調整前：6秒<br>調整後：5秒<br>移動速度減少：<br>調整前：2秒<br>調整後：1.5秒<br>移動速度増加：<br>調整前：45％（スキルLv.ごとに+9％）<br>調整後：60（スキルLv.ごとに+12）<br>基本ダメージ：<br>調整前：40（スキルLv.ごとに+8）（+物理攻撃の20％）<br>調整後：30（スキルLv.ごとに+6）（+物理攻撃の12％）<br>クールダウン：<br>調整前：12.5秒（スキルLv.ごとに-0.5秒）<br>調整後：10秒（スキルLv.ごとに-0.4秒）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 54711,
+                  "skillName": "血潮の牙",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
+                  "skillDesc": "円月刀を1つ呼び出すと、<color=#6fc075>移動速度が増加</color>する。発動中は壁を素早く<color=#ffce49>飛び越える</color>ことができる。",
+                  "skillIndex": 1,
+                  "skillIndexDesc": "スキル1"
+                }
+              },
+              {
+                "type": 3,
+                "title": "スネイク・キス",
+                "attributeDesc": "追加効果：<br>敵を引き寄せる<br>基本ダメージ：<br>調整前：320（スキルLv.ごとに+64）（+追加物理攻撃の80％）<br>調整後：350（スキルLv.ごとに+70）（+追加物理攻撃の100％）<br>クールダウン短縮：<br>調整前：50％<br>調整後：25％（スキルLv.ごとに+5％）",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 54723,
+                  "skillName": "スネイク・キス",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54720.png",
+                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>移動速度を減少</color>させる。\n円月刀を所有している場合は追加で敵に<color=#fa863a>ダメージ</color>を与え、所有していない場合はこのスキルのクールダウンが短縮される。",
+                  "skillIndex": 2,
+                  "skillIndexDesc": "スキル2"
+                }
+              },
+              {
+                "type": 3,
+                "title": "ブレージング・グレア",
+                "attributeDesc": "調整前：50秒（スキルLv.ごとに-5秒）<br>調整後：60秒（スキルLv.ごとに-6秒）<br>基本ダメージ：<br>調整前：480（スキルLv.ごとに+96）（+追加物理攻撃の120％）<br>調整後：450（スキルLv.ごとに+225）（+追加物理攻撃の140％）<br>火の雨ダメージ：<br>調整前：240（スキルLv.ごとに+120）（+追加物理攻撃の60％）<br>調整後：150（スキルLv.ごとに+75）（+追加物理攻撃の45％）<br>盲目効果持続時間：<br>調整前：2秒<br>調整後：1.5秒",
+                "preEquipInfo": [],
+                "heroSkillInfo": {
+                  "skillId": 54735,
+                  "skillName": "ブレージング・グレア",
+                  "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54730.png",
+                  "skillDesc": "指定方向にファイヤースネイクを放ち、ルート上の敵に<color=#db70d0>ダメージ</color>を与え<color=#ffce49>盲目</color>効果を付与し、円月刀を1つ呼び出して自身を強化する。\n強化中、敵にダメージを与えるとエネルギーを蓄積し、上限に達すると範囲<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>ノックアップ</color>する。",
+                  "skillIndex": 3,
+                  "skillIndexDesc": "奥義"
+                }
+              }
+            ]
+          }
+        },
+        {
           "seasonId": "14",
           "seasonName": "S14",
           "versionName": "2026/03/11",
@@ -14600,7 +15034,7 @@
                   "skillId": 54711,
                   "skillName": "血潮の牙",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
-                  "skillDesc": "円月刀を1つ<color=#6bc872>呼び出し</color>、<color=#6bc872>移動速度が増加</color>する。スキル発動中、壁を1回素早く<color=#ffc834>飛び越える</color>ことができる。",
+                  "skillDesc": "円月刀を1つ呼び出すと、<color=#6fc075>移動速度が増加</color>する。発動中は壁を素早く<color=#ffce49>飛び越える</color>ことができる。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -14614,7 +15048,7 @@
                   "skillId": 54723,
                   "skillName": "スネイク・キス",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54720.png",
-                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#f264ff>ダメージ</color>を与えて<color=#2bc6ff>移動速度を減少</color>させる。円月刀を所有している場合は追加で敵に<color=#ff6600>ダメージ</color>を与え、所有していない場合はクールダウンが短縮する。",
+                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>移動速度を減少</color>させる。\n円月刀を所有している場合は追加で敵に<color=#fa863a>ダメージ</color>を与え、所有していない場合はこのスキルのクールダウンが短縮される。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -14628,7 +15062,7 @@
                   "skillId": 54735,
                   "skillName": "ブレージング・グレア",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54730.png",
-                  "skillDesc": "指定方向にファイヤースネイクを放ち、ルート上の敵に<color=#f264ff>ダメージ</color>を与え<color=#ffc834>盲目</color>効果を付与し、円月刀を1つ呼び出す。その間敵を攻撃するか敵に攻撃されるとエネルギーを蓄積し、上限に達するたびに範囲<color=#f264ff>ダメージ</color>を与えて<color=#2bc6ff>ノックアップ</color>する。",
+                  "skillDesc": "指定方向にファイヤースネイクを放ち、ルート上の敵に<color=#db70d0>ダメージ</color>を与え<color=#ffce49>盲目</color>効果を付与し、円月刀を1つ呼び出して自身を強化する。\n強化中、敵にダメージを与えるとエネルギーを蓄積し、上限に達すると範囲<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>ノックアップ</color>する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "奥義"
                 }
@@ -14663,7 +15097,7 @@
                   "skillId": 54711,
                   "skillName": "血潮の牙",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
-                  "skillDesc": "円月刀を1つ<color=#6bc872>呼び出し</color>、<color=#6bc872>移動速度が増加</color>する。スキル発動中、壁を1回素早く<color=#ffc834>飛び越える</color>ことができる。",
+                  "skillDesc": "円月刀を1つ呼び出すと、<color=#6fc075>移動速度が増加</color>する。発動中は壁を素早く<color=#ffce49>飛び越える</color>ことができる。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -14677,7 +15111,7 @@
                   "skillId": 54735,
                   "skillName": "ブレージング・グレア",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54730.png",
-                  "skillDesc": "指定方向にファイヤースネイクを放ち、ルート上の敵に<color=#f264ff>ダメージ</color>を与え<color=#ffc834>盲目</color>効果を付与し、円月刀を1つ呼び出す。その間敵を攻撃するか敵に攻撃されるとエネルギーを蓄積し、上限に達するたびに範囲<color=#f264ff>ダメージ</color>を与えて<color=#2bc6ff>ノックアップ</color>する。",
+                  "skillDesc": "指定方向にファイヤースネイクを放ち、ルート上の敵に<color=#db70d0>ダメージ</color>を与え<color=#ffce49>盲目</color>効果を付与し、円月刀を1つ呼び出して自身を強化する。\n強化中、敵にダメージを与えるとエネルギーを蓄積し、上限に達すると範囲<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>ノックアップ</color>する。",
                   "skillIndex": 3,
                   "skillIndexDesc": "奥義"
                 }
@@ -14712,7 +15146,7 @@
                   "skillId": 54711,
                   "skillName": "血潮の牙",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
-                  "skillDesc": "円月刀を1つ<color=#6bc872>呼び出し</color>、<color=#6bc872>移動速度が増加</color>する。スキル発動中、壁を1回素早く<color=#ffc834>飛び越える</color>ことができる。",
+                  "skillDesc": "円月刀を1つ呼び出すと、<color=#6fc075>移動速度が増加</color>する。発動中は壁を素早く<color=#ffce49>飛び越える</color>ことができる。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -14726,7 +15160,7 @@
                   "skillId": 54723,
                   "skillName": "スネイク・キス",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54720.png",
-                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#f264ff>ダメージ</color>を与えて<color=#2bc6ff>移動速度を減少</color>させる。円月刀を所有している場合は追加で敵に<color=#ff6600>ダメージ</color>を与え、所有していない場合はクールダウンが短縮する。",
+                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>移動速度を減少</color>させる。\n円月刀を所有している場合は追加で敵に<color=#fa863a>ダメージ</color>を与え、所有していない場合はこのスキルのクールダウンが短縮される。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }
@@ -14789,7 +15223,7 @@
                   "skillId": 54700,
                   "skillName": "蛇炎の使者",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54700.png",
-                  "skillDesc": "通常攻撃時に円月刀で敵を断斬して<color=#ff6600>ダメージ</color>を与える。命中するたびに、スキル1のクールダウンが短縮する。",
+                  "skillDesc": "通常攻撃時に円月刀で敵を断斬し、スキルを発動するごとに攻撃速度が増加する。",
                   "skillIndex": 0,
                   "skillIndexDesc": "パッシブ"
                 }
@@ -14803,7 +15237,7 @@
                   "skillId": 54711,
                   "skillName": "血潮の牙",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
-                  "skillDesc": "円月刀を1つ<color=#6bc872>呼び出し</color>、<color=#6bc872>移動速度が増加</color>する。スキル発動中、壁を1回素早く<color=#ffc834>飛び越える</color>ことができる。",
+                  "skillDesc": "円月刀を1つ呼び出すと、<color=#6fc075>移動速度が増加</color>する。発動中は壁を素早く<color=#ffce49>飛び越える</color>ことができる。",
                   "skillIndex": 1,
                   "skillIndexDesc": "スキル1"
                 }
@@ -14817,7 +15251,7 @@
                   "skillId": 54723,
                   "skillName": "スネイク・キス",
                   "skillIcon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54720.png",
-                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#f264ff>ダメージ</color>を与えて<color=#2bc6ff>移動速度を減少</color>させる。円月刀を所有している場合は追加で敵に<color=#ff6600>ダメージ</color>を与え、所有していない場合はクールダウンが短縮する。",
+                  "skillDesc": "指定位置にファイヤースネイクを召喚する。ファイヤースネイクは自身に向かって突進し、ルート上の敵に<color=#db70d0>ダメージ</color>を与えて<color=#50c1eb>移動速度を減少</color>させる。\n円月刀を所有している場合は追加で敵に<color=#fa863a>ダメージ</color>を与え、所有していない場合はこのスキルのクールダウンが短縮される。",
                   "skillIndex": 2,
                   "skillIndexDesc": "スキル2"
                 }

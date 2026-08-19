@@ -70,21 +70,29 @@ class PredictionPageTests(unittest.TestCase):
             [item["rank"] for item in predictions],
         )
         self.assertIsInstance(prediction_round["result"]["ready"], bool)
-        self.assertTrue(prediction_round["result"]["ready"])
-        self.assertEqual(10, prediction_round["result"]["actual_count"])
-        self.assertEqual(1, prediction_round["result"]["predicted_actual_count"])
-        self.assertEqual(1, prediction_round["result"]["hit_count"])
-        dun = next(
+        self.assertFalse(prediction_round["result"]["ready"])
+        self.assertEqual("橘右京", predictions[0]["hero_name"])
+
+        _, previous_rounds, _ = load_prediction_rounds()
+        aug14 = next(
             item
-            for item in prediction_round["result"]["actual_adjustments"]
-            if item["hero_name"] == "夏侯惇"
+            for item in previous_rounds
+            if item["round_id"] == "balance-2026-08-14-audit"
         )
-        self.assertEqual(2, dun["forecast"]["candidate_position"])
-        self.assertEqual(68, dun["forecast"]["probability"])
-        self.assertEqual("下方修正", dun["actual_direction"])
+        self.assertEqual(9, aug14["result"]["actual_count"])
+        self.assertEqual(1, aug14["result"]["predicted_actual_count"])
+        self.assertEqual(1, aug14["result"]["hit_count"])
+        mai = next(
+            item
+            for item in aug14["result"]["actual_adjustments"]
+            if item["hero_name"] == "不知火舞"
+        )
+        self.assertEqual(2, mai["forecast"]["candidate_position"])
+        self.assertEqual(22.7, mai["forecast"]["probability"])
+        self.assertEqual("上方修正", mai["actual_direction"])
 
     def test_generated_page_contains_predictions_and_round_config(self):
-        expected_latest_date = load_hero_histories()["李信"][-1]["date_label"]
+        expected_latest_date = load_hero_histories()["橘右京"][-1]["date_label"]
         with tempfile.TemporaryDirectory() as temp_dir:
             output_dir = Path(temp_dir)
             generate_prediction_page(output_dir=output_dir)
@@ -92,47 +100,47 @@ class PredictionPageTests(unittest.TestCase):
             html = (output_dir / "index.html").read_text(encoding="utf-8")
             deployed_round = json.loads((output_dir / "round.json").read_text(encoding="utf-8"))
             hero_assets = json.loads((output_dir / "hero_assets.json").read_text(encoding="utf-8"))
-            archived_round_exists = (output_dir / "rounds" / "balance-2026-07-30.json").exists()
+            archived_round_path = output_dir / "rounds" / "balance-2026-08-14-audit.json"
+            archived_round = json.loads(archived_round_path.read_text(encoding="utf-8"))
+            old_round_exists = (output_dir / "rounds" / "balance-2026-07-30.json").exists()
 
         self.assertIn("次回バランス調整予想", html)
-        self.assertIn("data-prediction-id=\"lixin-nerf\"", html)
+        self.assertIn("data-prediction-id=\"ukyotachibana-buff\"", html)
         self.assertIn("最新判断材料", html)
         self.assertIn("詳しい判断材料", html)
         self.assertIn("直近13週", html)
         self.assertIn("連動傾向", html)
-        self.assertIn("今回調整された10人", html)
-        self.assertIn("7/17事後モデル", html)
-        self.assertIn("15.2%", html)
-        self.assertIn("12/116位", html)
-        self.assertIn("TOP10外", html)
-        self.assertIn("../hok_pics/lixin.png", html)
+        self.assertIn('data-result-round-id="balance-2026-08-14-audit"', html)
+        self.assertIn("2026/08/14（8/7時点データ）", html)
+        self.assertIn("../hok_pics/ukyotachibana.png", html)
         self.assertIn("id=\"comment-form\"", html)
         self.assertIn("value=\"匿名希望\"", html)
         self.assertIn("予想される修正", html)
         self.assertIn('value="妲己" data-asset="daji"', html)
         self.assertIn('href="prediction.css?v=', html)
         self.assertIn('src="comments.js?v=', html)
-        self.assertEqual("balance-2026-07-30", deployed_round["round_id"])
-        self.assertEqual("7/29 23:59", deployed_round["closes_label"])
+        self.assertEqual("balance-2026-08-28", deployed_round["round_id"])
+        self.assertEqual("8/27 23:59", deployed_round["closes_label"])
         self.assertEqual("daji", hero_assets["妲己"])
         self.assertIn("evidence", deployed_round["predictions"][0])
         self.assertEqual(
             expected_latest_date,
             deployed_round["predictions"][0]["evidence"]["latest_date_label"],
         )
-        self.assertTrue(archived_round_exists)
+        self.assertFalse(deployed_round["result"]["ready"])
+        self.assertTrue(old_round_exists)
 
-        retrospective = deployed_round["result"]["retrospective_evaluation"]
-        self.assertEqual("2026/07/17", retrospective["as_of_label"])
+        retrospective = archived_round["result"]["retrospective_evaluation"]
+        self.assertEqual("2026/08/07", retrospective["as_of_label"])
         self.assertEqual(21, retrospective["horizon_days"])
-        self.assertEqual(7050, retrospective["training_sample_count"])
-        dun = next(
+        self.assertEqual(7398, retrospective["training_sample_count"])
+        mai = next(
             item
-            for item in deployed_round["result"]["actual_adjustments"]
-            if item["hero_name"] == "夏侯惇"
+            for item in archived_round["result"]["actual_adjustments"]
+            if item["hero_name"] == "不知火舞"
         )
-        self.assertEqual(12, dun["retrospective"]["rank"])
-        self.assertAlmostEqual(15.2, dun["retrospective"]["probability"], places=1)
+        self.assertEqual(2, mai["retrospective"]["rank"])
+        self.assertAlmostEqual(22.7, mai["retrospective"]["probability"], places=1)
 
     def test_retrospective_model_excludes_adjustments_after_cutoff(self):
         histories = load_hero_histories()
@@ -188,15 +196,19 @@ class PredictionPageTests(unittest.TestCase):
         current["closes_at"] = "2098-12-31T23:59:59+09:00"
         current["result_after"] = "2099/01/01"
         manifest = {"current_round_id": current["round_id"], "rounds": [previous, current]}
+        first_prediction = previous["predictions"][0]
+        result_tag = (
+            "数値強化" if first_prediction["direction"] == "buff" else "数値弱体化"
+        )
         adjustments = {
             "heroes": [
                 {
-                    "hero_id": 163,
-                    "hero_name": "李信",
+                    "hero_id": 999,
+                    "hero_name": first_prediction["hero_name"],
                     "adjustments": [
                         {
                             "versionName": "2026/07/02",
-                            "adjustContent": {"contentTag": {"text": "数値弱体化"}},
+                            "adjustContent": {"contentTag": {"text": result_tag}},
                         }
                     ],
                 }

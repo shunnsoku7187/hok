@@ -1,5 +1,14 @@
 from hok_tools.categories_tool import get_heroes_by_tag
 
+
+def _has_class(tag, exact=(), prefixes=()):
+    classes = tag.get("class", []) if getattr(tag, "attrs", None) else []
+    return any(
+        class_name in exact
+        or any(class_name.startswith(prefix) for prefix in prefixes)
+        for class_name in classes
+    )
+
 ### データの前処理ブロック
 def read_html_from_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -15,12 +24,31 @@ def extract_hero_data(html_content):
 
     for row in hero_rows:
         hero_data = {}
-        hero_name_tag = row.find('div', class_='hero-intro-name')
+        hero_name_tag = row.find(
+            lambda tag: tag.name == "div"
+            and _has_class(
+                tag,
+                exact=("hero-intro-name",),
+                prefixes=("heroIntroName-",),
+            )
+        )
         if hero_name_tag:
             hero_data['name'] = hero_name_tag.text.strip()
         
         # 勝率、使用率、禁止率の取得
-        stats_tags = row.find_all('div', class_=['table-text table-normal-text', 'table-text table-trank-text'])
+        stats_tags = row.find_all(
+            lambda tag: tag.name == "div"
+            and _has_class(
+                tag,
+                exact=("table-text",),
+                prefixes=("tableText-",),
+            )
+            and _has_class(
+                tag,
+                exact=("table-normal-text", "table-trank-text"),
+                prefixes=("tableNormalText-", "tableTrankText-"),
+            )
+        )
 
         if len(stats_tags) >= 4:
             hero_data['win_rate'] = stats_tags[1].text.strip()

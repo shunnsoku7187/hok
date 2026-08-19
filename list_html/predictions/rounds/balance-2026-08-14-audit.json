@@ -1,0 +1,381 @@
+{
+  "round_id": "balance-2026-08-14-audit",
+  "title": "8/14バランス調整 事前再現予想",
+  "target_label": "2026/08/14（8/7時点データ）",
+  "published_at": "2026-08-19T19:00:00+09:00",
+  "closes_at": "2026-08-19T19:00:00+09:00",
+  "result_after": "2026/08/14",
+  "retrospective_evaluation": {
+    "as_of": "2026/08/07",
+    "horizon_days": 21
+  },
+  "result_direction_overrides": {
+    "達磨": "buff",
+    "エリン": "nerf",
+    "蒙牙": "nerf",
+    "啓": "nerf"
+  },
+  "method_note": "8/14の結果を取得する前に、8/7までの週次データと7/30までの調整履歴だけで全116人を順位付けした事前再現です。結果を見て候補や確率を変更していません。",
+  "predictions": [
+    {
+      "id": "ukyotachibana-buff",
+      "rank": "鉄板",
+      "hero_name": "橘右京",
+      "english_name": "ukyotachibana",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 23.4,
+      "reason": "8/7時点でスコア46.58、勝率48.59%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 46.58 / Win 48.59% / Pick 0.37% / Ban 0.02%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "maishiranui-buff",
+      "rank": "大本命",
+      "hero_name": "不知火舞",
+      "english_name": "maishiranui",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 22.7,
+      "reason": "8/7時点でスコア46.79、勝率48.46%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 46.79 / Win 48.46% / Pick 0.63% / Ban 0.11%",
+      "result": {
+        "outcome": "hit",
+        "outcome_label": "的中",
+        "actual_direction": "上方修正",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=157&versionName=2026%2F08%2F14"
+      }
+    },
+    {
+      "id": "luna-buff",
+      "rank": "本命",
+      "hero_name": "ルナ",
+      "english_name": "luna",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 21.4,
+      "reason": "8/7時点でスコア44.32、勝率46.96%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 44.32 / Win 46.96% / Pick 0.52% / Ban 0.23%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "hanxin-buff",
+      "rank": "対抗",
+      "hero_name": "韓信",
+      "english_name": "hanxin",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 21.3,
+      "reason": "8/7時点でスコア46.23、勝率48.45%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 46.23 / Win 48.45% / Pick 0.25% / Ban 0.04%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "guanyu-buff",
+      "rank": "対抗",
+      "hero_name": "関羽",
+      "english_name": "guanyu",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 19.3,
+      "reason": "8/7時点でスコア44.44、勝率47.24%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 44.44 / Win 47.24% / Pick 0.37% / Ban 0.09%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "garo-nerf",
+      "rank": "単穴",
+      "hero_name": "伽羅",
+      "english_name": "garo",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 18.3,
+      "reason": "8/7時点でスコア60.03、勝率53.55%の高水準。全期間モデルが短期の抑制調整候補として上位に置きました。",
+      "metrics": "Score 60.03 / Win 53.55% / Pick 1.38% / Ban 0.36%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "jing-buff",
+      "rank": "穴",
+      "hero_name": "鏡",
+      "english_name": "jing",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 18.0,
+      "reason": "8/7時点でスコア42.65、勝率46.01%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 42.65 / Win 46.01% / Pick 0.31% / Ban 0.13%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "arli-buff",
+      "rank": "穴",
+      "hero_name": "公孫離",
+      "english_name": "arli",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 17.8,
+      "reason": "8/7時点でスコア43.79、勝率46.40%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 43.79 / Win 46.40% / Pick 0.67% / Ban 0.27%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "lixin-nerf",
+      "rank": "大穴",
+      "hero_name": "李信",
+      "english_name": "lixin",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 17.5,
+      "reason": "8/7時点でスコア64.97、勝率53.83%の高水準。全期間モデルが短期の抑制調整候補として上位に置きました。",
+      "metrics": "Score 64.97 / Win 53.83% / Pick 2.66% / Ban 3.23%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    },
+    {
+      "id": "shangguan-buff",
+      "rank": "大穴",
+      "hero_name": "上官婉児",
+      "english_name": "shangguan",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 17.1,
+      "reason": "8/7時点でスコア47.33、勝率48.99%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+      "metrics": "Score 47.33 / Win 48.99% / Pick 0.39% / Ban 0.04%",
+      "result": {
+        "outcome": "miss",
+        "outcome_label": "修正なし",
+        "actual_direction": "修正なし",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+      }
+    }
+  ],
+  "closes_label": "8/19 19:00",
+  "result": {
+    "ready": true,
+    "version": "2026/08/14",
+    "version_label": "2026/8/14",
+    "hit_count": 1,
+    "prediction_count": 10,
+    "actual_count": 9,
+    "predicted_actual_count": 1,
+    "unpredicted_actual_count": 8,
+    "actual_adjustments": [
+      {
+        "hero_name": "ファーティフ",
+        "hero_id": 128,
+        "actual_direction": "上方修正",
+        "direction_class": "buff",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=128&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "fatih",
+        "page_slug": "fatih",
+        "retrospective": {
+          "probability": 4.7,
+          "probability_label": "4.7%",
+          "rank": 81,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "達磨",
+        "hero_id": 134,
+        "actual_direction": "上方修正",
+        "direction_class": "buff",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=134&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "dharma",
+        "page_slug": "dharma",
+        "retrospective": {
+          "probability": 4.1,
+          "probability_label": "4.1%",
+          "rank": 96,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "エリン",
+        "hero_id": 155,
+        "actual_direction": "下方修正",
+        "direction_class": "nerf",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=155&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "erin",
+        "page_slug": "erin",
+        "retrospective": {
+          "probability": 11.2,
+          "probability_label": "11.2%",
+          "rank": 27,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "不知火舞",
+        "hero_id": 157,
+        "actual_direction": "上方修正",
+        "direction_class": "buff",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=157&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": true,
+          "candidate_position": 2,
+          "probability": 22.7,
+          "predicted_direction_label": "上方修正",
+          "outcome": "hit",
+          "outcome_label": "的中"
+        },
+        "english_name": "maishiranui",
+        "page_slug": "maishiranui",
+        "retrospective": {
+          "probability": 22.7,
+          "probability_label": "22.7%",
+          "rank": 2,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "后羿",
+        "hero_id": 169,
+        "actual_direction": "複合・数値調整",
+        "direction_class": "adjust",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=169&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "houyi",
+        "page_slug": "houyi",
+        "retrospective": {
+          "probability": 7.1,
+          "probability_label": "7.1%",
+          "rank": 52,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "百里玄策",
+        "hero_id": 195,
+        "actual_direction": "上方修正",
+        "direction_class": "buff",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=195&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "xuance",
+        "page_slug": "xuance",
+        "retrospective": {
+          "probability": 8.2,
+          "probability_label": "8.2%",
+          "rank": 44,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "蒙牙",
+        "hero_id": 524,
+        "actual_direction": "下方修正",
+        "direction_class": "nerf",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=524&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "mengya",
+        "page_slug": "mengya",
+        "retrospective": {
+          "probability": 14.8,
+          "probability_label": "14.8%",
+          "rank": 19,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "啓",
+        "hero_id": 534,
+        "actual_direction": "下方修正",
+        "direction_class": "nerf",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=534&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "sakeer",
+        "page_slug": "sakeer",
+        "retrospective": {
+          "probability": 14.7,
+          "probability_label": "14.7%",
+          "rank": 20,
+          "hero_count": 116
+        }
+      },
+      {
+        "hero_name": "ルアンナ",
+        "hero_id": 547,
+        "actual_direction": "上方修正",
+        "direction_class": "buff",
+        "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail?heroId=547&versionName=2026%2F08%2F14",
+        "forecast": {
+          "published": false
+        },
+        "english_name": "luara",
+        "page_slug": "luara",
+        "retrospective": {
+          "probability": 15.2,
+          "probability_label": "15.2%",
+          "rank": 18,
+          "hero_count": 116
+        }
+      }
+    ],
+    "source_url": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail",
+    "retrospective_evaluation": {
+      "as_of": "2026-08-07",
+      "as_of_label": "2026/08/07",
+      "horizon_days": 21,
+      "training_sample_count": 7398,
+      "training_positive_count": 617,
+      "base_rate_label": "8.3%",
+      "hero_count": 116
+    }
+  }
+}

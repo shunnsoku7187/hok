@@ -14,7 +14,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ROUND_ID = "balance-2026-07-30"
 ADMIN_TOKEN = "test-comment-admin-token"
 
 
@@ -40,6 +39,7 @@ class PredictionCommentApiTests(unittest.TestCase):
             (ROOT / "list_html" / "predictions" / "round.json").read_text(encoding="utf-8")
         )
         round_config["closes_at"] = "2099-07-29T23:59:59+09:00"
+        cls.round_id = round_config["round_id"]
         (cls.web_root / "predictions" / "round.json").write_text(
             json.dumps(round_config, ensure_ascii=False), encoding="utf-8"
         )
@@ -59,7 +59,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         )
         for _ in range(30):
             try:
-                cls._request("GET", query={"round_id": ROUND_ID})
+                cls._request("GET", query={"round_id": cls.round_id})
                 break
             except (urllib.error.URLError, ConnectionError):
                 time.sleep(0.1)
@@ -93,7 +93,7 @@ class PredictionCommentApiTests(unittest.TestCase):
             self._request(
                 "POST",
                 payload={
-                    "round_id": ROUND_ID,
+                    "round_id": self.round_id,
                     "action": "create",
                     "nickname": "予想屋A",
                     "hero": "存在しないヒーロー",
@@ -108,7 +108,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         created = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "create",
                 "nickname": "予想屋A",
                 "hero": "ルナ",
@@ -128,7 +128,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         replied = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "create",
                 "nickname": "予想屋B",
                 "body": "私も賛成です。",
@@ -145,7 +145,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         liked = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "like",
                 "comment_id": root["id"],
                 "voter_token": "comment-voter-token-0003",
@@ -157,7 +157,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         unliked = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "like",
                 "comment_id": root["id"],
                 "voter_token": "comment-voter-token-0003",
@@ -168,7 +168,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         deleted = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "admin_delete",
                 "comment_id": root["id"],
             },
@@ -181,7 +181,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         reply_deleted = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "admin_delete",
                 "comment_id": reply["id"],
             },
@@ -192,7 +192,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         root_deleted = self._request(
             "POST",
             payload={
-                "round_id": ROUND_ID,
+                "round_id": self.round_id,
                 "action": "admin_delete",
                 "comment_id": root["id"],
             },
@@ -206,7 +206,7 @@ class PredictionCommentApiTests(unittest.TestCase):
         config["closes_at"] = "2000-01-01T00:00:00+09:00"
         config_path.write_text(json.dumps(config, ensure_ascii=False), encoding="utf-8")
 
-        closed = self._request("GET", query={"round_id": ROUND_ID})
+        closed = self._request("GET", query={"round_id": self.round_id})
         self.assertTrue(closed["closed"])
         for payload in (
             {
@@ -223,7 +223,7 @@ class PredictionCommentApiTests(unittest.TestCase):
                 self._request(
                     "POST",
                     payload={
-                        "round_id": ROUND_ID,
+                        "round_id": self.round_id,
                         "voter_token": "comment-voter-token-closed",
                         **payload,
                     },

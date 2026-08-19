@@ -37,6 +37,8 @@ class PredictionApiTests(unittest.TestCase):
             (ROOT / "list_html" / "predictions" / "round.json").read_text(encoding="utf-8")
         )
         round_config["closes_at"] = "2099-07-29T23:59:59+09:00"
+        cls.round_id = round_config["round_id"]
+        cls.prediction_id = round_config["predictions"][0]["id"]
         (cls.web_root / "predictions" / "round.json").write_text(
             json.dumps(round_config, ensure_ascii=False), encoding="utf-8"
         )
@@ -55,7 +57,7 @@ class PredictionApiTests(unittest.TestCase):
         )
         for _ in range(30):
             try:
-                cls._request("GET", "?round_id=balance-2026-07-30")
+                cls._request("GET", f"?round_id={cls.round_id}")
                 break
             except (urllib.error.URLError, ConnectionError):
                 time.sleep(0.1)
@@ -82,18 +84,18 @@ class PredictionApiTests(unittest.TestCase):
 
     def test_vote_can_be_recorded_and_changed(self):
         base_payload = {
-            "round_id": "balance-2026-07-30",
-            "prediction_id": "lixin-nerf",
+            "round_id": self.round_id,
+            "prediction_id": self.prediction_id,
             "voter_token": "test-voter-token-0001",
         }
 
         voted_do = self._request("POST", payload={**base_payload, "choice": "do"})
-        self.assertEqual({"do": 1, "not": 0}, voted_do["markets"]["lixin-nerf"])
-        self.assertEqual("do", voted_do["own_votes"]["lixin-nerf"])
+        self.assertEqual({"do": 1, "not": 0}, voted_do["markets"][self.prediction_id])
+        self.assertEqual("do", voted_do["own_votes"][self.prediction_id])
 
         voted_not = self._request("POST", payload={**base_payload, "choice": "not"})
-        self.assertEqual({"do": 0, "not": 1}, voted_not["markets"]["lixin-nerf"])
-        self.assertEqual("not", voted_not["own_votes"]["lixin-nerf"])
+        self.assertEqual({"do": 0, "not": 1}, voted_not["markets"][self.prediction_id])
+        self.assertEqual("not", voted_not["own_votes"][self.prediction_id])
 
     def test_archived_round_is_read_only(self):
         archived = self._request("GET", "?round_id=balance-2026-06-01")
@@ -104,7 +106,7 @@ class PredictionApiTests(unittest.TestCase):
                 "POST",
                 payload={
                     "round_id": "balance-2026-06-01",
-                    "prediction_id": "lixin-nerf",
+                    "prediction_id": self.prediction_id,
                     "choice": "do",
                     "voter_token": "test-voter-token-archive",
                 },

@@ -82,6 +82,21 @@ class HeroHistoryTests(unittest.TestCase):
         self.assertIn('x1="499.0"', chart)
         self.assertNotIn("2025/12/01", chart)
 
+    def test_score_chart_extends_to_adjustment_after_latest_score(self):
+        history = [
+            {"date": date(2026, 8, 1), "date_label": "2026/08/01", "score": 50, "score_label": "50.00", "hero_name": "テスト"},
+            {"date": date(2026, 8, 7), "date_label": "2026/08/07", "score": 51, "score_label": "51.00", "hero_name": "テスト"},
+        ]
+        adjustments = [
+            {"date": date(2026, 8, 14), "date_label": "2026/08/14", "direction_label": "上方修正", "tag_class": "buff"},
+        ]
+
+        chart = build_score_chart(history, adjustments)
+
+        self.assertIn("2026/08/14 上方修正", chart)
+        self.assertIn(">26/08/14</text>", chart)
+        self.assertIn('x1="936.0"', chart)
+
     def test_resolves_legacy_ambiguous_dates_using_adjacent_weeks(self):
         paths = [
             Path("csv/20251031_heroes.csv"),

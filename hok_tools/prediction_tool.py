@@ -635,18 +635,19 @@ def generate_prediction_page(
     template = env.get_template(template_path)
     hero_options = load_hero_options()
     asset_by_name = {option["name"]: option["asset"] for option in hero_options}
-    for result_item in prediction_round["result"].get("actual_adjustments", []):
-        asset = asset_by_name.get(result_item["hero_name"])
-        if asset:
-            result_item["english_name"] = asset
-            result_item["page_slug"] = hero_page_slug(asset)
     histories = load_hero_histories(csv_dir)
     adjustment_payload = _load_adjustment_payload(adjustment_path)
-    attach_retrospective_evaluation(
-        prediction_round,
-        histories,
-        adjustment_payload,
-    )
+    for configured_round in all_rounds:
+        for result_item in configured_round["result"].get("actual_adjustments", []):
+            asset = asset_by_name.get(result_item["hero_name"])
+            if asset:
+                result_item["english_name"] = asset
+                result_item["page_slug"] = hero_page_slug(asset)
+        attach_retrospective_evaluation(
+            configured_round,
+            histories,
+            adjustment_payload,
+        )
     relationships = calculate_hero_relationships(histories)
     attach_prediction_evidence(
         prediction_round,

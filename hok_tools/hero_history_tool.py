@@ -151,6 +151,23 @@ def build_score_chart(history, adjustments=None):
     plot_width = width - left - right
     plot_height = height - top - bottom
     scores = [item["score"] for item in history]
+    adjustment_dates = [
+        adjustment.get("date")
+        for adjustment in adjustments or []
+        if adjustment.get("date") and adjustment["date"] >= history[0]["date"]
+    ]
+    chart_end_date = max([history[-1]["date"], *adjustment_dates])
+    date_gaps = [
+        (current["date"] - previous["date"]).days
+        for previous, current in zip(history, history[1:])
+        if current["date"] > previous["date"]
+    ]
+    typical_gap_days = median(date_gaps) if date_gaps else 7
+    trailing_units = max(
+        0,
+        (chart_end_date - history[-1]["date"]).days / typical_gap_days,
+    )
+    axis_units = max(1, len(history) - 1 + trailing_units)
 
     y_min = math.floor((min(scores) - 2) / 5) * 5
     y_max = math.ceil((max(scores) + 2) / 5) * 5
@@ -160,17 +177,22 @@ def build_score_chart(history, adjustments=None):
 
     def x_position(index):
         if len(history) == 1:
-            return left + plot_width / 2
-        return left + plot_width * index / (len(history) - 1)
+            return left if trailing_units else left + plot_width / 2
+        return left + plot_width * index / axis_units
 
     def y_position(score):
         return top + (y_max - score) * plot_height / (y_max - y_min)
 
     def adjustment_x_position(adjustment_date):
-        if not adjustment_date or not history[0]["date"] <= adjustment_date <= history[-1]["date"]:
+        if not adjustment_date or not history[0]["date"] <= adjustment_date <= chart_end_date:
             return None
         if len(history) == 1:
-            return x_position(0)
+            offset = (adjustment_date - history[0]["date"]).days / typical_gap_days
+            return left + plot_width * offset / axis_units
+
+        if adjustment_date > history[-1]["date"]:
+            offset = (adjustment_date - history[-1]["date"]).days / typical_gap_days
+            return x_position(len(history) - 1) + plot_width * offset / axis_units
 
         for index in range(1, len(history)):
             previous_date = history[index - 1]["date"]
@@ -195,11 +217,17 @@ def build_score_chart(history, adjustments=None):
         )
 
     x_labels = []
-    for index in _chart_label_indices(len(history)):
+    label_count = 5 if chart_end_date > history[-1]["date"] else 6
+    for index in _chart_label_indices(len(history), max_labels=label_count):
         x = x_position(index)
         label = history[index]["date"].strftime("%y/%m/%d")
         x_labels.append(
             f'<text class="chart-x-label" x="{x:.1f}" y="{height - 18}">{label}</text>'
+        )
+    if chart_end_date > history[-1]["date"]:
+        x_labels.append(
+            f'<text class="chart-x-label" x="{width - right:.1f}" '
+            f'y="{height - 18}" text-anchor="end">{chart_end_date.strftime("%y/%m/%d")}</text>'
         )
 
     adjustment_markers = []

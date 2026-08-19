@@ -1,6 +1,258 @@
 {
-    "current_round_id": "balance-2026-07-30",
+    "current_round_id": "balance-2026-08-28",
     "rounds": [
+        {
+            "round_id": "balance-2026-08-28",
+            "title": "次回バランス調整予想",
+            "target_label": "2026/08/28前後（9/4までの21日間）",
+            "published_at": "2026-08-19T20:00:00+09:00",
+            "closes_at": "2026-08-27T23:59:59+09:00",
+            "result_after": "2026/08/15",
+            "method_note": "8/14の調整結果を学習へ追加し、最新の8/7成績を据え置いて8/14直後の状態を再現した全期間モデルです。確率は今後21日以内に何らかの調整対象となる推定値です。",
+            "predictions": [
+                {
+                    "id": "ukyotachibana-buff",
+                    "rank": "鉄板",
+                    "hero_name": "橘右京",
+                    "english_name": "ukyotachibana",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 26.2,
+                    "reason": "低スコアと低Pickが続き、未調整期間も長めです。救済対象としてモデルが最上位に評価しました。",
+                    "metrics": "Score 46.58 / Win 48.59% / Pick 0.37% / Ban 0.02%"
+                },
+                {
+                    "id": "hanxin-buff",
+                    "rank": "大本命",
+                    "hero_name": "韓信",
+                    "english_name": "hanxin",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 22.1,
+                    "reason": "勝率48.45%、Pick率0.25%の低調が継続。小幅な火力または操作感の上方候補です。",
+                    "metrics": "Score 46.23 / Win 48.45% / Pick 0.25% / Ban 0.04%"
+                },
+                {
+                    "id": "luna-buff",
+                    "rank": "本命",
+                    "hero_name": "ルナ",
+                    "english_name": "luna",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 21.6,
+                    "reason": "スコア44.32、勝率46.96%で全体下位。人気を残したまま成績が沈み、救済余地があります。",
+                    "metrics": "Score 44.32 / Win 46.96% / Pick 0.52% / Ban 0.23%"
+                },
+                {
+                    "id": "garo-nerf",
+                    "rank": "対抗",
+                    "hero_name": "伽羅",
+                    "english_name": "garo",
+                    "direction": "nerf",
+                    "direction_label": "下方修正",
+                    "probability": 19.8,
+                    "reason": "スコア60.03、勝率53.55%を維持。利用率も低すぎず、数値抑制の候補です。",
+                    "metrics": "Score 60.03 / Win 53.55% / Pick 1.38% / Ban 0.36%"
+                },
+                {
+                    "id": "arli-buff",
+                    "rank": "対抗",
+                    "hero_name": "公孫離",
+                    "english_name": "arli",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 18.2,
+                    "reason": "スコア43.79、勝率46.40%で最下位圏。難度を考慮しても底上げ候補に残ります。",
+                    "metrics": "Score 43.79 / Win 46.40% / Pick 0.67% / Ban 0.27%"
+                },
+                {
+                    "id": "lixin-nerf",
+                    "rank": "単穴",
+                    "hero_name": "李信",
+                    "english_name": "lixin",
+                    "direction": "nerf",
+                    "direction_label": "下方修正",
+                    "probability": 18.2,
+                    "reason": "スコア64.97、勝率53.83%、BAN率3.23%。6月の更新後も突出が続き、下方候補です。",
+                    "metrics": "Score 64.97 / Win 53.83% / Pick 2.66% / Ban 3.23%"
+                },
+                {
+                    "id": "guanyu-buff",
+                    "rank": "穴",
+                    "hero_name": "関羽",
+                    "english_name": "guanyu",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 17.8,
+                    "reason": "スコア44.44、Pick率0.37%。長期の低調を解消する小幅上方が入り得ます。",
+                    "metrics": "Score 44.44 / Win 47.24% / Pick 0.37% / Ban 0.09%"
+                },
+                {
+                    "id": "jing-buff",
+                    "rank": "穴",
+                    "hero_name": "鏡",
+                    "english_name": "jing",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 17.7,
+                    "reason": "スコア42.65、勝率46.01%で全体最下位。高難度枠でも救済優先度が高い状態です。",
+                    "metrics": "Score 42.65 / Win 46.01% / Pick 0.31% / Ban 0.13%"
+                },
+                {
+                    "id": "athena-nerf",
+                    "rank": "大穴",
+                    "hero_name": "アテナ",
+                    "english_name": "athena",
+                    "direction": "nerf",
+                    "direction_label": "下方修正",
+                    "probability": 17.5,
+                    "reason": "勝率54.17%と高い一方でPick率0.06%。母数は小さいものの、局所的な抑制候補です。",
+                    "metrics": "Score 59.25 / Win 54.17% / Pick 0.06% / Ban 0.00%"
+                },
+                {
+                    "id": "sunce-buff",
+                    "rank": "大穴",
+                    "hero_name": "孫策",
+                    "english_name": "sunce",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 17.0,
+                    "reason": "スコア47.04、勝率48.46%。極端ではないものの、全期間モデルでは上方候補上位です。",
+                    "metrics": "Score 47.04 / Win 48.46% / Pick 0.80% / Ban 0.03%"
+                }
+            ]
+        },
+        {
+            "round_id": "balance-2026-08-14-audit",
+            "title": "8/14バランス調整 事前再現予想",
+            "target_label": "2026/08/14（8/7時点データ）",
+            "published_at": "2026-08-19T19:00:00+09:00",
+            "closes_at": "2026-08-19T19:00:00+09:00",
+            "result_after": "2026/08/14",
+            "retrospective_evaluation": {
+                "as_of": "2026/08/07",
+                "horizon_days": 21
+            },
+            "result_direction_overrides": {
+                "達磨": "buff",
+                "エリン": "nerf",
+                "蒙牙": "nerf",
+                "啓": "nerf"
+            },
+            "method_note": "8/14の結果を取得する前に、8/7までの週次データと7/30までの調整履歴だけで全116人を順位付けした事前再現です。結果を見て候補や確率を変更していません。",
+            "predictions": [
+                {
+                    "id": "ukyotachibana-buff",
+                    "rank": "鉄板",
+                    "hero_name": "橘右京",
+                    "english_name": "ukyotachibana",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 23.4,
+                    "reason": "8/7時点でスコア46.58、勝率48.59%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 46.58 / Win 48.59% / Pick 0.37% / Ban 0.02%"
+                },
+                {
+                    "id": "maishiranui-buff",
+                    "rank": "大本命",
+                    "hero_name": "不知火舞",
+                    "english_name": "maishiranui",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 22.7,
+                    "reason": "8/7時点でスコア46.79、勝率48.46%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 46.79 / Win 48.46% / Pick 0.63% / Ban 0.11%"
+                },
+                {
+                    "id": "luna-buff",
+                    "rank": "本命",
+                    "hero_name": "ルナ",
+                    "english_name": "luna",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 21.4,
+                    "reason": "8/7時点でスコア44.32、勝率46.96%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 44.32 / Win 46.96% / Pick 0.52% / Ban 0.23%"
+                },
+                {
+                    "id": "hanxin-buff",
+                    "rank": "対抗",
+                    "hero_name": "韓信",
+                    "english_name": "hanxin",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 21.3,
+                    "reason": "8/7時点でスコア46.23、勝率48.45%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 46.23 / Win 48.45% / Pick 0.25% / Ban 0.04%"
+                },
+                {
+                    "id": "guanyu-buff",
+                    "rank": "対抗",
+                    "hero_name": "関羽",
+                    "english_name": "guanyu",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 19.3,
+                    "reason": "8/7時点でスコア44.44、勝率47.24%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 44.44 / Win 47.24% / Pick 0.37% / Ban 0.09%"
+                },
+                {
+                    "id": "garo-nerf",
+                    "rank": "単穴",
+                    "hero_name": "伽羅",
+                    "english_name": "garo",
+                    "direction": "nerf",
+                    "direction_label": "下方修正",
+                    "probability": 18.3,
+                    "reason": "8/7時点でスコア60.03、勝率53.55%の高水準。全期間モデルが短期の抑制調整候補として上位に置きました。",
+                    "metrics": "Score 60.03 / Win 53.55% / Pick 1.38% / Ban 0.36%"
+                },
+                {
+                    "id": "jing-buff",
+                    "rank": "穴",
+                    "hero_name": "鏡",
+                    "english_name": "jing",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 18.0,
+                    "reason": "8/7時点でスコア42.65、勝率46.01%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 42.65 / Win 46.01% / Pick 0.31% / Ban 0.13%"
+                },
+                {
+                    "id": "arli-buff",
+                    "rank": "穴",
+                    "hero_name": "公孫離",
+                    "english_name": "arli",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 17.8,
+                    "reason": "8/7時点でスコア43.79、勝率46.40%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 43.79 / Win 46.40% / Pick 0.67% / Ban 0.27%"
+                },
+                {
+                    "id": "lixin-nerf",
+                    "rank": "大穴",
+                    "hero_name": "李信",
+                    "english_name": "lixin",
+                    "direction": "nerf",
+                    "direction_label": "下方修正",
+                    "probability": 17.5,
+                    "reason": "8/7時点でスコア64.97、勝率53.83%の高水準。全期間モデルが短期の抑制調整候補として上位に置きました。",
+                    "metrics": "Score 64.97 / Win 53.83% / Pick 2.66% / Ban 3.23%"
+                },
+                {
+                    "id": "shangguan-buff",
+                    "rank": "大穴",
+                    "hero_name": "上官婉児",
+                    "english_name": "shangguan",
+                    "direction": "buff",
+                    "direction_label": "上方修正",
+                    "probability": 17.1,
+                    "reason": "8/7時点でスコア47.33、勝率48.99%の低調域。全期間モデルが短期の救済調整候補として上位に置きました。",
+                    "metrics": "Score 47.33 / Win 48.99% / Pick 0.39% / Ban 0.04%"
+                }
+            ]
+        },
         {
             "round_id": "balance-2026-07-30",
             "title": "次回バランス調整予想",

@@ -19,6 +19,15 @@ INPUT_CSV_FILE = "names.csv"
 OUTPUT_HTML_FILE = "html.txt"
 OUTPUT_FILENAME = "html.txt" # 抽出された<tbody>タグの中身のみを保存するファイル名
 
+
+def has_hero_name_class(tag):
+    classes = tag.get("class", []) if getattr(tag, "attrs", None) else []
+    return tag.name == "div" and any(
+        class_name == "hero-intro-name"
+        or class_name.startswith("heroIntroName-")
+        for class_name in classes
+    )
+
 def load_lazy_table_content(driver):
     """
     テーブル内の遅延ロード画像をできるだけ読み込むため、各行を一度表示範囲に入れる。
@@ -177,11 +186,11 @@ def translate_hero_names(html_file, translation_map, output_file):
     # Beautiful SoupはHTMLの解析エラーを許容するため、try/exceptブロックは省略
     soup = BeautifulSoup(html_content, 'html.parser')
     
-    # ヒーロー名を含む全ての要素（<div class="hero-intro-name">）を探す
-    name_divs = soup.find_all('div', class_='hero-intro-name')
+    # 旧形式と、ビルドごとに接尾辞が変わる現行形式の両方を認識する。
+    name_divs = soup.find_all(has_hero_name_class)
     
     if not name_divs:
-        print("⚠️ 警告: ヒーロー名を含む要素（class='hero-intro-name'）がHTML内から見つかりませんでした。")
+        print("⚠️ 警告: ヒーロー名を含む要素がHTML内から見つかりませんでした。")
         # 見つからない場合は、元のコンテンツをそのまま出力します
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(html_content)

@@ -1,6 +1,8 @@
 import json
+import re
 import sys
 import time
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from selenium import webdriver
@@ -12,9 +14,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 TARGET_URL = (
     "https://camp.honorofkings.com/h5/app/index.html"
-    "?lang=ja&lang_type=ja#/adjustment-detail?heroId=172"
+    "?lang=ja&lang_type=ja#/hero-homepage"
 )
 SOURCE_URL = "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail"
+ADJUSTMENT_LIST_API = "/api/game/adjust/adjustforseason"
 ADJUSTMENT_API = "/api/game/adjust/adjustheroinfo"
 OUTPUT_FILE = Path("data/hero_adjustments.json")
 
@@ -57,7 +60,10 @@ def _wait_for_adjustment_response(driver, timeout=15):
 
             if method == "Network.requestWillBeSent":
                 request = params.get("request", {})
-                if ADJUSTMENT_API not in request.get("url", ""):
+                if (
+                    ADJUSTMENT_API not in request.get("url", "")
+                    or request.get("method") != "POST"
+                ):
                     continue
                 post_data = json.loads(request.get("postData", "{}"))
                 request_ids[request_id] = int(post_data["heroId"])
@@ -80,9 +86,72 @@ def _wait_for_adjustment_response(driver, timeout=15):
     raise TimeoutError("HOKCAMP adjustment response timed out")
 
 
+def _wait_for_adjustment_list_response(driver, timeout=20):
+    request_ids = set()
+    response_ids = set()
+    deadline = time.monotonic() + timeout
+
+    while time.monotonic() < deadline:
+        for message in _performance_messages(driver):
+            method = message.get("method")
+            params = message.get("params", {})
+            request_id = params.get("requestId")
+
+            if method == "Network.requestWillBeSent":
+                request = params.get("request", {})
+                if (
+                    ADJUSTMENT_LIST_API in request.get("url", "")
+                    and request.get("method") == "POST"
+                ):
+                    request_ids.add(request_id)
+            elif method == "Network.responseReceived" and request_id in request_ids:
+                response_ids.add(request_id)
+            elif method == "Network.loadingFinished" and request_id in response_ids:
+                body = driver.execute_cdp_cmd(
+                    "Network.getResponseBody", {"requestId": request_id}
+                )
+                payload = json.loads(body["body"])
+                if payload.get("code") != 0:
+                    raise RuntimeError(
+                        "HOKCAMP adjustment list API failed: "
+                        f"{payload.get('msg', payload.get('code'))}"
+                    )
+                return (payload.get("data") or {}).get("adjustList") or []
+
+        time.sleep(0.05)
+
+    raise TimeoutError("HOKCAMP adjustment list response timed out")
+
+
 def _date_key(value):
     digits = "".join(char for char in str(value) if char.isdigit())
     return digits[:8].ljust(8, "0")
+
+
+def _fetch_hero_detail(hero_id, route_version, attempts=2):
+    target_url = (
+        "https://camp.honorofkings.com/h5/app/index.html"
+        f"?lang=ja&lang_type=ja#/adjustment-detail?heroId={hero_id}"
+        f"&versionName={route_version}"
+    )
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        detail_driver = webdriver.Chrome(options=_chrome_options())
+        try:
+            detail_driver.execute_cdp_cmd(
+                "Emulation.setLocaleOverride", {"locale": "ja-JP"}
+            )
+            detail_driver.execute_cdp_cmd("Network.enable", {})
+            detail_driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
+            detail_driver.get(target_url)
+            return _wait_for_adjustment_response(detail_driver, timeout=25)
+        except Exception as exc:
+            last_error = exc
+            if attempt == attempts:
+                raise
+        finally:
+            detail_driver.quit()
+    raise last_error
 
 
 def merge_adjustments(current, previous):
@@ -121,31 +190,48 @@ def fetch_adjustments():
         driver.get(TARGET_URL)
 
         wait = WebDriverWait(driver, 30)
-        wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".hero-card")))
-        wait.until(
-            lambda current_driver: len(
-                current_driver.find_elements(By.CSS_SELECTOR, ".hero-card")
-            )
-            >= 100
+        wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), '直近の調整')]")))
+        latest_match = re.search(
+            r"アップデート[：:]\s*(\d{4}/\d{2}/\d{2})",
+            driver.find_element(By.TAG_NAME, "body").text,
         )
-        time.sleep(1)
-
-        hero_count = len(driver.find_elements(By.CSS_SELECTOR, ".hero-card"))
-        if hero_count < 100:
-            raise RuntimeError(f"Only {hero_count} hero cards were loaded")
-
-        # Discard initial page-load traffic. Selecting a different card always creates
-        # one fresh adjustment request, so process the initially selected card last.
+        if not latest_match:
+            raise RuntimeError("HOKCAMP homepage has no latest adjustment date")
+        latest_version = latest_match.group(1)
         list(_performance_messages(driver))
-        cached = load_cached_heroes()
-        heroes = []
+        more_links = driver.find_elements(
+            By.XPATH, "//*[normalize-space(text())='もっと見る>']"
+        )
+        if not more_links:
+            raise RuntimeError("HOKCAMP recent-adjustments link was not found")
+        driver.execute_script("arguments[0].click();", more_links[0])
+        wait.until(lambda current_driver: "#/adjustment-detail" in current_driver.current_url)
+        adjustment_items = _wait_for_adjustment_list_response(driver)
+        if not adjustment_items:
+            raise RuntimeError("HOKCAMP returned an empty adjustment list")
+        route_version = (
+            datetime.strptime(latest_version, "%Y/%m/%d") - timedelta(days=1)
+        ).strftime("%Y/%m/%d")
+        print(
+            f"HOKCAMP latest adjustment: {latest_version}; "
+            f"route version: {route_version}; "
+            f"season list: {len(adjustment_items)} heroes"
+        )
 
-        for processed, index in enumerate(list(range(1, hero_count)) + [0], 1):
-            cards = driver.find_elements(By.CSS_SELECTOR, ".hero-card")
-            card = cards[index]
-            hero_name = card.find_element(By.CSS_SELECTOR, ".title").text.strip()
-            driver.execute_script("arguments[0].click();", card)
-            hero_id, data = _wait_for_adjustment_response(driver)
+        cached = load_cached_heroes()
+        refreshed = {}
+
+        for processed, item in enumerate(adjustment_items, 1):
+            hero_info = item.get("heroInfo") or {}
+            hero_name = hero_info.get("heroName", "").strip()
+            expected_hero_id = int(hero_info.get("heroId"))
+            if not hero_name:
+                raise RuntimeError("HOKCAMP adjustment item has no hero name")
+            hero_id, data = _fetch_hero_detail(expected_hero_id, route_version)
+            if hero_id != expected_hero_id:
+                raise RuntimeError(
+                    f"Hero route mismatch: expected={expected_hero_id}, response={hero_id}"
+                )
 
             if data:
                 api_name = data["heroInfo"]["heroName"].strip()
@@ -157,21 +243,45 @@ def fetch_adjustments():
             else:
                 current_adjustments = []
 
-            previous_adjustments = cached.get(hero_name, {}).get("adjustments", [])
-            heroes.append(
-                {
-                    "hero_id": hero_id,
-                    "hero_name": hero_name,
-                    "adjustments": merge_adjustments(
-                        current_adjustments, previous_adjustments
-                    ),
-                }
+            current_latest = max(
+                (record.get("versionName", "") for record in current_adjustments),
+                key=_date_key,
+                default="",
             )
+            if _date_key(current_latest) not in {
+                _date_key(latest_version),
+                _date_key(route_version),
+            }:
+                print(
+                    f"Stopped at older adjustment: {hero_name} ({current_latest})"
+                )
+                break
+            if _date_key(current_latest) == _date_key(route_version):
+                for record in current_adjustments:
+                    if _date_key(record.get("versionName", "")) == _date_key(route_version):
+                        record["versionName"] = latest_version
+
+            previous_adjustments = cached.get(hero_name, {}).get("adjustments", [])
+            refreshed[hero_name] = {
+                "hero_id": hero_id,
+                "hero_name": hero_name,
+                "adjustments": merge_adjustments(
+                    current_adjustments, previous_adjustments
+                ),
+            }
             print(
-                f"[{processed:03d}/{hero_count}] {hero_name}: "
+                f"[{processed:03d}/{len(adjustment_items)}] {hero_name}: "
                 f"{len(current_adjustments)} records"
             )
 
+        heroes = [refreshed.get(name, hero) for name, hero in cached.items()]
+        for name, hero in refreshed.items():
+            if name not in cached:
+                heroes.append(hero)
+
+        hero_count = len(heroes)
+        if hero_count < 100:
+            raise RuntimeError(f"Only {hero_count} heroes were retained")
         if len({hero["hero_id"] for hero in heroes}) != hero_count:
             raise RuntimeError("Duplicate or missing hero IDs in adjustment data")
         if len({hero["hero_name"] for hero in heroes}) != hero_count:
