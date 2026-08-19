@@ -26,7 +26,7 @@
                 </div>
                 <span class="live-status" id="live-status"><span aria-hidden="true"></span>集計サーバーへ接続中</span>
             </div>
-            <p class="method-note">8/14の調整結果を学習へ追加し、最新の8/7成績を据え置いて8/14直後の状態を再現した全期間モデルです。確率は今後21日以内に何らかの調整対象となる推定値です。</p>
+            <p class="method-note">8/14の調整結果と8/14週次成績を学習へ追加した全期間モデルです。確率は今後21日以内に何らかの調整対象となる推定値で、上方・下方の方向は最新スコアと推移から判定しています。</p>
             <div class="summary-strip" aria-label="予想概要">
                 <div><span>候補</span><strong>10人</strong></div>
                 <div><span>投票締切</span><strong>8/27 23:59</strong></div>
@@ -59,11 +59,11 @@
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>26.2%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 26.2パーセント">
-                            <span style="width: 26.2%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>25.4%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 25.4パーセント">
+                            <span style="width: 25.4%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>低スコアと低Pickが続き、未調整期間も長めです。救済対象としてモデルが最上位に評価しました。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>13週で5.01点低下し、スコア46.73まで後退。2025年4月以降は未調整で、救済候補の最上位です。</p>
 
                         <div class="evidence-strip" aria-label="橘右京の最新判断材料">
                             <div><span>現在スコア</span><strong>46.73</strong></div>
@@ -112,73 +112,8 @@
                     </div>
                 </article>
 
-                <article class="prediction-card" data-prediction-id="hanxin-buff">
-                    <div class="pick-rank">大本命</div>
-                    <a class="hero-identity" href="../heroes/hanxin.html">
-                        <img src="../hok_pics/hanxin.png" alt="" width="88" height="88">
-                        <div>
-                            <h3>韓信</h3>
-                            <span class="direction direction-buff">上方修正</span>
-
-                        </div>
-                    </a>
-
-                    <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>22.1%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 22.1パーセント">
-                            <span style="width: 22.1%"></span>
-                        </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>勝率48.45%、Pick率0.25%の低調が継続。小幅な火力または操作感の上方候補です。</p>
-
-                        <div class="evidence-strip" aria-label="韓信の最新判断材料">
-                            <div><span>現在スコア</span><strong>48.05</strong></div>
-                            <div><span>直近4週</span><strong class="positive">+1.86</strong></div>
-                            <div><span>直近13週</span><strong class="negative">-11.47</strong></div>
-                            <div><span>週間変動幅</span><strong>1.94</strong></div>
-                        </div>
-                        <details class="evidence-disclosure">
-                            <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
-                            <div class="evidence-detail">
-                                <dl class="evidence-facts">
-                                    <div><dt>現在位置</dt><dd>C Tier・99 / 116位</dd></div>
-                                    <div><dt>平均週間変化</dt><dd>-0.88</dd></div>
-                                    <div><dt>直近13週</dt><dd>上昇 4・下降 7・横ばい 2（±0.20未満）</dd></div>
-                                    <div><dt>直近調整</dt><dd>2026/05/28 下方修正</dd></div>
-                                </dl>
-                                <div class="evidence-relations">
-                                    <span>連動傾向</span>
-                                    <a href="../heroes/marcopolo.html">同方向 マルコ・ポーロ +0.69</a>
-                                    <a href="../heroes/lorion.html">逆方向 ロリアン -0.57</a>
-
-                                </div>
-                            </div>
-                        </details>
-
-
-                    </div>
-
-                    <div class="community-vote">
-                        <div class="vote-heading">
-                            <span>みんなの予想</span>
-                            <strong class="vote-total">0票</strong>
-                        </div>
-                        <div class="crowd-track" aria-label="投票割合">
-                            <span class="crowd-do" style="width: 50%"></span>
-                            <span class="crowd-not" style="width: 50%"></span>
-                        </div>
-                        <div class="vote-split">
-                            <span class="do-count">DO 0票</span>
-                            <span class="not-count">NOT 0票</span>
-                        </div>
-                        <div class="vote-actions" role="group" aria-label="韓信への投票">
-                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
-                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
-                        </div>
-                    </div>
-                </article>
-
                 <article class="prediction-card" data-prediction-id="luna-buff">
-                    <div class="pick-rank">本命</div>
+                    <div class="pick-rank">大本命</div>
                     <a class="hero-identity" href="../heroes/luna.html">
                         <img src="../hok_pics/luna.png" alt="" width="88" height="88">
                         <div>
@@ -189,11 +124,11 @@
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>21.6%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 21.6パーセント">
-                            <span style="width: 21.6%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>24.1%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 24.1パーセント">
+                            <span style="width: 24.1%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア44.32、勝率46.96%で全体下位。人気を残したまま成績が沈み、救済余地があります。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア43.60で全116人中最下位、13週でも4.09点低下。高難度枠を考慮しても救済余地が大きい状態です。</p>
 
                         <div class="evidence-strip" aria-label="ルナの最新判断材料">
                             <div><span>現在スコア</span><strong>43.60</strong></div>
@@ -242,6 +177,136 @@
                     </div>
                 </article>
 
+                <article class="prediction-card" data-prediction-id="shangguan-buff">
+                    <div class="pick-rank">本命</div>
+                    <a class="hero-identity" href="../heroes/shangguan.html">
+                        <img src="../hok_pics/shangguan.png" alt="" width="88" height="88">
+                        <div>
+                            <h3>上官婉児</h3>
+                            <span class="direction direction-buff">上方修正</span>
+
+                        </div>
+                    </a>
+
+                    <div class="ai-forecast">
+                        <div class="forecast-label"><span>AI予想確率</span><strong>22.0%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 22.0パーセント">
+                            <span style="width: 22.0%"></span>
+                        </div>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア45.95で109位。直近4週も下向きで、2025年5月以降の未調整期間も長くなっています。</p>
+
+                        <div class="evidence-strip" aria-label="上官婉児の最新判断材料">
+                            <div><span>現在スコア</span><strong>45.95</strong></div>
+                            <div><span>直近4週</span><strong class="negative">-0.35</strong></div>
+                            <div><span>直近13週</span><strong class="negative">-1.09</strong></div>
+                            <div><span>週間変動幅</span><strong>0.83</strong></div>
+                        </div>
+                        <details class="evidence-disclosure">
+                            <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
+                            <div class="evidence-detail">
+                                <dl class="evidence-facts">
+                                    <div><dt>現在位置</dt><dd>C Tier・109 / 116位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>-0.08</dd></div>
+                                    <div><dt>直近13週</dt><dd>上昇 6・下降 6・横ばい 1（±0.20未満）</dd></div>
+                                    <div><dt>直近調整</dt><dd>2025/05/29 上方修正</dd></div>
+                                </dl>
+                                <div class="evidence-relations">
+                                    <span>連動傾向</span>
+                                    <a href="../heroes/daqiao.html">同方向 大喬 +0.73</a>
+                                    <a href="../heroes/ladyzhen.html">逆方向 甄姫 -0.69</a>
+
+                                </div>
+                            </div>
+                        </details>
+
+
+                    </div>
+
+                    <div class="community-vote">
+                        <div class="vote-heading">
+                            <span>みんなの予想</span>
+                            <strong class="vote-total">0票</strong>
+                        </div>
+                        <div class="crowd-track" aria-label="投票割合">
+                            <span class="crowd-do" style="width: 50%"></span>
+                            <span class="crowd-not" style="width: 50%"></span>
+                        </div>
+                        <div class="vote-split">
+                            <span class="do-count">DO 0票</span>
+                            <span class="not-count">NOT 0票</span>
+                        </div>
+                        <div class="vote-actions" role="group" aria-label="上官婉児への投票">
+                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
+                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prediction-card" data-prediction-id="guiguzi-nerf">
+                    <div class="pick-rank">対抗</div>
+                    <a class="hero-identity" href="../heroes/guiguzi.html">
+                        <img src="../hok_pics/guiguzi.png" alt="" width="88" height="88">
+                        <div>
+                            <h3>鬼谷子</h3>
+                            <span class="direction direction-nerf">下方修正</span>
+
+                        </div>
+                    </a>
+
+                    <div class="ai-forecast">
+                        <div class="forecast-label"><span>AI予想確率</span><strong>21.9%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 21.9パーセント">
+                            <span style="width: 21.9%"></span>
+                        </div>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>勝率53.33%、13週で5.19点上昇。Pick率は低いものの、継続的な上振れから抑制候補に浮上しました。</p>
+
+                        <div class="evidence-strip" aria-label="鬼谷子の最新判断材料">
+                            <div><span>現在スコア</span><strong>57.11</strong></div>
+                            <div><span>直近4週</span><strong class="positive">+3.60</strong></div>
+                            <div><span>直近13週</span><strong class="positive">+5.19</strong></div>
+                            <div><span>週間変動幅</span><strong>1.74</strong></div>
+                        </div>
+                        <details class="evidence-disclosure">
+                            <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
+                            <div class="evidence-detail">
+                                <dl class="evidence-facts">
+                                    <div><dt>現在位置</dt><dd>A Tier・15 / 116位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>+0.40</dd></div>
+                                    <div><dt>直近13週</dt><dd>上昇 8・下降 4・横ばい 1（±0.20未満）</dd></div>
+                                    <div><dt>直近調整</dt><dd>2025/03/20 上方修正</dd></div>
+                                </dl>
+                                <div class="evidence-relations">
+                                    <span>連動傾向</span>
+                                    <a href="../heroes/mulan.html">同方向 ムーラン +0.71</a>
+                                    <a href="../heroes/allain.html">逆方向 アレン -0.73</a>
+
+                                </div>
+                            </div>
+                        </details>
+
+
+                    </div>
+
+                    <div class="community-vote">
+                        <div class="vote-heading">
+                            <span>みんなの予想</span>
+                            <strong class="vote-total">0票</strong>
+                        </div>
+                        <div class="crowd-track" aria-label="投票割合">
+                            <span class="crowd-do" style="width: 50%"></span>
+                            <span class="crowd-not" style="width: 50%"></span>
+                        </div>
+                        <div class="vote-split">
+                            <span class="do-count">DO 0票</span>
+                            <span class="not-count">NOT 0票</span>
+                        </div>
+                        <div class="vote-actions" role="group" aria-label="鬼谷子への投票">
+                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
+                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
+                        </div>
+                    </div>
+                </article>
+
                 <article class="prediction-card" data-prediction-id="garo-nerf">
                     <div class="pick-rank">対抗</div>
                     <a class="hero-identity" href="../heroes/garo.html">
@@ -254,11 +319,11 @@
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>19.8%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 19.8パーセント">
-                            <span style="width: 19.8%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>21.3%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 21.3パーセント">
+                            <span style="width: 21.3%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア60.03、勝率53.55%を維持。利用率も低すぎず、数値抑制の候補です。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア60.28で全体4位、勝率53.62%。13週でも高水準を維持しており、数値抑制の有力候補です。</p>
 
                         <div class="evidence-strip" aria-label="伽羅の最新判断材料">
                             <div><span>現在スコア</span><strong>60.28</strong></div>
@@ -307,108 +372,43 @@
                     </div>
                 </article>
 
-                <article class="prediction-card" data-prediction-id="arli-buff">
-                    <div class="pick-rank">対抗</div>
-                    <a class="hero-identity" href="../heroes/arli.html">
-                        <img src="../hok_pics/arli.png" alt="" width="88" height="88">
-                        <div>
-                            <h3>公孫離</h3>
-                            <span class="direction direction-buff">上方修正</span>
-
-                        </div>
-                    </a>
-
-                    <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>18.2%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 18.2パーセント">
-                            <span style="width: 18.2%"></span>
-                        </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア43.79、勝率46.40%で最下位圏。難度を考慮しても底上げ候補に残ります。</p>
-
-                        <div class="evidence-strip" aria-label="公孫離の最新判断材料">
-                            <div><span>現在スコア</span><strong>45.10</strong></div>
-                            <div><span>直近4週</span><strong class="positive">+1.21</strong></div>
-                            <div><span>直近13週</span><strong class="negative">-0.12</strong></div>
-                            <div><span>週間変動幅</span><strong>0.56</strong></div>
-                        </div>
-                        <details class="evidence-disclosure">
-                            <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
-                            <div class="evidence-detail">
-                                <dl class="evidence-facts">
-                                    <div><dt>現在位置</dt><dd>C Tier・113 / 116位</dd></div>
-                                    <div><dt>平均週間変化</dt><dd>-0.01</dd></div>
-                                    <div><dt>直近13週</dt><dd>上昇 2・下降 5・横ばい 6（±0.20未満）</dd></div>
-                                    <div><dt>直近調整</dt><dd>2025/12/16 調整</dd></div>
-                                </dl>
-                                <div class="evidence-relations">
-                                    <span>連動傾向</span>
-                                    <a href="../heroes/libai.html">同方向 李白 +0.69</a>
-                                    <a href="../heroes/heino.html">逆方向 ハイノ -0.74</a>
-
-                                </div>
-                            </div>
-                        </details>
-
-
-                    </div>
-
-                    <div class="community-vote">
-                        <div class="vote-heading">
-                            <span>みんなの予想</span>
-                            <strong class="vote-total">0票</strong>
-                        </div>
-                        <div class="crowd-track" aria-label="投票割合">
-                            <span class="crowd-do" style="width: 50%"></span>
-                            <span class="crowd-not" style="width: 50%"></span>
-                        </div>
-                        <div class="vote-split">
-                            <span class="do-count">DO 0票</span>
-                            <span class="not-count">NOT 0票</span>
-                        </div>
-                        <div class="vote-actions" role="group" aria-label="公孫離への投票">
-                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
-                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="prediction-card" data-prediction-id="lixin-nerf">
+                <article class="prediction-card" data-prediction-id="feyd-nerf">
                     <div class="pick-rank">単穴</div>
-                    <a class="hero-identity" href="../heroes/lixin.html">
-                        <img src="../hok_pics/lixin.png" alt="" width="88" height="88">
+                    <a class="hero-identity" href="../heroes/feyd.html">
+                        <img src="../hok_pics/feyd.png" alt="" width="88" height="88">
                         <div>
-                            <h3>李信</h3>
+                            <h3>ハロルド</h3>
                             <span class="direction direction-nerf">下方修正</span>
 
                         </div>
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>18.2%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 18.2パーセント">
-                            <span style="width: 18.2%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>18.4%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 18.4パーセント">
+                            <span style="width: 18.4%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア64.97、勝率53.83%、BAN率3.23%。6月の更新後も突出が続き、下方候補です。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア63.63で全体1位、4週で10.64点上昇。7/16の上方後に突出しており、反動調整を警戒します。</p>
 
-                        <div class="evidence-strip" aria-label="李信の最新判断材料">
-                            <div><span>現在スコア</span><strong>63.36</strong></div>
-                            <div><span>直近4週</span><strong class="negative">-0.75</strong></div>
-                            <div><span>直近13週</span><strong class="positive">+3.94</strong></div>
-                            <div><span>週間変動幅</span><strong>1.31</strong></div>
+                        <div class="evidence-strip" aria-label="ハロルドの最新判断材料">
+                            <div><span>現在スコア</span><strong>63.63</strong></div>
+                            <div><span>直近4週</span><strong class="positive">+10.64</strong></div>
+                            <div><span>直近13週</span><strong class="positive">+11.30</strong></div>
+                            <div><span>週間変動幅</span><strong>1.57</strong></div>
                         </div>
                         <details class="evidence-disclosure">
                             <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
                             <div class="evidence-detail">
                                 <dl class="evidence-facts">
-                                    <div><dt>現在位置</dt><dd>S Tier・2 / 116位</dd></div>
-                                    <div><dt>平均週間変化</dt><dd>+0.30</dd></div>
-                                    <div><dt>直近13週</dt><dd>上昇 5・下降 5・横ばい 3（±0.20未満）</dd></div>
-                                    <div><dt>直近調整</dt><dd>2026/06/17 上方修正</dd></div>
+                                    <div><dt>現在位置</dt><dd>S Tier・1 / 116位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>+0.87</dd></div>
+                                    <div><dt>直近13週</dt><dd>上昇 8・下降 3・横ばい 2（±0.20未満）</dd></div>
+                                    <div><dt>直近調整</dt><dd>2026/07/16 上方修正</dd></div>
                                 </dl>
                                 <div class="evidence-relations">
                                     <span>連動傾向</span>
-                                    <a href="../heroes/augran.html">同方向 大司命 +0.71</a>
-                                    <a href="../heroes/xuance.html">逆方向 百里玄策 -0.90</a>
+                                    <a href="../heroes/gan-mo.html">同方向 干将・莫耶 +0.71</a>
+                                    <a href="../heroes/kongming.html">逆方向 孔明 -0.60</a>
 
                                 </div>
                             </div>
@@ -430,50 +430,50 @@
                             <span class="do-count">DO 0票</span>
                             <span class="not-count">NOT 0票</span>
                         </div>
-                        <div class="vote-actions" role="group" aria-label="李信への投票">
+                        <div class="vote-actions" role="group" aria-label="ハロルドへの投票">
                             <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
                             <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="prediction-card" data-prediction-id="guanyu-buff">
+                <article class="prediction-card" data-prediction-id="sunce-buff">
                     <div class="pick-rank">穴</div>
-                    <a class="hero-identity" href="../heroes/guanyu.html">
-                        <img src="../hok_pics/guanyu.png" alt="" width="88" height="88">
+                    <a class="hero-identity" href="../heroes/sunce.html">
+                        <img src="../hok_pics/sunce.png" alt="" width="88" height="88">
                         <div>
-                            <h3>関羽</h3>
+                            <h3>孫策</h3>
                             <span class="direction direction-buff">上方修正</span>
 
                         </div>
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>17.8%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 17.8パーセント">
-                            <span style="width: 17.8%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>18.0%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 18.0パーセント">
+                            <span style="width: 18.0%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア44.44、Pick率0.37%。長期の低調を解消する小幅上方が入り得ます。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア46.82で104位、13週で2.08点低下。極端ではないものの、継続的な低調から上方候補です。</p>
 
-                        <div class="evidence-strip" aria-label="関羽の最新判断材料">
-                            <div><span>現在スコア</span><strong>45.33</strong></div>
-                            <div><span>直近4週</span><strong class="positive">+2.35</strong></div>
-                            <div><span>直近13週</span><strong class="negative">-0.34</strong></div>
-                            <div><span>週間変動幅</span><strong>0.93</strong></div>
+                        <div class="evidence-strip" aria-label="孫策の最新判断材料">
+                            <div><span>現在スコア</span><strong>46.82</strong></div>
+                            <div><span>直近4週</span><strong class="negative">-0.98</strong></div>
+                            <div><span>直近13週</span><strong class="negative">-2.08</strong></div>
+                            <div><span>週間変動幅</span><strong>0.58</strong></div>
                         </div>
                         <details class="evidence-disclosure">
                             <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
                             <div class="evidence-detail">
                                 <dl class="evidence-facts">
-                                    <div><dt>現在位置</dt><dd>C Tier・111 / 116位</dd></div>
-                                    <div><dt>平均週間変化</dt><dd>-0.03</dd></div>
-                                    <div><dt>直近13週</dt><dd>上昇 8・下降 3・横ばい 2（±0.20未満）</dd></div>
-                                    <div><dt>直近調整</dt><dd>2026/01/22 上方修正</dd></div>
+                                    <div><dt>現在位置</dt><dd>C Tier・104 / 116位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>-0.16</dd></div>
+                                    <div><dt>直近13週</dt><dd>上昇 2・下降 7・横ばい 4（±0.20未満）</dd></div>
+                                    <div><dt>直近調整</dt><dd>2025/06/12 上方修正</dd></div>
                                 </dl>
                                 <div class="evidence-relations">
                                     <span>連動傾向</span>
-                                    <a href="../heroes/dyadia.html">同方向 少司縁 +0.84</a>
-                                    <a href="../heroes/dianwei.html">逆方向 典韋 -0.86</a>
+                                    <a href="../heroes/lorion.html">同方向 ロリアン +0.60</a>
+                                    <a href="../heroes/sakeer.html">逆方向 啓 -0.52</a>
 
                                 </div>
                             </div>
@@ -495,7 +495,7 @@
                             <span class="do-count">DO 0票</span>
                             <span class="not-count">NOT 0票</span>
                         </div>
-                        <div class="vote-actions" role="group" aria-label="関羽への投票">
+                        <div class="vote-actions" role="group" aria-label="孫策への投票">
                             <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
                             <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
                         </div>
@@ -514,11 +514,11 @@
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>17.7%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 17.7パーセント">
-                            <span style="width: 17.7%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>17.3%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 17.3パーセント">
+                            <span style="width: 17.3%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア42.65、勝率46.01%で全体最下位。高難度枠でも救済優先度が高い状態です。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>4週では回復したものの、スコア44.53で全体115位。D帯から抜け切れず、追加救済の余地があります。</p>
 
                         <div class="evidence-strip" aria-label="鏡の最新判断材料">
                             <div><span>現在スコア</span><strong>44.53</strong></div>
@@ -567,108 +567,43 @@
                     </div>
                 </article>
 
-                <article class="prediction-card" data-prediction-id="athena-nerf">
+                <article class="prediction-card" data-prediction-id="mayene-buff">
                     <div class="pick-rank">大穴</div>
-                    <a class="hero-identity" href="../heroes/athena.html">
-                        <img src="../hok_pics/athena.png" alt="" width="88" height="88">
+                    <a class="hero-identity" href="../heroes/mayene.html">
+                        <img src="../hok_pics/mayene.png" alt="" width="88" height="88">
                         <div>
-                            <h3>アテナ</h3>
-                            <span class="direction direction-nerf">下方修正</span>
-
-                        </div>
-                    </a>
-
-                    <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>17.5%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 17.5パーセント">
-                            <span style="width: 17.5%"></span>
-                        </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>勝率54.17%と高い一方でPick率0.06%。母数は小さいものの、局所的な抑制候補です。</p>
-
-                        <div class="evidence-strip" aria-label="アテナの最新判断材料">
-                            <div><span>現在スコア</span><strong>56.92</strong></div>
-                            <div><span>直近4週</span><strong class="negative">-0.04</strong></div>
-                            <div><span>直近13週</span><strong class="negative">-3.52</strong></div>
-                            <div><span>週間変動幅</span><strong>1.85</strong></div>
-                        </div>
-                        <details class="evidence-disclosure">
-                            <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
-                            <div class="evidence-detail">
-                                <dl class="evidence-facts">
-                                    <div><dt>現在位置</dt><dd>A Tier・16 / 116位</dd></div>
-                                    <div><dt>平均週間変化</dt><dd>-0.27</dd></div>
-                                    <div><dt>直近13週</dt><dd>上昇 7・下降 6・横ばい 0（±0.20未満）</dd></div>
-                                    <div><dt>直近調整</dt><dd>2025/12/16 上方修正</dd></div>
-                                </dl>
-                                <div class="evidence-relations">
-                                    <span>連動傾向</span>
-                                    <a href="../heroes/arke.html">同方向 阿軻 +0.76</a>
-                                    <a href="../heroes/arthur.html">逆方向 アーサー -0.73</a>
-
-                                </div>
-                            </div>
-                        </details>
-
-
-                    </div>
-
-                    <div class="community-vote">
-                        <div class="vote-heading">
-                            <span>みんなの予想</span>
-                            <strong class="vote-total">0票</strong>
-                        </div>
-                        <div class="crowd-track" aria-label="投票割合">
-                            <span class="crowd-do" style="width: 50%"></span>
-                            <span class="crowd-not" style="width: 50%"></span>
-                        </div>
-                        <div class="vote-split">
-                            <span class="do-count">DO 0票</span>
-                            <span class="not-count">NOT 0票</span>
-                        </div>
-                        <div class="vote-actions" role="group" aria-label="アテナへの投票">
-                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
-                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="prediction-card" data-prediction-id="sunce-buff">
-                    <div class="pick-rank">大穴</div>
-                    <a class="hero-identity" href="../heroes/sunce.html">
-                        <img src="../hok_pics/sunce.png" alt="" width="88" height="88">
-                        <div>
-                            <h3>孫策</h3>
+                            <h3>姫小満</h3>
                             <span class="direction direction-buff">上方修正</span>
 
                         </div>
                     </a>
 
                     <div class="ai-forecast">
-                        <div class="forecast-label"><span>AI予想確率</span><strong>17.0%</strong></div>
-                        <div class="probability-track" role="img" aria-label="AI予想確率 17.0パーセント">
-                            <span style="width: 17.0%"></span>
+                        <div class="forecast-label"><span>AI予想確率</span><strong>16.5%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 16.5パーセント">
+                            <span style="width: 16.5%"></span>
                         </div>
-                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア47.04、勝率48.46%。極端ではないものの、全期間モデルでは上方候補上位です。</p>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア44.94で全体114位。4月の上方後もD帯に留まり、再度の小幅救済が候補です。</p>
 
-                        <div class="evidence-strip" aria-label="孫策の最新判断材料">
-                            <div><span>現在スコア</span><strong>46.82</strong></div>
-                            <div><span>直近4週</span><strong class="negative">-0.98</strong></div>
-                            <div><span>直近13週</span><strong class="negative">-2.08</strong></div>
-                            <div><span>週間変動幅</span><strong>0.58</strong></div>
+                        <div class="evidence-strip" aria-label="姫小満の最新判断材料">
+                            <div><span>現在スコア</span><strong>44.94</strong></div>
+                            <div><span>直近4週</span><strong class="positive">+0.52</strong></div>
+                            <div><span>直近13週</span><strong class="negative">-0.15</strong></div>
+                            <div><span>週間変動幅</span><strong>0.98</strong></div>
                         </div>
                         <details class="evidence-disclosure">
                             <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
                             <div class="evidence-detail">
                                 <dl class="evidence-facts">
-                                    <div><dt>現在位置</dt><dd>C Tier・104 / 116位</dd></div>
-                                    <div><dt>平均週間変化</dt><dd>-0.16</dd></div>
-                                    <div><dt>直近13週</dt><dd>上昇 2・下降 7・横ばい 4（±0.20未満）</dd></div>
-                                    <div><dt>直近調整</dt><dd>2025/06/12 上方修正</dd></div>
+                                    <div><dt>現在位置</dt><dd>D Tier・114 / 116位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>-0.01</dd></div>
+                                    <div><dt>直近13週</dt><dd>上昇 6・下降 4・横ばい 3（±0.20未満）</dd></div>
+                                    <div><dt>直近調整</dt><dd>2026/04/29 上方修正</dd></div>
                                 </dl>
                                 <div class="evidence-relations">
                                     <span>連動傾向</span>
-                                    <a href="../heroes/lorion.html">同方向 ロリアン +0.60</a>
-                                    <a href="../heroes/sakeer.html">逆方向 啓 -0.52</a>
+                                    <a href="../heroes/umbrosa.html">同方向 影 +0.70</a>
+                                    <a href="../heroes/lorion.html">逆方向 ロリアン -0.71</a>
 
                                 </div>
                             </div>
@@ -690,7 +625,72 @@
                             <span class="do-count">DO 0票</span>
                             <span class="not-count">NOT 0票</span>
                         </div>
-                        <div class="vote-actions" role="group" aria-label="孫策への投票">
+                        <div class="vote-actions" role="group" aria-label="姫小満への投票">
+                            <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
+                            <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="prediction-card" data-prediction-id="heino-buff">
+                    <div class="pick-rank">大穴</div>
+                    <a class="hero-identity" href="../heroes/heino.html">
+                        <img src="../hok_pics/heino.png" alt="" width="88" height="88">
+                        <div>
+                            <h3>ハイノ</h3>
+                            <span class="direction direction-buff">上方修正</span>
+
+                        </div>
+                    </a>
+
+                    <div class="ai-forecast">
+                        <div class="forecast-label"><span>AI予想確率</span><strong>16.3%</strong></div>
+                        <div class="probability-track" role="img" aria-label="AI予想確率 16.3パーセント">
+                            <span style="width: 16.3%"></span>
+                        </div>
+                        <p class="forecast-reason"><span>公開時の予想根拠</span>スコア45.10で112位、13週で2.66点低下。低迷が長引いており、上方候補の大穴です。</p>
+
+                        <div class="evidence-strip" aria-label="ハイノの最新判断材料">
+                            <div><span>現在スコア</span><strong>45.10</strong></div>
+                            <div><span>直近4週</span><strong class="negative">-0.35</strong></div>
+                            <div><span>直近13週</span><strong class="negative">-2.66</strong></div>
+                            <div><span>週間変動幅</span><strong>0.51</strong></div>
+                        </div>
+                        <details class="evidence-disclosure">
+                            <summary><span>詳しい判断材料</span><small>2026/08/14更新</small></summary>
+                            <div class="evidence-detail">
+                                <dl class="evidence-facts">
+                                    <div><dt>現在位置</dt><dd>C Tier・112 / 116位</dd></div>
+                                    <div><dt>平均週間変化</dt><dd>-0.20</dd></div>
+                                    <div><dt>直近13週</dt><dd>上昇 3・下降 7・横ばい 3（±0.20未満）</dd></div>
+                                    <div><dt>直近調整</dt><dd>2026/01/22 上方修正</dd></div>
+                                </dl>
+                                <div class="evidence-relations">
+                                    <span>連動傾向</span>
+                                    <a href="../heroes/luara.html">同方向 ルアンナ +0.74</a>
+                                    <a href="../heroes/libai.html">逆方向 李白 -0.75</a>
+
+                                </div>
+                            </div>
+                        </details>
+
+
+                    </div>
+
+                    <div class="community-vote">
+                        <div class="vote-heading">
+                            <span>みんなの予想</span>
+                            <strong class="vote-total">0票</strong>
+                        </div>
+                        <div class="crowd-track" aria-label="投票割合">
+                            <span class="crowd-do" style="width: 50%"></span>
+                            <span class="crowd-not" style="width: 50%"></span>
+                        </div>
+                        <div class="vote-split">
+                            <span class="do-count">DO 0票</span>
+                            <span class="not-count">NOT 0票</span>
+                        </div>
+                        <div class="vote-actions" role="group" aria-label="ハイノへの投票">
                             <button type="button" class="vote-button vote-do" data-choice="do" disabled>DO</button>
                             <button type="button" class="vote-button vote-not" data-choice="not" disabled>NOT</button>
                         </div>

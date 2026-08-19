@@ -5,7 +5,7 @@
   "published_at": "2026-08-19T20:00:00+09:00",
   "closes_at": "2026-08-27T23:59:59+09:00",
   "result_after": "2026/08/15",
-  "method_note": "8/14の調整結果を学習へ追加し、最新の8/7成績を据え置いて8/14直後の状態を再現した全期間モデルです。確率は今後21日以内に何らかの調整対象となる推定値です。",
+  "method_note": "8/14の調整結果と8/14週次成績を学習へ追加した全期間モデルです。確率は今後21日以内に何らかの調整対象となる推定値で、上方・下方の方向は最新スコアと推移から判定しています。",
   "predictions": [
     {
       "id": "ukyotachibana-buff",
@@ -14,9 +14,9 @@
       "english_name": "ukyotachibana",
       "direction": "buff",
       "direction_label": "上方修正",
-      "probability": 26.2,
-      "reason": "低スコアと低Pickが続き、未調整期間も長めです。救済対象としてモデルが最上位に評価しました。",
-      "metrics": "Score 46.58 / Win 48.59% / Pick 0.37% / Ban 0.02%",
+      "probability": 25.4,
+      "reason": "13週で5.01点低下し、スコア46.73まで後退。2025年4月以降は未調整で、救済候補の最上位です。",
+      "metrics": "Score 46.73 / Win 48.68% / Pick 0.36% / Ban 0.02%",
       "result": null,
       "evidence": {
         "hero_name": "橘右京",
@@ -61,68 +61,15 @@
       }
     },
     {
-      "id": "hanxin-buff",
-      "rank": "大本命",
-      "hero_name": "韓信",
-      "english_name": "hanxin",
-      "direction": "buff",
-      "direction_label": "上方修正",
-      "probability": 22.1,
-      "reason": "勝率48.45%、Pick率0.25%の低調が継続。小幅な火力または操作感の上方候補です。",
-      "metrics": "Score 46.23 / Win 48.45% / Pick 0.25% / Ban 0.04%",
-      "result": null,
-      "evidence": {
-        "hero_name": "韓信",
-        "latest_date_label": "2026/08/14",
-        "score_label": "48.05",
-        "tier": "C",
-        "rank": 99,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.86",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-11.47",
-          "class": "negative"
-        },
-        "volatility_label": "1.94",
-        "average_change_label": "-0.88",
-        "up_count": 4,
-        "down_count": 7,
-        "flat_count": 2,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2026/05/28",
-          "direction_label": "下方修正"
-        },
-        "positive_relation": {
-          "name": "マルコ・ポーロ",
-          "page_slug": "marcopolo",
-          "correlation_label": "+0.69",
-          "direction_count": 11,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "ロリアン",
-          "page_slug": "lorion",
-          "correlation_label": "-0.57",
-          "direction_count": 5,
-          "sample_count": 8
-        }
-      }
-    },
-    {
       "id": "luna-buff",
-      "rank": "本命",
+      "rank": "大本命",
       "hero_name": "ルナ",
       "english_name": "luna",
       "direction": "buff",
       "direction_label": "上方修正",
-      "probability": 21.6,
-      "reason": "スコア44.32、勝率46.96%で全体下位。人気を残したまま成績が沈み、救済余地があります。",
-      "metrics": "Score 44.32 / Win 46.96% / Pick 0.52% / Ban 0.23%",
+      "probability": 24.1,
+      "reason": "スコア43.60で全116人中最下位、13週でも4.09点低下。高難度枠を考慮しても救済余地が大きい状態です。",
+      "metrics": "Score 43.60 / Win 46.45% / Pick 0.53% / Ban 0.22%",
       "result": null,
       "evidence": {
         "hero_name": "ルナ",
@@ -167,15 +114,121 @@
       }
     },
     {
+      "id": "shangguan-buff",
+      "rank": "本命",
+      "hero_name": "上官婉児",
+      "english_name": "shangguan",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 22.0,
+      "reason": "スコア45.95で109位。直近4週も下向きで、2025年5月以降の未調整期間も長くなっています。",
+      "metrics": "Score 45.95 / Win 48.22% / Pick 0.36% / Ban 0.04%",
+      "result": null,
+      "evidence": {
+        "hero_name": "上官婉児",
+        "latest_date_label": "2026/08/14",
+        "score_label": "45.95",
+        "tier": "C",
+        "rank": 109,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-0.35",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-1.09",
+          "class": "negative"
+        },
+        "volatility_label": "0.83",
+        "average_change_label": "-0.08",
+        "up_count": 6,
+        "down_count": 6,
+        "flat_count": 1,
+        "flat_threshold_label": "0.20",
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/05/29",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "大喬",
+          "page_slug": "daqiao",
+          "correlation_label": "+0.73",
+          "direction_count": 10,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "甄姫",
+          "page_slug": "ladyzhen",
+          "correlation_label": "-0.69",
+          "direction_count": 10,
+          "sample_count": 13
+        }
+      }
+    },
+    {
+      "id": "guiguzi-nerf",
+      "rank": "対抗",
+      "hero_name": "鬼谷子",
+      "english_name": "guiguzi",
+      "direction": "nerf",
+      "direction_label": "下方修正",
+      "probability": 21.9,
+      "reason": "勝率53.33%、13週で5.19点上昇。Pick率は低いものの、継続的な上振れから抑制候補に浮上しました。",
+      "metrics": "Score 57.11 / Win 53.33% / Pick 0.21% / Ban 0.24%",
+      "result": null,
+      "evidence": {
+        "hero_name": "鬼谷子",
+        "latest_date_label": "2026/08/14",
+        "score_label": "57.11",
+        "tier": "A",
+        "rank": 15,
+        "hero_count": 116,
+        "four_week": {
+          "label": "+3.60",
+          "class": "positive"
+        },
+        "thirteen_week": {
+          "label": "+5.19",
+          "class": "positive"
+        },
+        "volatility_label": "1.74",
+        "average_change_label": "+0.40",
+        "up_count": 8,
+        "down_count": 4,
+        "flat_count": 1,
+        "flat_threshold_label": "0.20",
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/03/20",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "ムーラン",
+          "page_slug": "mulan",
+          "correlation_label": "+0.71",
+          "direction_count": 8,
+          "sample_count": 13
+        },
+        "negative_relation": {
+          "name": "アレン",
+          "page_slug": "allain",
+          "correlation_label": "-0.73",
+          "direction_count": 10,
+          "sample_count": 13
+        }
+      }
+    },
+    {
       "id": "garo-nerf",
       "rank": "対抗",
       "hero_name": "伽羅",
       "english_name": "garo",
       "direction": "nerf",
       "direction_label": "下方修正",
-      "probability": 19.8,
-      "reason": "スコア60.03、勝率53.55%を維持。利用率も低すぎず、数値抑制の候補です。",
-      "metrics": "Score 60.03 / Win 53.55% / Pick 1.38% / Ban 0.36%",
+      "probability": 21.3,
+      "reason": "スコア60.28で全体4位、勝率53.62%。13週でも高水準を維持しており、数値抑制の有力候補です。",
+      "metrics": "Score 60.28 / Win 53.62% / Pick 1.40% / Ban 0.36%",
       "result": null,
       "evidence": {
         "hero_name": "伽羅",
@@ -220,160 +273,107 @@
       }
     },
     {
-      "id": "arli-buff",
-      "rank": "対抗",
-      "hero_name": "公孫離",
-      "english_name": "arli",
-      "direction": "buff",
-      "direction_label": "上方修正",
-      "probability": 18.2,
-      "reason": "スコア43.79、勝率46.40%で最下位圏。難度を考慮しても底上げ候補に残ります。",
-      "metrics": "Score 43.79 / Win 46.40% / Pick 0.67% / Ban 0.27%",
-      "result": null,
-      "evidence": {
-        "hero_name": "公孫離",
-        "latest_date_label": "2026/08/14",
-        "score_label": "45.10",
-        "tier": "C",
-        "rank": 113,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+1.21",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-0.12",
-          "class": "negative"
-        },
-        "volatility_label": "0.56",
-        "average_change_label": "-0.01",
-        "up_count": 2,
-        "down_count": 5,
-        "flat_count": 6,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2025/12/16",
-          "direction_label": "調整"
-        },
-        "positive_relation": {
-          "name": "李白",
-          "page_slug": "libai",
-          "correlation_label": "+0.69",
-          "direction_count": 8,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "ハイノ",
-          "page_slug": "heino",
-          "correlation_label": "-0.74",
-          "direction_count": 8,
-          "sample_count": 13
-        }
-      }
-    },
-    {
-      "id": "lixin-nerf",
+      "id": "feyd-nerf",
       "rank": "単穴",
-      "hero_name": "李信",
-      "english_name": "lixin",
+      "hero_name": "ハロルド",
+      "english_name": "feyd",
       "direction": "nerf",
       "direction_label": "下方修正",
-      "probability": 18.2,
-      "reason": "スコア64.97、勝率53.83%、BAN率3.23%。6月の更新後も突出が続き、下方候補です。",
-      "metrics": "Score 64.97 / Win 53.83% / Pick 2.66% / Ban 3.23%",
+      "probability": 18.4,
+      "reason": "スコア63.63で全体1位、4週で10.64点上昇。7/16の上方後に突出しており、反動調整を警戒します。",
+      "metrics": "Score 63.63 / Win 55.32% / Pick 0.53% / Ban 0.24%",
       "result": null,
       "evidence": {
-        "hero_name": "李信",
+        "hero_name": "ハロルド",
         "latest_date_label": "2026/08/14",
-        "score_label": "63.36",
+        "score_label": "63.63",
         "tier": "S",
-        "rank": 2,
+        "rank": 1,
         "hero_count": 116,
         "four_week": {
-          "label": "-0.75",
-          "class": "negative"
-        },
-        "thirteen_week": {
-          "label": "+3.94",
-          "class": "positive"
-        },
-        "volatility_label": "1.31",
-        "average_change_label": "+0.30",
-        "up_count": 5,
-        "down_count": 5,
-        "flat_count": 3,
-        "flat_threshold_label": "0.20",
-        "sample_count": 13,
-        "latest_adjustment": {
-          "date_label": "2026/06/17",
-          "direction_label": "上方修正"
-        },
-        "positive_relation": {
-          "name": "大司命",
-          "page_slug": "augran",
-          "correlation_label": "+0.71",
-          "direction_count": 11,
-          "sample_count": 13
-        },
-        "negative_relation": {
-          "name": "百里玄策",
-          "page_slug": "xuance",
-          "correlation_label": "-0.90",
-          "direction_count": 10,
-          "sample_count": 13
-        }
-      }
-    },
-    {
-      "id": "guanyu-buff",
-      "rank": "穴",
-      "hero_name": "関羽",
-      "english_name": "guanyu",
-      "direction": "buff",
-      "direction_label": "上方修正",
-      "probability": 17.8,
-      "reason": "スコア44.44、Pick率0.37%。長期の低調を解消する小幅上方が入り得ます。",
-      "metrics": "Score 44.44 / Win 47.24% / Pick 0.37% / Ban 0.09%",
-      "result": null,
-      "evidence": {
-        "hero_name": "関羽",
-        "latest_date_label": "2026/08/14",
-        "score_label": "45.33",
-        "tier": "C",
-        "rank": 111,
-        "hero_count": 116,
-        "four_week": {
-          "label": "+2.35",
+          "label": "+10.64",
           "class": "positive"
         },
         "thirteen_week": {
-          "label": "-0.34",
-          "class": "negative"
+          "label": "+11.30",
+          "class": "positive"
         },
-        "volatility_label": "0.93",
-        "average_change_label": "-0.03",
+        "volatility_label": "1.57",
+        "average_change_label": "+0.87",
         "up_count": 8,
         "down_count": 3,
         "flat_count": 2,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
         "latest_adjustment": {
-          "date_label": "2026/01/22",
+          "date_label": "2026/07/16",
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "少司縁",
-          "page_slug": "dyadia",
-          "correlation_label": "+0.84",
-          "direction_count": 12,
+          "name": "干将・莫耶",
+          "page_slug": "gan-mo",
+          "correlation_label": "+0.71",
+          "direction_count": 10,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "典韋",
-          "page_slug": "dianwei",
-          "correlation_label": "-0.86",
-          "direction_count": 11,
+          "name": "孔明",
+          "page_slug": "kongming",
+          "correlation_label": "-0.60",
+          "direction_count": 9,
+          "sample_count": 13
+        }
+      }
+    },
+    {
+      "id": "sunce-buff",
+      "rank": "穴",
+      "hero_name": "孫策",
+      "english_name": "sunce",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 18.0,
+      "reason": "スコア46.82で104位、13週で2.08点低下。極端ではないものの、継続的な低調から上方候補です。",
+      "metrics": "Score 46.82 / Win 48.33% / Pick 0.80% / Ban 0.03%",
+      "result": null,
+      "evidence": {
+        "hero_name": "孫策",
+        "latest_date_label": "2026/08/14",
+        "score_label": "46.82",
+        "tier": "C",
+        "rank": 104,
+        "hero_count": 116,
+        "four_week": {
+          "label": "-0.98",
+          "class": "negative"
+        },
+        "thirteen_week": {
+          "label": "-2.08",
+          "class": "negative"
+        },
+        "volatility_label": "0.58",
+        "average_change_label": "-0.16",
+        "up_count": 2,
+        "down_count": 7,
+        "flat_count": 4,
+        "flat_threshold_label": "0.20",
+        "sample_count": 13,
+        "latest_adjustment": {
+          "date_label": "2025/06/12",
+          "direction_label": "上方修正"
+        },
+        "positive_relation": {
+          "name": "ロリアン",
+          "page_slug": "lorion",
+          "correlation_label": "+0.60",
+          "direction_count": 6,
+          "sample_count": 8
+        },
+        "negative_relation": {
+          "name": "啓",
+          "page_slug": "sakeer",
+          "correlation_label": "-0.52",
+          "direction_count": 7,
           "sample_count": 13
         }
       }
@@ -385,9 +385,9 @@
       "english_name": "jing",
       "direction": "buff",
       "direction_label": "上方修正",
-      "probability": 17.7,
-      "reason": "スコア42.65、勝率46.01%で全体最下位。高難度枠でも救済優先度が高い状態です。",
-      "metrics": "Score 42.65 / Win 46.01% / Pick 0.31% / Ban 0.13%",
+      "probability": 17.3,
+      "reason": "4週では回復したものの、スコア44.53で全体115位。D帯から抜け切れず、追加救済の余地があります。",
+      "metrics": "Score 44.53 / Win 47.33% / Pick 0.30% / Ban 0.13%",
       "result": null,
       "evidence": {
         "hero_name": "鏡",
@@ -432,107 +432,107 @@
       }
     },
     {
-      "id": "athena-nerf",
+      "id": "mayene-buff",
       "rank": "大穴",
-      "hero_name": "アテナ",
-      "english_name": "athena",
-      "direction": "nerf",
-      "direction_label": "下方修正",
-      "probability": 17.5,
-      "reason": "勝率54.17%と高い一方でPick率0.06%。母数は小さいものの、局所的な抑制候補です。",
-      "metrics": "Score 59.25 / Win 54.17% / Pick 0.06% / Ban 0.00%",
+      "hero_name": "姫小満",
+      "english_name": "mayene",
+      "direction": "buff",
+      "direction_label": "上方修正",
+      "probability": 16.5,
+      "reason": "スコア44.94で全体114位。4月の上方後もD帯に留まり、再度の小幅救済が候補です。",
+      "metrics": "Score 44.94 / Win 47.58% / Pick 0.37% / Ban 0.05%",
       "result": null,
       "evidence": {
-        "hero_name": "アテナ",
+        "hero_name": "姫小満",
         "latest_date_label": "2026/08/14",
-        "score_label": "56.92",
-        "tier": "A",
-        "rank": 16,
+        "score_label": "44.94",
+        "tier": "D",
+        "rank": 114,
         "hero_count": 116,
         "four_week": {
-          "label": "-0.04",
-          "class": "negative"
+          "label": "+0.52",
+          "class": "positive"
         },
         "thirteen_week": {
-          "label": "-3.52",
+          "label": "-0.15",
           "class": "negative"
         },
-        "volatility_label": "1.85",
-        "average_change_label": "-0.27",
-        "up_count": 7,
-        "down_count": 6,
-        "flat_count": 0,
+        "volatility_label": "0.98",
+        "average_change_label": "-0.01",
+        "up_count": 6,
+        "down_count": 4,
+        "flat_count": 3,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
         "latest_adjustment": {
-          "date_label": "2025/12/16",
+          "date_label": "2026/04/29",
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "阿軻",
-          "page_slug": "arke",
-          "correlation_label": "+0.76",
-          "direction_count": 11,
+          "name": "影",
+          "page_slug": "umbrosa",
+          "correlation_label": "+0.70",
+          "direction_count": 9,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "アーサー",
-          "page_slug": "arthur",
-          "correlation_label": "-0.73",
-          "direction_count": 11,
-          "sample_count": 13
+          "name": "ロリアン",
+          "page_slug": "lorion",
+          "correlation_label": "-0.71",
+          "direction_count": 6,
+          "sample_count": 8
         }
       }
     },
     {
-      "id": "sunce-buff",
+      "id": "heino-buff",
       "rank": "大穴",
-      "hero_name": "孫策",
-      "english_name": "sunce",
+      "hero_name": "ハイノ",
+      "english_name": "heino",
       "direction": "buff",
       "direction_label": "上方修正",
-      "probability": 17.0,
-      "reason": "スコア47.04、勝率48.46%。極端ではないものの、全期間モデルでは上方候補上位です。",
-      "metrics": "Score 47.04 / Win 48.46% / Pick 0.80% / Ban 0.03%",
+      "probability": 16.3,
+      "reason": "スコア45.10で112位、13週で2.66点低下。低迷が長引いており、上方候補の大穴です。",
+      "metrics": "Score 45.10 / Win 47.28% / Pick 0.74% / Ban 0.14%",
       "result": null,
       "evidence": {
-        "hero_name": "孫策",
+        "hero_name": "ハイノ",
         "latest_date_label": "2026/08/14",
-        "score_label": "46.82",
+        "score_label": "45.10",
         "tier": "C",
-        "rank": 104,
+        "rank": 112,
         "hero_count": 116,
         "four_week": {
-          "label": "-0.98",
+          "label": "-0.35",
           "class": "negative"
         },
         "thirteen_week": {
-          "label": "-2.08",
+          "label": "-2.66",
           "class": "negative"
         },
-        "volatility_label": "0.58",
-        "average_change_label": "-0.16",
-        "up_count": 2,
+        "volatility_label": "0.51",
+        "average_change_label": "-0.20",
+        "up_count": 3,
         "down_count": 7,
-        "flat_count": 4,
+        "flat_count": 3,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
         "latest_adjustment": {
-          "date_label": "2025/06/12",
+          "date_label": "2026/01/22",
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "ロリアン",
-          "page_slug": "lorion",
-          "correlation_label": "+0.60",
-          "direction_count": 6,
-          "sample_count": 8
+          "name": "ルアンナ",
+          "page_slug": "luara",
+          "correlation_label": "+0.74",
+          "direction_count": 9,
+          "sample_count": 13
         },
         "negative_relation": {
-          "name": "啓",
-          "page_slug": "sakeer",
-          "correlation_label": "-0.52",
-          "direction_count": 7,
+          "name": "李白",
+          "page_slug": "libai",
+          "correlation_label": "-0.75",
+          "direction_count": 9,
           "sample_count": 13
         }
       }
