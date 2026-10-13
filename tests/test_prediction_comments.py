@@ -39,6 +39,7 @@ class PredictionCommentApiTests(unittest.TestCase):
             (ROOT / "list_html" / "predictions" / "round.json").read_text(encoding="utf-8")
         )
         round_config["closes_at"] = "2099-07-29T23:59:59+09:00"
+        round_config["result"] = {"ready": False}
         cls.round_id = round_config["round_id"]
         (cls.web_root / "predictions" / "round.json").write_text(
             json.dumps(round_config, ensure_ascii=False), encoding="utf-8"
