@@ -274,6 +274,26 @@ def fetch_adjustments():
                 f"{len(current_adjustments)} records"
             )
 
+        # Newly discovered heroes may not appear in the recent-adjustment list.
+        from sync_new_heroes import parse_html_heroes
+
+        for ranked_hero in parse_html_heroes():
+            hero_name = ranked_hero["name"]
+            if hero_name in cached or hero_name in refreshed:
+                continue
+            expected_hero_id = int(ranked_hero["hero_id"])
+            hero_id, data = _fetch_hero_detail(expected_hero_id, route_version)
+            if hero_id != expected_hero_id:
+                raise RuntimeError(
+                    f"Hero route mismatch: expected={expected_hero_id}, response={hero_id}"
+                )
+            refreshed[hero_name] = {
+                "hero_id": hero_id,
+                "hero_name": hero_name,
+                "adjustments": (data or {}).get("adjustInfo") or [],
+            }
+            print(f"New hero adjustment history: {hero_name}")
+
         heroes = [refreshed.get(name, hero) for name, hero in cached.items()]
         for name, hero in refreshed.items():
             if name not in cached:

@@ -47,13 +47,13 @@ jobs:
         run: |
           python get_html.py
 
-      - name: Get hero adjustments
-        run: |
-          python get_adjustments.py
-
       - name: Sync new heroes
         run: |
           python sync_new_heroes.py
+
+      - name: Get hero adjustments
+        run: |
+          python get_adjustments.py
 
       - name: Run the script
         run: |
