@@ -1,6 +1,6 @@
 {
   "source": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail",
-  "hero_count": 116,
+  "hero_count": 118,
   "adjustment_count": 331,
   "latest_version": "2026/08/14",
   "heroes": [
@@ -15749,6 +15749,11 @@
       "adjustments": []
     },
     {
+      "hero_id": 583,
+      "hero_name": "元流の子（アサシン）",
+      "adjustments": []
+    },
+    {
       "hero_id": 584,
       "hero_name": "元流の子（マークスマン）",
       "adjustments": [
@@ -15858,6 +15863,11 @@
           }
         }
       ]
+    },
+    {
+      "hero_id": 585,
+      "hero_name": "元流の子（サポート）",
+      "adjustments": []
     },
     {
       "hero_id": 631,

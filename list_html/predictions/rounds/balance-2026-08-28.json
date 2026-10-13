@@ -20,24 +20,24 @@
       "result": null,
       "evidence": {
         "hero_name": "橘右京",
-        "latest_date_label": "2026/08/21",
-        "score_label": "46.97",
+        "latest_date_label": "2026/10/09",
+        "score_label": "48.95",
         "tier": "C",
-        "rank": 99,
-        "hero_count": 116,
+        "rank": 87,
+        "hero_count": 118,
         "four_week": {
-          "label": "-1.88",
+          "label": "-0.51",
           "class": "negative"
         },
         "thirteen_week": {
-          "label": "-4.97",
+          "label": "-3.05",
           "class": "negative"
         },
-        "volatility_label": "0.88",
-        "average_change_label": "-0.38",
-        "up_count": 3,
+        "volatility_label": "1.09",
+        "average_change_label": "-0.24",
+        "up_count": 4,
         "down_count": 7,
-        "flat_count": 3,
+        "flat_count": 2,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
         "latest_adjustment": {
@@ -45,16 +45,16 @@
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "雲中君",
-          "page_slug": "cirrus",
-          "correlation_label": "+0.57",
-          "direction_count": 9,
+          "name": "マルコ・ポーロ",
+          "page_slug": "marcopolo",
+          "correlation_label": "+0.67",
+          "direction_count": 10,
           "sample_count": 13
         },
         "negative_relation": {
           "name": "ミーユエ",
           "page_slug": "miyue",
-          "correlation_label": "-0.72",
+          "correlation_label": "-0.75",
           "direction_count": 10,
           "sample_count": 13
         }
@@ -73,21 +73,21 @@
       "result": null,
       "evidence": {
         "hero_name": "ルナ",
-        "latest_date_label": "2026/08/21",
-        "score_label": "42.58",
+        "latest_date_label": "2026/10/09",
+        "score_label": "43.64",
         "tier": "D",
-        "rank": 116,
-        "hero_count": 116,
+        "rank": 117,
+        "hero_count": 118,
         "four_week": {
-          "label": "-1.26",
+          "label": "-0.10",
           "class": "negative"
         },
         "thirteen_week": {
-          "label": "-4.33",
+          "label": "-3.87",
           "class": "negative"
         },
-        "volatility_label": "0.72",
-        "average_change_label": "-0.33",
+        "volatility_label": "0.78",
+        "average_change_label": "-0.30",
         "up_count": 4,
         "down_count": 6,
         "flat_count": 3,
@@ -100,16 +100,16 @@
         "positive_relation": {
           "name": "楊貴妃",
           "page_slug": "yuhuan",
-          "correlation_label": "+0.72",
+          "correlation_label": "+0.77",
           "direction_count": 11,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "フロレンティーノ",
-          "page_slug": "florentino",
-          "correlation_label": "-0.72",
-          "direction_count": 7,
-          "sample_count": 9
+          "name": "仁傑",
+          "page_slug": "direnjie",
+          "correlation_label": "-0.81",
+          "direction_count": 9,
+          "sample_count": 13
         }
       }
     },
@@ -126,23 +126,23 @@
       "result": null,
       "evidence": {
         "hero_name": "上官婉児",
-        "latest_date_label": "2026/08/21",
-        "score_label": "46.17",
+        "latest_date_label": "2026/10/09",
+        "score_label": "46.37",
         "tier": "C",
-        "rank": 108,
-        "hero_count": 116,
+        "rank": 109,
+        "hero_count": 118,
         "four_week": {
-          "label": "+0.75",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-0.02",
+          "label": "-0.08",
           "class": "negative"
         },
-        "volatility_label": "0.80",
-        "average_change_label": "-0.00",
-        "up_count": 7,
-        "down_count": 5,
+        "thirteen_week": {
+          "label": "+0.94",
+          "class": "positive"
+        },
+        "volatility_label": "0.77",
+        "average_change_label": "+0.07",
+        "up_count": 8,
+        "down_count": 4,
         "flat_count": 1,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
@@ -151,17 +151,17 @@
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "不知火舞",
-          "page_slug": "maishiranui",
+          "name": "大喬",
+          "page_slug": "daqiao",
           "correlation_label": "+0.68",
-          "direction_count": 9,
+          "direction_count": 12,
           "sample_count": 13
         },
         "negative_relation": {
           "name": "甄姫",
           "page_slug": "ladyzhen",
-          "correlation_label": "-0.73",
-          "direction_count": 10,
+          "correlation_label": "-0.67",
+          "direction_count": 9,
           "sample_count": 13
         }
       }
@@ -179,23 +179,23 @@
       "result": null,
       "evidence": {
         "hero_name": "鬼谷子",
-        "latest_date_label": "2026/08/21",
-        "score_label": "55.12",
-        "tier": "A",
-        "rank": 24,
-        "hero_count": 116,
+        "latest_date_label": "2026/10/09",
+        "score_label": "49.94",
+        "tier": "C",
+        "rank": 72,
+        "hero_count": 118,
         "four_week": {
-          "label": "+3.43",
-          "class": "positive"
+          "label": "-4.81",
+          "class": "negative"
         },
         "thirteen_week": {
-          "label": "+2.76",
-          "class": "positive"
+          "label": "-3.22",
+          "class": "negative"
         },
-        "volatility_label": "1.85",
-        "average_change_label": "+0.21",
-        "up_count": 7,
-        "down_count": 5,
+        "volatility_label": "2.33",
+        "average_change_label": "-0.25",
+        "up_count": 6,
+        "down_count": 6,
         "flat_count": 1,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
@@ -204,16 +204,16 @@
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "ムーラン",
-          "page_slug": "mulan",
-          "correlation_label": "+0.67",
-          "direction_count": 9,
+          "name": "瑶",
+          "page_slug": "yaria",
+          "correlation_label": "+0.66",
+          "direction_count": 10,
           "sample_count": 13
         },
         "negative_relation": {
           "name": "ファーティフ",
           "page_slug": "fatih",
-          "correlation_label": "-0.75",
+          "correlation_label": "-0.81",
           "direction_count": 11,
           "sample_count": 13
         }
@@ -232,21 +232,21 @@
       "result": null,
       "evidence": {
         "hero_name": "伽羅",
-        "latest_date_label": "2026/08/21",
-        "score_label": "62.14",
+        "latest_date_label": "2026/10/09",
+        "score_label": "60.55",
         "tier": "S",
-        "rank": 4,
-        "hero_count": 116,
+        "rank": 3,
+        "hero_count": 118,
         "four_week": {
-          "label": "+1.22",
-          "class": "positive"
+          "label": "-0.06",
+          "class": "negative"
         },
         "thirteen_week": {
-          "label": "+3.31",
+          "label": "+2.78",
           "class": "positive"
         },
-        "volatility_label": "1.03",
-        "average_change_label": "+0.25",
+        "volatility_label": "1.09",
+        "average_change_label": "+0.21",
         "up_count": 8,
         "down_count": 5,
         "flat_count": 0,
@@ -259,15 +259,15 @@
         "positive_relation": {
           "name": "フロレンティーノ",
           "page_slug": "florentino",
-          "correlation_label": "+0.87",
-          "direction_count": 7,
-          "sample_count": 9
+          "correlation_label": "+0.90",
+          "direction_count": 8,
+          "sample_count": 10
         },
         "negative_relation": {
-          "name": "鏡",
-          "page_slug": "jing",
+          "name": "楊貴妃",
+          "page_slug": "yuhuan",
           "correlation_label": "-0.73",
-          "direction_count": 12,
+          "direction_count": 8,
           "sample_count": 13
         }
       }
@@ -285,23 +285,23 @@
       "result": null,
       "evidence": {
         "hero_name": "ハロルド",
-        "latest_date_label": "2026/08/21",
-        "score_label": "63.17",
-        "tier": "S",
-        "rank": 2,
-        "hero_count": 116,
+        "latest_date_label": "2026/10/09",
+        "score_label": "58.82",
+        "tier": "A",
+        "rank": 6,
+        "hero_count": 118,
         "four_week": {
-          "label": "+6.50",
+          "label": "+0.92",
           "class": "positive"
         },
         "thirteen_week": {
-          "label": "+12.08",
+          "label": "+7.25",
           "class": "positive"
         },
-        "volatility_label": "1.50",
-        "average_change_label": "+0.93",
-        "up_count": 8,
-        "down_count": 3,
+        "volatility_label": "2.06",
+        "average_change_label": "+0.56",
+        "up_count": 7,
+        "down_count": 4,
         "flat_count": 2,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
@@ -312,16 +312,16 @@
         "positive_relation": {
           "name": "干将・莫耶",
           "page_slug": "gan-mo",
-          "correlation_label": "+0.69",
+          "correlation_label": "+0.77",
           "direction_count": 10,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "フロレンティーノ",
-          "page_slug": "florentino",
+          "name": "司馬懿",
+          "page_slug": "simayi",
           "correlation_label": "-0.68",
-          "direction_count": 5,
-          "sample_count": 9
+          "direction_count": 9,
+          "sample_count": 13
         }
       }
     },
@@ -338,24 +338,24 @@
       "result": null,
       "evidence": {
         "hero_name": "孫策",
-        "latest_date_label": "2026/08/21",
-        "score_label": "46.84",
+        "latest_date_label": "2026/10/09",
+        "score_label": "47.91",
         "tier": "C",
-        "rank": 101,
-        "hero_count": 116,
+        "rank": 103,
+        "hero_count": 118,
         "four_week": {
-          "label": "-1.18",
-          "class": "negative"
+          "label": "+0.61",
+          "class": "positive"
         },
         "thirteen_week": {
-          "label": "-1.26",
+          "label": "-0.38",
           "class": "negative"
         },
-        "volatility_label": "0.55",
-        "average_change_label": "-0.10",
-        "up_count": 2,
+        "volatility_label": "0.63",
+        "average_change_label": "-0.03",
+        "up_count": 3,
         "down_count": 6,
-        "flat_count": 5,
+        "flat_count": 4,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
         "latest_adjustment": {
@@ -365,15 +365,15 @@
         "positive_relation": {
           "name": "バイロン",
           "page_slug": "biron",
-          "correlation_label": "+0.63",
+          "correlation_label": "+0.70",
           "direction_count": 8,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "チーシャ",
-          "page_slug": "chicha",
-          "correlation_label": "-0.59",
-          "direction_count": 9,
+          "name": "白龍",
+          "page_slug": "ao-yin",
+          "correlation_label": "-0.65",
+          "direction_count": 11,
           "sample_count": 13
         }
       }
@@ -391,24 +391,24 @@
       "result": null,
       "evidence": {
         "hero_name": "鏡",
-        "latest_date_label": "2026/08/21",
-        "score_label": "44.03",
+        "latest_date_label": "2026/10/09",
+        "score_label": "41.65",
         "tier": "D",
-        "rank": 115,
-        "hero_count": 116,
+        "rank": 118,
+        "hero_count": 118,
         "four_week": {
-          "label": "+2.52",
-          "class": "positive"
+          "label": "-0.66",
+          "class": "negative"
         },
         "thirteen_week": {
-          "label": "+1.83",
-          "class": "positive"
+          "label": "-0.45",
+          "class": "negative"
         },
-        "volatility_label": "0.79",
-        "average_change_label": "+0.14",
+        "volatility_label": "1.04",
+        "average_change_label": "-0.04",
         "up_count": 5,
-        "down_count": 4,
-        "flat_count": 4,
+        "down_count": 5,
+        "flat_count": 3,
         "flat_threshold_label": "0.20",
         "sample_count": 13,
         "latest_adjustment": {
@@ -416,16 +416,16 @@
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "棋星",
-          "page_slug": "yixing",
-          "correlation_label": "+0.86",
-          "direction_count": 11,
+          "name": "ユンエイ",
+          "page_slug": "ying",
+          "correlation_label": "+0.72",
+          "direction_count": 9,
           "sample_count": 13
         },
         "negative_relation": {
           "name": "司馬懿",
           "page_slug": "simayi",
-          "correlation_label": "-0.78",
+          "correlation_label": "-0.80",
           "direction_count": 10,
           "sample_count": 13
         }
@@ -444,21 +444,21 @@
       "result": null,
       "evidence": {
         "hero_name": "姫小満",
-        "latest_date_label": "2026/08/21",
-        "score_label": "45.72",
-        "tier": "C",
-        "rank": 110,
-        "hero_count": 116,
+        "latest_date_label": "2026/10/09",
+        "score_label": "44.01",
+        "tier": "D",
+        "rank": 115,
+        "hero_count": 118,
         "four_week": {
-          "label": "+1.50",
-          "class": "positive"
-        },
-        "thirteen_week": {
-          "label": "-0.05",
+          "label": "-0.11",
           "class": "negative"
         },
-        "volatility_label": "0.98",
-        "average_change_label": "-0.00",
+        "thirteen_week": {
+          "label": "-1.25",
+          "class": "negative"
+        },
+        "volatility_label": "1.08",
+        "average_change_label": "-0.09",
         "up_count": 6,
         "down_count": 4,
         "flat_count": 3,
@@ -469,18 +469,18 @@
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "影",
-          "page_slug": "umbrosa",
-          "correlation_label": "+0.79",
-          "direction_count": 10,
+          "name": "元流の子（メイジ）",
+          "page_slug": "flowborn-mage",
+          "correlation_label": "+0.57",
+          "direction_count": 8,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "ロリアン",
-          "page_slug": "lorion",
-          "correlation_label": "-0.58",
-          "direction_count": 6,
-          "sample_count": 9
+          "name": "阿軻",
+          "page_slug": "arke",
+          "correlation_label": "-0.54",
+          "direction_count": 8,
+          "sample_count": 13
         }
       }
     },
@@ -497,21 +497,21 @@
       "result": null,
       "evidence": {
         "hero_name": "ハイノ",
-        "latest_date_label": "2026/08/21",
-        "score_label": "45.47",
+        "latest_date_label": "2026/10/09",
+        "score_label": "46.50",
         "tier": "C",
-        "rank": 112,
-        "hero_count": 116,
+        "rank": 108,
+        "hero_count": 118,
         "four_week": {
-          "label": "+0.36",
+          "label": "+0.70",
           "class": "positive"
         },
         "thirteen_week": {
-          "label": "-1.32",
+          "label": "-0.70",
           "class": "negative"
         },
-        "volatility_label": "0.48",
-        "average_change_label": "-0.10",
+        "volatility_label": "0.55",
+        "average_change_label": "-0.05",
         "up_count": 4,
         "down_count": 6,
         "flat_count": 3,
@@ -522,17 +522,17 @@
           "direction_label": "上方修正"
         },
         "positive_relation": {
-          "name": "太公望",
-          "page_slug": "ziya",
-          "correlation_label": "+0.74",
+          "name": "趙雲",
+          "page_slug": "zilong",
+          "correlation_label": "+0.76",
           "direction_count": 11,
           "sample_count": 13
         },
         "negative_relation": {
-          "name": "李白",
-          "page_slug": "libai",
+          "name": "百里玄策",
+          "page_slug": "xuance",
           "correlation_label": "-0.76",
-          "direction_count": 10,
+          "direction_count": 11,
           "sample_count": 13
         }
       }
