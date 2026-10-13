@@ -7,6 +7,8 @@ import urllib.request
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+from get_html import has_hero_name_class
+from hok_tools.list_tool import _has_class
 
 
 HTML_FILE = Path("html.txt")
@@ -147,11 +149,15 @@ def parse_html_heroes():
     heroes = []
 
     for row in soup.find_all("tr"):
-        name_tag = row.find("div", class_="hero-intro-name")
+        name_tag = row.find(has_hero_name_class)
         if not name_tag:
             continue
 
-        career_tag = row.find("div", class_="hero-intro-career")
+        career_tag = row.find(
+            lambda tag: tag.name == "div" and _has_class(
+                tag, exact=("hero-intro-career",), prefixes=("heroIntroCareer-",)
+            )
+        )
         img_tag = row.find("img", class_="hero-icon") or row.find("img")
         image_url = img_tag.get("src") if img_tag else None
 
@@ -231,7 +237,7 @@ def fetch_japanese_hero_names_by_id():
         names_by_hero_id = {}
 
         for row in soup.find_all("tr"):
-            name_tag = row.find("div", class_="hero-intro-name")
+            name_tag = row.find(has_hero_name_class)
             img_tag = row.find("img", class_="hero-icon") or row.find("img")
             hero_id = extract_hero_id(img_tag)
             if not name_tag or not hero_id:
@@ -303,7 +309,7 @@ def fetch_english_asset_names_by_id():
         assets_by_hero_id = {}
 
         for row in soup.find_all("tr"):
-            name_tag = row.find("div", class_="hero-intro-name")
+            name_tag = row.find(has_hero_name_class)
             img_tag = row.find("img", class_="hero-icon") or row.find("img")
             hero_id = extract_hero_id(img_tag)
             if not name_tag or not hero_id:
@@ -331,7 +337,7 @@ def rewrite_html_hero_names(names_by_hero_id, normalized_english_to_japanese):
     changed = 0
 
     for row in soup.find_all("tr"):
-        name_tag = row.find("div", class_="hero-intro-name")
+        name_tag = row.find(has_hero_name_class)
         if not name_tag:
             continue
 
