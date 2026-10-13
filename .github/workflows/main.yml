@@ -10,6 +10,7 @@ on:
       - main  # mainブランチへのプルリクエストが作成されたときにも実行
   repository_dispatch:
     types: [trigger-from-discord]
+  workflow_dispatch:
   schedule:
     - cron: '0 21 * * 6'
 

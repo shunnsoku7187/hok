@@ -70,7 +70,8 @@ class PredictionPageTests(unittest.TestCase):
             [item["rank"] for item in predictions],
         )
         self.assertIsInstance(prediction_round["result"]["ready"], bool)
-        self.assertFalse(prediction_round["result"]["ready"])
+        if prediction_round["result"]["ready"]:
+            self.assertGreater(prediction_round["result"]["actual_count"], 0)
         self.assertEqual("橘右京", predictions[0]["hero_name"])
 
         _, previous_rounds, _ = load_prediction_rounds()
@@ -127,7 +128,9 @@ class PredictionPageTests(unittest.TestCase):
             expected_latest_date,
             deployed_round["predictions"][0]["evidence"]["latest_date_label"],
         )
-        self.assertFalse(deployed_round["result"]["ready"])
+        self.assertEqual(
+            load_prediction_round()["result"]["ready"], deployed_round["result"]["ready"]
+        )
         self.assertTrue(old_round_exists)
 
         retrospective = archived_round["result"]["retrospective_evaluation"]
@@ -237,6 +240,22 @@ class PredictionPageTests(unittest.TestCase):
         self.assertEqual("hit", previous_rounds[0]["predictions"][0]["result"]["outcome"])
         self.assertIn('data-result-round-id="balance-2026-07-01"', html)
         self.assertIn("過去の予想結果", html)
+
+        # Completed current rounds without optional retrospective data must render too.
+        manifest["current_round_id"] = previous["round_id"]
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_path = Path(temp_dir)
+            config_path = temp_path / "rounds.json"
+            adjustment_path = temp_path / "adjustments.json"
+            config_path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+            adjustment_path.write_text(json.dumps(adjustments, ensure_ascii=False), encoding="utf-8")
+            generate_prediction_page(
+                config_path=config_path, adjustment_path=adjustment_path,
+                output_dir=temp_path / "output",
+            )
+            html = (temp_path / "output/index.html").read_text(encoding="utf-8")
+        self.assertIn('data-result-ready="true"', html)
+        self.assertIn("今回調整された1人", html)
 
 
 if __name__ == "__main__":

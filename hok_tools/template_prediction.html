@@ -58,12 +58,14 @@
                     <span>今回調整された{{ round.result.actual_count }}人</span>
                     <small>公開時のAI評価と照合</small>
                 </summary>
-                {% set retrospective = round.result.retrospective_evaluation %}
+                {% set retrospective = round.result.get('retrospective_evaluation') %}
+                {% if retrospective %}
                 <p class="actual-adjustments-note">
                     公開時評価に加え、{{ retrospective.as_of_label }}までのデータだけで全{{ retrospective.hero_count }}人を再評価しました。
                     過去{{ retrospective.training_sample_count }}件から「{{ retrospective.horizon_days }}日以内に調整される確率」を推定し、{{ round.result.version_label }}の結果は入力・学習に使用していません。
                     基準発生率は{{ retrospective.base_rate_label }}です。
                 </p>
+                {% endif %}
                 <div class="actual-adjustment-list">
                     {% for actual in round.result.actual_adjustments %}
                     <article class="actual-adjustment-item">

@@ -4,6 +4,7 @@ import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 import datetime
 import re
+from pathlib import Path
 from hok_tools.adjustment_tool import has_adjustment_between, load_adjustment_data
 from hok_tools.categories_tool import get_heroes_by_tag
 
@@ -84,10 +85,9 @@ def format_hero_data(data):
     
 def csv_to_list(filename="heroes.csv",roll = "All"):
     yc,mc,dc = get_period()
-    yp,mp,dp = get_period(previous=True)
     
     current_csv = find_snapshot_path(yc, mc, dc, filename)
-    previous_csv = find_snapshot_path(yp, mp, dp, filename)
+    previous_csv, _ = find_previous_snapshot(datetime.date(yc, mc, dc), filename)
     
     pick_up_list = find_heroes_by_roll(previous_csv, current_csv,roll = roll)
     pick_up_list = sorted(pick_up_list, key=lambda hero:hero['meta_score_curr'], reverse=True)
@@ -104,6 +104,18 @@ def find_snapshot_path(year, month, day, filename="heroes.csv"):
     if os.path.exists(legacy_path):
         return legacy_path
     return padded_path
+
+
+def find_previous_snapshot(current_date, filename="heroes.csv"):
+    from hok_tools.hero_history_tool import resolve_snapshot_dates
+
+    paths = list(Path(BASE_PATH).glob(f"*_{filename}"))
+    dated_paths = resolve_snapshot_dates(paths)
+    previous = [(date, path) for path, date in dated_paths.items() if date < current_date]
+    if not previous:
+        raise FileNotFoundError(f"No snapshot before {current_date} in {BASE_PATH}")
+    previous_date, previous_path = max(previous, key=lambda item: item[0])
+    return str(previous_path), previous_date
 
 
 def hero_page_slug(english_name):
@@ -137,9 +149,14 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
     adjustment_data = load_adjustment_data()
     data = csv_to_list(roll=roll)
     y, m, d = get_period()
-    py, pm, pd = get_period(previous=True)
     current_date = datetime.date(y, m, d)
-    previous_date = datetime.date(py, pm, pd)
+    _, previous_date = find_previous_snapshot(current_date)
+    comparison_note = ""
+    if (current_date - previous_date).days != 7:
+        comparison_note = (
+            f"比較対象: {previous_date:%Y/%m/%d}（前週データ欠測のため、"
+            "保存済みの直近データと比較）"
+        )
 
     env = Environment(loader=FileSystemLoader('.'))
     if device == "pc":
@@ -165,13 +182,15 @@ def generate_pick_up_html(roll, image_folder=IMAGE_PATH, filename="sample.html",
             "tier": hero["tier"],
             "data": hero["data"],
             "recent_adjustment": has_adjustment_between(
-                adjustment_data.get(hero_name), previous_date, current_date
+                adjustment_data.get(hero_name),
+                current_date - datetime.timedelta(days=7), current_date
             ),
         })
 
     # テンプレートにデータを埋め込む
     html_content = template.render(
         title=f"{y}/{m}/{d} Score List",
+        comparison_note=comparison_note,
         data=hero_data
     )
     html_content = "\n".join(line.rstrip() for line in html_content.splitlines()) + "\n"
