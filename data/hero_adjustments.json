@@ -1,6 +1,6 @@
 {
   "source": "https://camp.honorofkings.com/h5/app/index.html#/adjustment-detail",
-  "hero_count": 118,
+  "hero_count": 119,
   "adjustment_count": 331,
   "latest_version": "2026/08/14",
   "heroes": [
@@ -4792,6 +4792,11 @@
           }
         }
       ]
+    },
+    {
+      "hero_id": 138,
+      "hero_name": "王維",
+      "adjustments": []
     },
     {
       "hero_id": 139,
