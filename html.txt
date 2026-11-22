@@ -2,41 +2,6 @@
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=509}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/oAi4jpSd.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      イージス
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      サポート/タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    44.63%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.62%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    4.39%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
     <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=142}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
@@ -55,17 +20,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.47%
+    51.30%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.94%
+    2.86%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.06%
+    1.09%
    </div>
   </td>
  </tr>
@@ -90,192 +55,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.53%
+    50.49%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.37%
+    2.35%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.79%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=517}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      大司命
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.89%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.56%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    3.33%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=507}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/mWSBbpVr.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      李信
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.09%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.72%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.02%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=156}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      張良
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.37%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.77%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    3.92%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=519}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      白龍
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.26%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.57%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.18%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=111}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      孫尚香
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    S
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.40%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.39%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.31%
+    1.78%
    </div>
   </td>
  </tr>
@@ -300,17 +90,122 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.00%
+    51.41%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.46%
+    3.10%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.14%
+    0.23%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=517}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      大司命
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.34%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.49%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    3.19%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=156}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      張良
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.82%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.76%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    3.98%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=519}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      白龍
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.09%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.60%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.99%
    </div>
   </td>
  </tr>
@@ -335,7 +230,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.01%
+    47.87%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.69%
    </div>
   </td>
   <td>
@@ -343,22 +243,17 @@
     1.61%
    </div>
   </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.62%
-   </div>
-  </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=159}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=507}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/mWSBbpVr.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      ドリア
+      李信
      </div>
      <div class="heroIntroCareer-SDG6X">
-      サポート
+      ファイター
      </div>
     </div>
    </div>
@@ -370,17 +265,87 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.87%
+    51.42%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.92%
+    1.56%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.80%
+    1.83%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=509}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/oAi4jpSd.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      イージス
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      サポート/タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    47.28%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.66%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    3.60%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=646}" src="https://camp.honorofkings.com/camp/admin/default/8RgEv87D.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      バタフライ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.41%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.87%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.09%
    </div>
   </td>
  </tr>
@@ -405,17 +370,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.49%
+    47.89%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.76%
+    0.88%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.78%
+    3.03%
    </div>
   </td>
  </tr>
@@ -435,22 +400,92 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableTrankText-askYN">
+    S
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.72%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.33%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.95%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=159}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ドリア
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      サポート
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
     A
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.39%
+    47.05%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.08%
+    1.87%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.97%
+    0.83%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=119}" src="https://camp.honorofkings.com/camp/admin/default/wNLuC8Jy.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      扁鵲
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.16%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.79%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.96%
    </div>
   </td>
  </tr>
@@ -475,30 +510,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.57%
+    45.12%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.96%
+    0.94%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    2.19%
+    2.39%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=190}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XDnXeq3x.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=111}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      孔明
+      孫尚香
      </div>
      <div class="heroIntroCareer-SDG6X">
-      メイジ
+      マークスマン
      </div>
     </div>
    </div>
@@ -510,17 +545,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.53%
+    50.22%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.62%
+    1.90%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.62%
+    0.14%
    </div>
   </td>
  </tr>
@@ -545,52 +580,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.00%
+    50.68%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.79%
+    1.80%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.25%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=152}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/lhZtGJlg.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      王昭君
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.04%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.57%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.67%
+    0.26%
    </div>
   </td>
  </tr>
@@ -615,147 +615,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.27%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.04%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.59%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=138}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/9ydtLpQD.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      王維
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.05%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.04%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.41%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=108}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      墨子
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ/ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.74%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.16%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.08%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=577}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/Qdvu6qgO.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      少司縁
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      サポート/メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.04%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.03%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.28%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=528}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      瀾
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン/ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.46%
+    49.49%
    </div>
   </td>
   <td>
@@ -765,147 +625,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.18%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=508}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      伽羅
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.36%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.45%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.37%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=126}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      夏侯惇
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      タンク/ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.72%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.30%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.66%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=174}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      虞美人
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.94%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.53%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.19%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=106}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      小喬
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.70%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.49%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.27%
+    1.62%
    </div>
   </td>
  </tr>
@@ -930,7 +650,42 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    46.08%
+    47.48%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.69%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.26%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=152}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/lhZtGJlg.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      王昭君
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.15%
    </div>
   </td>
   <td>
@@ -940,7 +695,252 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.23%
+    0.63%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=190}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XDnXeq3x.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      孔明
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.82%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.45%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.61%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=106}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      小喬
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    47.60%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.62%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.27%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=577}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/Qdvu6qgO.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      少司縁
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      サポート/メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.64%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.07%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.35%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=108}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      墨子
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.39%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.16%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.08%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=528}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      瀾
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.44%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.03%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.25%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=174}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      虞美人
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.70%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.49%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.20%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=126}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      夏侯惇
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      タンク/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.40%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.23%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.58%
    </div>
   </td>
  </tr>
@@ -965,87 +965,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.62%
+    50.31%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.54%
+    1.45%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.11%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=510}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Te1nmDGP.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      孫策
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.03%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.50%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.13%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=172}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/lkU98jAV.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      チーシャ
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    A
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.62%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.40%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.29%
    </div>
   </td>
  </tr>
@@ -1070,27 +1000,27 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.10%
+    48.08%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.23%
+    1.16%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.60%
+    0.64%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=547}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/znRnu3kt.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=508}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      ルアンナ
+      伽羅
      </div>
      <div class="heroIntroCareer-SDG6X">
       マークスマン
@@ -1105,30 +1035,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.45%
+    52.67%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.42%
+    1.28%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.13%
+    0.32%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=116}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=537}" src="https://camp.honorofkings.com/camp/admin/default/MagzAk8i.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      阿軻
+      デーヴァラ
      </div>
      <div class="heroIntroCareer-SDG6X">
-      アサシン
+      ファイター/メイジ
      </div>
     </div>
    </div>
@@ -1140,17 +1070,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.81%
+    49.14%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.71%
+    1.27%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.44%
+    0.27%
    </div>
   </td>
  </tr>
@@ -1175,30 +1105,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.19%
+    50.68%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.34%
+    1.32%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.17%
+    0.16%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=179}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=172}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/lkU98jAV.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      女媧
+      チーシャ
      </div>
      <div class="heroIntroCareer-SDG6X">
-      メイジ
+      ファイター
      </div>
     </div>
    </div>
@@ -1210,17 +1140,122 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    54.03%
+    50.90%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.02%
+    1.28%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.64%
+    0.24%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=153}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      蘭陵王
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.48%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.63%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.54%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=510}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Te1nmDGP.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      孫策
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.04%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.34%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.08%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=547}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/znRnu3kt.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ルアンナ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    A
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.09%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.27%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.11%
    </div>
   </td>
  </tr>
@@ -1240,17 +1275,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableTrankText-askYN">
-    A
+    B
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.03%
+    50.63%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.91%
+    0.95%
    </div>
   </td>
   <td>
@@ -1280,7 +1315,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.72%
+    49.35%
    </div>
   </td>
   <td>
@@ -1290,77 +1325,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.09%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=123}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      呂布
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.49%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.15%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.26%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=153}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      蘭陵王
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.45%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.58%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.36%
+    1.11%
    </div>
   </td>
  </tr>
@@ -1385,30 +1350,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.20%
+    49.73%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.91%
+    0.92%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.63%
+    0.67%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=537}" src="https://camp.honorofkings.com/camp/admin/default/MagzAk8i.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=116}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      デーヴァラ
+      阿軻
      </div>
      <div class="heroIntroCareer-SDG6X">
-      ファイター/メイジ
+      アサシン
      </div>
     </div>
    </div>
@@ -1420,17 +1385,87 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.83%
+    53.14%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.07%
+    0.62%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.22%
+    1.14%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=179}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      女媧
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    53.91%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.88%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.60%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=123}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      呂布
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.24%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    1.06%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.25%
    </div>
   </td>
  </tr>
@@ -1455,87 +1490,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.62%
+    50.71%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.06%
+    1.03%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.11%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=583}" src="https://camp.honorofkings.com/camp/admin/default/rlKkeGUd.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      元流の子（アサシン）
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.08%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.90%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.42%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=105}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      廉頗
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.06%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.02%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.15%
    </div>
   </td>
  </tr>
@@ -1560,17 +1525,87 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.55%
+    50.24%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.03%
+    1.00%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.11%
+    0.12%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=503}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/F3A0JkoT.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      バイロン
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.87%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.88%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.35%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=105}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      廉頗
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.77%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.97%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.14%
    </div>
   </td>
  </tr>
@@ -1595,7 +1630,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.37%
+    48.10%
    </div>
   </td>
   <td>
@@ -1605,112 +1640,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    1.06%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=177}" src="https://camp.honorofkings.com/camp/admin/default/sJURXorM.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      蒼
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.72%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.96%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.09%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=107}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      趙雲
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.22%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.97%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.06%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=130}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      宮本武蔵
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.39%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.86%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.28%
+    1.04%
    </div>
   </td>
  </tr>
@@ -1735,257 +1665,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.36%
+    50.22%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.98%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=129}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      典韋
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.18%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.84%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.24%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=173}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      李元芳
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.54%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.93%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=137}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      司馬懿
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン/メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    54.19%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.79%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.26%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=133}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      仁傑
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.01%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.91%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.02%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=135}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FLyy9J46.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      項羽
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      タンク/ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.78%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.88%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=127}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      甄姫
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.95%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.88%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=545}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/nnafEHV0.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      アレッシオ
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.79%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.84%
+    1.00%
    </div>
   </td>
   <td>
@@ -2015,62 +1700,27 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.10%
+    51.14%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.71%
+    0.81%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.29%
+    0.36%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=157}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=173}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      不知火舞
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン/メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.68%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.79%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.14%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=584}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/WuG07My1.jpeg?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      元流の子（マークスマン）
+      李元芳
      </div>
      <div class="heroIntroCareer-SDG6X">
       マークスマン
@@ -2085,30 +1735,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.08%
+    49.18%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.81%
+    0.96%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
+    0.04%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=563}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=130}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      ハイノ
+      宮本武蔵
      </div>
      <div class="heroIntroCareer-SDG6X">
-      メイジ/ファイター
+      ファイター/アサシン
      </div>
     </div>
    </div>
@@ -2120,17 +1770,297 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.32%
+    49.33%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.77%
+    0.81%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.12%
+    0.30%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=135}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FLyy9J46.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      項羽
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      タンク/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.63%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.91%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=177}" src="https://camp.honorofkings.com/camp/admin/default/sJURXorM.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      蒼
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.98%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.89%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.08%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=133}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      仁傑
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.69%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.87%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.02%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=127}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      甄姫
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.59%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.85%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=129}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      典韋
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.89%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.75%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.22%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=545}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/nnafEHV0.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      アレッシオ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    52.10%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.84%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.03%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=107}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      趙雲
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    52.11%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.82%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=138}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/9ydtLpQD.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      王維
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.12%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.62%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.44%
    </div>
   </td>
  </tr>
@@ -2155,332 +2085,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.12%
+    49.51%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.78%
+    0.79%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.08%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=585}" src="https://camp.honorofkings.com/camp/admin/default/umejTpUh.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      元流の子（サポート）
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      サポート/メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.09%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.62%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.34%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=503}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/F3A0JkoT.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      バイロン
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.27%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.69%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.20%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=110}" src="https://camp.honorofkings.com/camp/admin/default/h6UHy1TN.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      カルラ
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.94%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.76%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=523}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      西施
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.85%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.62%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.31%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=536}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      シャルロット
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.41%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.74%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.06%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=141}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/qFBebEbk.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      貂蝉
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    48.73%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.71%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.06%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=631}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/skJXGWLF.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      フロレンティーノ
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.39%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.37%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.72%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=176}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/r97AVgaV.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      楊貴妃
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.52%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.69%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.06%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=148}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      太公望
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    B
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.07%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.67%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.06%
+    0.09%
    </div>
   </td>
  </tr>
@@ -2505,27 +2120,552 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    46.36%
+    46.56%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.62%
+    0.69%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.14%
+    0.28%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=195}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/keW8Hfo0.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=563}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      百里玄策
+      ハイノ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.44%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.76%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.12%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=110}" src="https://camp.honorofkings.com/camp/admin/default/h6UHy1TN.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      カルラ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.20%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.79%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=584}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/WuG07My1.jpeg?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      元流の子（マークスマン）
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.35%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.79%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.03%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=137}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      司馬懿
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン/メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    54.56%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.66%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.25%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=536}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      シャルロット
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.38%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.74%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.06%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=523}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      西施
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.08%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.59%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.32%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=162}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ナコルル
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.96%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.63%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.24%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=141}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/qFBebEbk.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      貂蝉
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.47%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.71%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.07%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=131}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      李白
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    53.03%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.63%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.18%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=140}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      関羽
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    46.20%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.60%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.23%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=522}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xw0HrvxD.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      曜
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    B
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    51.82%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.68%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.05%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=154}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ムーラン
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.96%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.69%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.03%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=157}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      不知火舞
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン/メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.96%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.64%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.11%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=631}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/skJXGWLF.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      フロレンティーノ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.77%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.39%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.56%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=148}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      太公望
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.23%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.64%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.07%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=583}" src="https://camp.honorofkings.com/camp/admin/default/rlKkeGUd.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      元流の子（アサシン）
      </div>
      <div class="heroIntroCareer-SDG6X">
       アサシン
@@ -2540,17 +2680,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.29%
+    51.50%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.44%
+    0.59%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.41%
+    0.14%
    </div>
   </td>
  </tr>
@@ -2575,122 +2715,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.95%
+    52.65%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.49%
+    0.48%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.28%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=131}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      李白
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.21%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.55%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.15%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=197}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/RLA5jvBk.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      棋星
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.28%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.61%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=119}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      扁鵲
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.24%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.56%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.12%
+    0.30%
    </div>
   </td>
  </tr>
@@ -2715,30 +2750,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.80%
+    53.50%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.52%
+    0.56%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.07%
+    0.08%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=538}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=197}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/RLA5jvBk.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      ユンエイ
+      棋星
      </div>
      <div class="heroIntroCareer-SDG6X">
-      ファイター/アサシン
+      メイジ
      </div>
     </div>
    </div>
@@ -2750,12 +2785,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.05%
+    51.20%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.54%
+    0.55%
    </div>
   </td>
   <td>
@@ -2767,188 +2802,13 @@
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=522}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xw0HrvxD.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=195}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/keW8Hfo0.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      曜
+      百里玄策
      </div>
      <div class="heroIntroCareer-SDG6X">
-      ファイター/アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.12%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.52%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=180}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/WDh84DWg.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      ナタク
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.53%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.50%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.05%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=146}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      ルナ
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター/メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    46.05%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.48%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.11%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=646}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/FPq2P4ew.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      バタフライ
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.90%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.49%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.07%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=163}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      橘右京
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン/ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.27%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.50%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=533}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      アグド
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
+      アサシン
      </div>
     </div>
    </div>
@@ -2965,12 +2825,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.48%
+    0.37%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
+    0.33%
    </div>
   </td>
  </tr>
@@ -2995,30 +2855,30 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.39%
+    49.54%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.49%
+    0.52%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
+    0.04%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=162}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=585}" src="https://camp.honorofkings.com/camp/admin/default/umejTpUh.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      ナコルル
+      元流の子（サポート）
      </div>
      <div class="heroIntroCareer-SDG6X">
-      アサシン
+      サポート/メイジ
      </div>
     </div>
    </div>
@@ -3030,17 +2890,52 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.12%
+    50.73%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.46%
+    0.41%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.09%
+    0.24%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=176}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/r97AVgaV.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      楊貴妃
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    52.75%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.51%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.02%
    </div>
   </td>
  </tr>
@@ -3065,12 +2960,187 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.27%
+    50.10%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.48%
+    0.50%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.03%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=146}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ルナ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    46.21%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.46%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.11%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=533}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      アグド
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    52.97%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.47%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=163}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/8e9WRFgL.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      橘右京
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン/ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    52.31%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.47%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.03%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=150}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      韓信
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    47.48%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.46%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.06%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=538}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/diRuUQDV.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ユンエイ
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.63%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.47%
    </div>
   </td>
   <td>
@@ -3100,17 +3170,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.42%
+    53.00%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.47%
+    0.45%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
+    0.04%
    </div>
   </td>
  </tr>
@@ -3135,77 +3205,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.12%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.47%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.01%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=140}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      関羽
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.04%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.40%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.16%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=139}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UhQkVUBi.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      孔子
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      ファイター
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.66%
+    50.49%
    </div>
   </td>
   <td>
@@ -3215,7 +3215,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
+    0.01%
    </div>
   </td>
  </tr>
@@ -3240,17 +3240,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.62%
+    50.39%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.44%
+    0.41%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.02%
+    0.03%
    </div>
   </td>
  </tr>
@@ -3275,12 +3275,117 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.59%
+    52.36%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.42%
+    0.41%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.02%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=120}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uY7c38Tt.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      白起
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    52.61%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.39%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=180}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/WDh84DWg.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ナタク
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター/タンク
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.71%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.38%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.05%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=501}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      明世隠
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      サポート
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.16%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.39%
    </div>
   </td>
   <td>
@@ -3310,157 +3415,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.19%
+    49.37%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.40%
+    0.37%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.06%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=501}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      明世隠
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      サポート
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.88%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.40%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.02%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=115}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      漸離
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.95%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.38%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=120}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uY7c38Tt.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      白起
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.62%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.37%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.04%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=125}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/en5o11rK.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      元歌
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      アサシン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.25%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.37%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.05%
    </div>
   </td>
  </tr>
@@ -3485,7 +3450,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    44.68%
+    44.82%
    </div>
   </td>
   <td>
@@ -3495,20 +3460,20 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.11%
+    0.13%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=154}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=125}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/en5o11rK.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      ムーラン
+      元歌
      </div>
      <div class="heroIntroCareer-SDG6X">
-      ファイター/アサシン
+      アサシン
      </div>
     </div>
    </div>
@@ -3520,7 +3485,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.35%
+    47.36%
    </div>
   </td>
   <td>
@@ -3530,20 +3495,20 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.02%
+    0.05%
    </div>
   </td>
  </tr>
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=513}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/zyA68GFr.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=115}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      上官婉児
+      漸離
      </div>
      <div class="heroIntroCareer-SDG6X">
-      メイジ/アサシン
+      メイジ
      </div>
     </div>
    </div>
@@ -3555,12 +3520,47 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.44%
+    51.47%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.35%
+    0.36%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.04%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=139}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UhQkVUBi.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      孔子
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      ファイター
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.76%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.36%
    </div>
   </td>
   <td>
@@ -3590,122 +3590,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.65%
+    51.03%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.35%
+    0.36%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.02%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=524}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      蒙牙
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      マークスマン
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.17%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.35%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.01%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=635}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/UDiFFfId.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      ロリアン
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.82%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.31%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.07%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=168}" src="https://camp.honorofkings.com/camp/admin/default/AuWJ7G0J.png?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      ラプール
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      サポート/タンク
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    55.02%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.32%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.01%
    </div>
   </td>
  </tr>
@@ -3730,7 +3625,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.74%
+    50.30%
    </div>
   </td>
   <td>
@@ -3741,6 +3636,41 @@
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.05%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=513}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/zyA68GFr.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      上官婉児
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ/アサシン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    48.26%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.32%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.03%
    </div>
   </td>
  </tr>
@@ -3765,7 +3695,42 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.72%
+    49.57%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.32%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.02%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=582}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/66xErXNs.jpeg?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      元流の子（メイジ）
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.20%
    </div>
   </td>
   <td>
@@ -3776,6 +3741,76 @@
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.02%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=635}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/UDiFFfId.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      ロリアン
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      メイジ
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    50.19%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.29%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.06%
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=524}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/vhBTA9jh.png?imageMogr2/thumbnail/64x" style=""/>
+    <div class="heroIntro-nWFhk">
+     <div class="heroIntroName-cDPLz">
+      蒙牙
+     </div>
+     <div class="heroIntroCareer-SDG6X">
+      マークスマン
+     </div>
+    </div>
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableTrankText-askYN">
+    C
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    49.57%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.31%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.01%
    </div>
   </td>
  </tr>
@@ -3800,12 +3835,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    46.84%
+    46.92%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.31%
+    0.30%
    </div>
   </td>
   <td>
@@ -3817,13 +3852,13 @@
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=178}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=168}" src="https://camp.honorofkings.com/camp/admin/default/AuWJ7G0J.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      楊戩
+      ラプール
      </div>
      <div class="heroIntroCareer-SDG6X">
-      ファイター
+      サポート/タンク
      </div>
     </div>
    </div>
@@ -3835,7 +3870,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.33%
+    54.19%
    </div>
   </td>
   <td>
@@ -3845,7 +3880,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.02%
+    0.01%
    </div>
   </td>
  </tr>
@@ -3870,7 +3905,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    51.56%
+    51.46%
    </div>
   </td>
   <td>
@@ -3905,17 +3940,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.62%
+    49.63%
+   </div>
+  </td>
+  <td>
+   <div class="tableText-b8CTB tableNormalText-K7wBj">
+    0.19%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
     0.20%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.18%
    </div>
   </td>
  </tr>
@@ -3940,12 +3975,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    49.05%
+    48.97%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.27%
+    0.26%
    </div>
   </td>
   <td>
@@ -3957,13 +3992,13 @@
  <tr>
   <td>
    <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=150}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png?imageMogr2/thumbnail/64x" style=""/>
+    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=178}" src="https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png?imageMogr2/thumbnail/64x" style=""/>
     <div class="heroIntro-nWFhk">
      <div class="heroIntroName-cDPLz">
-      韓信
+      楊戩
      </div>
      <div class="heroIntroCareer-SDG6X">
-      アサシン
+      ファイター
      </div>
     </div>
    </div>
@@ -3975,17 +4010,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    46.88%
+    51.02%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.28%
+    0.27%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.03%
+    0.01%
    </div>
   </td>
  </tr>
@@ -4010,52 +4045,17 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.37%
+    49.57%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.27%
+    0.25%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.02%
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div class="heroIntroContainer-sDwrX heroIntroContainer-Vk4zz">
-    <img class="heroIcon-qU2mT heroIcon-mKwDW" dt-eid="rank_page_news_hero" dt-imp-ignore="true" dt-params="rank_page_hero_id=582}" src="https://camp.honorofkings.com/camp/admin/hero/head_128-128/66xErXNs.jpeg?imageMogr2/thumbnail/64x" style=""/>
-    <div class="heroIntro-nWFhk">
-     <div class="heroIntroName-cDPLz">
-      元流の子（メイジ）
-     </div>
-     <div class="heroIntroCareer-SDG6X">
-      メイジ
-     </div>
-    </div>
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableTrankText-askYN">
-    C
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    47.59%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.24%
-   </div>
-  </td>
-  <td>
-   <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.01%
+    0.03%
    </div>
   </td>
  </tr>
@@ -4080,12 +4080,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    52.14%
+    52.36%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.23%
+    0.21%
    </div>
   </td>
   <td>
@@ -4115,7 +4115,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    54.20%
+    53.82%
    </div>
   </td>
   <td>
@@ -4150,12 +4150,12 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    50.91%
+    49.81%
    </div>
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    0.19%
+    0.18%
    </div>
   </td>
   <td>
@@ -4185,7 +4185,7 @@
   </td>
   <td>
    <div class="tableText-b8CTB tableNormalText-K7wBj">
-    53.11%
+    52.38%
    </div>
   </td>
   <td>
